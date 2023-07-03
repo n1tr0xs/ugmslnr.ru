@@ -1,0 +1,35 @@
+table.counter {
+  counter-reset: cnt1;
+}
+
+table.counter tbody {
+  counter-increment: cnt1;
+}
+
+table.counter td.level-1::before {
+  content: counter(cnt1) ". ";
+}
+
+table.counter td.level-1 {
+  counter-reset: cnt2;
+}
+
+table.counter tr.level-2 {
+  counter-increment: cnt2;
+}
+
+table.counter td.level-2::before {
+  content: counter(cnt1) "." counter(cnt2) ". ";
+}
+
+table.counter tr.level-2 {
+  counter-reset: cnt3;
+}
+
+table.counter tr.level-3 {
+  counter-increment: cnt3;
+}
+
+td.level-3::before{
+  content: counter(cnt1) "." counter(cnt2) "." counter(cnt3);
+}
