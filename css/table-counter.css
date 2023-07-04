@@ -7,7 +7,7 @@ table.counter tbody {
 }
 
 table.counter td.level-1::before {
-  <div id='content'>: counter(cnt1) ". ";
+  content: counter(cnt1) ". ";
 }
 
 table.counter td.level-1 {
@@ -19,7 +19,7 @@ table.counter tr.level-2 {
 }
 
 table.counter td.level-2::before {
-  <div id='content'>: counter(cnt1) "." counter(cnt2);
+  content: counter(cnt1) "." counter(cnt2);
 }
 
 table.counter tr.level-2 {
@@ -31,5 +31,5 @@ table.counter tr.level-3 {
 }
 
 td.level-3::before{
-  <div id='content'>: counter(cnt1) "." counter(cnt2) "." counter(cnt3);
+  content: counter(cnt1) "." counter(cnt2) "." counter(cnt3);
 }
