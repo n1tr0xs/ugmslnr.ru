@@ -859,15 +859,43 @@
     <tr>
         <td colspan="4" class='level-1 tooltip'> Гидрологическая информация </td>
     </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
                 </tbody>
 <tbody>
     <tr>
         <td colspan="4" class='level-1 tooltip'> Агронометрическая информация </td>
     </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
                 </tbody>
 <tbody>
     <tr>
         <td colspan="4" class='level-1 tooltip'> Информаия о загрязнении окружающей среды </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
     </tr>
                 </tbody>
 <tbody>
