@@ -19,7 +19,7 @@ table.counter tr.level-2 {
 }
 
 table.counter td.level-2::before {
-  content: counter(cnt1) "." counter(cnt2) ". ";
+  content: counter(cnt1) "." counter(cnt2);
 }
 
 table.counter tr.level-2 {
