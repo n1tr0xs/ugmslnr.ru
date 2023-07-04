@@ -849,6 +849,243 @@
     <tr>
         <td colspan="4" class='level-1 tooltip'> Расчетные метеорологические и климатические характиеристики за многолетний период </td>
     </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'> Температура воздуха </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Средняя месячная и годовая температура воздуха по месяцам и за год </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Средний минимум/максимум температуры воздуха по месяцам и за год </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Абсолютные максимальные/минимальные значения температуры воздуха за весь ряд наблюдений / Расчет средних из абсолютных </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Даты наступления средних суточных температур воздуха выше и ниже определенных пределов/число дней с температурой воздуха, превышающей эти пределы </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Дата первого и последнего заморозка, продолжительность безморозного периода </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'> Температура почвы </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Средняя месячная и годовая температура почвы по месяцам и за год </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Средний минимум/максимум температуры почвы по месяцам и за год </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Абсолютные значения температуры почвы за весь ряд наблюдений / Расчет средних из абсолютных </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Дата первого и последнего заморозка, продолжительность безморозного периода на поверхности почвы </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Глубина промерзания почвы средняя/наибольшая </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Повторяемость направлений ветра и штилей по 8-ми румбам по месяцам и за год / Построение розы ветров </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Средняя месячная и годовая скорость ветра по месяцам и за год </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Максимальная скорость ветра (с учетом порывов) </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Максимальная скорость ветра (без учета порывов) </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Повторяемость скоростей ветра различных градаций по направлениям </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Повторяемость скоростей ветра по градациям </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Скорость ветра по направлениям </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Число дней с ветром заданной скорости </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Средняя месячная и годовая скорость ветра в различные часы суток </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Средняя скорость ветра заданной повторяемости, вероятность возникновения 1 раз в n лет (1 элемент). Максимальная скорость ветра с учетом порывов/без учета порывов заданной повторяемости, вероятность возникновения 1 раз в 1 лет (1 элемент) </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Скорость ветра, повторяемость превышения которой составляет 5% </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Среднее количество осадков по месяцам и за год </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Среднее максимальное суточное количество осадков по месяцам и за год </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Количество осадков за холодный/теплый периоды </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Продолжительность осадков </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Число дней с осадками по градациям (один элемент) </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Максимальное количество осадков за сутки/максимальный суточный слой осадков различной обеспеченности (1 элемент) </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td colspan="4" class='level-2'>  </td>
+    </tr>
                 </tbody>
 <tbody>
     <tr>
