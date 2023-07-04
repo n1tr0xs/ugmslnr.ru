@@ -1,4 +1,5 @@
 <header>
+  <link rel="stylesheet" href="/css/menu.css">
   <nav>
     <ul class='navbar'>
       <li class='navbar'><a href='/'>Начальная страница</a></li>
@@ -14,7 +15,7 @@
       <li class='navbar dropdown'>
         <a class='dropdown' href='to_customers.php'>Потребителям</a>
         <ul class='navbar dropdown-content'>
-          <li><a href="pricelist.php">Цены услуг</a></li>
+          <li><a href="pricelist.php">Услуги</a></li>
         </ul>
       </li>
     </ul>

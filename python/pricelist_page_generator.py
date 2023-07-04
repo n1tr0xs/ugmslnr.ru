@@ -417,7 +417,7 @@ with open(r'..\pricelist.php', 'w', encoding='utf-8') as fout:
         <title>Услуги</title>
     </head>
     <body>
-      <? include 'header.html'; ?>
+      <? include 'header.php'; ?>
       <div id='content'>
         <table class='fixed-head counter'>
           <caption> Перечь платных услуг (работ) и их стоимости на гидрометеорологическую продукцию и информацию о состоянии окружающей среды, ее загрязнее на 2023 год </caption>
@@ -438,7 +438,7 @@ with open(r'..\pricelist.php', 'w', encoding='utf-8') as fout:
     '''
     </table>
 </div>
-<? include 'footer.html'; ?>
+<? include 'footer.php'; ?>
 </body>
 </html>
 

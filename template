@@ -7,10 +7,10 @@
     <title></title>
 </head>
   <body>
-    <? include 'header.html'; ?>
+    <? include 'header.php'; ?>
     <div id='content'>
 
    </div>
-    <? include 'footer.html'; ?>
+    <? include 'footer.php'; ?>
 </body>
 </html>
