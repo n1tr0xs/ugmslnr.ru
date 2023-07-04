@@ -410,7 +410,7 @@ with open(r'..\pricelist.php', 'w', encoding='utf-8') as fout:
     <!DOCTYPE html>
     <html lang="en" dir="ltr">
       <head>
-        <link rel="stylesheet" href="/css/water.css">
+        <link rel="stylesheet" href="/css/master.css">
         <link rel="stylesheet" href="/css/menu.css">
         <link rel="stylesheet" href="/css/table-counter.css">
         <meta charset="utf-8">
