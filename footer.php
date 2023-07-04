@@ -1,11 +1,19 @@
 <footer>
-  <link rel="stylesheet" href="/css/footer.css">
+  <div id='company'>
+    <p>
+      Федеральное государственное бюджетное учреждение
+    </p>
+    <p>
+      "УГМС по ЛНР"
+    </p>
+  </div>
+
   <div id='date'>
-  <span>
-    Последнее обновление страницы:
-  </span>
-  <br>
-  <span>
-    <?=date("Y-m-d H:i:s", filemtime(basename($_SERVER['SCRIPT_FILENAME'])));?>
-  </span>
+    <p>
+      Последнее обновление страницы:
+    </p>
+    <p>
+      <?=date("Y-m-d H:i:s", filemtime(basename($_SERVER['SCRIPT_FILENAME'])));?>
+    </p>
+  </div>
 </footer>

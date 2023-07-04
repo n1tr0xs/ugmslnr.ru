@@ -120,8 +120,17 @@ footer {
   border-top: 1px solid #dbdbdb;
   border-top: 1px solid var(--border);
   padding-top: 10px;
+}
+
+footer > * {
+  display: inline-block;
+}
+
+footer > #date {
   color: #70777f;
   color: var(--text-muted);
+  float: right;
+  text-align: right;
 }
 
 body >footer {
