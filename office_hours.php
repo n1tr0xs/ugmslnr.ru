@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="/css/master.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>Часы приема</title>
 </head>
   <body>
     <? include 'header.php'; ?>

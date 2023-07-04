@@ -7,10 +7,9 @@
 </head>
 <body>
   <? include 'header.php'; ?>
-
   <div id='content'>
-    Content
- </div>
+    
+  </div>
   <? include 'footer.php'; ?>
 </body>
 </html>

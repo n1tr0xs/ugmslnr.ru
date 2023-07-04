@@ -21,6 +21,7 @@
   --variable: #39a33c;
   --highlight: #ff0;
   --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
+  --main-text: #dbdbdb;
 }
 
 fieldset {
@@ -38,6 +39,7 @@ body {
   margin: 20px auto;
   padding: 0 10px;
   color: #dbdbdb;
+  color: var(--main-text);
   background: #202b38;
   text-rendering: optimizeLegibility;
 }
@@ -51,6 +53,20 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+a[href^='tel:'], a[href^='mailto:'] {
+  color: #dbdbdb;
+  color: var(--main-text);
+}
+
+a[href^='tel:']:hover {
+  text-decoration: none;
+}
+
+a[href^='mailto:']:hover {
+ color:
+}
+
 
 table {
   border: 1px solid #dbdbdb;
@@ -116,25 +132,36 @@ thead, td[colspan='4'] {
   color: var(--text-bright);
 }
 
+body >footer {
+  margin-top: 40px;
+}
+
 footer {
   border-top: 1px solid #dbdbdb;
   border-top: 1px solid var(--border);
   padding-top: 10px;
+  display: table;
+  width: 100%;
 }
 
-footer > * {
-  display: inline-block;
+footer > div {
+  display: table-row;
 }
 
-footer > #date {
+footer > div > div {
+  display: table-cell;
+}
+
+
+
+
+.muted {
   color: #70777f;
   color: var(--text-muted);
-  float: right;
-  text-align: right;
 }
 
-body >footer {
-  margin-top: 40px;
+.text-right {
+  text-align: right;
 }
 
 input {
@@ -274,4 +301,24 @@ textarea:disabled {
 
 h1, h2, h4, h5, h5, h6, h7, h8 {
   text-align: center;
+}
+
+
+footer > div > div p:first-child {
+  margin: 0;
+  padding: 0;
+}
+
+footer > div > div p:last-child {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.leader {
+  display: block;
+}
+.leader > figure, .leader > div {
+  display: inline-block;
+  vertical-align: middle;
 }
