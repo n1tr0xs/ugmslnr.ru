@@ -40,9 +40,10 @@ class XXX:
                 '''
 
 class XX_spec:
-    def __init__(self, name:str, childs:list):
+    def __init__(self, name:str, price:str='', desc:str=''):
         self.name = name
-        self.childs = childs
+        self.price = price
+        self.desc = desc
 
     def __str__(self):
         return f'''
@@ -196,7 +197,9 @@ x_list = map(X, x_names, xx_list)
 spec_x = X(
     'Прочие услуги',
     [
-
+        XX_spec('Оформление, вывод на бумажный носитель (печать, копирование)', ''),
+        XX_spec('Подготовка и доведение информации по ОЯ', ''),
+        XX_spec('Коэффициент рельефа местности', ''),
     ]
 )
 
@@ -241,3 +244,5 @@ with open(r'..\pricelist.php', 'w', encoding='utf-8') as fout:
 
     '''
     )
+
+print('Succesfull')

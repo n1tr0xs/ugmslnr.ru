@@ -353,6 +353,27 @@
     <tr>
         <td colspan="4" class='level-1'> Прочие услуги </td>
     </tr>
+                
+    <tr class='level-2'>
+        <td class='level-2'>  </td>
+        <td> Оформление, вывод на бумажный носитель (печать, копирование) </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td class='level-2'>  </td>
+        <td> Подготовка и доведение информации по ОЯ </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-2'>
+        <td class='level-2'>  </td>
+        <td> Коэффициент рельефа местности </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
                 </tbody>
     </table>
 </section>
