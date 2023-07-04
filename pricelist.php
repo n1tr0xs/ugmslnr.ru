@@ -564,14 +564,14 @@
                 
     <tr class='level-3'>
         <td class='level-3'>  </td>
-        <td> Прододжительность осадков за сутки </td>
+        <td> Продолжительность осадков за сутки </td>
         <td>  </td>
         <td>  </td>
     </tr>
                 
     <tr class='level-3'>
         <td class='level-3'>  </td>
-        <td> Прододжительность осадков за месяц </td>
+        <td> Продолжительность осадков за месяц </td>
         <td>  </td>
         <td>  </td>
     </tr>
@@ -631,29 +631,218 @@
                 
     <tr class='level-3'>
         <td class='level-3'>  </td>
-        <td> Прододжительность атмосферных явлений за месяц </td>
+        <td> Продолжительность атмосферных явлений за месяц </td>
         <td>  </td>
         <td>  </td>
     </tr>
                 
     <tr class='level-2'>
-        <td colspan="4" class='level-2'>  </td>
+        <td colspan="4" class='level-2'> Снежный покров </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Средняя высота снежного покрова за сутки </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Средняя высота снежного покрова за месяц </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Средняя высота снежного покрова за декаду </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Максимальная/средняя высота снега за зиму </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Высота снежного покрова на маршруте </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Плотность снега на маршруте </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Запас воды в снеге на маршруте </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Число дней со снежным покровом за месяц </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Число дней со снежным покровом за сезон </td>
+        <td>  </td>
+        <td>  </td>
     </tr>
                 
     <tr class='level-2'>
-        <td colspan="4" class='level-2'>  </td>
+        <td colspan="4" class='level-2'> Солнечное сияние </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Число дней без солнца за месяц </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Продолжительность солнечного сияния за сутки (часы) </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Продолжительность солнечного сияния за декаду (часы) </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Продолжительность солнечного сияния за месяц (часы) </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Продолжительность солнечного сияния за год (часы) </td>
+        <td>  </td>
+        <td>  </td>
     </tr>
                 
     <tr class='level-2'>
-        <td colspan="4" class='level-2'>  </td>
+        <td colspan="4" class='level-2'> Гололедно-изморозевые явления </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Вид отложения на проводе </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Продолжительность обледенения (за случай отложения) </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Размер отложений на проводе (за случай отложения) </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Масса отложений (за случай отложения) </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Число дней с гололедно-изморозевым отложением за сезон </td>
+        <td>  </td>
+        <td>  </td>
     </tr>
                 
     <tr class='level-2'>
-        <td colspan="4" class='level-2'>  </td>
+        <td colspan="4" class='level-2'> Облачность </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Число ясных и пасмурных дней за месяц </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Число ясных и пасмурных дней за год </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Высота нижней границы облачности </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Количество общей и нижней облачности за срок </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Количество общей и нижней облачности за сутки </td>
+        <td>  </td>
+        <td>  </td>
     </tr>
                 
     <tr class='level-2'>
-        <td colspan="4" class='level-2'>  </td>
+        <td colspan="4" class='level-2'> Видимость </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Метеорологическая дальность видимости в срок наблюдений </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Число случаев с видимостью различных градаций за месяц </td>
+        <td>  </td>
+        <td>  </td>
+    </tr>
+                
+    <tr class='level-3'>
+        <td class='level-3'>  </td>
+        <td> Число случаев с видимостью различных градаций за год </td>
+        <td>  </td>
+        <td>  </td>
     </tr>
                 </tbody>
 <tbody>
