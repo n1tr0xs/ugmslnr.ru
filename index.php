@@ -6,11 +6,13 @@
     <meta charset="utf-8">
     <title>УГМС по ЛНР - Федеральное государственное бюджетное учреждение</title>
 </head>
-  <body>
-    <? include 'header.html'; ?>
-    <content>
+<body>
+  <? include 'header.html'; ?>
 
- </content>
-    <? include 'footer.html'; ?>
+  <div id='content'>
+    Content
+ </div>
+
+  <? include 'footer.html'; ?>
 </body>
 </html>

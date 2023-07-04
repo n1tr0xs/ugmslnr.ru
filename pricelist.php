@@ -10,7 +10,7 @@
     </head>
     <body>
       <? include 'header.html'; ?>
-      <section>
+      <div id='content'>
         <table class='fixed-head counter'>
           <caption> Перечь платных услуг (работ) и их стоимости на гидрометеорологическую продукцию и информацию о состоянии окружающей среды, ее загрязнее на 2023 год </caption>
           <thead>
@@ -1162,7 +1162,7 @@
     </tr>
                 </tbody>
     </table>
-</section>
+</div>
 <? include 'footer.html'; ?>
 </body>
 </html>

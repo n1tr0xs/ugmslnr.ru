@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/water.css">
+    <link rel="stylesheet" href="/css/menu.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>Контакты</title>
 </head>
   <body>
     <? include 'header.html'; ?>
-    <content>
+    <div id='content'>
 
- </content>
+   </div>
     <? include 'footer.html'; ?>
 </body>
 </html>
