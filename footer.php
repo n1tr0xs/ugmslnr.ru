@@ -7,7 +7,7 @@
     </div>
     <div id='contacts'>
       <p> Сообщить об ошибке: </p>
-      <p> <a href='mailto:@mail.ru'> @mail.ru </a> </p>
+      <p> <a href='mailto:@mail.ru'> <i class='fa fa-envelope' aria-hidden='true'></i>@mail.ru </a> </p>
     </div>
   </div>
   <div id='row2'>

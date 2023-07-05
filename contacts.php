@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="/css/master.css">
+    <script src="https://use.fontawesome.com/bd02b5ff79.js"></script>
     <meta charset="utf-8">
     <title>Контакты</title>
 </head>
@@ -13,10 +14,10 @@
         <b> Юридический адрес: </b> <span> </span>
       </div>
       <div>
-        <b> Телефон: </b> <a href='tel:'> +7 959 xxx xx xx </a>
+        <b> Телефон: </b> <a href='tel:'> <i class='fa fa-mobile' aria-hidden='true'></i> +7 959 xxx xx xx </a>
       </div>
       <div>
-        <b> Электронная почта: </b> <a href='mailto:@mail.ru'> @mail.ru </a>
+        <b> Электронная почта: </b> <a href='mailto:'> <i class='fa fa-envelope' aria-hidden='true'></i>@mail.ru </a>
       </div>
     </div>
     <? include 'footer.php'; ?>
