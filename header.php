@@ -1,6 +1,11 @@
 <header>
   <link rel="stylesheet" href="/css/header.css">
   <script src="js/menu.js" charset="utf-8"></script>
+  <div>
+    <img src=""/>
+    <p style="font-size: 1.5em"> УГМС по ЛНР </p>
+    <p style="font-size: 1.5em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>
+  </div>
   <nav class='pc'>
     <ul class='navbar'>
       <li class='navbar'><a href='/'>Начальная страница</a></li>

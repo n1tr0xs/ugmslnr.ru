@@ -19,6 +19,7 @@
   --menu-dropdown-hover-background: #404040;
   --footer-background: #22202c;
   --text-footer: #fffffffc;
+  --header-border: 2px solid #a5a5a5;
 }
 
 body {
