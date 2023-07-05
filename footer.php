@@ -1,4 +1,5 @@
 <footer>
+  <link rel="stylesheet" href="/css/footer.css">
   <div id='row1'>
     <div id='company'>
       <p> Федеральное государственное бюджетное учреждение </p>
