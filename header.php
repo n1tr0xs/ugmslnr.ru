@@ -23,7 +23,7 @@
       <li class='navbar'><a href='weater_report.php'> Погода </a></li>
     </ul>
   </nav>
-  
+
   <nav class='mobile'>
     <div class='menu-btn'>
       <span></span>
