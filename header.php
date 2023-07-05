@@ -7,7 +7,6 @@
       <li class='navbar dropdown'>
         <a class='dropdown' href='about.php'>О нас</a>
         <div class='navbar dropdown-content'>
-          <a href='about.php'>О нас</a>
           <a href='leadership.php'>Руководство</a>
           <a href='structure.php'>Структура</a>
           <a href='requisites.php'>Реквизиты</a>
@@ -17,7 +16,6 @@
       <li class='navbar dropdown'>
         <a class='dropdown' href='to_customers.php'>Потребителям</a>
         <div class='navbar dropdown-content'>
-          <a href='to_customers.php'>Потребителям</a>
           <a href="pricelist.php">Услуги</a>
           <a href="office_hours.php">Часы приема</a>
         </div>
@@ -25,6 +23,7 @@
       <li class='navbar'><a href='weater_report.php'> Погода </a></li>
     </ul>
   </nav>
+  
   <nav class='mobile'>
     <div class='menu-btn'>
       <span></span>
