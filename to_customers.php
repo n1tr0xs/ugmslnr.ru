@@ -8,8 +8,8 @@
   <body>
     <? include 'header.php'; ?>
     <div id='content'>
+      <h2>Образцы писем-запросов</h2>
       <div>
-        <h3>Образцы писем-запросов</h3>
         <ul>
           <li><a href='/files/example1.txt' download>образец №1</a></li>
           <li><a href='/files/example2.txt' download>образец №2</a></li>
