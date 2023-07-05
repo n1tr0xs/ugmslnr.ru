@@ -18,7 +18,7 @@
 
     document.addEventListener('DOMContentLoaded', function(){
       var min_news = 1;
-      var max_news = 2;
+      var max_news = 5;
       var folder = '/news/short_news/';
       var div = document.getElementById('news-container');
       for(let i=max_news; i>=min_news; --i) {
