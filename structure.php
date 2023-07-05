@@ -20,11 +20,15 @@
     .show {
       cursor: pointer;
     }
-    .show::after {
-      /* content: "+"; */
-    }
     div.department > h2 {
-      background-color: #000000;
+      background-color: rgb(38, 59, 84);
+    }
+    div.employee {
+      border-bottom: 1px solid #dbdbdb;
+      border-bottom: 1px solid var(--border);
+    }
+    div.employee:last-child {
+      border: 0;
     }
     </style>
     <title>Структура</title>
@@ -32,35 +36,25 @@
 <body>
   <? include 'header.php'; ?>
   <div class='content'>
+
     <div class='department'>
       <h2 href='#unit1' class='show'> Отдел 1</h2>
       <div id='unit1' class='unit'>
-        <div class='contact'>
-          Контакт 1
+        <div class='employee'>
+          <p> ФИО 1 </p>
+          <p> Должность 1 </p>
         </div>
-        <div class='contact'>
-          Контакт 3
+        <div class='employee'>
+          <p> ФИО 2 </p>
+          <p> Должность 2 </p>
         </div>
-        <div class='contact'>
-          Контакт 2
+        <div class='employee'>
+          <p> ФИО 3 </p>
+          <p> Должность 3 </p>
         </div>
       </div>
     </div>
 
-    <div class='department'>
-      <h2 href='#unit2' class='show'> Отдел 2 </h2>
-      <div id='unit2' class='unit'>
-        <div class='contact'>
-          Контакт 1
-        </div>
-        <div class='contact'>
-          Контакт 3
-        </div>
-        <div class='contact'>
-          Контакт 2
-        </div>
-      </div>
-    </div>
   </div>
   <? include 'footer.php'; ?>
 </body>
