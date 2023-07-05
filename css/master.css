@@ -152,21 +152,6 @@ footer > div > div {
   text-align: right;
 }
 
-input {
-  color: #1d1d1d;
-  color: var(--form-text);
-  background-color: #efefef;
-  background-color: var(--background);
-  font-family: inherit;
-  font-size: inherit;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  outline: none;
-}
-
 h1, h2, h4, h5, h5, h6 {
   text-align: center;
 }
