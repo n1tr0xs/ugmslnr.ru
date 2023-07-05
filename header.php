@@ -7,12 +7,12 @@
 
       <li class='navbar dropdown'>
         <a class='dropdown' href='about.php'>О нас</a>
-        <ul class='navbar dropdown-content'>
-          <li><a href='about.php'>О нас</a></li>
-          <li><a href='leadership.php'>Руководство</a></li>
-          <li><a href='structure.php'>Структура</a></li>
-          <li><a href='requisites.php'>Реквизиты</a></li>
-        </ul>
+        <div class='navbar dropdown-content'>
+          <a href='about.php'>О нас</a>
+          <a href='leadership.php'>Руководство</a>
+          <a href='structure.php'>Структура</a>
+          <a href='requisites.php'>Реквизиты</a>
+        </div>
       </li>
 
       <li class='navbar'><a href='contacts.php'>Контакты</a></li>
