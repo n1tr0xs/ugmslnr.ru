@@ -1,5 +1,3 @@
-/* computer footer */
-
 body > footer {
   margin-top: 40px;
 }
@@ -8,17 +6,9 @@ footer {
   border-top: 1px solid #dbdbdb;
   border-top: 1px solid var(--border);
   padding-top: 10px;
-  display: table;
   width: 100%;
 }
 
-footer > div {
-  display: table-row;
-}
-
-footer > div > div {
-  display: table-cell;
-}
 footer > div > div p:first-child {
   margin: 0;
   padding: 0;
@@ -28,4 +18,34 @@ footer > div > div p:last-child {
   margin: 0;
   padding: 0;
   margin-bottom: 1em;
+}
+
+/* computer footer */
+@media screen and (min-width: 1000px) {
+  footer {
+    display: table;
+  }
+
+  footer > div {
+    display: table-row;
+  }
+
+  footer > div > div {
+    display: table-cell;
+  }
+
+  footer > div > div:last-child {
+    text-align: right;
+  }
+}
+/* mobile footer */
+@media screen and (max-width: 1000px){
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer p {
+    display: inline-block;
+  }
 }
