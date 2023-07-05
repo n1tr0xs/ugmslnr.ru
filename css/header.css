@@ -1,23 +1,25 @@
-nav {
-  display: none;
-}
-
-nav.pc {
-  display: block;
+@media screen and (min-width: 1000px) {
+  nav.pc {
+    display: block;
+  }
+  nav:not(.pc) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-  nav.pc {
-    display: none;
-  }
   nav.mobile {
     display: block;
+  }
+  nav:not(.mobile) {
+    display: none;
   }
 }
 
 /* computer menu */
 nav.pc {
-  background-color: rgb(9, 32, 60);
+  background: #09203C;
+  background: var(--menu-background)
 }
 
 nav.pc a:hover {
@@ -33,13 +35,14 @@ nav.pc ul.navbar {
 
 nav.pc li.navbar {
   float: left;
-  border-right: 1px solid black;
+  border-right: 1px solid #000000;
+  border-right: var(--menu-border);
 }
 
 nav.pc  a, .dropbtn {
   display: inline-block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1em 1em;
   text-decoration: none;
 }
 
@@ -50,9 +53,9 @@ nav.pc li.dropdown {
 nav.pc .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #000011;
+  background: #000011;
+  background: var(--menu-dropdown-background);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
@@ -64,7 +67,8 @@ nav.pc .dropdown-content a {
 }
 
 nav.pc .dropdown-content a:hover {
-  background-color: #404040;
+  background: #404040;
+  background: var(--menu-dropdown-hover-background)
 }
 
 nav.pc .dropdown:hover .dropdown-content {
@@ -98,7 +102,7 @@ nav.mobile {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: var(--background);
+	background: var(--background);
 	transition: all 0.5s;
 }
 
@@ -131,7 +135,6 @@ nav.mobile {
 	padding: 15px;
   background: var(--background-body);
 	transform: translateX(-100%);
-	transition: transform 0.5s;
 }
 
 .menu.active {

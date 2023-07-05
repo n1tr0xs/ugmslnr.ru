@@ -38,6 +38,7 @@ footer > div > div p:last-child {
     text-align: right;
   }
 }
+
 /* mobile footer */
 @media screen and (max-width: 1000px){
   footer {
