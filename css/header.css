@@ -19,7 +19,7 @@
 /* computer menu */
 nav.pc {
   background: #09203C;
-  background: var(--menu-background)
+  background: var(--menu-background);
 }
 
 nav.pc a:hover {
@@ -73,6 +73,15 @@ nav.pc .dropdown-content a:hover {
 
 nav.pc .dropdown:hover .dropdown-content {
   display: block;
+}
+
+nav.pc a {
+  color: #fffffffc; /* no var */
+}
+
+nav.pc a:hover {
+  color: #fff; /* no var */
+  background: #1e4b75; /* no var */
 }
 
 /* phone menu */

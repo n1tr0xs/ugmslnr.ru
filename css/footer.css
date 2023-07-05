@@ -3,6 +3,10 @@ body > footer {
 }
 
 footer {
+  background: #22202c;
+  background: var(--footer-background);
+  color: #fffffffc;
+  color: var(--text-footer);
   border-top: 1px solid #dbdbdb;
   border-top: 1px solid var(--border);
   padding-top: 10px;
