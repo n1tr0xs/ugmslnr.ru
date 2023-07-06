@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="/css/master.css">
-    <script src="https://use.fontawesome.com/bd02b5ff79.js"></script>
     <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/bd02b5ff79.js"></script>
+    <link rel="stylesheet" href="/css/master.css">
     <title>Контакты</title>
 </head>
   <body>

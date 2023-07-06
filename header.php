@@ -1,7 +1,7 @@
 <header>
-  <link rel="stylesheet" href="/css/header.css">
   <script src="https://use.fontawesome.com/bd02b5ff79.js"></script>
-  <script src="js/menu.js" charset="utf-8"></script>
+  <script src="/js/menu.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="/css/header.css">
   <div>
     <p style="font-size: 1.5em"> УГМС по ЛНР </p>
     <p style="font-size: 1.5em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>

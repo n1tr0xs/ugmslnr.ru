@@ -3,14 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"> </script>
-    <script type='text/javascript'>
-      $(document).ready(function(){
-        $(".show").on('click', function(){
-          var data = $(this).attr('href');
-          $("div"+data).css('display', $("div"+data).css('display') == 'none' ? 'block' : 'none');
-        });
-      });
-    </script>
+    <script src="/js/structure.js" charset="utf-8"></script>
     <link rel="stylesheet" href="/css/master.css">
     <link rel="stylesheet" href="/css/structure.css">
     <title>Структура</title>
