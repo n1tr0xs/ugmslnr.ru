@@ -23,32 +23,33 @@
   --h-text: #fff;
   --text-gloomy: #fff;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background-body: #1f2123;
-    --background: #1d1f20;
-    --selection: #4f5559;
-    --text-main: #fff;
-    --text-bright: #e8e6e3;
-    --text-muted: #9d9487;
-    --links: #4fb4ff;
-    --border: 1px solid #dbdbdb;
-    --button-base: #d0cfcf;
-    --button-hover: #50575b;
-    --scrollbar-thumb: #484e51;
-    --scrollbar-thumb-hover: var(--button-hover);
-    --menu-background: #1f3249;
-    --menu-border: 1px solid #000000;
-    --menu-dropdown-background: #00000e;
-    --menu-dropdown-hover-background: #303436;
-    --footer-background: #1b1a23;
-    --text-footer: rgba(232, 230, 227, 0.99);
-    --header-border: 2px solid #a5a5a5;
-    --h-text: #e8e6e3;
-    --text-gloomy: #e8e6e3;
-  }
+:root {
+--background-body: #1f2123;
+--background: #1d1f20;
+--selection: #4f5559;
+--text-main: #fff;
+--text-bright: #e8e6e3;
+--text-muted: #9d9487;
+--links: #4fb4ff;
+--border: 1px solid #dbdbdb;
+--button-base: #d0cfcf;
+--button-hover: #50575b;
+--scrollbar-thumb: #484e51;
+--scrollbar-thumb-hover: var(--button-hover);
+--menu-background: #1f3249;
+--menu-border: 1px solid #000000;
+--menu-dropdown-background: #00000e;
+--menu-dropdown-hover-background: #303436;
+--footer-background: #1b1a23;
+--text-footer: rgba(232, 230, 227, 0.99);
+--header-border: 2px solid #a5a5a5;
+--h-text: #e8e6e3;
+--text-gloomy: #e8e6e3;
 }
+}
+*/
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
