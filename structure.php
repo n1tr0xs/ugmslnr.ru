@@ -11,7 +11,6 @@
           $("div"+href).css('display', $("div"+href).css('display') == 'none' ? 'block' : 'none');
         });
       });
-
     </script>
     <style>
     .unit {
@@ -25,7 +24,7 @@
     }
     div.employee {
       border-bottom: 1px solid #dbdbdb;
-      border-bottom: 1px solid var(--border);
+      border-bottom: var(--border);
     }
     div.employee:last-child {
       border: 0;

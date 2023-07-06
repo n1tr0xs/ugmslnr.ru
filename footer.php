@@ -5,7 +5,7 @@
       <p> Федеральное государственное бюджетное учреждение </p>
       <p> "УГМС по ЛНР" </p>
     </div>
-    <div id='contacts'>
+    <div id='footer-contacts'>
       <p> Сообщить об ошибке: </p>
       <p> <a href='mailto:@mail.ru'> <i class='fa fa-envelope' aria-hidden='true'></i>@mail.ru </a> </p>
     </div>

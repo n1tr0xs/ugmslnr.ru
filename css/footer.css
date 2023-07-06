@@ -8,7 +8,7 @@ footer {
   color: #fffffffc;
   color: var(--text-footer);
   border-top: 1px solid #dbdbdb;
-  border-top: 1px solid var(--border);
+  border-top: var(--border);
   padding-top: 10px;
   width: 100%;
 }
@@ -22,6 +22,11 @@ footer > div > div p:last-child {
   margin: 0;
   padding: 0;
   margin-bottom: 1em;
+}
+
+footer a:hover {
+  color: #fff;
+  color: var(--text-gloomy);
 }
 
 /* computer footer */
