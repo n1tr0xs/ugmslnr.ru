@@ -58,4 +58,8 @@ footer a:hover {
   footer p {
     display: inline-block;
   }
+
+  footer p.new-line {
+    display: block;
+  }
 }
