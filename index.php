@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="/js/index.js" charset="utf-8"></script>
+    <script src="/js/index.js"></script>
     <link rel="stylesheet" href="/css/master.css">
     <title>УГМС по ЛНР - Федеральное государственное бюджетное учреждение</title>
 </head>

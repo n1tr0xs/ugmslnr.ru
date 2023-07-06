@@ -1,6 +1,6 @@
 <header>
   <script src="https://use.fontawesome.com/bd02b5ff79.js"></script>
-  <script src="/js/menu.js" charset="utf-8"></script>
+  <script src="/js/menu.js"></script>
   <link rel="stylesheet" href="/css/header.css">
   <div>
     <p style="font-size: 1.5em"> УГМС по ЛНР </p>
