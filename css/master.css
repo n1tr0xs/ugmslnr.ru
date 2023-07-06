@@ -20,8 +20,9 @@
   --footer-background: #22202c;
   --text-footer: #fffffffc;
   --header-border: 2px solid #a5a5a5;
-  --h-text: #fff;
+  --show-text: #fff;
   --text-gloomy: #fff;
+  --show-background: rgb(38, 59, 84);
 }
 /*
 @media (prefers-color-scheme: dark) {
@@ -45,7 +46,7 @@
 --footer-background: #1b1a23;
 --text-footer: rgba(232, 230, 227, 0.99);
 --header-border: 2px solid #a5a5a5;
---h-text: #e8e6e3;
+--show-text: #e8e6e3;
 --text-gloomy: #e8e6e3;
 }
 }
@@ -164,7 +165,7 @@ h1, h2, h4, h5, h5, h6 {
   background: #273e5b;
   background: var(--menu-background);
   color: #fff;
-  color: var(--h-text);
+  color: var(--show-text);
 }
 
 .leader {

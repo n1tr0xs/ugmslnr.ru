@@ -3,9 +3,22 @@
 }
 .show {
   cursor: pointer;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background: rgb(38, 59, 84);
+  background: var(--show-background);
+  color: #000;
+  color: var(--show-text);
 }
-div.department > h2 {
-  background-color: rgb(38, 59, 84);
+.show:hover {
+  text-decoration: none;
 }
 div.employee {
   border-bottom: 1px solid #dbdbdb;

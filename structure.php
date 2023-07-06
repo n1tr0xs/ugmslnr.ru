@@ -6,7 +6,7 @@
     <script type='text/javascript'>
       $(document).ready(function(){
         $(".show").on('click', function(){
-          var data = $(this).attr('data-value');
+          var data = $(this).attr('href');
           $("div"+data).css('display', $("div"+data).css('display') == 'none' ? 'block' : 'none');
         });
       });
@@ -20,7 +20,7 @@
   <div class='content'>
 
     <div class='department'>
-      <h2 data-value='#unit1' class='show'> Отдел 1</h2>
+      <a href='#unit1' class='show'> Отдел 1</a>
       <div id='unit1' class='unit'>
         <div class='employee'>
           <p> ФИО 1 </p>
