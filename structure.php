@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"> </script>
-    <link rel="stylesheet" href="/css/master.css">
     <script type='text/javascript'>
       $(document).ready(function(){
         $(".show").on('click', function(){
@@ -12,24 +11,8 @@
         });
       });
     </script>
-    <style>
-    .unit {
-      display: none;
-    }
-    .show {
-      cursor: pointer;
-    }
-    div.department > h2 {
-      background-color: rgb(38, 59, 84);
-    }
-    div.employee {
-      border-bottom: 1px solid #dbdbdb;
-      border-bottom: var(--border);
-    }
-    div.employee:last-child {
-      border: 0;
-    }
-    </style>
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="/css/structure.css">
     <title>Структура</title>
 </head>
 <body>

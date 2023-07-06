@@ -1,0 +1,16 @@
+.unit {
+  display: none;
+}
+.show {
+  cursor: pointer;
+}
+div.department > h2 {
+  background-color: rgb(38, 59, 84);
+}
+div.employee {
+  border-bottom: 1px solid #dbdbdb;
+  border-bottom: var(--border);
+}
+div.employee:last-child {
+  border: 0;
+}
