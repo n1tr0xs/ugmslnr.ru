@@ -9,8 +9,20 @@ document.addEventListener('DOMContentLoaded', function(){
 }, false);
 
 document.addEventListener('DOMContentLoaded', function(){
-  var links = document.querySelectorAll('a.dropdown');
+  let links = document.querySelectorAll('a.dropdown');
   for(let i=0; i<links.length; ++i){
     links[i].innerHTML = links[i].innerHTML + ' <i class="fa fa-angle-down" aria-hidden="true">';
+  }
+}, false);
+
+document.addEventListener('DOMContentLoaded', function(){
+  let dropdown = document.querySelectorAll('nav.mobile .dropdown');
+  for(let i=0; i<dropdown.length; ++i) {
+    let dd = dropdown[i];
+    let dropdown_content = dd.querySelectorAll('.dropdown-content');
+    dd.addEventListener('click', function(){
+      for(let j=0; j<dropdown_content.length; ++j)
+        dropdown_content[j].classList.toggle('active');
+    });
   }
 }, false);

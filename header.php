@@ -38,18 +38,24 @@
     <div class="menu">
       <ul>
         <li><a href='/'>Начальная страница</a></li>
-        <li><a href='about.php'>О нас</a></li>
-        <ul>
-          <li><a href='leadership.php'>Руководство</a></li>
-          <li><a href='structure.php'>Структура</a></li>
-          <li><a href='requisites.php'>Реквизиты</a></li>
-        </ul>
+        <li class='dropdown'>
+          <a class='dropdown' href='#'>О нас</a>
+          <ul class='dropdown-content'>
+            <li><a href='about.php'>О нас</a></li>
+            <li><a href='leadership.php'>Руководство</a></li>
+            <li><a href='structure.php'>Структура</a></li>
+            <li><a href='requisites.php'>Реквизиты</a></li>
+          </ul>
+        </li>
         <li><a href='contacts.php'>Контакты</a></li>
-        <li><a href='to_customers.php'>Потребителям</a></li>
-        <ul>
-          <li><a href="pricelist.php">Услуги</a></li>
-          <li><a href="office_hours.php">Часы приема</a></li>
-        </ul>
+        <li class='dropdown'>
+          <a class='dropdown' href='#'>Потребителям</a>
+          <ul class='dropdown-content'>
+            <li><a href='to_customers.php'>Потребителям</a></li>
+            <li><a href="pricelist.php">Услуги</a></li>
+            <li><a href="office_hours.php">Часы приема</a></li>
+          </ul>
+        </li>
         <li><a href='weater_report.php'> Погода </a></li>
       </ul>
     </div>
