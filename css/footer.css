@@ -24,6 +24,12 @@ footer > div > div p:last-child {
   margin-bottom: 1em;
 }
 
+footer a[href^='tel:'],
+footer a[href^='mailto:'] {
+  color: #dbdbdb;
+  color: var(--text-footer);
+}
+
 footer a:hover {
   color: #fff;
   color: var(--text-gloomy);
