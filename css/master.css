@@ -21,8 +21,9 @@
   --show-text: #ffffff;
   --text-gloomy: #ffffff;
   --show-background: rgb(38, 59, 84);
-  --content-background: #e1e1e16b;
+  --content-background: #e1e1e1;
   --background-bright: #ffffff;
+  --quote-background: gray;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,6 +50,7 @@
     --text-gloomy: #e8e6e3;
     --content-background: #191b1c;
     --background-bright: #000000;
+    --quote-background: gray;
   }
 }
 
@@ -78,11 +80,11 @@ a:hover {
   text-decoration: underline;
 }
 
-a[href^='tel:'], a[href^='mailto:'] {
+a[href^='tel:'],
+a[href^='mailto:'] {
   color: #dbdbdb;
   color: var(--text-main);
 }
-
 
 div#content a[href^='tel:']:hover,
 div#content a[href^='mailto:']:hover {
@@ -165,7 +167,7 @@ thead, td[colspan='4'] {
   text-align: right;
 }
 
-h1, h2, h4, h5, h5, h6 {
+h1, h2, h3, h4, h5, h5, h6 {
   text-align: center;
   background: #273e5b;
   background: var(--menu-background);
@@ -185,4 +187,33 @@ caption {
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: 1.5em;
+}
+
+section p {
+  text-indent: 2em;
+  margin: 0;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+section ol {
+  margin: 0;
+}
+
+section li {
+  margin-left: 2em;
+}
+
+blockquote {
+  background: var(--quote-background);
+  border-radius: 5px;
+}
+
+blockquote ~ figcaption {
+  text-indent: 10em;
+  font-style: italic;
+}
+
+img {
+  border: 2px solid var(--border-color);
 }
