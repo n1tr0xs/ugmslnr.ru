@@ -12,16 +12,13 @@
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background: rgb(38, 59, 84);
   background: var(--show-background);
-  color: #000;
   color: var(--show-text);
 }
 .show:hover {
   text-decoration: none;
 }
 div.employee {
-  border-bottom: 1px solid #dbdbdb;
   border-bottom: var(--border);
 }
 div.employee:last-child {

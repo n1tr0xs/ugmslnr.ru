@@ -3,11 +3,8 @@ body > footer {
 }
 
 footer {
-  background: #22202c;
   background: var(--footer-background);
-  color: #fffffffc;
   color: var(--text-footer);
-  border-top: 1px solid #dbdbdb;
   border-top: var(--border);
   padding-top: 10px;
   width: 100%;
@@ -26,12 +23,10 @@ footer > div > div p:last-child {
 
 footer a[href^='tel:'],
 footer a[href^='mailto:'] {
-  color: #dbdbdb;
   color: var(--text-footer);
 }
 
 footer a:hover {
-  color: #fff;
   color: var(--text-gloomy);
 }
 

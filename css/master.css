@@ -55,39 +55,12 @@
   }
 } */
 
-#content {
-  background: #e1e1e1;
-  background: var(--content-background);
-  float: left;
-  width: 75%;
-  margin: 0;
-}
-
-#aside-content {
-  background: #e1e1e1;
-  background: var(--content-background);
-  max-width: 24%;
-  float: left;
-  text-align: center;
-  border-left: 3px solid var(--border-color);
-  margin: 0;
-  padding: 0;
-}
-
-#aside-content li {
-  text-align: left;
-}
-
-.list-name {
-  margin: 0;
-  border-bottom: 2px solid var(--border-color);
-}
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
   line-height: 1.4;
+  font-size: 1em;
   margin: 20px auto;
   padding: 0 10px;
-  color: #dbdbdb;
   color: var(--text-main);
   background: var(--background-body);
   text-rendering: optimizeLegibility;
@@ -95,7 +68,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #0076d1;
   color: var(--links);
 }
 
@@ -105,7 +77,6 @@ a:hover {
 
 a[href^='tel:'],
 a[href^='mailto:'] {
-  color: #dbdbdb;
   color: var(--text-main);
 }
 
@@ -114,13 +85,11 @@ a[href^='mailto:'] {
 #content a[href^='mailto:']:hover,
 #aside-content a[href^='mailto:']:hover {
  text-decoration: none;
- color: #000;
  color: var(--text-bright);
 }
 
 
 table {
-  border: 1px solid #dbdbdb;
   border: var(--border);
   border-collapse: collapse;
   margin-bottom: 10px;
@@ -134,7 +103,6 @@ table caption {
 
 td,
 th {
-  border: 1px solid #dbdbdb;
   border: var(--border);
   padding: 6px;
   text-align: center;
@@ -153,7 +121,6 @@ thead, td[colspan='4'] {
 }
 
 ::-webkit-scrollbar-track {
-  background: #efefef;
   background: var(--background);
   border-radius: 6px;
 }
@@ -165,26 +132,20 @@ thead, td[colspan='4'] {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9b9b9b;
   background: var(--scrollbar-thumb-hover);
 }
 
 ::-moz-selection {
-  background-color: #9e9e9e;
   background-color: var(--selection);
-  color: #000;
   color: var(--text-bright);
 }
 
 ::selection {
-  background-color: #9e9e9e;
   background-color: var(--selection);
-  color: #000;
   color: var(--text-bright);
 }
 
 .muted {
-  color: #70777f;
   color: var(--text-muted);
 }
 
@@ -194,7 +155,6 @@ thead, td[colspan='4'] {
 
 h1, h2, h3, h4, h5, h5, h6 {
   text-align: center;
-  background: #273e5b;
   background: var(--menu-background);
   color: #fff;
   color: var(--show-text);
@@ -241,4 +201,42 @@ blockquote ~ figcaption {
 
 img {
   border: 2px solid var(--border-color);
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ul ul {
+  list-style-type: square;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+}
+
+#content {
+  background: var(--content-background);
+  float: left;
+  width: 75%;
+  margin: 0;
+}
+
+#aside-content {
+  background: var(--content-background);
+  max-width: 24%;
+  float: left;
+  text-align: center;
+  border-left: 3px solid var(--border-color);
+  margin: 0;
+  padding: 0;
+}
+
+#aside-content li {
+  text-align: left;
+}
+
+.list-name {
+  margin: 0;
+  border-bottom: 2px solid var(--border-color);
 }

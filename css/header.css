@@ -22,7 +22,6 @@ header {
 
 /* computer header */
 nav.pc {
-  background: #09203C;
   background: var(--menu-background);
 }
 
@@ -39,7 +38,6 @@ nav.pc ul.navbar {
 
 nav.pc li.navbar {
   float: left;
-  border-right: 1px solid #000000;
   border-right: var(--menu-border);
 }
 
@@ -57,7 +55,6 @@ nav.pc li.dropdown {
 nav.pc .dropdown-content {
   display: none;
   position: absolute;
-  background: #000011;
   background: var(--menu-dropdown-background);
   min-width: 160px;
   z-index: 1;
@@ -71,7 +68,6 @@ nav.pc .dropdown-content a {
 }
 
 nav.pc .dropdown-content a:hover {
-  background: #404040;
   background: var(--menu-dropdown-hover-background)
 }
 
@@ -96,7 +92,6 @@ nav.pc a:hover {
     right: 0;
   }
   header {
-    border-bottom: 2px solid #000000;
     border-bottom: var(--header-border);
   }
 }
