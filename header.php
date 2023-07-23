@@ -19,9 +19,10 @@
       </li>
       <li class='navbar'><a href='contacts.php'>Контакты</a></li>
       <li class='navbar dropdown'>
-        <a class='dropdown' href='to_customers.php'>Потребителям</a>
+        <a class='dropdown' href='pricelist.php'>Потребителям</a>
         <div class='navbar dropdown-content'>
           <a href="pricelist.php">Услуги</a>
+          <a href="request_samples.php">Образцы писем-запросов</a>
           <a href="office_hours.php">Часы приема</a>
         </div>
       </li>
