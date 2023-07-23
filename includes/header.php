@@ -10,20 +10,20 @@
     <ul class='navbar'>
       <li class='navbar'><a href='/index.php'>Начальная страница</a></li>
       <li class='navbar dropdown'>
-        <a class='dropdown' href='/about.php'>О нас </a>
+        <a class='dropdown' href='/about/about.php'>О нас </a>
         <div class='navbar dropdown-content'>
-          <a href='/leadership.php'>Руководство</a>
-          <a href='/structure.php'>Структура</a>
-          <a href='/requisites.php'>Реквизиты</a>
+          <a href='/about/leadership.php'>Руководство</a>
+          <a href='/about/structure.php'>Структура</a>
+          <a href='/about/requisites.php'>Реквизиты</a>
         </div>
       </li>
       <li class='navbar'><a href='/contacts.php'>Контакты</a></li>
       <li class='navbar dropdown'>
-        <a class='dropdown' href='/pricelist.php'>Потребителям</a>
+        <a class='dropdown' href='/to_customers/pricelist.php'>Потребителям</a>
         <div class='navbar dropdown-content'>
-          <a href="/pricelist.php">Услуги</a>
-          <a href="/request_samples.php">Образцы писем-запросов</a>
-          <a href="/office_hours.php">Часы приема</a>
+          <a href="/to_customers/pricelist.php">Услуги</a>
+          <a href="/to_customers/request_samples.php">Образцы писем-запросов</a>
+          <a href="/to_customers/office_hours.php">Часы приема</a>
         </div>
       </li>
       <li class='navbar'><a href='/weater_report.php'> Погода </a></li>
