@@ -54,7 +54,7 @@
   }
 }
 
-div#content {
+#content, #aside-content {
   background: #e1e1e16b;
   background: var(--content-background);
 }
@@ -86,8 +86,10 @@ a[href^='mailto:'] {
   color: var(--text-main);
 }
 
-div#content a[href^='tel:']:hover,
-div#content a[href^='mailto:']:hover {
+#content a[href^='tel:']:hover,
+#aside-content a[href^='tel:']:hover,
+#content a[href^='mailto:']:hover,
+#aside-content a[href^='mailto:']:hover {
  text-decoration: none;
  color: #000;
  color: var(--text-bright);

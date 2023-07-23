@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-  <? include 'header.php'; ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ; ?>
   <div id='content'>
     <div id='pdf-container' style="text-align: center;">
       <object type="application/pdf" data="/files/pricelist.pdf" >
@@ -24,6 +24,6 @@
       </object>
     </div>
   </div>
-  <? include 'footer.php'; ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/footer.php';  ?>
 </body>
 </html>

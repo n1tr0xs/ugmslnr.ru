@@ -9,8 +9,8 @@
     <title>Структура</title>
 </head>
 <body>
-  <? include 'header.php'; ?>
-  <div class='content'>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ; ?>
+  <div id='content'>
 
     <div class='department'>
       <a href='#unit1' class='show'> Отдел 1</a>
@@ -31,6 +31,6 @@
     </div>
 
   </div>
-  <? include 'footer.php'; ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/footer.php';  ?>
 </body>
 </html>

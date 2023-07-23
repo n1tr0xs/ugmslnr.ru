@@ -7,7 +7,7 @@
     <title>Контакты</title>
 </head>
   <body>
-    <? include 'header.php'; ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ; ?>
     <div id='content'>
       <h2> Общая контактная информация </h1>
       <div>
@@ -20,6 +20,6 @@
         <b> Электронная почта: </b> <a href='mailto:'> <i class='fa fa-envelope' aria-hidden='true'></i>@mail.ru </a>
       </div>
     </div>
-    <? include 'footer.php'; ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/footer.php';  ?>
 </body>
 </html>

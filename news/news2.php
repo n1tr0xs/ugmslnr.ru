@@ -6,7 +6,7 @@
     <title></title>
 </head>
   <body>
-    <? include 'header.php'; ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ; ?>
     <div id='content'>
       <div class='news'>
         <h2> News 2 </h2>
@@ -18,6 +18,6 @@
         </div>
       </div>
    </div>
-    <? include 'footer.php'; ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/footer.php';  ?>
 </body>
 </html>
