@@ -7,7 +7,7 @@
     <title>Контакты</title>
 </head>
   <body>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ; ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ; ?>
     <div id='content'>
       <h2> Общая контактная информация </h1>
       <div>
@@ -20,7 +20,7 @@
         <b> Телефон: </b> <a href='tel:'> <i class='fa fa-mobile' aria-hidden='true'></i> +7 959 xxx xx xx </a>
       </div>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/aside.php';  ?>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/footer.php';  ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
 </body>
 </html>

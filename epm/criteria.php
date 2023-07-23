@@ -14,7 +14,7 @@
   <title>Критерии качества компонентов природной среды</title>
 </head>
 <body>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ; ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ; ?>
   <div id='content'>
     <span> Критерии экстремально высокого загрязнения окружающей природной среды (ЭВЗ) </span>
     <ol>
@@ -113,7 +113,7 @@
       </ul>
     </ol>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/aside.php';  ?>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/footer.php';  ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
 </body>
 </html>

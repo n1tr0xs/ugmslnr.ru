@@ -6,7 +6,7 @@
     <title></title>
 </head>
   <body>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ; ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ; ?>
     <div id='content'>
       <h2>Образцы писем-запросов</h2>
       <div>
@@ -21,7 +21,7 @@
         </ul>
       </div>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/aside.php';  ?>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/footer.php';  ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
 </body>
 </html>

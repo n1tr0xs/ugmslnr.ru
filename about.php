@@ -6,7 +6,7 @@
   <title>О нас</title>
 </head>
 <body>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ; ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ; ?>
   <div id='content'>
     <section>
       <h3> О гидрометцентре </h3>
@@ -130,7 +130,7 @@
       </section>
   </section>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/aside.php';  ?>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/footer.php';  ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
 </body>
 </html>
