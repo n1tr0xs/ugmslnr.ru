@@ -11,7 +11,6 @@
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/header.php'; ; ?>
   <div id='content'>
-
     <div class='department'>
       <a href='#unit1' class='show'> Отдел 1</a>
       <div id='unit1' class='unit'>
@@ -31,6 +30,7 @@
     </div>
 
   </div>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/aside.php';  ?>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/footer.php';  ?>
 </body>
 </html>

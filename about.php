@@ -130,6 +130,7 @@
       </section>
   </section>
   </div>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/aside.php';  ?>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/footer.php';  ?>
 </body>
 </html>
