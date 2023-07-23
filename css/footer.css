@@ -44,7 +44,12 @@ footer a:hover {
     display: table-cell;
   }
 
+  footer > div > div:first-child {
+    padding-left: .8em;
+  }
+
   footer > div > div:last-child {
+    padding-right: .8em;
     text-align: right;
   }
 }
