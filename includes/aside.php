@@ -1,7 +1,10 @@
 <div id='aside-content'>
+  <div id='weather-container' class='text-left'>
+    <span class='div-name'> Погода в Луганске </span>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/weather.html'; ?>
+  </div>
   <div>
-    <hr>
-    <span class='list-name'> Мониторинг загрязнения окружающей среды </span>
+    <span class='div-name'> Мониторинг загрязнения окружающей среды </span>
     <ul>
       <li> <a href='/epm/index.php'> Центр мониторинга загрязнения окружающей среды </a> </li>
       <li> <a href='/epm/criteria.php'> Критерии качества компонентов природной среды </a> </li>
@@ -10,12 +13,10 @@
       <li> <a href='#'> Радиационная обстановка </a> </li>
       <li> <a href='/epm/month_review.php'> Ежемесячный обзор состояния окружающей среды </a> </li>
     </ul>
-    <hr>
   </div>
 
   <div>
-    <hr>
-    <span class='list-name'>Гидрометцентр</span>
+    <span class='div-name'>Гидрометцентр</span>
     <ul>
       <li><a href='/hydromet/index.php'>О гидрометцентре </a></li>
       <li><a href='/hydromet/mndf.php'>Отдел метеорологических и численных прогнозов </a></li>
@@ -26,7 +27,8 @@
       <li><a href='/hydromet/fire_danger.php'>Пожарная опасность</a></li>
       <li><a href='/hydromet/awc.php'>Информация о неблагоприятных метеорологических условиях</a></li>
       <li><a href='/hydromet/criteria.php'>Критерии ОЯ и НЯ</a></li>
+      <li><a href="/hydromet/circumstances.php">Гидрометеорологические условия</a></li>
+      <li><a href="/hydromet/clim_char.php">Климатическая характеристика</a></li>
     </ul>
-    <hr>
   </div>
 </div>

@@ -57,6 +57,9 @@
         </tr>
       </tbody>
     </table>
+    <div class='text-center'>
+      <img src="/updatable/fire_danger.png" alt="Пожарная опасность" class='no-border'>
+    </div>
   </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>

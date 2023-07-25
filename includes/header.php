@@ -3,8 +3,10 @@
   <script src="/js/menu.js"></script>
   <link rel="stylesheet" href="/css/header.css">
   <div>
-    <p style="font-size: 1.5em"> УГМС по ЛНР </p>
-    <p style="font-size: 1.5em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>
+    <img src="/files/logo1.png" alt="Логотип Росгидромет" class="no-border">
+    <!-- <span style="font-size: 1.2em; line-height: 45px; vertical-align: middle;"> УГМС по ЛНР </span> -->
+    <br>
+    <span style="font-size: 1.2em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </span>
   </div>
   <nav class='pc'>
     <ul class='navbar'>

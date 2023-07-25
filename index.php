@@ -22,10 +22,10 @@
     <title>УГМС по ЛНР - Федеральное государственное бюджетное учреждение</title>
 </head>
 <body>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ; ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='content'>
-    <h1> Последние новости </h1>
     <div id='news-container'>
+      <h1> Последние новости </h1>
     </div>
   </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
