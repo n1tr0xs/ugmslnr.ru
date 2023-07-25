@@ -251,8 +251,7 @@ ul.no-bullets {
   text-align: center;
   border-left: 1.2px solid var(--border-color);
   margin: 0;
-  padding: 0;
-  padding-top: 0em;
+  padding: .5em 0;
 }
 
 #aside-content ul {

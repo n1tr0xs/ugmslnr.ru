@@ -14,6 +14,16 @@
           div.innerHTML += loadFile(folder + fileName);
         }
       }, false);
+
+
+      document.addEventListener('DOMContentLoaded', function(){
+        setMinContentHeight();
+      }, false);
+
+      window.addEventListener('resize', function(event) {
+setMinContentHeight();
+      }, true);
+
     </script>
     <link rel="stylesheet" href="/css/master.css">
     <style>
