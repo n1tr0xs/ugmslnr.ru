@@ -126,7 +126,6 @@ thead, td[colspan='4'] {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(170, 170, 170);
   background: var(--scrollbar-thumb);
   border-radius: 6px;
 }
@@ -153,11 +152,24 @@ thead, td[colspan='4'] {
   text-align: right;
 }
 
-h1, h2, h3, h4, h5, h5, h6 {
-  text-align: center;
+h1:not(.normal),
+h2:not(.normal),
+h3:not(.normal),
+h4:not(.normal),
+h5:not(.normal),
+h5:not(.normal),
+h6:not(.normal) {
   background: var(--menu-background);
-  color: #fff;
   color: var(--show-text);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6 {
+  text-align: center;
 }
 
 .leader {
@@ -218,8 +230,9 @@ ul.no-bullets {
 #content {
   background: var(--content-background);
   float: left;
-  width: 75%;
+  width: 73%;
   margin: 0;
+  padding: 0.5em;
 }
 
 #aside-content {
@@ -232,6 +245,16 @@ ul.no-bullets {
   padding: 0;
 }
 
+#aside-content ul {
+  padding-left: 0.5em;
+
+  list-style-type: none;
+}
+
+#aside-content ul > li {
+  font-size: .8em;
+}
+
 #aside-content li {
   text-align: left;
 }
@@ -239,4 +262,12 @@ ul.no-bullets {
 .list-name {
   margin: 0;
   border-bottom: 2px solid var(--border-color);
+}
+
+.text-centered {
+  text-align:  center;
+}
+
+p {
+  text-indent: 2em;
 }
