@@ -26,6 +26,7 @@
   --quote-background: gray;
   --aside-content-background: #a2a2a2;
   --background-tr-odd: #c9c9c9;
+  --circle-size: 1em;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -296,4 +297,36 @@ table.text-left td {
 }
 .table-striped  tr:nth-child(even) {
   background: var(--background-tr-odd);
+}
+
+#circle {
+  width: var(--circle-size);
+  height: var(--circle-size);
+  -webkit-border-radius: calc(var(--circle-size)/2);
+  -moz-border-radius: calc(var(--circle-size)/2);
+  border-radius: calc(var(--circle-size)/2);
+  background: green;
+  display: inline-block;
+}
+
+.warned #circle {
+  background: red;
+}
+
+#warnings td[colspan="2"]{
+  display: none;
+}
+
+#warnings > .warned > tr > td[colspan="2"]:after {
+  content: 'Предупреждение есть';
+  color: red;
+}
+
+#warnings > :not(.warned) > tr > td[colspan="2"]:after {
+  content: 'Предупреждения нет';
+  color: green;
+}
+
+#warnings  tbody:hover td[colspan="2"] {
+  display: table-cell;
 }

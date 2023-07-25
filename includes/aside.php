@@ -1,7 +1,51 @@
 <div id='aside-content'>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var trs = document.querySelectorAll('#warnings > :not(.warned)');
+      for(let i=0; i<trs.length; ++i){
+        t = trs[i];
+        t.onclick = function(){
+          t.append
+        }
+      }
+    }, false);
+  </script>
   <div id='weather-container' class='text-left'>
     <span class='div-name'> Погода в Луганске </span>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/weather.html'; ?>
+  </div>
+  <div id='warnings-container'>
+    <span class='div-name'>Предупреждения</span>
+    <table id='warnings' class='no-border text-left'>
+      <tbody class='warned'>
+        <tr>
+          <td style="white-space: nowrap;">Метеорологическое</td>
+          <td><div id='circle'></div></td>
+        </tr>
+        <tr><td colspan="2"></td></tr>
+      </tbody>
+      <tbody class=''>
+        <tr>
+          <td style="white-space: nowrap;">Гидрометеорологическое</td>
+          <td><div id='circle'></div></td>
+        <tr><td colspan="2"></td></tr>
+        </tr>
+      </tbody>
+      <tbody class=''>
+        <tr>
+          <td style="white-space: nowrap;">Агрометеорологическое</td>
+          <td><div id='circle'></div></td>
+        <tr><td colspan="2"></td></tr>
+        </tr>
+      </tbody>
+      <tbody class=''>
+        <tr>
+          <td style="white-space: nowrap;">Загрязнение окружающей среды</td>
+          <td><div id='circle'></div></td>
+        <tr><td colspan="2"></td></tr>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <div>
     <span class='div-name'> Мониторинг загрязнения окружающей среды </span>
