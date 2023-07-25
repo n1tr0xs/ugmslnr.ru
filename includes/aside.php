@@ -66,7 +66,7 @@
       <li><a href='/hydromet/mndf.php'>Отдел метеорологических и численных прогнозов </a></li>
       <li><a href='/hydromet/amfam.php'>Отдел агрометеорологических прогнозов и агрометеорологии</a></li>
       <li><a href='/hydromet/hl.php'>Отдел гидрологии</a></li>
-      <li><a href='/hydromet/weather_report.php'>Прогноз погоды </a></li>
+      <li><a href='/weather_report.php'>Прогноз погоды </a></li>
       <li><a href='#'>Комментарии синоптика </a></li>
       <li><a href='/hydromet/fire_danger.php'>Пожарная опасность</a></li>
       <li><a href='/hydromet/awc.php'>Информация о неблагоприятных метеорологических условиях</a></li>

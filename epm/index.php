@@ -7,6 +7,7 @@
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <div id='containter'>
   <div id='content'>
     <div id='info'>
       <h4> Центр мониторинга загрязнения окружающей среды </h4>
@@ -35,6 +36,8 @@
     </div>
   </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <span style="display: block; clear: both;"></span>
+  </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
 </body>
 </html>

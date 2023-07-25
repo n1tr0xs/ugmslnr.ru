@@ -15,6 +15,8 @@
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ; ?>
+  <div id='containter'>
+
   <div id='content'>
     <h3 class="normal"> Критерии экстремально высокого загрязнения окружающей природной среды (ЭВЗ) </h3>
     <ol>
@@ -114,6 +116,8 @@
     </ol>
   </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <span style="display: block; clear: both;"></span>
+  </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
 </body>
 </html>

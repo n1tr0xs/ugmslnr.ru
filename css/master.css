@@ -237,6 +237,10 @@ ul.no-bullets {
   list-style-type: none;
 }
 
+#containter {
+  background: var(--content-background);
+}
+
 #content {
   background: var(--content-background);
   float: left;

@@ -7,12 +7,15 @@
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <div id='containter'>
   <div id='content'>
     <ul>
       <li> <a href='/files/epm/month_review/'> Ежемесячный обзор состояния окржающей среды. Июль </a></li>
     </ul>
   </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <span style="display: block; clear: both;"></span>
+  </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
 </body>
 </html>

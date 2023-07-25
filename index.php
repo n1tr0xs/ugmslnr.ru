@@ -14,31 +14,21 @@
           div.innerHTML += loadFile(folder + fileName);
         }
       }, false);
-
-
-      document.addEventListener('DOMContentLoaded', function(){
-        setMinContentHeight();
-      }, false);
-
-      window.addEventListener('resize', function(event) {
-setMinContentHeight();
-      }, true);
-
     </script>
     <link rel="stylesheet" href="/css/master.css">
-    <style>
-    
-    </style>
     <title>УГМС по ЛНР - Федеральное государственное бюджетное учреждение</title>
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
-  <div id='content'>
-    <div id='news-container'>
-      <h1> Последние новости </h1>
+  <div id='containter'>
+    <div id='content'>
+      <div id='news-container'>
+        <h1> Последние новости </h1>
+      </div>
     </div>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <span style="display: block; clear: both;"></span>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
 </body>
 </html>

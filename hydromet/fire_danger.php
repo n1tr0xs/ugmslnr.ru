@@ -7,6 +7,7 @@
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <div id='containter'>
   <div id='content'>
     <p>
       Лесные пожары остаются одним из самых мощных природных катастрофических явлений. Обеспечению своевременной и эффективной подготовки людей и техники к тушению пожаров во многом способствуют знания ожидаемой степени пожарной опасности с разной заблаговременностью.
@@ -62,6 +63,8 @@
     </div>
   </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <span style="display: block; clear: both;"></span>
+  </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
 </body>
 </html>

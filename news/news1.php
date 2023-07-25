@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="/css/master.css">
@@ -7,6 +7,7 @@
 </head>
   <body>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ; ?>
+  <div id='containter'>
     <div id='content'>
       <div class='news'>
         <h2> News 1 </h2>

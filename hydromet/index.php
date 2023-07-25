@@ -7,6 +7,7 @@
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <div id='containter'>
   <div id='content'>
     <h3 class='normal'>Гидрометцентр Луганской Народной Республики</h3>
     <p>
@@ -33,6 +34,8 @@
     </p>
   </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <span style="display: block; clear: both;"></span>
+  </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
 </body>
 </html>

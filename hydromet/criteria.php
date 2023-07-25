@@ -7,6 +7,7 @@
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <div id='containter'>
   <div id='content'>
 <p> Опасное природное явление (ОЯ): Гидрометеорологическое или гелиогеофизическое явление, которое по интенсивности развития, продолжительности или моменту возникновения может представлять угрозу жизни или здоровью граждан, а также может наносить значительный материальный ущерб.
 </p>
@@ -221,6 +222,8 @@
 
   </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <span style="display: block; clear: both;"></span>
+  </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
 </body>
 </html>
