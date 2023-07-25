@@ -28,7 +28,7 @@
           <a href="/to_customers/office_hours.php">Часы приема</a>
         </div>
       </li>
-      <li class='navbar'><a href='/weater_report.php'> Погода </a></li>
+      <li class='navbar'><a href='/weather_report.php'> Погода </a></li>
     </ul>
   </nav>
 
