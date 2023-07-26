@@ -1,15 +1,4 @@
 <div id='aside-content'>
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      var trs = document.querySelectorAll('#warnings > :not(.warned)');
-      for(let i=0; i<trs.length; ++i){
-        t = trs[i];
-        t.onclick = function(){
-          t.append
-        }
-      }
-    }, false);
-  </script>
   <div id='weather-container' class='text-left'>
     <span class='div-name'> Погода в Луганске </span>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/weather.html'; ?>
