@@ -52,7 +52,7 @@
     <ul>
       <li> <a href='/epm/index.php'> Центр мониторинга загрязнения окружающей среды </a> </li>
       <li> <a href='/epm/criteria.php'> Критерии качества компонентов природной среды </a> </li>
-      <li> <a href='/epm/amc.php'> Информация о неблагоприятных метеорологических условиях (НМУ) </a> </li>
+      <li> <a href='/epm/awc.php'> Информация о неблагоприятных метеорологических условиях (НМУ) </a> </li>
       <li> <a href='#'> Загрязнение атмосферного воздуха </a> </li>
       <li> <a href='#'> Радиационная обстановка </a> </li>
       <li> <a href='/epm/month_review.php'> Ежемесячный обзор состояния окружающей среды </a> </li>
@@ -69,7 +69,6 @@
       <li><a href='/weather_report.php'>Прогноз погоды </a></li>
       <li><a href='#'>Комментарии синоптика </a></li>
       <li><a href='/hydromet/fire_danger.php'>Пожарная опасность</a></li>
-      <li><a href='/hydromet/awc.php'>Информация о неблагоприятных метеорологических условиях</a></li>
       <li><a href='/hydromet/criteria.php'>Критерии ОЯ и НЯ</a></li>
       <li><a href="/hydromet/circumstances.php">Гидрометеорологические условия</a></li>
       <li><a href="/hydromet/clim_char.php">Климатическая характеристика</a></li>
