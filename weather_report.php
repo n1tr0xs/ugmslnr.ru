@@ -13,7 +13,9 @@
     #forecast-text .day {
       font-weight: bold;
     }
-
+    p.region {
+      font-weight: bold;
+    }
   </style>
   <title>Погода</title>
 </head>
