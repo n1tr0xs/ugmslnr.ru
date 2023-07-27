@@ -5,36 +5,7 @@
   </div>
   <div id='warnings-container'>
     <span class='div-name'>Предупреждения</span>
-    <table id='warnings' class='no-border text-left'>
-      <tbody class='warned'>
-        <tr>
-          <td style="white-space: nowrap;">Метеорологическое</td>
-          <td><div id='circle'></div></td>
-        </tr>
-        <tr><td colspan="2"></td></tr>
-      </tbody>
-      <tbody class=''>
-        <tr>
-          <td style="white-space: nowrap;">Гидрометеорологическое</td>
-          <td><div id='circle'></div></td>
-        <tr><td colspan="2"></td></tr>
-        </tr>
-      </tbody>
-      <tbody class=''>
-        <tr>
-          <td style="white-space: nowrap;">Агрометеорологическое</td>
-          <td><div id='circle'></div></td>
-        <tr><td colspan="2"></td></tr>
-        </tr>
-      </tbody>
-      <tbody class=''>
-        <tr>
-          <td style="white-space: nowrap;">Загрязнение окружающей среды</td>
-          <td><div id='circle'></div></td>
-        <tr><td colspan="2"></td></tr>
-        </tr>
-      </tbody>
-    </table>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/warnings.html'; ; ?>
   </div>
   <div>
     <span class='div-name'> Мониторинг загрязнения окружающей среды </span>
