@@ -32,6 +32,7 @@
       <li><a href='/hydromet/criteria.php'>Критерии ОЯ и НЯ</a></li>
       <li><a href="/hydromet/circumstances.php">Гидрометеорологические условия</a></li>
       <li><a href="/hydromet/clim_char.php">Климатическая характеристика</a></li>
+      <li><a href="/hydromet/pfatp.php">Вероятностный прогноз температуры воздуха и осадков</a></li>
     </ul>
   </div>
 </div>
