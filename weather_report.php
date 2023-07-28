@@ -3,20 +3,6 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/master.css">
-  <style>
-    p.day {
-      text-align: center;
-    }
-    p.description {
-      text-indent: 0;
-    }
-    #forecast-text .day {
-      font-weight: bold;
-    }
-    p.region {
-      font-weight: bold;
-    }
-  </style>
   <title>Погода</title>
 </head>
 <body>

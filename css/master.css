@@ -334,3 +334,16 @@ table.text-left td {
 #warnings  tbody:hover td[colspan="2"] {
   display: table-cell;
 }
+
+p.day {
+  text-align: center;
+}
+p.description {
+  text-indent: 0;
+}
+#forecast-text .day {
+  font-weight: bold;
+}
+p.region {
+  font-weight: bold;
+}
