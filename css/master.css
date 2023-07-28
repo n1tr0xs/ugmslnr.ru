@@ -162,16 +162,6 @@ thead, td[colspan='4'] {
   text-align: center;
 }
 
-h1:not(.normal),
-h2:not(.normal),
-h3:not(.normal),
-h4:not(.normal),
-h5:not(.normal),
-h5:not(.normal),
-h6:not(.normal) {
-  background: var(--menu-background);
-  color: var(--show-text);
-}
 h1,
 h2,
 h3,
