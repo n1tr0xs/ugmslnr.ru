@@ -9,7 +9,7 @@
 			var text =
 				'<p>Прогноз уровня загрязнения атмосферного воздуха в г. Луганске и городах Луганской Народной Республики на ' +
 				document.getElementById('date').value + ' года</p>' +
-				'<p>' + document.getElementById('description').value + '</p>';
+				'<p class="description">' + document.getElementById('description').value + '</p>';
 			;
 			var element = document.createElement('a');
 			element.setAttribute('href', 'data:text/plain;charset=utf-8,'+encodeURIComponent(text));

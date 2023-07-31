@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>НМУ - генератор</title>
+	<title>Пожароопасность - генератор</title>
 	<script>
 		function download() {
 			var filename = 'awc.html';
 			var text =
-				'<p style="font-weight: bold;"> Прогноз на  ' +
+				'<p class="day"> Прогноз на  ' +
 				document.getElementById('date1').value + ' </p>' +
-				'<p>' + document.getElementById('description1').value + '</p>' + 
-				'<p style="font-weight: bold;"> Прогноз на  ' +
+				'<p class="description>' + document.getElementById('description1').value + '</p>' +
+				'<p class="day"> Прогноз на  ' +
 				document.getElementById('date2').value + ' </p>' +
-				'<p>' + document.getElementById('description2').value + '</p>'
+				'<p class="description>' + document.getElementById('description2').value + '</p>'
 			;
 			var element = document.createElement('a');
 			element.setAttribute('href', 'data:text/plain;charset=utf-8,'+encodeURIComponent(text));
