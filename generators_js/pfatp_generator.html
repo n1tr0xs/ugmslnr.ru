@@ -2,17 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Пожароопасность - генератор</title>
+	<title>Прогноз - генератор</title>
 	<script>
 		function download() {
-			var filename = 'fire_forecast.html';
+			var filename = 'pfatp.html';
 			var text =
 				'<p class="day"> Прогноз на  ' +
-				document.getElementById('date1').value + ' </p>' +
-				'<p class="description>' + document.getElementById('description1').value + '</p>' +
-				'<p class="day"> Прогноз на  ' +
-				document.getElementById('date2').value + ' </p>' +
-				'<p class="description>' + document.getElementById('description2').value + '</p>'
+				document.getElementById('date').value + ' </p>' +
+				'<p class="description>' + document.getElementById('description').value + '</p>'
 			;
 			var element = document.createElement('a');
 			element.setAttribute('href', 'data:text/plain;charset=utf-8,'+encodeURIComponent(text));
@@ -34,14 +31,6 @@
 		<tr>
 			<td><label>Описание</label></td>
 			<td><input type="text" id="description1"></td>
-		</tr>
-		<tr>
-			<td><label> Дата </label></td>
-			<td><input type='text' id='date2'></td>
-		</tr>
-		<tr>
-			<td><label>Описание</label></td>
-			<td><input type="text" id="description2"></td>
 		</tr>
 		<tr>
 			<td colspan="2"><button onclick="download();">Скачать</button></td>
