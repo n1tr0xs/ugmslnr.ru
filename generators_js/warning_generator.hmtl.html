@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Предупреждения - генератор</title>
+	<script>
+		function download() {
+			var filename = 'warnings.html';
+			var text = '<table id="warnings" class="no-border text-left">';
+			var boxes = document.getElementsByTagName('input');
+			var labels = document.getElementsByTagName('label');
+			for(let i=0; i<boxes.length; ++i){
+				text += boxes[i].checked ? '<tbody class="warned">' : '<tbody>';
+				text += '<tr><td>' + labels[i].textContent + '</td>';
+				text += '<td><div id="circle"></div></td>';
+				text += '</tr><tr><td colspan="2"></td></tr></tbody>';
+			}
+			text += '</table>';
+			var element = document.createElement('a');
+			element.setAttribute('href', 'data:text/plain;charset=utf-8,'+encodeURIComponent(text));
+			element.setAttribute('download', filename);
+
+			element.style.display = 'none';
+			document.body.appendChild(element);
+			element.click();
+			document.body.removeChild(element);
+		}
+	</script>
+</head>
+<body>
+	<label for="m">Метеорологическое</label>	<input type="checkbox" id='m'><br>
+	<label for="g">Гидрометеорологическое</label>	<input type="checkbox" id='g'><br>
+	<label for="a">Агрометеорологическое</label>	<input type="checkbox" id='a'><br>
+	<label for="p">Загрязнение окружающей среды</label>	<input type="checkbox" id='p'><br>
+	<br><button onclick="download();">Скачать</button>
+</body>
+</html>
