@@ -9,8 +9,9 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
   <div id='content'>
-    <ul>
-      <li> <a href='/files/epm/month_review/'> Ежемесячный обзор состояния окржающей среды. Июль </a></li>
+    <h3> Ежемесячный обзор состояния окружающей среды </h3>
+    <ul class='no-bullets'>
+      <li> <a href='/updatable/month_review/july_2023.pdf'> Ежемесячный обзор состояния окружающей среды. Июль 2023</a></li>
     </ul>
   </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>

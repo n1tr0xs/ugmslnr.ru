@@ -1,5 +1,5 @@
 <footer class='pc'>
-  <script src="https://use.fontawesome.com/bd02b5ff79.js"></script>
+  <script src="https://use.fontawesome.com/bd02b5ff79.js" defer></script>
   <link rel="stylesheet" href="/css/footer.css">
   <div id='row1'>
     <div id='company'>

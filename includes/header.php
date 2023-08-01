@@ -1,5 +1,5 @@
 <header>
-  <script src="https://use.fontawesome.com/bd02b5ff79.js"></script>
+  <script src="https://use.fontawesome.com/bd02b5ff79.js" defer></script>
   <script src="/js/menu.js"></script>
   <link rel="stylesheet" href="/css/header.css">
   <div>
