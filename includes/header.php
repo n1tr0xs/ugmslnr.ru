@@ -8,12 +8,22 @@
     <br>
     <span style="font-size: 1.2em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </span>
   </div>
-  <nav class='pc'>
-    <ul class='navbar'>
+  <nav>
+
+    <div class='mobile menu-btn'>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class='navbar menu'>
+
       <li class='navbar'><a href='/index.php'>Начальная страница</a></li>
+
       <li class='navbar dropdown'>
-        <a class='dropdown' href='/about/about.php'>О нас </a>
+        <a class='dropdown' href="#">О нас </a>
         <ul class='navbar dropdown-content'>
+          <li><a href='/about/about.php'>О нас</a></li>
           <li><a href='/about/leadership.php'>Руководство</a></li>
           <li><a href='/about/structure.php'>Структура</a></li>
           <li><a href='/about/requisites.php'>Реквизиты</a></li>
@@ -21,50 +31,20 @@
           <li><a href="/about/anti_corruption.php">Противодействие коррупции</a></li>
         </ul>
       </li>
+
       <li class='navbar'><a href='/contacts.php'>Контакты</a></li>
+
       <li class='navbar dropdown'>
-        <a class='dropdown' href='/to_customers/pricelist.php'>Потребителям</a>
+        <a class='dropdown' href='#'>Потребителям</a>
         <ul class='navbar dropdown-content'>
           <li><a href="/to_customers/pricelist.php">Услуги</a></li>
           <li><a href="/to_customers/request_samples.php">Образцы писем-запросов</a></li>
           <li><a href="/to_customers/office_hours.php">Часы приема</a></li>
         </ul>
       </li>
-      <li class='navbar'><a href='/weather_report.php'> Погода </a></li>
-    </ul>
-  </nav>
 
-  <nav class='mobile'>
-    <div class='menu-btn'>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="menu">
-      <ul>
-        <li><a href='/'>Начальная страница</a></li>
-        <li class='dropdown'>
-          <a class='dropdown' href='#'>О нас</a>
-          <ul class='dropdown-content'>
-            <li><a href='/about/about.php'>О нас</a></li>
-            <li><a href='/about/leadership.php'>Руководство</a></li>
-            <li><a href='/about/structure.php'>Структура</a></li>
-            <li><a href='/about/requisites.php'>Реквизиты</a></li>
-            <li><a href="/about/articles_of_association.php">Уставные документы</a></li>
-            <li><a href="/about/anti_corruption.php">Противодействие коррупции</a></li>
-          </ul>
-        </li>
-        <li><a href='/contacts.php'>Контакты</a></li>
-        <li class='dropdown'>
-          <a class='dropdown' href='#'>Потребителям</a>
-          <ul class='dropdown-content'>
-            <li><a href='/to_customers.php'>Потребителям</a></li>
-            <li><a href="/pricelist.php">Услуги</a></li>
-            <li><a href="/office_hours.php">Часы приема</a></li>
-          </ul>
-        </li>
-        <li><a href='/weater_report.php'> Погода </a></li>
-      </ul>
-    </div>
+      <li class='navbar'><a href='/weather_report.php'> Погода </a></li>
+
+    </ul>
   </nav>
 </header>

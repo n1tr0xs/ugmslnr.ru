@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
 }, false);
 
 document.addEventListener('DOMContentLoaded', function(){
-  let dropdown = document.querySelectorAll('nav.mobile .dropdown');
+  let dropdown = document.querySelectorAll('.dropdown');
   for(let i=0; i<dropdown.length; ++i) {
     let dd = dropdown[i];
     let dropdown_content = dd.querySelectorAll('.dropdown-content');
