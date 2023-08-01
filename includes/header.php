@@ -13,27 +13,22 @@
       <li class='navbar'><a href='/index.php'>Начальная страница</a></li>
       <li class='navbar dropdown'>
         <a class='dropdown' href='/about/about.php'>О нас </a>
-        <div class='navbar dropdown-content'>
-          <a href='/about/leadership.php'>Руководство</a>
-          <a href='/about/structure.php'>Структура</a>
-          <a href='/about/requisites.php'>Реквизиты</a>
-        </div>
+        <ul class='navbar dropdown-content'>
+          <li><a href='/about/leadership.php'>Руководство</a></li>
+          <li><a href='/about/structure.php'>Структура</a></li>
+          <li><a href='/about/requisites.php'>Реквизиты</a></li>
+          <li><a href="/about/articles_of_association.php">Уставные документы</a></li>
+          <li><a href="/about/anti_corruption.php">Противодействие коррупции</a></li>
+        </ul>
       </li>
       <li class='navbar'><a href='/contacts.php'>Контакты</a></li>
       <li class='navbar dropdown'>
         <a class='dropdown' href='/to_customers/pricelist.php'>Потребителям</a>
-        <div class='navbar dropdown-content'>
-          <a href="/to_customers/pricelist.php">Услуги</a>
-          <a href="/to_customers/request_samples.php">Образцы писем-запросов</a>
-          <a href="/to_customers/office_hours.php">Часы приема</a>
-        </div>
-      </li>
-      <li class='navbar dropdown'>
-        <a class='dropdown' href='/documents/articles_of_association.php'>Документы</a>
-        <div class='navbar dropdown-content'>
-          <a href="/documents/articles_of_association.php">Уставные документы</a>
-          <a href="/documents/anti_corruption.php">Противодействие коррупции</a>
-        </div>
+        <ul class='navbar dropdown-content'>
+          <li><a href="/to_customers/pricelist.php">Услуги</a></li>
+          <li><a href="/to_customers/request_samples.php">Образцы писем-запросов</a></li>
+          <li><a href="/to_customers/office_hours.php">Часы приема</a></li>
+        </ul>
       </li>
       <li class='navbar'><a href='/weather_report.php'> Погода </a></li>
     </ul>
@@ -51,10 +46,12 @@
         <li class='dropdown'>
           <a class='dropdown' href='#'>О нас</a>
           <ul class='dropdown-content'>
-            <li><a href='/about.php'>О нас</a></li>
-            <li><a href='/leadership.php'>Руководство</a></li>
-            <li><a href='/structure.php'>Структура</a></li>
-            <li><a href='/requisites.php'>Реквизиты</a></li>
+            <li><a href='/about/about.php'>О нас</a></li>
+            <li><a href='/about/leadership.php'>Руководство</a></li>
+            <li><a href='/about/structure.php'>Структура</a></li>
+            <li><a href='/about/requisites.php'>Реквизиты</a></li>
+            <li><a href="/about/articles_of_association.php">Уставные документы</a></li>
+            <li><a href="/about/anti_corruption.php">Противодействие коррупции</a></li>
           </ul>
         </li>
         <li><a href='/contacts.php'>Контакты</a></li>
