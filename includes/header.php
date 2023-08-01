@@ -28,6 +28,13 @@
           <a href="/to_customers/office_hours.php">Часы приема</a>
         </div>
       </li>
+      <li class='navbar dropdown'>
+        <a class='dropdown' href='/documents/articles_of_association.php'>Документы</a>
+        <div class='navbar dropdown-content'>
+          <a href="/documents/articles_of_association.php">Уставные документы</a>
+          <a href="/documents/anti_corruption.php">Противодействие коррупции</a>
+        </div>
+      </li>
       <li class='navbar'><a href='/weather_report.php'> Погода </a></li>
     </ul>
   </nav>
