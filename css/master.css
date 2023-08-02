@@ -291,11 +291,13 @@ table.text-left tr,
 table.text-left td {
   text-align: left;
 }
+
 .table-striped  tr:nth-child(even) {
   background: var(--background-tr-odd);
 }
 
-#circle {
+/* warnings styling start*/
+.circle {
   width: var(--circle-size);
   height: var(--circle-size);
   -webkit-border-radius: calc(var(--circle-size)/2);
@@ -303,43 +305,45 @@ table.text-left td {
   border-radius: calc(var(--circle-size)/2);
   background: green;
   display: inline-block;
+  margin-left: .5em;
 }
 
-.warned #circle {
+.warned .circle {
   background: red;
 }
 
-#warnings td[colspan="2"]{
+#warnings .warning-text{
   display: none;
+  text-indent: calc(var(--circle-size)*1.8);
 }
 
-#warnings > .warned > tr > td[colspan="2"]:after {
+#warnings > .warned .warning-text:after {
   content: 'Предупреждение есть';
   color: red;
 }
 
-#warnings > :not(.warned) > tr > td[colspan="2"]:after {
+#warnings > :not(.warned) .warning-text:after {
   content: 'Предупреждения нет';
   color: green;
 }
 
-#warnings  tbody:hover td[colspan="2"] {
+#warnings .warning:hover .warning-text {
   display: table-cell;
 }
+/* warnings styling end */
 
 p.day {
   text-align: center;
 }
+
 p.description {
   text-indent: 0;
 }
+
 #forecast-text .day {
   font-weight: bold;
 }
+
 p.region {
   font-weight: bold;
 }
-
-  #warnings td {
-    white-space: nowrap;
-  }

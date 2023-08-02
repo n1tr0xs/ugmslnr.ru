@@ -1,12 +1,15 @@
 <div id='aside-content'>
+
   <div id='weather-container' class='text-left'>
     <span class='div-name'> Погода в Луганске </span>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/weather.html'; ?>
   </div>
+
   <div id='warnings-container'>
     <span class='div-name'>Предупреждения</span>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/warnings.html'; ?>
   </div>
+
   <div>
     <span class='div-name'> Мониторинг загрязнения окружающей среды </span>
     <ul>
