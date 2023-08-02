@@ -6,16 +6,17 @@
 	<script>
 		function download() {
 			var filename = 'warnings.html';
-			var text = '<table id="warnings" class="no-border text-left">';
+			var text = '<div id="warnings" class="text-left">';
 			var boxes = document.getElementsByTagName('input');
 			var labels = document.getElementsByTagName('label');
 			for(let i=0; i<boxes.length; ++i){
-				text += boxes[i].checked ? '<tbody class="warned">' : '<tbody>';
-				text += '<tr><td>' + labels[i].textContent + '</td>';
-				text += '<td><div class="circle"></div></td>';
-				text += '</tr><tr><td colspan="2"></td></tr></tbody>';
+				text += '<div class="warning';
+				text += boxes[i].checked ? ' warned">' : '">';
+				text += '<div><div class="circle"></div>' + labels[i].textContent + '</div>';
+				text += '<span class="warning-text"></span>';
+				text += '</div>';
 			}
-			text += '</table>';
+			text += '</div>';
 			var element = document.createElement('a');
 			element.setAttribute('href', 'data:text/plain;charset=utf-8,'+encodeURIComponent(text));
 			element.setAttribute('download', filename);
