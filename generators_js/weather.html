@@ -20,28 +20,35 @@
 	</script>
 </head>
 <body>
-	<table>
-		<tr>
-			<td><label>Дата</label></td>
-			<td><input id='date' type="text" oninput="generateText();" /></td>
-		</tr>
-		<tr>
-			<td><label>Температура</label></td>
-			<td><input id='temp' type="text" oninput="generateText();" /></td>
-		</tr>
-		<tr>
-			<td><label>Ветер</label></td>
-			<td><input id='wind' type="text" oninput="generateText();" /></td>
-		</tr>
-		<tr>
-			<td><label>Влажность</label></td>
-			<td><input id='humidity' type="text" oninput="generateText();" /></td>
-		</tr>
-		<tr>
-			<td><label>Давление</label></td>
-			<td><input id='pressure' type="text" oninput="generateText();" /></td>
-		</tr>
-	</table>
+	<label>Дата</label>
+	<input id='date' type="text" oninput="generateText();" />
+	<br>
+	<label>Температура</label></td>
+	<input id='temp' type="text" oninput="generateText();" />
+	<br>
+	<label>Ветер</label></td>
+	<input id='wind' type="text" oninput="generateText();" />
+	<br>
+	<label>Влажность</label></td>
+	<input id='humidity' type="text" oninput="generateText();" />
+	<br>
+	<label>Давление</label></td>
+	<input id='pressure' type="text" oninput="generateText();" />
+	<br>
+	<select>
+		<option>Ясно</option>
+		<option>Туман</option>
+		<option>Дождь с грозой</option>
+		<option>Дождь со снегом</option>
+		<option>Метель, поземок</option>
+		<option>Гололед</option>
+		<option>переменная облачность, облачно с прояснением</option>
+		<option>дождь</option>
+		<option>град</option>
+		<option>снег</option>
+		<option>гололедица</option>
+	</select>
+	<br>
 	<textarea id='result' cols="50" rows="6" readonly style="resize: none;" onclick="this.select()"></textarea>
 </body>
 </html>
