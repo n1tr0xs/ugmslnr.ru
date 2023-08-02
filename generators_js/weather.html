@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Генератор информации о погоде</title>
+	<script type="text/javascript">
+		function generateText(){
+			var inputs = document.getElementsByTagName('input');
+			var labels = document.getElementsByTagName('label');
+			var text = "";
+
+			text += "<p style='text-align: center;'>" + inputs[0].value + "</p>";
+			text += "<p><span style='color: red;'>" + labels[1].textContent + "</span>: " + inputs[1].value + " &#x2103;</p>";
+			text += "<p><span style='color: green;'>" + labels[2].textContent + "</span>: " + inputs[2].value + " м/с</p>";
+			text += "<p><span style='color: blue;'>" + labels[3].textContent + "</span>: " + inputs[3].value + " %</p>";
+			text += "<p><span style='color: black;'>" + labels[4].textContent + "</span>: " + inputs[4].value + " мм.рт.ст.</p>";
+
+			document.getElementById('result').value = text;
+		}
+	</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td><label>Дата</label></td>
+			<td><input id='date' type="text" oninput="generateText();" /></td>
+		</tr>
+		<tr>
+			<td><label>Температура</label></td>
+			<td><input id='temp' type="text" oninput="generateText();" /></td>
+		</tr>
+		<tr>
+			<td><label>Ветер</label></td>
+			<td><input id='wind' type="text" oninput="generateText();" /></td>
+		</tr>
+		<tr>
+			<td><label>Влажность</label></td>
+			<td><input id='humidity' type="text" oninput="generateText();" /></td>
+		</tr>
+		<tr>
+			<td><label>Давление</label></td>
+			<td><input id='pressure' type="text" oninput="generateText();" /></td>
+		</tr>
+	</table>
+	<textarea id='result' cols="50" rows="6" readonly style="resize: none;" onclick="this.select()"></textarea>
+</body>
+</html>
