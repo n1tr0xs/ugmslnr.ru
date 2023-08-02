@@ -60,12 +60,11 @@ header {
   }
 
   nav a {
-    color: #fffffffc; /* no var */
+    color: var(--nav-a-color);
   }
 
   nav a:hover {
-    color: #fff; /* no var */
-    background: #1e4b75; /* no var */
+    background: car(--nav-a-background);
   }
 }
 
@@ -155,7 +154,6 @@ header {
   }
 
   .menu a{
-    color: #fff;
     color: var(--text-main);
   }
 
