@@ -9,6 +9,7 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
+      <h3> Часы приёма</h3>
       <p>
         Понедельник - Пятница: 8:00 - 17:00.
       </p>

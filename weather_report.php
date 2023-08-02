@@ -9,9 +9,8 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <div>
-      </div>
-      <div id='forecast-text'>
+      <h3> Прогноз погоды </h3>
+      <div id='forecast'>
         <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/forecast.html';  ?>
       </div>
     </div>
