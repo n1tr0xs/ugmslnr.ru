@@ -1,6 +1,6 @@
 <header>
   <script src="https://use.fontawesome.com/bd02b5ff79.js" defer></script>
-  <script src="/js/menu.js"></script>
+  <script src="/js/listeners.js"></script>
   <link rel="stylesheet" href="/css/header.css">
   <div>
     <img src="/files/logo1.png" alt="Логотип Росгидромет" class="no-border">
