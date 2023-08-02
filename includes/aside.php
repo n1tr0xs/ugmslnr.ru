@@ -5,7 +5,7 @@
   </div>
   <div id='warnings-container'>
     <span class='div-name'>Предупреждения</span>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/warnings.html'; ; ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/warnings.html'; ?>
   </div>
   <div>
     <span class='div-name'> Мониторинг загрязнения окружающей среды </span>
