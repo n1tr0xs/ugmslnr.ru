@@ -10,6 +10,7 @@
 			var text = "";
 
 			text += "<p style='text-align: center;'>" + inputs[0].value + "</p>";
+			text += "<div class='text-center'><img src='/files/imgs/" + document.getElementById('icon').selectedOptions[0].value + ".png' class='no-border'></div>";
 			text += "<p><span style='color: red;'>" + labels[1].textContent + "</span>: " + inputs[1].value + " &#x2103;</p>";
 			text += "<p><span style='color: green;'>" + labels[2].textContent + "</span>: " + inputs[2].value + " м/с</p>";
 			text += "<p><span style='color: blue;'>" + labels[3].textContent + "</span>: " + inputs[3].value + " %</p>";
@@ -35,18 +36,19 @@
 	<label>Давление</label></td>
 	<input id='pressure' type="text" oninput="generateText();" />
 	<br>
-	<select>
-		<option>Ясно</option>
-		<option>Туман</option>
-		<option>Дождь с грозой</option>
-		<option>Дождь со снегом</option>
-		<option>Метель, поземок</option>
-		<option>Гололед</option>
-		<option>переменная облачность, облачно с прояснением</option>
-		<option>дождь</option>
-		<option>град</option>
-		<option>снег</option>
-		<option>гололедица</option>
+	<label>Иконка</label>
+	<select id='icon' oninput="generateText();" onchange="generateText();">
+		<option value='clearly'>Ясно</option>
+		<option value='fog'>Туман</option>
+		<option value='rain_thunder'>Дождь с грозой</option>
+		<option value='rain_snow'>Дождь со снегом</option>
+		<option value='snowstorm'>Метель, поземок</option>
+		<option value='black_ice'>Гололед</option>
+		<option value='cloudly'>Переменная облачность, облачно с прояснением</option>
+		<option value='rain'>Дождь</option>
+		<option value='hail'>Град</option>
+		<option value='snow'>Снег</option>
+		<option value='ice_slick'>Гололедица</option>
 	</select>
 	<br>
 	<textarea id='result' cols="50" rows="6" readonly style="resize: none;" onclick="this.select()"></textarea>
