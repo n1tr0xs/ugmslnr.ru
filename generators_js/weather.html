@@ -4,40 +4,46 @@
 	<meta charset="UTF-8">
 	<title>Генератор информации о погоде</title>
 	<script type="text/javascript">
-		function generateText(){
-			var inputs = document.getElementsByTagName('input');
-			var labels = document.getElementsByTagName('label');
-			var text = "";
+	function download(){
+		vvar filename = 'weather.html';
+		var text = "";
 
-			text += "<p style='text-align: center;'>" + inputs[0].value + "</p>";
-			text += "<div class='text-center'><img src='/files/imgs/" + document.getElementById('icon').selectedOptions[0].value + ".png' class='no-border'></div>";
-			text += "<p><span style='color: red;'>" + labels[1].textContent + "</span>: " + inputs[1].value + " &#x2103;</p>";
-			text += "<p><span style='color: green;'>" + labels[2].textContent + "</span>: " + inputs[2].value + " м/с</p>";
-			text += "<p><span style='color: blue;'>" + labels[3].textContent + "</span>: " + inputs[3].value + " %</p>";
-			text += "<p><span style='color: black;'>" + labels[4].textContent + "</span>: " + inputs[4].value + " мм.рт.ст.</p>";
+		text += "<p style='text-align: center;'>" + inputs[0].value + "</p>";
+		text += "<div class='text-center'><img src='/files/imgs/" + document.getElementById('icon').selectedOptions[0].value + ".png' class='no-border'></div>";
+		text += "<p><span style='color: red;'>" + document.getElementById('temp-label').value + "</span>: " + document.getElementById('temp-input').value + " &#x2103;</p>";
+		text += "<p><span style='color: green;'>" + document.getElementById('wind-label').value + "</span>: " + document.getElementById('wind-input').value + " м/с</p>";
+		text += "<p><span style='color: blue;'>" + document.getElementById('humidity-label').value + "</span>: " + document.getElementById('humidity-input').value + " %</p>";
+		text += "<p><span style='color: black;'>" + document.getElementById('pressure-label').value + "</span>: " + document.getElementById('pressure-input').value + " мм.рт.ст.</p>";
 
-			document.getElementById('result').value = text;
-		}
+		var element = document.createElement('a');
+		element.setAttribute('href', 'data:text/plain;charset=utf-8,'+encodeURIComponent(text));
+		element.setAttribute('download', filename);
+
+		element.style.display = 'none';
+		document.body.appendChild(element);
+		element.click();
+		document.body.removeChild(element);
+	}
 	</script>
 </head>
 <body>
-	<label>Дата</label>
-	<input id='date' type="text" oninput="generateText();" />
+	<label id='date-label'>Дата</label>
+	<input id='date-input' type="text" oninput="download();" />
 	<br>
-	<label>Температура</label></td>
-	<input id='temp' type="text" oninput="generateText();" />
+	<label id='temp-label'>Температура</label></td>
+	<input id='temp-input' type="text" oninput="download();" />
 	<br>
-	<label>Ветер</label></td>
-	<input id='wind' type="text" oninput="generateText();" />
+	<label id='wind-label'>Ветер</label></td>
+	<input id='wind-input' type="text" oninput="download();" />
 	<br>
-	<label>Влажность</label></td>
-	<input id='humidity' type="text" oninput="generateText();" />
+	<label id='humidity-label'>Влажность</label></td>
+	<input id='humidity-input' type="text" oninput="download();" />
 	<br>
-	<label>Давление</label></td>
-	<input id='pressure' type="text" oninput="generateText();" />
+	<label id='pressure-label'>Давление</label></td>
+	<input id='pressure-input' type="text" oninput="download();" />
 	<br>
 	<label>Иконка</label>
-	<select id='icon' oninput="generateText();" onchange="generateText();">
+	<select id='icon' oninput="download();" onchange="download();">
 		<option value='clearly'>Ясно</option>
 		<option value='fog'>Туман</option>
 		<option value='rain_thunder'>Дождь с грозой</option>
@@ -51,6 +57,6 @@
 		<option value='ice_slick'>Гололедица</option>
 	</select>
 	<br>
-	<textarea id='result' cols="50" rows="6" readonly style="resize: none;" onclick="this.select()"></textarea>
+	<button onclick="download();">Скачать</button>
 </body>
 </html>
