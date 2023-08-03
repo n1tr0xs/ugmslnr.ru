@@ -8,7 +8,7 @@
 		vvar filename = 'weather.html';
 		var text = "";
 
-		text += "<p style='text-align: center;'>" + inputs[0].value + "</p>";
+		text += "<p style='text-align: center;'>" + document.getElementById('date-input').value + "</p>";
 		text += "<div class='text-center'><img src='/files/imgs/" + document.getElementById('icon').selectedOptions[0].value + ".png' class='no-border'></div>";
 		text += "<p><span style='color: red;'>" + document.getElementById('temp-label').value + "</span>: " + document.getElementById('temp-input').value + " &#x2103;</p>";
 		text += "<p><span style='color: green;'>" + document.getElementById('wind-label').value + "</span>: " + document.getElementById('wind-input').value + " м/с</p>";
