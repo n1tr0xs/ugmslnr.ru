@@ -1,4 +1,3 @@
-form > input,
-form > button{
+.form-row {
   display: block;
 }
