@@ -11,12 +11,12 @@
     <div id='content'>
       <h3> Администрирование - текущая погода</h3>
       <form action='/admin/weather_exec.php' method='post'>
-        <div class='form-row'><input type='text' id='date' name='date' placeholder="Дата"></div>
-        <div class='form-row'><input type='text' id='temp' name='temp' placeholder="Температура"></div>
-        <div class='form-row'><input type='text' id='wind' name='wind' placeholder="Ветер"></div>
-        <div class='form-row'><input type='text' id='humidity' name='humidity' placeholder="Влажность"></div>
-        <div class='form-row'><input type='text' id='pressure' name='pressure' placeholder="Давление"></div>
-        <div class='form-row'><select id='icon' name='icon'>
+        <div class='form-row'><input type='text' id='date' name='date' placeholder="Дата" required></div>
+        <div class='form-row'><input type='text' id='temp' name='temp' placeholder="Температура" required></div>
+        <div class='form-row'><input type='text' id='wind' name='wind' placeholder="Ветер" required></div>
+        <div class='form-row'><input type='text' id='humidity' name='humidity' placeholder="Влажность" required></div>
+        <div class='form-row'><input type='text' id='pressure' name='pressure' placeholder="Давление" required></div>
+        <div class='form-row'><select id='icon' name='icon' required>
           <option value='clearly'>Ясно</option>
           <option value='fog'>Туман</option>
           <option value='rain_thunder'>Дождь с грозой</option>
