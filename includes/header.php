@@ -23,7 +23,7 @@
       <li class='navbar dropdown'>
         <a class='dropdown' href="#">О нас </a>
         <ul class='navbar dropdown-content'>
-          <li><a href='/about/about.php'>О нас</a></li>
+          <li><a href='/about/index.php'>О нас</a></li>
           <li><a href='/about/leadership.php'>Руководство</a></li>
           <li><a href='/about/structure.php'>Структура</a></li>
           <li><a href='/about/requisites.php'>Реквизиты</a></li>
@@ -38,7 +38,7 @@
       <li class='navbar dropdown'>
         <a class='dropdown' href='#'>Потребителям</a>
         <ul class='navbar dropdown-content'>
-          <li><a href="/to_customers/pricelist.php">Услуги</a></li>
+          <li><a href="/to_customers/index.php">Услуги</a></li>
           <li><a href="/to_customers/request_samples.php">Образцы писем-запросов</a></li>
           <li><a href="/to_customers/office_hours.php">Часы приема</a></li>
         </ul>
