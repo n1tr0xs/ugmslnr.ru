@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="/css/admin.css">
   <title>Администрирование - текущая погода</title>
 </head>
 <body>
   <div id='containter'>
     <div id='content'>
+      <h3> Администрирование - текущая погода</h3>
       <form action='/admin/weather_exec.php' method='post'>
         <input type='text' id='date' name='date' placeholder="Дата">
         <input type='text' id='temp' name='temp' placeholder="Температура">
         <input type='text' id='wind' name='wind' placeholder="Ветер">
         <input type='text' id='humidity' name='humidity' placeholder="Влажность">
         <input type='text' id='pressure' name='pressure' placeholder="Давление">
-        <br>
         <label> Иконка: </label><select id='icon' name='icon'>
           <option value='clearly'>Ясно</option>
           <option value='fog'>Туман</option>
@@ -28,11 +29,9 @@
           <option value='snow'>Снег</option>
           <option value='ice_slick'>Гололедица</option>
         </select>
-        <br>
         <button> Отправить данные </button>
       </form>
     </div>
-    <span style="display: block; clear: both;"></span>
   </div>
 </body>
 </html>
