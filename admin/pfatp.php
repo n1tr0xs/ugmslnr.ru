@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="/css/admin.css">
   <title>Администрирование - вероятностный прогноз температуры воздуха и осадков</title>
 </head>
 <body>
