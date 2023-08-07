@@ -30,7 +30,7 @@
       <li><a href='/hydromet/amfam.php'>Отдел агрометеорологических прогнозов и агрометеорологии</a></li>
       <li><a href='/hydromet/hl.php'>Отдел гидрологии</a></li>
       <li><a href='/weather_report.php'>Прогноз погоды </a></li>
-      <li><a href='#'>Комментарии синоптика </a></li>
+      <li><a href='/hydromet/comments.php'>Комментарии синоптика </a></li>
       <li><a href='/hydromet/fire_danger.php'>Пожарная опасность</a></li>
       <li><a href='/hydromet/criteria.php'>Критерии ОЯ и НЯ</a></li>
       <li><a href="/hydromet/circumstances.php">Гидрометеорологические условия</a></li>
