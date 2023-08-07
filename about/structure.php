@@ -13,7 +13,7 @@
   <div id='containter'>
     <div id='content'>
       <div class='text-center'>
-        <img class='no-border' src="/files/imgs/structure.jpg">
+        <img class="no-border auto-scaled-img" src="/files/imgs/structure.jpg">
       </div>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>

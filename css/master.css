@@ -347,3 +347,7 @@ p.description {
 p.region {
   font-weight: bold;
 }
+
+.auto-scaled-img {
+  max-width: 70vw;
+}
