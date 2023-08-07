@@ -3,8 +3,6 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/master.css">
-  <link rel="stylesheet" href="/css/table-counter.css">
-  <link rel="stylesheet" href="/css/pricelist.css">
   <title>Услуги</title>
   <style>
   object {

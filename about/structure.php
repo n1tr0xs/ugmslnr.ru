@@ -5,7 +5,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"> </script>
     <script src="/js/structure.js"></script>
     <link rel="stylesheet" href="/css/master.css">
-    <link rel="stylesheet" href="/css/structure.css">
     <title>Структура</title>
 </head>
 <body>
