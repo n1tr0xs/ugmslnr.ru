@@ -70,6 +70,47 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+#containter {
+  background: var(--content-background);
+}
+
+#content {
+  background: var(--content-background);
+  float: left;
+  width: 73%;
+  margin: 0;
+  padding: 0.5em;
+}
+
+#aside-content {
+  background: var(--content-background);
+  max-width: 24%;
+  float: left;
+  text-align: center;
+  border-left: 1.2px solid var(--border-color);
+  margin: 0;
+  padding: .5em 0;
+}
+
+#aside-content ul {
+  padding-left: 0.5em;
+
+  list-style-type: none;
+}
+
+#aside-content ul > li {
+  font-size: .8em;
+  text-align: left;
+}
+
+#content a[href^='tel:']:hover,
+#aside-content a[href^='tel:']:hover,
+#content a[href^='mailto:']:hover,
+#aside-content a[href^='mailto:']:hover {
+ text-decoration: none;
+ color: var(--text-bright);
+}
+
 a {
   text-decoration: none;
   color: var(--links);
@@ -83,15 +124,6 @@ a[href^='tel:'],
 a[href^='mailto:'] {
   color: var(--text-main);
 }
-
-#content a[href^='tel:']:hover,
-#aside-content a[href^='tel:']:hover,
-#content a[href^='mailto:']:hover,
-#aside-content a[href^='mailto:']:hover {
- text-decoration: none;
- color: var(--text-bright);
-}
-
 
 table {
   border: var(--border);
@@ -229,39 +261,6 @@ ul.no-bullets {
   list-style-type: none;
 }
 
-#containter {
-  background: var(--content-background);
-}
-
-#content {
-  background: var(--content-background);
-  float: left;
-  width: 73%;
-  margin: 0;
-  padding: 0.5em;
-}
-
-#aside-content {
-  background: var(--content-background);
-  max-width: 24%;
-  float: left;
-  text-align: center;
-  border-left: 1.2px solid var(--border-color);
-  margin: 0;
-  padding: .5em 0;
-}
-
-#aside-content ul {
-  padding-left: 0.5em;
-
-  list-style-type: none;
-}
-
-#aside-content ul > li {
-  font-size: .8em;
-  text-align: left;
-}
-
 .div-name {
   margin: 0;
   text-align: center;
@@ -292,7 +291,7 @@ table.text-left td {
   text-align: left;
 }
 
-.table-striped  tr:nth-child(even) {
+.table-striped tr:nth-child(even) {
   background: var(--background-tr-odd);
 }
 
@@ -340,11 +339,11 @@ p.description {
   text-indent: 0;
 }
 
-#forecast-text .day {
+p.region {
   font-weight: bold;
 }
 
-p.region {
+#forecast-text .day {
   font-weight: bold;
 }
 
