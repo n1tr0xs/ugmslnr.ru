@@ -29,7 +29,7 @@
           <li><a href='/about/requisites.php'>Реквизиты</a></li>
           <li><a href="/about/articles_of_association.php">Уставные документы</a></li>
           <li><a href="/about/anti_corruption.php">Противодействие коррупции</a></li>
-          <li class='navbar'><a href='/about/contacts.php'>Контакты</a></li>
+          <li><a href='/about/contacts.php'>Контакты</a></li>
         </ul>
       </li>
 
