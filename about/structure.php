@@ -12,24 +12,9 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <div class='department'>
-        <a href='#unit1' class='show'> Отдел 1</a>
-        <div id='unit1' class='unit'>
-          <div class='employee'>
-            <p> ФИО 1 </p>
-            <p> Должность 1 </p>
-          </div>
-          <div class='employee'>
-            <p> ФИО 2 </p>
-            <p> Должность 2 </p>
-          </div>
-          <div class='employee'>
-            <p> ФИО 3 </p>
-            <p> Должность 3 </p>
-          </div>
-        </div>
+      <div class='text-center'>
+        <img class='no-border' src="/files/imgs/structure.jpg">
       </div>
-
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
     <span style="display: block; clear: both;"></span>
