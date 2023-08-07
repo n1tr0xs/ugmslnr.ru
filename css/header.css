@@ -68,6 +68,7 @@ header {
   }
 }
 
+/* mobile header */
 @media screen and (max-width: 1000px) {
   .mobile.menu-btn {
     display: absolute;
