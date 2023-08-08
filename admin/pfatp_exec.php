@@ -13,6 +13,6 @@ fwrite($file, $text);
 fclose($file);
 
 echo "Данные отправлены.<br>";
-echo "<a href='/admin/pfatp.php'>Страница администрирования</a><br>";
-echo "<a href='/index.php'>Главная страница сайта</a><br>";
+echo "<a href='/admin/pfatp.html'>Страница администрирования</a><br>";
+echo "<a href='/index.html'>Главная страница сайта</a><br>";
 ?>

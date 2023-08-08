@@ -18,6 +18,6 @@ fwrite($file, $text);
 fclose($file);
 
 echo "Данные отправлены.<br>";
-echo "<a href='/admin/warning.php'>Страница администрирования</a><br>";
-echo "<a href='/index.php'>Главная страница сайта</a><br>";
+echo "<a href='/admin/warning.html'>Страница администрирования</a><br>";
+echo "<a href='/index.html'>Главная страница сайта</a><br>";
 ?>
