@@ -16,7 +16,6 @@
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
-
     <div id='content'>
       <h3 > Критерии экстремально высокого загрязнения окружающей природной среды (ЭВЗ) </h3>
       <ol>
