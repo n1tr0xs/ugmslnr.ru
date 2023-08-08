@@ -10,12 +10,9 @@
   <div id='containter'>
     <div id='content'>
       <h3> Часы приёма</h3>
-      <p>
-        Понедельник - Пятница: 8:00 - 17:00.
-      </p>
-      <p>
-        Суббота - Воскресенье: выходной.
-      </p>
+      <p> Понедельник - Четверг: 8:00 - 17:00. </p>
+      <p> Пятница: 8:00 - 16:00. </p>
+      <p> Суббота - Воскресенье: выходной. </p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
     <span style="display: block; clear: both;"></span>
