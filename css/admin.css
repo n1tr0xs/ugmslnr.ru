@@ -1,3 +1,7 @@
 .form-row {
   display: block;
 }
+
+:root {
+  --background-body: var(--content-background);
+}
