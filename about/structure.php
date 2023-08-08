@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"> </script>
+    <script src="/js/jquery.min.js"> </script>
     <script src="/js/structure.js"></script>
     <link rel="stylesheet" href="/css/master.css">
     <title>Структура</title>
