@@ -3,10 +3,9 @@
   <script src="/js/listeners.js"></script>
   <link rel="stylesheet" href="/css/header.css">
   <div>
-    <img src="/files/logo1.png" alt="Логотип Росгидромет" class="no-border">
-    <!-- <span style="font-size: 1.2em; line-height: 45px; vertical-align: middle;"> УГМС по ЛНР </span> -->
-    <br>
-    <span style="font-size: 1.2em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </span>
+    <img src="/files/logo.png" alt="Логотип Росгидромет" class="no-border" align="left">
+    <p style="font-size: 1.2em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>
+    <p style="font-size: 1.2em"> "Управление по гидрометеорологии и мониторингу окружающей среды по Луганской Народной Республике" </p>
   </div>
   <nav>
 
