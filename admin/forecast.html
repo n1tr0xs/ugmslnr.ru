@@ -2,6 +2,11 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <script>
+    function change(num){
+      document.getElementById('date'+num).value = document.getElementById('day'+num).value;
+    }
+  </script>
   <link rel="stylesheet" href="/css/master.css">
   <link rel="stylesheet" href="/css/admin.css">
   <title>Администрирование - прогноз погоды</title>
@@ -14,9 +19,9 @@
         <div class="form-row">
           <table class='text-center'>
             <tr>
-              <td colspan="2"><input type="text" name="day[]" placeholder="Дата" required tabindex="1"></td>
-              <td colspan="2"><input type="text" name="day[]" placeholder="Дата" required tabindex="10"></td>
-              <td colspan="2"><input type="text" name="day[]" placeholder="Дата" required tabindex="19"></td>
+              <td colspan="2"><input type="text" name="day[]" id="day1" placeholder="Дата" required tabindex="1" oninput="change('1');"></td>
+              <td colspan="2"><input type="text" name="day[]" id="day2" placeholder="Дата" required tabindex="10" oninput="change('2');"></td>
+              <td colspan="2"><input type="text" name="day[]" id="day3" placeholder="Дата" required tabindex="19" oninput="change('3');"></td>
             </tr>
             <tr>
               <td>ночь</td>
@@ -156,21 +161,21 @@
         </div>
         <hr>
 
-        <div class="form-row"><input type="text" name="date[]" placeholder="Дата" required></div>
+        <div class="form-row"><input type="text" name="date[]" id="date1" placeholder="Дата" required></div>
         <div class="form-row">По городу Луганск</div>
         <div class="form-row"><textarea name="description[]" placeholder="Описание" required></textarea></div>
         <div class="form-row">По территории Луганской Народной Республики</div>
         <div class="form-row"><textarea name="description[]" placeholder="Описание" required></textarea></div>
         <hr>
 
-        <div class="form-row"><input type="text" name="date[]" placeholder="Дата" required></div>
+        <div class="form-row"><input type="text" name="date[]" id="date2" placeholder="Дата" required></div>
         <div class="form-row">По городу Луганск</div>
         <div class="form-row"><textarea name="description[]" placeholder="Описание" required></textarea></div>
         <div class="form-row">По территории Луганской Народной Республики</div>
         <div class="form-row"><textarea name="description[]" placeholder="Описание" required></textarea></div>
         <hr>
 
-        <div class="form-row"><input type="text" name="date[]" placeholder="Дата" required></div>
+        <div class="form-row"><input type="text" name="date[]" id="date3" placeholder="Дата" required></div>
         <div class="form-row">По городу Луганск</div>
         <div class="form-row"><textarea name="description[]" placeholder="Описание" required></textarea></div>
         <div class="form-row">По территории Луганской Народной Республики</div>
