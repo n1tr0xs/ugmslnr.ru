@@ -8,8 +8,6 @@ if($input_password != $check_string){
 	exit();
 }
 
-
-
 $filepath = $_SERVER['DOCUMENT_ROOT'] . "/updatable/{$_file}.html";
 $file = fopen($filepath, 'w');
 fwrite($file, $text);

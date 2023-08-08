@@ -13,7 +13,6 @@ if($input_password != $check_string){
 }
 
 $text = "<div id='warnings' class='text-left'>";
-
 $text .= "<div class='warning". ($meteo ? " warned" : ""). "'><div><div class='circle'></div>Метеорология</div><span class='warning-text'></span></div>";
 $text .= "<div class='warning". ($agro ? " warned" : ""). "'><div><div class='circle'></div>Гидрология</div><span class='warning-text'></span></div>";
 $text .= "<div class='warning". ($hydro ? " warned" : ""). "'><div><div class='circle'></div>Агрометеорология</div><span class='warning-text'></span></div>";

@@ -8,7 +8,6 @@ if($input_password != $check_string){
 	exit();
 }
 
-
 $filepath = $_SERVER['DOCUMENT_ROOT'] . "/updatable/{$_file}.png";
 if(move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $filepath)){
 	echo "Данные отправлены.";

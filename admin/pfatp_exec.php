@@ -10,8 +10,6 @@ if($input_password != $check_string){
 	exit();
 }
 
-
-
 $text = '';
 $text .= "<p class='day'>Прогноз на ". $date. "</p>";
 $text .= "<p class='description'>Прогноз на ". $desc. "</p>";

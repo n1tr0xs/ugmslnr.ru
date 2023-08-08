@@ -12,14 +12,11 @@ if($input_password != $check_string){
 	exit();
 }
 
-
-
 $text = "";
 $text .= "<p class='day'>Прогноз на ". $date1. "</p>";
 $text .= "<p class='description'>Прогноз на ". $desc1. "</p>";
 $text .= "<p class='day'>Прогноз на ". $date2. "</p>";
 $text .= "<p class='description'>Прогноз на ". $desc2. "</p>";
-
 
 $filepath = $_SERVER['DOCUMENT_ROOT'] . "/updatable/{$_file}.html";
 $file = fopen($filepath, 'w');
