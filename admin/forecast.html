@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <title>Администрирование - прогноз погоды</title>
+</head>
+<body>
+  <div id='containter'>
+    <div id='content'>
+      <h3>Администрирование - прогноз погоды</h3>
+      <form action="/admin/forecast_exec.php" method="post">
+        <div class="form-row">
+          <table>
+            <tr>
+              <td colspan="2"><input type="text" name="day[]" placeholder="Дата" required></td>
+              <td colspan="2"><input type="text" name="day[]" placeholder="Дата" required></td>
+              <td colspan="2"><input type="text" name="day[]" placeholder="Дата" required></td>
+            </tr>
+            <tr>
+              <td>ночь</td>
+              <td>день</td>
+              <td>ночь</td>
+              <td>день</td>
+              <td>ночь</td>
+              <td>день</td>
+            </tr>
+            <tr>
+              <td>
+                <select name='icon[]' required>
+                  <option value='clearly'>Ясно</option>
+                  <option value='fog'>Туман</option>
+                  <option value='rain_thunder'>Дождь с грозой</option>
+                  <option value='rain_snow'>Дождь со снегом</option>
+                  <option value='snowstorm'>Метель, поземок</option>
+                  <option value='black_ice'>Гололед</option>
+                  <option value='cloudly'>Переменная облачность</option>
+                  <option value='rain'>Дождь</option>
+                  <option value='hail'>Град</option>
+                  <option value='snow'>Снег</option>
+                  <option value='ice_slick'>Гололедица</option>
+                </select>
+              </td>
+              <td>
+                <select name='icon[]' required>
+                  <option value='clearly'>Ясно</option>
+                  <option value='fog'>Туман</option>
+                  <option value='rain_thunder'>Дождь с грозой</option>
+                  <option value='rain_snow'>Дождь со снегом</option>
+                  <option value='snowstorm'>Метель, поземок</option>
+                  <option value='black_ice'>Гололед</option>
+                  <option value='cloudly'>Переменная облачность</option>
+                  <option value='rain'>Дождь</option>
+                  <option value='hail'>Град</option>
+                  <option value='snow'>Снег</option>
+                  <option value='ice_slick'>Гололедица</option>
+                </select>
+              </td>
+              <td>
+                <select name='icon[]' required>
+                  <option value='clearly'>Ясно</option>
+                  <option value='fog'>Туман</option>
+                  <option value='rain_thunder'>Дождь с грозой</option>
+                  <option value='rain_snow'>Дождь со снегом</option>
+                  <option value='snowstorm'>Метель, поземок</option>
+                  <option value='black_ice'>Гололед</option>
+                  <option value='cloudly'>Переменная облачность</option>
+                  <option value='rain'>Дождь</option>
+                  <option value='hail'>Град</option>
+                  <option value='snow'>Снег</option>
+                  <option value='ice_slick'>Гололедица</option>
+                </select>
+              </td>
+              <td>
+                <select name='icon[]' required>
+                  <option value='clearly'>Ясно</option>
+                  <option value='fog'>Туман</option>
+                  <option value='rain_thunder'>Дождь с грозой</option>
+                  <option value='rain_snow'>Дождь со снегом</option>
+                  <option value='snowstorm'>Метель, поземок</option>
+                  <option value='black_ice'>Гололед</option>
+                  <option value='cloudly'>Переменная облачность</option>
+                  <option value='rain'>Дождь</option>
+                  <option value='hail'>Град</option>
+                  <option value='snow'>Снег</option>
+                  <option value='ice_slick'>Гололедица</option>
+                </select>
+              </td>
+              <td>
+                <select name='icon[]' required>
+                  <option value='clearly'>Ясно</option>
+                  <option value='fog'>Туман</option>
+                  <option value='rain_thunder'>Дождь с грозой</option>
+                  <option value='rain_snow'>Дождь со снегом</option>
+                  <option value='snowstorm'>Метель, поземок</option>
+                  <option value='black_ice'>Гололед</option>
+                  <option value='cloudly'>Переменная облачность</option>
+                  <option value='rain'>Дождь</option>
+                  <option value='hail'>Град</option>
+                  <option value='snow'>Снег</option>
+                  <option value='ice_slick'>Гололедица</option>
+                </select>
+              </td>
+              <td>
+                <select name='icon[]' required>
+                  <option value='clearly'>Ясно</option>
+                  <option value='fog'>Туман</option>
+                  <option value='rain_thunder'>Дождь с грозой</option>
+                  <option value='rain_snow'>Дождь со снегом</option>
+                  <option value='snowstorm'>Метель, поземок</option>
+                  <option value='black_ice'>Гололед</option>
+                  <option value='cloudly'>Переменная облачность</option>
+                  <option value='rain'>Дождь</option>
+                  <option value='hail'>Град</option>
+                  <option value='snow'>Снег</option>
+                  <option value='ice_slick'>Гололедица</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="wind_direction[]" placeholder="Направление ветра" required>
+                <input type="text" name="wind_speed[]" placeholder="Скорость ветра" required>
+              </td>
+              <td>
+                <input type="text" name="wind_direction[]" placeholder="Направление ветра" required>
+                <input type="text" name="wind_speed[]" placeholder="Скорость ветра" required>
+              </td>
+              <td>
+                <input type="text" name="wind_direction[]" placeholder="Направление ветра" required>
+                <input type="text" name="wind_speed[]" placeholder="Скорость ветра" required>
+              </td>
+              <td>
+                <input type="text" name="wind_direction[]" placeholder="Направление ветра" required>
+                <input type="text" name="wind_speed[]" placeholder="Скорость ветра" required>
+              </td>
+              <td>
+                <input type="text" name="wind_direction[]" placeholder="Направление ветра" required>
+                <input type="text" name="wind_speed[]" placeholder="Скорость ветра" required>
+              </td>
+              <td>
+                <input type="text" name="wind_direction[]" placeholder="Направление ветра" required>
+                <input type="text" name="wind_speed[]" placeholder="Скорость ветра" required>
+              </td>
+            </tr>
+            <tr>
+              <td> <input type="text" name="temp[]" placeholder="Температура" required></td>
+              <td> <input type="text" name="temp[]" placeholder="Температура" required></td>
+              <td> <input type="text" name="temp[]" placeholder="Температура" required></td>
+              <td> <input type="text" name="temp[]" placeholder="Температура" required></td>
+              <td> <input type="text" name="temp[]" placeholder="Температура" required></td>
+              <td> <input type="text" name="temp[]" placeholder="Температура" required></td>
+            </tr>
+          </table>
+        </div>
+        <hr>
+
+        <div class="form-row"><input type="text" name="date[]" placeholder="Дата" required></div>
+        <div class="form-row">По городу Луганск</div>
+        <div class="form-row"><textarea name="description[]" placeholder="Описание" required></textarea></div>
+        <div class="form-row">По территории Луганской Народной Республики</div>
+        <div class="form-row"><textarea name="description[]" placeholder="Описание" required></textarea></div>
+        <hr>
+
+        <div class="form-row"><input type="text" name="date[]" placeholder="Дата" required></div>
+        <div class="form-row">По городу Луганск</div>
+        <div class="form-row"><textarea name="description[]" placeholder="Описание" required></textarea></div>
+        <div class="form-row">По территории Луганской Народной Республики</div>
+        <div class="form-row"><textarea name="description[]" placeholder="Описание" required></textarea></div>
+        <hr>
+
+        <div class="form-row"><input type="text" name="date[]" placeholder="Дата" required></div>
+        <div class="form-row">По городу Луганск</div>
+        <div class="form-row"><textarea name="description[]" placeholder="Описание" required></textarea></div>
+        <div class="form-row">По территории Луганской Народной Республики</div>
+        <div class="form-row"><textarea name="description[]" placeholder="Описание" required></textarea></div>
+        <hr>
+
+        <div class="form-row"><input type="password" name="password" placeholder="Пароль" required></div>
+        <div class="form-row"><button>Отправить данные</button></div>
+      </form><br> <a href='/admin/'> Список панелей администрирования </a>
+    </div>
+  </div>
+</body>
+</html>
