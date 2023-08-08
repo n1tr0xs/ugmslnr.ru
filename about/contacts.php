@@ -18,7 +18,7 @@
         </p>
         <p>
           <b> Электронная почта: </b>
-          <a href='mailto:ugms.lnr@mail.ru'>ugms.lnr@mail.ru<i class='fa fa-envelope' aria-hidden='true'></i></a>
+          <a href='mailto:ugms.lnr@mail.ru'><i class='fa fa-envelope' aria-hidden='true'></i>ugms.lnr@mail.ru</a>
         </p>
         <p>
           <b> Телефон (городской): </b>

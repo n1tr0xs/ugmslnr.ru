@@ -350,3 +350,7 @@ p.region {
 .auto-scaled-img {
   max-width: 70vw;
 }
+
+p i.fa {
+  text-indent: 0;
+}
