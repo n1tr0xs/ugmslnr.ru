@@ -2,8 +2,16 @@
 $date = $_POST['date'];
 $desc = $_POST['desc'];
 
-$text = '';
+$input_password = hash('sha256', $_POST['password']);
+$check_string = file_get_contents($_SERVER['DOCUMENT_ROOT']. '/pwd/pfatp');
+if($input_password != $check_string){
+	echo "Неверный пароль!";
+	exit();
+}
 
+
+
+$text = '';
 $text .= "<p class='day'>Прогноз на ". $date. "</p>";
 $text .= "<p class='description'>Прогноз на ". $desc. "</p>";
 

@@ -4,6 +4,13 @@ $agro = $_POST['agro'];
 $hydro = $_POST['hydro'];
 $pollution = $_POST['pollution'];
 
+$input_password = hash('sha256', $_POST['password']);
+$check_string = file_get_contents($_SERVER['DOCUMENT_ROOT']. '/pwd/warning');
+if($input_password != $check_string){
+	echo "Неверный пароль!";
+	exit();
+}
+
 $text = "<div id='warnings' class='text-left'>";
 
 $text .= "<div class='warning". ($meteo ? " warned" : ""). "'><div><div class='circle'></div>Метеорология</div><span class='warning-text'></span></div>";

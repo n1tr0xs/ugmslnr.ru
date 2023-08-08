@@ -6,6 +6,13 @@ $humidity = $_POST['humidity'];
 $pressure = $_POST['pressure'];
 $icon = $_POST['icon'];
 
+$input_password = hash('sha256', $_POST['password']);
+$check_string = file_get_contents($_SERVER['DOCUMENT_ROOT']. '/pwd/weather');
+if($input_password != $check_string){
+	echo "Неверный пароль!";
+	exit();
+}
+
 $text = '';
 $text .= "<p style='text-align: center;'>{$date}</p>";
 $text .= "<div class='text-center'><img src='/files/imgs/{$icon}.png' class='no-border'></div>";
