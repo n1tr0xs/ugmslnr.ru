@@ -10,9 +10,7 @@
   <div id='containter'>
     <div id='content'>
       <h3> Комментарии синоптика</h3>
-      <ul class="no-bullets">
-        <ol><a href="#"></a></ol>
-      </ul>
+      <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/comments.html';  ?>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
     <span style="display: block; clear: both;"></span>
