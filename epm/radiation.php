@@ -10,11 +10,7 @@
   <div id='containter'>
     <div id='content'>
       <h3>Радиационная обстановка</h3>
-
       <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/radiation.html';  ?>
-      <p>
-        Уровень радиации 20 июля по территории Луганской Народной Республики составил 11-14 мкР/час, что не превышает естественного для Республики гамма-фона
-      </p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
     <span style="display: block; clear: both;"></span>

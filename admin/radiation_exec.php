@@ -10,7 +10,7 @@ if($input_password != $check_string){
 $date = $_POST['date'];
 $desc = $_POST['desc'];
 $text = "";
-$text .= "Уровень радиации на ". $date. " по территории Луганской Народной Республики составил ". $desc;
+$text .= "<p>Уровень радиации на ". $date. " по территории Луганской Народной Республики составил ". $desc. "</p>;
 
 $filepath = $_SERVER['DOCUMENT_ROOT'] . "/updatable/{$_file}.html";
 $file = fopen($filepath, 'w');
