@@ -14,9 +14,9 @@
         <li> <a href='/updatable/month_review/july_2023.pdf'> Ежемесячный обзор состояния окружающей среды. Июль 2023</a></li>
       </ul>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
 </html>

@@ -10,14 +10,14 @@
   <div id='containter'>
     <div id='content'>
       <h3 > Вероятностный прогноз температуры воздуха и осадков </h3>
-      <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/pfatp.html';  ?>
+      <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/pfatp.html'; ?>
       <p style='font-style: italic;'> Примечание:  </p>
       <p> Вероятностный прогноз температуры и осадков составлен специалистами ФГБУ «Гидрометцентр России». В течение месяца прогнозы погоды будут корректироваться краткосрочными прогнозами погоды ФГБУ «УГМС по ЛНР». </p>
       <p> <a href='https://meteoinfo.ru/1month-forc'>https://meteoinfo.ru/1month-forc</a> </p>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
 </html>

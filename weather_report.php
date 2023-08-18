@@ -11,12 +11,12 @@
     <div id='content'>
       <h3> Прогноз погоды </h3>
       <div id='forecast'>
-        <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/forecast.html';  ?>
+        <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/forecast.html'; ?>
       </div>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
 </html>

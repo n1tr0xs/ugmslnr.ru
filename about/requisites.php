@@ -24,9 +24,9 @@
       <p>ОКТМО  43701000001</p>
       <p>КБК 06050000000000000244</p>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
 </html>

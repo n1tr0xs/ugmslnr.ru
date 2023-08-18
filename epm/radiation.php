@@ -10,11 +10,11 @@
   <div id='containter'>
     <div id='content'>
       <h3>Радиационная обстановка</h3>
-      <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/radiation.html';  ?>
+      <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/radiation.html'; ?>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php';  ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';  ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
 </html>
