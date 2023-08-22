@@ -14,18 +14,26 @@ if ($conn->connect_error) {
 }
 
 $date = $_POST['date'];
+$day_part = $_POST['day_part'];
+$icon = $_POST['icon'];
+$wind_direction = $_POST['wind_direction'];
+$wind_min = $_POST['wind_min'];
+$wind_max = $_POST['wind_max'];
+$temp_min = $_POST['temp_min'];
+$temp_max = $_POST['temp_max'];
 
 $sql = "
-insert into weather_table_forecast values 
-(NULL, '{$date}', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+insert into `ugmslnr`.`weather_table_forecast` values 
+(NULL, '{$date}', {$day_part}, {$icon}, {$wind_direction}, {$wind_min}, {$wind_max}, {$temp_min}, {$temp_max});
 ";
-echo $sql;
-// if($conn->query($sql) === TRUE){
-// 	echo "Данные отправлены.<br>";
-// } else {
-//   echo "Error: {$sql}<br>{$conn->error}";
-// }
+// echo $sql;
+if($conn->query($sql) === TRUE){
+	echo "Данные отправлены.<br>";
+} else {
+  echo "Error: {$sql}<br>{$conn->error}";
+}
 
-echo "<a href='/admin_db/{$_file}.html'>Страница администрирования</a><br>";
+echo "<br>";
+echo "<a href='/admin_db/{$_file}.php'>Страница администрирования</a><br>";
 echo "<a href='/index.html'>Главная страница сайта</a><br>";
 ?>
