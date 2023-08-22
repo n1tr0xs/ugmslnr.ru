@@ -1,20 +1,4 @@
-<?
-function get_arr($conn, $sql){
-  $resp = $conn->query($sql);
-  $arr = $resp->fetch_all(MYSQLI_ASSOC);
-  return $arr;
-}
-function print_table($arr){
-  echo "<table>";
-  foreach ($arr as $row) {
-    echo "<tr>";
-    foreach ($row as $key => $value)
-      echo "<td>{$key}</td><td>{$value}</td>";
-    echo "</tr>";
-  }
-  echo "</table>";
-}
-?>
+<? include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php'; ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -28,30 +12,28 @@ function print_table($arr){
     <div id='content'>
       <h3> Прогноз погоды </h3>
       <div id='forecast'>
-
-        <? 
-          // include $_SERVER['DOCUMENT_ROOT'] . '/updatable/forecast.html'; 
-        ?>
         <?
           $conn = new mysqli('ugmslnr', 'visiter', '');
           if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
           }
-          $sql = "
-            select date from (
-              select distinct(date) date
-              from 
-               `ugmslnr`.`weather_table_forecast` 
-              order by 
-               `date` desc 
-              limit 3
-            ) a
-            order by 
-              date asc
-          ";
-          $arr = get_arr($conn, $sql);
         ?>
         <table>
+          <?
+            $sql = "
+              select date from (
+                select distinct(date) date
+                from 
+                 `ugmslnr`.`weather_table_forecast` 
+                order by 
+                 `date` desc 
+                limit 3
+              ) a
+              order by 
+                date asc
+            ";
+            $arr = get_arr($conn, $sql);
+          ?>
           <tr>
             <? foreach ($arr as $row): ?>
             <td colspan="2"><? echo date("d", strtotime($row['date'])); ?></td>
@@ -68,10 +50,19 @@ function print_table($arr){
           <? 
             $sql = "
               select * from (
-              select w.date date
+              select 
+                w.date date, 
+                w.day_part day_part, 
+                i.url icon, 
+                w.temp_min temp_min, 
+                w.temp_max temp_max, 
+                wd.direction wind_direction,
+                w.wind_speed_min wind_min,
+                w.wind_speed_max wind_max
               from 
                `ugmslnr`.`weather_table_forecast` w
-               join `ugmslnr`.`icons` i on (w.id=i.id)
+               join `ugmslnr`.`icons` i on (w.icon=i.id)
+               join `ugmslnr`.`wind_directions` wd on (w.wind_direction=wd.id)
               order by 
                `date` desc 
               limit 6
@@ -82,13 +73,21 @@ function print_table($arr){
             $arr = get_arr($conn, $sql); 
           ?>
           <tr>
-            <td> <? echo $arr[0]['icon']; ?>
+            <? foreach($arr as $row): ?>
+            <td class="text-center"> <img width="75px" height="75px" class="no-border" src="<? echo $row['icon']; ?>"></td>
+            <? endforeach; ?>
+          </tr>
+          <tr>
+            <? foreach ($arr as $row): ?>
+            <td><? echo $row['wind_direction']."<br>".$row['wind_min']."-".$row['wind_max']." м/с"; ?> </td>
+            <? endforeach; ?>
+          </tr>
+          <tr>
+            <? foreach ($arr as $row): ?>
+              <td><? echo $row['temp_min']." - ".$row['temp_max'].' &deg;C'; ?> 
+            <? endforeach; ?>
           </tr>
         </table>
-
-        <?  $arr = get_arr($conn, 'select * from `ugmslnr`.`weather_table_forecast` order by `date` desc, `day_part` asc limit 6');
-        
-        ?>
       </div>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

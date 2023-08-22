@@ -1,3 +1,4 @@
+<? include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php'; ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -6,12 +7,7 @@
   <link rel="stylesheet" href="/css/admin.css">
   <title>Администрирование - прогноз погоды</title>
 </head>
-<?
-  $conn = new mysqli("ugmslnr", "sinop", "sinop");
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-?>
+<? $conn = connect('sinop', 'sinop'); ?>
 <body>
   <div id='containter'>
     <div id='content'> 
@@ -24,8 +20,8 @@
           <label for="day_part">Часть дня</label>
           <select name="day_part" required>
           <?
-            $arr = $conn->query("SELECT * FROM `ugmslnr`.`day_parts` order by `id`");
-            $arr = $arr->fetch_all(MYSQLI_ASSOC);
+            $sql = "SELECT * FROM `ugmslnr`.`day_parts` order by `id`";
+            $arr = get_arr($conn, $sql);
             foreach($arr as $row): ?>
               <option value="<? echo $row['id']; ?>"><? echo $row['name']; ?></option>
             <? endforeach; ?>
@@ -35,8 +31,8 @@
           <label for="icon">Иконка</label>
           <select name="icon" required>
             <?
-            $arr = $conn->query("SELECT * FROM `ugmslnr`.`icons` order by `id`");
-            $arr = $arr->fetch_all(MYSQLI_ASSOC);
+            $sql = "SELECT * FROM `ugmslnr`.`icons` order by `id`";
+            $arr = get_arr($conn, $sql);
             foreach($arr as $row): ?>
               <option value="<? echo $row['id']; ?>"><? echo $row['name']; ?></option>
             <? endforeach; ?>
@@ -46,8 +42,8 @@
           <label for="wind_direction">Направление ветра</label>
           <select name="wind_direction" required>
             <?
-            $arr = $conn->query("SELECT * FROM `ugmslnr`.`wind_directions` order by `id`");
-            $arr = $arr->fetch_all(MYSQLI_ASSOC);
+            $sql = "SELECT * FROM `ugmslnr`.`wind_directions` order by `id`";
+            $arr = get_arr($conn, $sql);
             foreach($arr as $row): ?>
               <option value="<? echo $row['id']; ?>"><? echo $row['direction']; ?></option>
             <? endforeach; ?>
