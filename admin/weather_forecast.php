@@ -24,7 +24,7 @@
       return true;
     }
   </script>
-  <title>Администрирование - прогноз погоды</title>
+  <title>Администрирование - прогноз погоды - таблица</title>
 </head>
 <? $conn = connect('sinop', 'sinop'); ?>
 <body>
