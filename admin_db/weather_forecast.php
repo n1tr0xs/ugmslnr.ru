@@ -5,6 +5,25 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/master.css">
   <link rel="stylesheet" href="/css/admin.css">
+  <script type="text/javascript">
+    function check(){
+      var temp_min = document.getElementById('temp_min').value;
+      var temp_max = document.getElementById('temp_max').value;
+      if (parseInt(temp_min) > parseInt(temp_max)) {
+        window.alert('Минимальная температура не может быть больше максимальной!'); 
+        return false;
+      }
+      var wind_min = document.getElementById('wind_min').value;
+      var wind_max = document.getElementById('wind_max').value;
+      if (parseInt(wind_min) > parseInt(wind_max)) {
+        window.alert('Минимальная скорость воздуха не может быть больше максимальной!'); 
+        return false;
+      }
+      var button = document.getElementById('submit-button');
+      button.disabled = false;
+      return true;
+    }
+  </script>
   <title>Администрирование - прогноз погоды</title>
 </head>
 <? $conn = connect('sinop', 'sinop'); ?>
@@ -50,19 +69,19 @@
           </select>
         </div>
         <div class="form-row"> 
-          <input type="number" name="wind_min" placeholder="Минимальная скорость ветра">
+          <input type="number" id="wind_min" name="wind_min" placeholder="Минимальная скорость ветра" oninput="check();" required>
         </div>
         <div class="form-row"> 
-          <input type="number" name="wind_max" placeholder="Максимальная скорость ветра">
+          <input type="number" id="wind_max" name="wind_max" placeholder="Максимальная скорость ветра" oninput="check();" required>
         </div>
         <div class="form-row"> 
-          <input type="number" name="temp_min" placeholder="Минимальная температура">
+          <input type="number" id="temp_min" name="temp_min" placeholder="Минимальная температура" oninput="check();" required>
         </div>
         <div class="form-row"> 
-          <input type="number" name="temp_max" placeholder="Максимальная температура">
+          <input type="number" id="temp_max" name="temp_max" placeholder="Максимальная температура" oninput="check();" required>
         </div>
         <div class="form-row">
-          <button>Отправить данные</button>
+          <button id='submit-button' disabled>Отправить данные</button>
         </div>
       </form><br> <a href='/admin_db/index.html'> Список панелей администрирования </a>
     </div>
