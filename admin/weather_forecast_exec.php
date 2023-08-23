@@ -24,17 +24,17 @@ $desc_city = $_POST['desc_city'];
 $desc_region = $_POST['desc_region'];
 
 
-$sql = "select count(*) c from `ugmslnr`.`weather_table_forecast` where `date`='{$date}' and `day_part`={$day_part}";
+$sql = "select count(*) c from `ugmslnr`.`weather_forecast` where `date`='{$date}' and `day_part`={$day_part}";
 $row = get_row($conn, $sql);
 if($row['c']){
   $sql = "
-  update `ugmslnr`.`weather_table_forecast` 
+  update `ugmslnr`.`weather_forecast` 
   set `icon`={$icon}, `wind_direction`={$wind_direction}, `wind_speed_min`={$wind_min}, `wind_speed_max`={$wind_max}, `temp_min`={$temp_min}, `temp_max`={$temp_max}, `desc_city`='{$desc_city}', `desc_region`='{$desc_region}'
   where `date`='{$date}' and `day_part`={$day_part}
   ";
 } else {
   $sql = "
-  insert into `ugmslnr`.`weather_table_forecast` 
+  insert into `ugmslnr`.`weather_forecast` 
   values (NULL, '{$date}', {$day_part}, {$icon}, {$wind_direction}, {$wind_min}, {$wind_max}, {$temp_min}, {$temp_max});
   ";
 }

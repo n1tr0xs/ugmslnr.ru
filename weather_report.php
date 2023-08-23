@@ -24,7 +24,7 @@
               select date from (
                 select distinct(date) date
                 from 
-                 `ugmslnr`.`weather_table_forecast` 
+                 `ugmslnr`.`weather_forecast` 
                 order by 
                  `date` desc 
                 limit 3
@@ -62,7 +62,7 @@
                 w.desc_city desc_city,
                 w.desc_region desc_region
               from 
-               `ugmslnr`.`weather_table_forecast` w
+               `ugmslnr`.`weather_forecast` w
                join `ugmslnr`.`icons` i on (w.icon=i.id)
                join `ugmslnr`.`wind_directions` wd on (w.wind_direction=wd.id)
               order by 
