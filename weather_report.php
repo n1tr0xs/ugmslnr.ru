@@ -32,10 +32,10 @@
               order by 
                 date asc
             ";
-            $arr = get_arr($conn, $sql);
+            $days = get_arr($conn, $sql);
           ?>
           <tr>
-            <? foreach ($arr as $row): ?>
+            <? foreach ($days as $row): ?>
             <td colspan="2"><? echo date("d", strtotime($row['date'])); ?></td>
             <? endforeach; ?>
           </tr>
@@ -58,7 +58,9 @@
                 w.temp_max temp_max, 
                 wd.direction wind_direction,
                 w.wind_speed_min wind_min,
-                w.wind_speed_max wind_max
+                w.wind_speed_max wind_max,
+                w.desc_city desc_city,
+                w.desc_region desc_region
               from 
                `ugmslnr`.`weather_table_forecast` w
                join `ugmslnr`.`icons` i on (w.icon=i.id)
@@ -70,24 +72,31 @@
             order by 
               date asc
             ";
-            $arr = get_arr($conn, $sql); 
+            $data = get_arr($conn, $sql); 
           ?>
           <tr>
-            <? foreach($arr as $row): ?>
+            <? foreach($data as $row): ?>
             <td class="text-center"> <img width="75px" height="75px" class="no-border" src="<? echo $row['icon']; ?>"></td>
             <? endforeach; ?>
           </tr>
           <tr>
-            <? foreach ($arr as $row): ?>
+            <? foreach ($data as $row): ?>
             <td><? echo $row['wind_direction']."<br>".$row['wind_min']."-".$row['wind_max']." м/с"; ?> </td>
             <? endforeach; ?>
           </tr>
           <tr>
-            <? foreach ($arr as $row): ?>
+            <? foreach ($data as $row): ?>
               <td><? echo $row['temp_min']." - ".$row['temp_max'].' &deg;C'; ?> 
             <? endforeach; ?>
           </tr>
         </table>
+        <? for($i=0; $i<3; ++$i): ?>
+        <p class="day"> <? echo $days[$i]['date']; ?> </p>
+        <p class="region"> По городу Луганск </p>
+        <p class="description"> <? echo $data[$i*2]['desc_city']."<br>".$data[$i*2+1]['desc_city']; ?> </p>
+        <p class="region"> По территории Луганской Народной Республики </p>
+        <p class="description"> <? echo $data[$i*2]['desc_region']."<br>".$data[$i*2+1]['desc_region']; ?> </p>
+        <? endfor; ?>
       </div>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

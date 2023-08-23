@@ -20,6 +20,8 @@ $wind_min = $_POST['wind_min'];
 $wind_max = $_POST['wind_max'];
 $temp_min = $_POST['temp_min'];
 $temp_max = $_POST['temp_max'];
+$desc_city = $_POST['desc_city'];
+$desc_region = $_POST['desc_region'];
 
 
 $sql = "select count(*) c from `ugmslnr`.`weather_table_forecast` where `date`='{$date}' and `day_part`={$day_part}";
@@ -27,7 +29,7 @@ $row = get_row($conn, $sql);
 if($row['c']){
   $sql = "
   update `ugmslnr`.`weather_table_forecast` 
-  set `icon`={$icon}, `wind_direction`={$wind_direction}, `wind_speed_min`={$wind_min}, `wind_speed_max`={$wind_max}, `temp_min`={$temp_min}, `temp_max`={$temp_max} 
+  set `icon`={$icon}, `wind_direction`={$wind_direction}, `wind_speed_min`={$wind_min}, `wind_speed_max`={$wind_max}, `temp_min`={$temp_min}, `temp_max`={$temp_max}, `desc_city`='{$desc_city}', `desc_region`='{$desc_region}'
   where `date`='{$date}' and `day_part`={$day_part}
   ";
 } else {
@@ -43,6 +45,6 @@ if($conn->query($sql) === TRUE){
 }
 
 echo "<br>";
-echo "<a href='/admin_db/{$_file}.php'>Страница администрирования</a><br>";
+echo "<a href='/admin/{$_file}.php'>Страница администрирования</a><br>";
 echo "<a href='/index.html'>Главная страница сайта</a><br>";
 ?>

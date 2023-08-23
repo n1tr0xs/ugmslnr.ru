@@ -7,19 +7,20 @@
   <link rel="stylesheet" href="/css/admin.css">
   <script type="text/javascript">
     function check(){
-      var temp_min = document.getElementById('temp_min').value;
-      var temp_max = document.getElementById('temp_max').value;
-      if (parseInt(temp_min) > parseInt(temp_max)) {
-        window.alert('Минимальная температура не может быть больше максимальной!'); 
-        return false;
-      }
-      var wind_min = document.getElementById('wind_min').value;
-      var wind_max = document.getElementById('wind_max').value;
-      if (parseInt(wind_min) > parseInt(wind_max)) {
-        window.alert('Минимальная скорость воздуха не может быть больше максимальной!'); 
-        return false;
-      }
       var button = document.getElementById('submit-button');
+    
+      if (parseInt(document.getElementById('wind_min').value) > parseInt(document.getElementById('wind_max').value)) {
+        button.innerText = 'Минимальная скорость воздуха не может быть больше максимальной!';
+        button.disabled = true;
+        return false;
+      }      
+
+      if (parseInt(document.getElementById('temp_min').value) > parseInt(document.getElementById('temp_max').value)) {
+        button.innerText = 'Минимальная температура не может быть больше максимальной!'; 
+        button.disabled = true;
+        return false;
+      }
+      button.innerText = 'Отправить данные';
       button.disabled = false;
       return true;
     }
@@ -30,7 +31,7 @@
 <body>
   <div id='containter'>
     <div id='content'> 
-      <form action="/admin_db/weather_forecast_exec.php" method="post">
+      <form action="/admin/weather_forecast_exec.php" method="post">
         <div class="form-row"> 
           <label for="date">Дата</label> 
           <input type="date" name="date">
@@ -69,21 +70,27 @@
           </select>
         </div>
         <div class="form-row"> 
-          <input type="number" id="wind_min" name="wind_min" placeholder="Минимальная скорость ветра" oninput="check();" required>
+          <input type="number" id="wind_min" name="wind_min" placeholder="Минимальная скорость ветра" oninput="check();" value="0" required>
         </div>
         <div class="form-row"> 
-          <input type="number" id="wind_max" name="wind_max" placeholder="Максимальная скорость ветра" oninput="check();" required>
+          <input type="number" id="wind_max" name="wind_max" placeholder="Максимальная скорость ветра" oninput="check();" value="0" required>
         </div>
         <div class="form-row"> 
-          <input type="number" id="temp_min" name="temp_min" placeholder="Минимальная температура" oninput="check();" required>
+          <input type="number" id="temp_min" name="temp_min" placeholder="Минимальная температура" oninput="check();" value="0" required>
         </div>
         <div class="form-row"> 
-          <input type="number" id="temp_max" name="temp_max" placeholder="Максимальная температура" oninput="check();" required>
+          <input type="number" id="temp_max" name="temp_max" placeholder="Максимальная температура" oninput="check();" value="0" required>
+        </div>
+        <div class='form-row'>
+          <textarea cols="50" rows="5" name="desc_city" placeholder="Описание для города"></textarea>
+        </div>
+        <div class='form-row'>
+          <textarea cols="50" rows="5" name="desc_region" placeholder="Описание для области"></textarea>
         </div>
         <div class="form-row">
           <button id='submit-button' disabled>Отправить данные</button>
         </div>
-      </form><br> <a href='/admin_db/index.html'> Список панелей администрирования </a>
+      </form><br> <a href='/admin/index.html'> Список панелей администрирования </a>
     </div>
   </div>
 </body>
