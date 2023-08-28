@@ -6,7 +6,7 @@ $_file = basename(__FILE__, '_exec.php');
 
 $date = $_POST['date'];
 $desc_city = $_POST['desc_city'];
-$desc_region = $_POST['desc_region'];
+$desc_region = $_POST['desc_region']; 
 
 $sql = "
 replace into `ugmslnr`.`weather_forecast_text` values 
