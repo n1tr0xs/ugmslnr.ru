@@ -1,6 +1,7 @@
 <?
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
-$conn = connect("sinop", "sinop");
+$password = $_POST['password'];
+$conn = connect("editor", $password);
 
 $_file = basename(__FILE__, '_exec.php');
 

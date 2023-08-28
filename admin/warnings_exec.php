@@ -1,6 +1,6 @@
 <?
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
-$conn = connect("sinop", "sinop");
+$conn = connect("editor", $password);
 
 $_file = basename(__FILE__, '_exec.php');
 $meteo = $_POST['meteo'];
