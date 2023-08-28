@@ -28,7 +28,7 @@
           <li><a href="/about/anti_corruption.php">Противодействие коррупции</a></li>
           <li><a href='/about/contacts.php'>Контакты</a></li>
           <li><a href='/about/immortal_regiment.php'>Бессмертный полк</a></li>
-          <li><a href='/about/vakansy.php'>Вакасии</a></li>
+          <!-- <li><a href='/about/vakansy.php'>Вакансии</a></li> -->
         </ul>
       </li>
       <li class='navbar'><a href='/about/contacts.php'>Контакты</a></li>
