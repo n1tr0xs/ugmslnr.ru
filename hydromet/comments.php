@@ -1,3 +1,7 @@
+<? 
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php'; 
+$conn = connect("visiter", "");
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -10,7 +14,11 @@
   <div id='containter'>
     <div id='content'>
       <h3> Комментарии синоптика</h3>
-      <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/comments.html'; ?>
+      <? 
+      $sql = "select `date`, `comment` from `ugmslnr`.`sinop_comments` order by `date` desc limit 1";
+      $row = get_row($conn, $sql);
+      ?>
+      <p> <? echo $row['comment']; ?> </p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>
