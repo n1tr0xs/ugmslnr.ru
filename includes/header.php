@@ -1,3 +1,7 @@
+<? 
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php'; 
+$conn = connect("visiter", "");
+?>
 <header>
   <script src="https://use.fontawesome.com/bd02b5ff79.js" defer></script>
   <script src="/js/listeners.js"></script>

@@ -8,17 +8,20 @@ $pollution = $_POST['pollution'];
 
 $conn = connect("sinop", "sinop");
 
-// $text = "<div id='warnings' class='text-left'>";
-// $text .= "<div class='warning". ($meteo ? " warned" : ""). "'><div><div class='circle'></div>Метеорология</div><span class='warning-text'></span></div>";
-// $text .= "<div class='warning". ($agro ? " warned" : ""). "'><div><div class='circle'></div>Гидрология</div><span class='warning-text'></span></div>";
-// $text .= "<div class='warning". ($hydro ? " warned" : ""). "'><div><div class='circle'></div>Агрометеорология</div><span class='warning-text'></span></div>";
-// $text .= "<div class='warning". ($pollution ? " warned" : ""). "'><div><div class='circle'></div>Загрязнение окружающей среды</div><span class='warning-text'></span></div>";
-// $text .= "</div>";
+$names = array();
+if($meteo)
+	array_push($names, "Метеорология");
+if($agro)
+	array_push($names, "Агрометеорология");
+if($hydro)
+	array_push($names, "Гидрология");
+if($pollution)
+	array_push($names, "Загрязнение окружающей среды");
 
 $sql = "
 update `ugmslnr`.`warnings`
-set `is_active`='{$meteo}'
-where `name`='Метеорология'
+set `is_active`='1'
+where `name` IN (\"".implode('", "', $names)."\")
 ";
 
 if($conn->query($sql) === TRUE){

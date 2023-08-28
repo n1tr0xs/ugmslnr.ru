@@ -1,9 +1,5 @@
-<? 
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php'; 
-$conn = connect("visiter", "");
-?>
 <div id='aside-content'>
-
+  
   <div id='weather-container' class='text-left'>
     <span class='div-name'> Погода в Луганске </span>
     <?
