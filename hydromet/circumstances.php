@@ -11,7 +11,7 @@
     <div id='content'>
       <table class='no-border text-left table-striped'>
         <!-- TODO: auto list -->
-        <tr><td><a href="/updatable/circumstances/05.2023.pdf">Гидрометеорологические условия на территории Луганской Народной Ресспублики в мае 2023 года</a></td></tr>
+        <tr><td><a href="/updatable/circumstances/05.2023.pdf">Гидрометеорологические условия на территории Луганской Народной Республики в мае 2023 года</a></td></tr>
       </table>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
