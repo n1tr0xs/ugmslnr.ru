@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!-- !DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
@@ -36,3 +36,46 @@
   </div>
 </body>
 </html>
+ -->
+
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <title>Администрирование - текущая погода</title>
+</head>
+<body>
+  <div id='containter'>
+    <div id='content'>
+      <h3> Администрирование - текущая погода</h3>
+      <form action='/admin/weather_exec.php' method='post'>
+        <div class='form-row'><input type='text' id='date' name='date' placeholder="Дата" required></div>
+        <div class='form-row'><input type='text' id='temp' name='temp' placeholder="Температура" required></div>
+        <div class='form-row'><input type='text' id='wind' name='wind' placeholder="Ветер" required></div>
+        <div class='form-row'><input type='text' id='humidity' name='humidity' placeholder="Влажность" required></div>
+        <div class='form-row'><input type='text' id='pressure' name='pressure' placeholder="Давление" required></div>
+        <div class='form-row'><select id='icon' name='icon' required>
+          <option value='clearly'>Ясно</option>
+          <option value='fog'>Туман</option>
+          <option value='rain_thunder'>Дождь с грозой</option>
+          <option value='rain_snow'>Дождь со снегом</option>
+          <option value='snowstorm'>Метель, поземок</option>
+          <option value='black_ice'>Гололед</option>
+          <option value='cloudly'>Переменная облачность</option>
+          <option value='rain'>Дождь</option>
+          <option value='hail'>Град</option>
+          <option value='snow'>Снег</option>
+          <option value='ice_slick'>Гололедица</option>
+        </select></div>
+        <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
+        <div class='form-row'><button> Отправить данные </button></div>
+      </form><br> <a href='/admin/'> Список панелей администрирования </a>
+    </div>
+  </div>
+</body>
+</html>
+ -->
+
+  --> --> -->

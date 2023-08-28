@@ -24,7 +24,7 @@
               select date from (
                 select distinct(date) date
                 from 
-                 `ugmslnr`.`weather_forecast` 
+                 `ugmslnr`.`weather_forecast_table` 
                 order by 
                  `date` desc 
                 limit 3
@@ -58,11 +58,9 @@
                 w.temp_max temp_max, 
                 wd.direction wind_direction,
                 w.wind_speed_min wind_min,
-                w.wind_speed_max wind_max,
-                w.desc_city desc_city,
-                w.desc_region desc_region
+                w.wind_speed_max wind_max
               from 
-               `ugmslnr`.`weather_forecast` w
+               `ugmslnr`.`weather_forecast_table` w
                join `ugmslnr`.`icons` i on (w.icon=i.id)
                join `ugmslnr`.`wind_directions` wd on (w.wind_direction=wd.id)
               order by 
@@ -90,13 +88,25 @@
             <? endforeach; ?>
           </tr>
         </table>
-        <? for($i=0; $i<3; ++$i): ?>
-        <p class="day"> <? echo $days[$i]['date']; ?> </p>
+        <?
+        $sql = "
+        select 
+          date, desc_city, desc_region 
+        from 
+          `ugmslnr`.`weather_forecast_text` 
+        order by 
+          date desc
+        limit 3
+        ";
+        $data = get_arr($conn, $sql);
+        ?>
+        <? foreach($data as $row): ?>
+        <p class="day"> <? echo $row['date']; ?> </p>
         <p class="region"> По городу Луганск </p>
-        <p class="description"> <? echo $data[$i*2]['desc_city']."<br>".$data[$i*2+1]['desc_city']; ?> </p>
+        <p class="description"> <? echo $row['desc_city']; ?> </p>
         <p class="region"> По территории Луганской Народной Республики </p>
-        <p class="description"> <? echo $data[$i*2]['desc_region']."<br>".$data[$i*2+1]['desc_region']; ?> </p>
-        <? endfor; ?>
+        <p class="description"> <? echo $row['desc_region']; ?> </p>
+        <? endforeach; ?>
       </div>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

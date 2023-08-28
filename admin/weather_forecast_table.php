@@ -31,7 +31,7 @@
 <body>
   <div id='containter'>
     <div id='content'> 
-      <form action="/admin/weather_forecast_exec.php" method="post">
+      <form action="/admin/weather_forecast_table_exec.php" method="post">
         <div class="form-row"> 
           <label for="date">Дата</label> 
           <input type="date" name="date">
@@ -81,14 +81,8 @@
         <div class="form-row"> 
           <input type="number" id="temp_max" name="temp_max" placeholder="Максимальная температура" oninput="check();" value="0" required>
         </div>
-        <div class='form-row'>
-          <textarea cols="50" rows="5" name="desc_city" placeholder="Описание для города"></textarea>
-        </div>
-        <div class='form-row'>
-          <textarea cols="50" rows="5" name="desc_region" placeholder="Описание для области"></textarea>
-        </div>
         <div class="form-row">
-          <button id='submit-button' disabled>Отправить данные</button>
+          <button id='submit-button'>Отправить данные</button>
         </div>
       </form><br> <a href='/admin/index.html'> Список панелей администрирования </a>
     </div>
