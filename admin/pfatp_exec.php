@@ -3,13 +3,6 @@ $date = $_POST['date'];
 $desc = $_POST['desc'];
 $_file = basename(__FILE__, '_exec.php');
 
-$input_password = hash('sha256', $_POST['password']);
-$check_string = file_get_contents($_SERVER['DOCUMENT_ROOT']. "/pwd/{$_file}");
-if($input_password != $check_string){
-	echo "Неверный пароль!";
-	exit();
-}
-
 $text = '';
 $text .= "<p class='day'>Прогноз на ". $date. "</p>";
 $text .= "<p class='description'>Прогноз на ". $desc. "</p>";
