@@ -1,4 +1,7 @@
-<? include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php'; ?>
+<? 
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php'; 
+$conn = connect("visiter", "");
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -12,12 +15,6 @@
     <div id='content'>
       <h3> Прогноз погоды </h3>
       <div id='forecast'>
-        <?
-          $conn = new mysqli('ugmslnr', 'visiter', '');
-          if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-          }
-        ?>
         <table>
           <?
             $sql = "
