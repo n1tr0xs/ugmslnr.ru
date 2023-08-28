@@ -11,21 +11,11 @@ $wind_direction = $_POST['wind_direction'];
 $wind_speed = $_POST['wind_speed'];
 $temperature = $_POST['temperature'];
 
+$sql = "
+replace into `ugmslnr`.`weather_forecast_table` values 
+('{$date}', {$day_part}, '{$icon}', {$wind_direction}, '{$wind_speed}', '{$temperature}')
+";
 
-$sql = "select count(*) c from `ugmslnr`.`weather_forecast_table` where `date`='{$date}' and `day_part`={$day_part}";
-$row = get_row($conn, $sql);
-if($row['c']){
-  $sql = "
-  update `ugmslnr`.`weather_forecast_table` 
-  set `icon`={$icon}, `wind_direction`={$wind_direction}, `wind_speed`='{$wind_speed}', `temperature`='{$tempature}'
-  where `date`='{$date}' and `day_part`={$day_part}
-  ";
-} else {
-  $sql = "
-  insert into `ugmslnr`.`weather_forecast_table` 
-  values (NULL, '{$date}', {$day_part}, {$icon}, {$wind_direction}, {$wind_speed}, {$tempature});
-  ";
-}
 if($conn->query($sql) === TRUE){
 	echo "Данные отправлены.<br>";
 } else {
