@@ -10,7 +10,12 @@
   <div id='containter'>
     <div id='content'>
       <h3 > Вероятностный прогноз температуры воздуха и осадков </h3>
-      <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/pfatp.html'; ?>
+      <?
+      $sql = "select * from `ugmslnr`.`pfatp` order by `date` desc limit 1";
+      $row = get_row($conn, $sql);      
+      ?>
+      <p class='day'>Прогноз на <? echo date("d.m.Y", strtotime($row['date'])); ?></p>
+      <p class='description'> <? echo $row['desc']; ?></p>
       <p style='font-style: italic;'> Примечание:  </p>
       <p> Вероятностный прогноз температуры и осадков составлен специалистами ФГБУ «Гидрометцентр России». В течение месяца прогнозы погоды будут корректироваться краткосрочными прогнозами погоды ФГБУ «УГМС по ЛНР». </p>
       <p> <a href='https://meteoinfo.ru/1month-forc'>https://meteoinfo.ru/1month-forc</a> </p>
