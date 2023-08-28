@@ -1,4 +1,7 @@
-<? include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php'; ?>
+<? 
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php'; 
+$conn = connect("visiter", ""); 
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -6,7 +9,6 @@
   <link rel="stylesheet" href="/css/master.css">
   <title>Информация о неблагоприятных метеорологических условиях (НМУ)</title>
 </head>
-<? $conn = connect("visiter", ""); ?>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
@@ -24,9 +26,11 @@
       limit 1
       ";
       $row = get_row($conn, $sql);
+      $date = date("d.m Y", strtotime($row['date']));
+      $desc = $row['desc'];
       ?>
-      <p>Прогноз уровня загрязнения атмосферного воздуха в г. Луганске и городах Луганской Народной Республики на <? echo date("d.m Y", strtotime($row['date'])); ?> года</p>
-      <p class='description'> <? echo $row['desc']; ?> </p>
+      <p>Прогноз уровня загрязнения атмосферного воздуха в г. Луганске и городах Луганской Народной Республики на <? echo $date; ?> года</p>
+      <p class='description'> <? echo $desc; ?> </p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>
