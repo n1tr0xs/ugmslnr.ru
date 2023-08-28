@@ -33,7 +33,20 @@ $conn = connect("visiter", "");
 
   <div id='warnings-container'>
     <span class='div-name'>Предупреждения</span>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/warnings.html'; ?>
+    <?
+    $sql = "select `name`, `is_active` from `ugmslnr`.`warnings`";
+    $data = get_arr($conn, $sql);
+    ?>
+    <div id='warnings' class='text-left'>
+      <? foreach($data as $row): ?>
+      <div class='warning <? echo $row['is_active']? "warned" : "";?>'>
+        <div>
+          <div class='circle'></div>
+          <span><? echo $row['name']; ?></span>
+        </div>
+      </div>
+      <? endforeach; ?>
+    </div>
   </div>
 
   <div>
