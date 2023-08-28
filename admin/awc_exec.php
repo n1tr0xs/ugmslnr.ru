@@ -14,7 +14,7 @@ replace into `ugmslnr`.`awc` values
 ";
 
 if($conn->query($sql) === TRUE){
-	echo "Данные отправлены.<br>";
+	echo "Данные отправлены.";
 } else {
   echo "Error: {$sql}<br>{$conn->error}";
 }

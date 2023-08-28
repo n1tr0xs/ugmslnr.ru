@@ -16,7 +16,7 @@ $file = fopen($filepath, 'w');
 fwrite($file, $text);
 fclose($file);
 
-echo "Данные отправлены.<br>";
+echo "Данные отправлены.";
 echo "<a href='/admin/{$_file}.html'>Страница администрирования</a><br>";
 echo "<a href='/index.html'>Главная страница сайта</a><br>";
 ?>
