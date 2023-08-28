@@ -20,14 +20,11 @@ $conn = connect("visiter", "");
             $sql = "
               select date from (
                 select distinct(date) date
-                from 
-                 `ugmslnr`.`weather_forecast_table` 
-                order by 
-                 `date` desc 
+                from `ugmslnr`.`weather_forecast_table` 
+                order by `date` desc 
                 limit 3
               ) a
-              order by 
-                date asc
+              order by date asc
             ";
             $days = get_arr($conn, $sql);
           ?>
@@ -50,22 +47,17 @@ $conn = connect("visiter", "");
               select 
                 w.date date, 
                 w.day_part day_part, 
-                i.url icon, 
-                w.temp_min temp_min, 
-                w.temp_max temp_max, 
-                wd.direction wind_direction,
-                w.wind_speed_min wind_min,
-                w.wind_speed_max wind_max
+                w.temperature temperature,
+                w.wind_speed wind_speed,
+                i.url icon
               from 
                `ugmslnr`.`weather_forecast_table` w
                join `ugmslnr`.`icons` i on (w.icon=i.id)
                join `ugmslnr`.`wind_directions` wd on (w.wind_direction=wd.id)
-              order by 
-               `date` desc 
+              order by `date` desc 
               limit 6
             ) a
-            order by 
-              date asc
+            order by date asc
             ";
             $data = get_arr($conn, $sql); 
           ?>
@@ -76,12 +68,12 @@ $conn = connect("visiter", "");
           </tr>
           <tr>
             <? foreach ($data as $row): ?>
-            <td><? echo $row['wind_direction']."<br>".$row['wind_min']."-".$row['wind_max']." м/с"; ?> </td>
+            <td><? echo $row['wind_direction']."<br>".$row['temperature']." м/с"; ?> </td>
             <? endforeach; ?>
           </tr>
           <tr>
             <? foreach ($data as $row): ?>
-              <td><? echo $row['temp_min']." - ".$row['temp_max'].' &deg;C'; ?> 
+              <td><? echo $row['wind_speed'].' &deg;C'; ?> 
             <? endforeach; ?>
           </tr>
         </table>
@@ -91,8 +83,7 @@ $conn = connect("visiter", "");
           date, desc_city, desc_region 
         from 
           `ugmslnr`.`weather_forecast_text` 
-        order by 
-          date desc
+        order by date desc
         limit 3
         ";
         $data = get_arr($conn, $sql);

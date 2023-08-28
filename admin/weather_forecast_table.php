@@ -5,26 +5,6 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/master.css">
   <link rel="stylesheet" href="/css/admin.css">
-  <script type="text/javascript">
-    function check(){
-      var button = document.getElementById('submit-button');
-    
-      if (parseInt(document.getElementById('wind_min').value) > parseInt(document.getElementById('wind_max').value)) {
-        button.innerText = 'Минимальная скорость воздуха не может быть больше максимальной!';
-        button.disabled = true;
-        return false;
-      }      
-
-      if (parseInt(document.getElementById('temp_min').value) > parseInt(document.getElementById('temp_max').value)) {
-        button.innerText = 'Минимальная температура не может быть больше максимальной!'; 
-        button.disabled = true;
-        return false;
-      }
-      button.innerText = 'Отправить данные';
-      button.disabled = false;
-      return true;
-    }
-  </script>
   <title>Администрирование - прогноз погоды - таблица</title>
 </head>
 <? $conn = connect('sinop', 'sinop'); ?>
@@ -40,10 +20,10 @@
           <label for="day_part">Часть дня</label>
           <select name="day_part" required>
           <?
-            $sql = "SELECT * FROM `ugmslnr`.`day_parts` order by `id`";
-            $arr = get_arr($conn, $sql);
-            foreach($arr as $row): ?>
-              <option value="<? echo $row['id']; ?>"><? echo $row['name']; ?></option>
+          $sql = "SELECT * FROM `ugmslnr`.`day_parts` order by `id`";
+          $arr = get_arr($conn, $sql);
+          foreach($arr as $row): ?>
+            <option value="<? echo $row['id']; ?>"><? echo $row['name']; ?></option>
             <? endforeach; ?>
           </select>
         </div>
@@ -70,16 +50,12 @@
           </select>
         </div>
         <div class="form-row"> 
-          <input type="number" id="wind_min" name="wind_min" placeholder="Минимальная скорость ветра" oninput="check();" value="0" required>
+          <label>Скорость ветра</label>
+          <input type="number" id="wind_min" name="wind_speed" required>
         </div>
         <div class="form-row"> 
-          <input type="number" id="wind_max" name="wind_max" placeholder="Максимальная скорость ветра" oninput="check();" value="0" required>
-        </div>
-        <div class="form-row"> 
-          <input type="number" id="temp_min" name="temp_min" placeholder="Минимальная температура" oninput="check();" value="0" required>
-        </div>
-        <div class="form-row"> 
-          <input type="number" id="temp_max" name="temp_max" placeholder="Максимальная температура" oninput="check();" value="0" required>
+          <label>Температура</label>          
+          <input type="number" id="temp_min" name="temperature" required>
         </div>
         <div class="form-row">
           <button id='submit-button'>Отправить данные</button>
