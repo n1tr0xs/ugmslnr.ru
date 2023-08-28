@@ -1,14 +1,12 @@
-<? include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php'; ?>
-
 <?
-$_file = basename(__FILE__, '_exec.php');
-
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
 $conn = connect("sinop", "sinop");
+
+$_file = basename(__FILE__, '_exec.php');
 
 $date = $_POST['date'];
 $desc_city = $_POST['desc_city'];
 $desc_region = $_POST['desc_region'];
-
 
 $sql = "select count(*) c from `ugmslnr`.`weather_forecast_text` where `date`='{$date}'";
 $row = get_row($conn, $sql);

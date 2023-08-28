@@ -1,3 +1,7 @@
+<?
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
+$conn = connect("sinop", "sinop");
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>

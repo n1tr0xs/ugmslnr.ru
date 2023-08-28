@@ -5,8 +5,7 @@
   <link rel="stylesheet" href="/css/master.css">
   <link rel="stylesheet" href="/css/admin.css">
   <title>Администрирование - комментарии синоптика</title>
-</head>
-<body>
+</head><body>
   <div id='containter'>
     <div id='content'>
       <form action="/admin/comments_exec.php" method="post">

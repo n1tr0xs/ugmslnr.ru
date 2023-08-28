@@ -1,9 +1,8 @@
-<? include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php'; ?>
-
 <?
-$_file = basename(__FILE__, '_exec.php');
-
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
 $conn = connect("sinop", "sinop");
+
+$_file = basename(__FILE__, '_exec.php');
 
 $date = $_POST['date'];
 $day_part = $_POST['day_part'];

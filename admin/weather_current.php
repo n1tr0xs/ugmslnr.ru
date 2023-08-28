@@ -1,5 +1,5 @@
-<? 
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php'; 
+<?
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
 $conn = connect("sinop", "sinop");
 ?>
 <!DOCTYPE html>
