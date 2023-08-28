@@ -13,4 +13,4 @@ if(move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $filepath)){
 
 echo "<br>";
 echo "<a href='/admin/{$_file}.php'>Страница администрирования</a><br>";
-echo "<a href='/index.html'>Главная страница сайта</a><br>";
+echo "<a href='/index.php'>Главная страница сайта</a><br>";

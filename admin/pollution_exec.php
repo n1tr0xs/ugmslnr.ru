@@ -1,17 +1,24 @@
 <?
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
+$password = $_POST['password'];
+$conn = connect("editor", $password);
 $_file = basename(__FILE__, '_exec.php');
 
-// TODO: DB
-$text = "<p>
-  По данным наблюдений на государственной наблюдательной сети на стационарных постах ФГБУ «УГМС по ЛНР» по территории Луганской Народной Республики за период с 13:00 19.07.23 по 07:00 20.07.23 отмечалась низкая степень загрязнения атмосферного воздуха, максимальные разовые концентрации загрязняющих веществ санитарно-гигиенических норм не превышали.
-</p>";
+$date = $_POST['date'];
+$desc = $_POST['desc'];
 
-$filepath = $_SERVER['DOCUMENT_ROOT'] . "/updatable/{$_file}.html";
-$file = fopen($filepath, 'w');
-fwrite($file, $text);
-fclose($file);
+$sql = "
+replace into `ugmslnr`.`pollution` values
+('{$date}', '{$desc}')
+";
 
-echo "Данные отправлены.";
-echo "<a href='/admin/{$_file}.html'>Страница администрирования</a><br>";
-echo "<a href='/index.html'>Главная страница сайта</a><br>";
+if($conn->query($sql) === TRUE){
+  echo "Данные отправлены.";
+} else {
+  echo "Error: {$sql}<br>{$conn->error}";
+}
+
+echo "<br>";
+echo "<a href='/admin/{$_file}.php'>Страница администрирования</a><br>";
+echo "<a href='/index.php'>Главная страница сайта</a><br>";
 ?>

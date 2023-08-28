@@ -19,5 +19,5 @@ if($conn->query($sql) === TRUE){
 }
 
 echo "<a href='/admin/{$_file}.php'>Страница администрирования</a><br>";
-echo "<a href='/index.html'>Главная страница сайта</a><br>";
+echo "<a href='/index.php'>Главная страница сайта</a><br>";
 ?>
