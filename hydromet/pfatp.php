@@ -17,7 +17,7 @@
       <p class='day'>Прогноз на <? echo date("d.m.Y", strtotime($row['date'])); ?></p>
       <p class='description'> <? echo $row['desc']; ?></p>
       <p style='font-style: italic;'> Примечание:  </p>
-      <p> Вероятностный прогноз температуры и осадков составлен специалистами ФГБУ «Гидрометцентр России». В течение месяца прогнозы погоды будут корректироваться краткосрочными прогнозами погоды ФГБУ «УГМС по ЛНР». </p>
+      <p> Вероятностный прогноз температуры и осадков составлен специалистами ФГБУ «Гидрометцентр России».</p>
       <p> <a href='https://meteoinfo.ru/1month-forc'>https://meteoinfo.ru/1month-forc</a> </p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
