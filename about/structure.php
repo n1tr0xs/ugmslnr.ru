@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script src="/js/jquery.min.js"> </script>
-    <script src="/js/structure.js"></script>
-    <link rel="stylesheet" href="/css/master.css">
-    <title>Структура</title>
+<head>
+  <meta charset="utf-8">
+  <script src="/js/jquery.min.js"> </script>
+  <script src="/js/structure.js"></script>
+  <link rel="stylesheet" href="/css/master.css">
+  <title>Структура</title>
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

@@ -15,7 +15,7 @@ replace into `ugmslnr`.`sinop_comments` values
 if($conn->query($sql) === TRUE){
 	echo "Данные отправлены.";
 } else {
-  echo "Error: {$sql}<br>{$conn->error}";
+	echo "Error: {$sql}<br>{$conn->error}";
 }
 
 echo "<br>";

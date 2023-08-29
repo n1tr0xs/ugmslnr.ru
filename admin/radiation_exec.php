@@ -15,7 +15,7 @@ replace into `ugmslnr`.`radiation` values
 if($conn->query($sql) === TRUE){
 	echo "Данные отправлены.";
 } else {
-  echo "Error: {$sql}<br>{$conn->error}";
+	echo "Error: {$sql}<br>{$conn->error}";
 }
 
 echo "<a href='/admin/{$_file}.php'>Страница администрирования</a><br>";

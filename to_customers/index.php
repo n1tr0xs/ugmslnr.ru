@@ -5,12 +5,12 @@
   <link rel="stylesheet" href="/css/master.css">
   <title>Услуги</title>
   <style>
-  object {
-    width: 900px;
-    height: 900px;
-    margin-top: 3em;
-    margin-bottom: 3em;
-  }
+    object {
+      width: 900px;
+      height: 900px;
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
   </style>
 </head>
 <body>

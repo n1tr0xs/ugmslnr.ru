@@ -35,12 +35,12 @@
     ?>
     <div id='warnings' class='text-left'>
       <? foreach($data as $row): ?>
-      <div class='warning <? echo $row['is_active']? "warned" : "";?>'>
-        <div>
-          <div class='circle'></div>
-          <span><? echo $row['name']; ?></span>
+        <div class='warning <? echo $row['is_active']? "warned" : "";?>'>
+          <div>
+            <div class='circle'></div>
+            <span><? echo $row['name']; ?></span>
+          </div>
         </div>
-      </div>
       <? endforeach; ?>
     </div>
   </div>

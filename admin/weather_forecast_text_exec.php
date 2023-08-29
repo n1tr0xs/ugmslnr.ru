@@ -16,7 +16,7 @@ replace into `ugmslnr`.`weather_forecast_text` values
 if($conn->query($sql) === TRUE){
 	echo "Данные отправлены.";
 } else {
-  echo "Error: {$sql}<br>{$conn->error}";
+	echo "Error: {$sql}<br>{$conn->error}";
 }
 
 echo "<br>";

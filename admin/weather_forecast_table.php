@@ -21,11 +21,11 @@ $conn = connect("sinop", "sinop");
         <div class="form-row"> 
           <label for="day_part">Часть дня</label>
           <select name="day_part" required>
-          <?
-          $sql = "SELECT * FROM `ugmslnr`.`day_parts` order by `id`";
-          $arr = get_arr($conn, $sql);
-          foreach($arr as $row): ?>
-            <option value="<? echo $row['id']; ?>"><? echo $row['name']; ?></option>
+            <?
+            $sql = "SELECT * FROM `ugmslnr`.`day_parts` order by `id`";
+            $arr = get_arr($conn, $sql);
+            foreach($arr as $row): ?>
+              <option value="<? echo $row['id']; ?>"><? echo $row['name']; ?></option>
             <? endforeach; ?>
           </select>
         </div>

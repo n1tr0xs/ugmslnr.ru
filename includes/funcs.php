@@ -3,7 +3,7 @@
 function connect($login, $password){
 	$conn = new mysqli("ugmslnr", $login, $password);
 	if ($conn->connect_error) {
-	  die("Connection failed: " . $conn->connect_error);
+		die("Connection failed: " . $conn->connect_error);
 	}
 	return $conn;
 }

@@ -13,20 +13,20 @@
       <div id='forecast'>
         <table>
           <?
-            $sql = "
-              select date from (
-                select distinct(date) date
-                from `ugmslnr`.`weather_forecast_table` 
-                order by `date` desc 
-                limit 3
-              ) a
-              order by date asc
-            ";
-            $days = get_arr($conn, $sql);
+          $sql = "
+          select date from (
+          select distinct(date) date
+          from `ugmslnr`.`weather_forecast_table` 
+          order by `date` desc 
+          limit 3
+          ) a
+          order by date asc
+          ";
+          $days = get_arr($conn, $sql);
           ?>
           <tr>
             <? foreach ($days as $row): ?>
-            <td colspan="2"><? echo date("d", strtotime($row['date'])); ?></td>
+              <td colspan="2"><? echo date("d", strtotime($row['date'])); ?></td>
             <? endforeach; ?>
           </tr>
           <tr>
@@ -38,33 +38,33 @@
             <td>день</td>
           </tr>
           <? 
-            $sql = "
-              select * from (
-              select 
-                w.date date, 
-                w.day_part day_part, 
-                w.temperature temperature,
-                w.wind_speed wind_speed,
-                i.url icon
-              from 
-               `ugmslnr`.`weather_forecast_table` w
-               join `ugmslnr`.`icons` i on (w.icon=i.id)
-               join `ugmslnr`.`wind_directions` wd on (w.wind_direction=wd.id)
-              order by `date` desc 
-              limit 6
-            ) a
-            order by date asc
-            ";
-            $data = get_arr($conn, $sql); 
+          $sql = "
+          select * from (
+            select 
+              w.date date, 
+              w.day_part day_part, 
+              w.temperature temperature,
+              w.wind_speed wind_speed,
+              i.url icon
+            from 
+              `ugmslnr`.`weather_forecast_table` w
+              join `ugmslnr`.`icons` i on (w.icon=i.id)
+              join `ugmslnr`.`wind_directions` wd on (w.wind_direction=wd.id)
+            order by `date` desc 
+            limit 6
+          ) a
+          order by date asc
+          ";
+          $data = get_arr($conn, $sql); 
           ?>
           <tr>
             <? foreach($data as $row): ?>
-            <td class="text-center"> <img width="75px" height="75px" class="no-border" src="<? echo $row['icon']; ?>"></td>
+              <td class="text-center"> <img width="75px" height="75px" class="no-border" src="<? echo $row['icon']; ?>"></td>
             <? endforeach; ?>
           </tr>
           <tr>
             <? foreach ($data as $row): ?>
-            <td><? echo $row['wind_direction']."<br>".$row['temperature']." м/с"; ?> </td>
+              <td><? echo $row['wind_direction']."<br>".$row['temperature']." м/с"; ?> </td>
             <? endforeach; ?>
           </tr>
           <tr>
@@ -85,11 +85,11 @@
         $data = get_arr($conn, $sql);
         ?>
         <? foreach($data as $row): ?>
-        <p class="day"> <? echo $row['date']; ?> </p>
-        <p class="region"> По городу Луганск </p>
-        <p class="description"> <? echo $row['desc_city']; ?> </p>
-        <p class="region"> По территории Луганской Народной Республики </p>
-        <p class="description"> <? echo $row['desc_region']; ?> </p>
+          <p class="day"> <? echo $row['date']; ?> </p>
+          <p class="region"> По городу Луганск </p>
+          <p class="description"> <? echo $row['desc_city']; ?> </p>
+          <p class="region"> По территории Луганской Народной Республики </p>
+          <p class="description"> <? echo $row['desc_region']; ?> </p>
         <? endforeach; ?>
       </div>
     </div>

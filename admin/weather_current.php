@@ -52,6 +52,6 @@ $conn = connect("sinop", "sinop");
       </form><br> <a href='/admin/index.html'> Список панелей администрирования </a>
     </div>
   </div>
-  </div>
+</div>
 </body>
 </html>
