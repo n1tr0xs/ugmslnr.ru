@@ -9,7 +9,7 @@ $filepath = $_SERVER['DOCUMENT_ROOT'] . "/updatable/fire_danger.png";
 if(move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $filepath)){
 	echo "<span style='color: green'>Данные отправлены.</span>";
 } else {
-	echo "<p style='color:red'>Ошибка</p>";
+	echo "<span style='color: red'>Ошибка</p>";
 }
 
 echo "<br>";

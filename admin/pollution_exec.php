@@ -2,6 +2,7 @@
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
 $password = $_POST['password'];
 $conn = connect("editor", $password);
+
 $_file = basename(__FILE__, '_exec.php');
 
 $date = $_POST['date'];

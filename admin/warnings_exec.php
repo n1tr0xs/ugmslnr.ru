@@ -1,8 +1,10 @@
 <?
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
+$password = $_POST['password'];
 $conn = connect("editor", $password);
 
 $_file = basename(__FILE__, '_exec.php');
+
 $meteo = $_POST['meteo'];
 $agro = $_POST['agro'];
 $hydro = $_POST['hydro'];
