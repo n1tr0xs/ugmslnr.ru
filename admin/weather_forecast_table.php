@@ -1,6 +1,6 @@
 <?
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
-$conn = connect("sinop", "sinop");
+$conn = connect("visiter", "");
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
