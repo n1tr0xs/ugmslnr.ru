@@ -11,7 +11,7 @@
     <div id='content'>
       <h3>Администрирование - радиация</h3>
       <form action="/admin/radiation_exec.php" method="post">
-        <div class='form-row'><input type="date" name="date" placeholder="Дата" required></div>
+        <div class='form-row'><input type="date" name="date" value="<? echo date('Y-m-d'); ?>" placeholder="Дата" required></div>
         <div class="form-row"><input type="text" placeholder="Описание" name="desc"></div>
         <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
         <div class="form-row"><button>Отправить данные</button></div>

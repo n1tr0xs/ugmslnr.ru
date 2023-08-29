@@ -9,7 +9,7 @@
   <div id='containter'>
     <div id='content'>
       <form action="/admin/comments_exec.php" method="post">
-        <div class='form-row'> <input type="date" name="date" placeholder="Дата" required></div>
+        <div class='form-row'> <input type="date" name="date" value="<? echo date('Y-m-d'); ?>" placeholder="Дата" required></div>
         <div class="form-row"><textarea name="comment" placeholder="Комментарий"></textarea></div>
         <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
         <div class="form-row"><button>Отправить данные</button></div>

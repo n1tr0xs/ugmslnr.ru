@@ -16,7 +16,7 @@ $conn = connect("visiter", "");
       <form action="/admin/weather_forecast_table_exec.php" method="post">
         <div class="form-row"> 
           <label for="date">Дата</label> 
-          <input type="date" name="date">
+          <input type="date" name="date" value="<? echo date('Y-m-d'); ?>">
         </div>
         <div class="form-row"> 
           <label for="day_part">Часть дня</label>
