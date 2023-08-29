@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <script src="https://use.fontawesome.com/bd02b5ff79.js"></script>
   <link rel="stylesheet" href="/css/master.css">
   <title>Контакты</title>
 </head>
@@ -17,7 +16,7 @@
         </p>
         <p>
           <b> Электронная почта: </b>
-          <a href='mailto:ugms.lnr@mail.ru'><i class='fa fa-envelope' aria-hidden='true'></i>ugms.lnr@mail.ru</a>
+          <a href='mailto:ugms.lnr@mail.ru'>ugms.lnr@mail.ru</a>
         </p>
         <p>
           <b> Телефон (городской): </b>

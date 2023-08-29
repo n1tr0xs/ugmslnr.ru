@@ -1,5 +1,4 @@
 <footer class='pc'>
-  <script src="https://use.fontawesome.com/bd02b5ff79.js" defer></script>
   <link rel="stylesheet" href="/css/footer.css">
   <div id='row1'>
     <div id='company'>
@@ -8,7 +7,7 @@
     </div>
     <div id='footer-contacts'>
       <p> Сообщить об ошибке: </p>
-      <p> <a href='mailto:@mail.ru'> <i class='fa fa-envelope' aria-hidden='true'></i>@mail.ru </a> </p>
+      <p> <a href='mailto:@mail.ru'> @mail.ru </a> </p>
     </div>
   </div>
   <div id='row2'>

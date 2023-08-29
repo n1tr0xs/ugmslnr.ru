@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <script src="https://use.fontawesome.com/bd02b5ff79.js"></script>
   <link rel="stylesheet" href="/css/master.css">
   <title>Краткая историческая справка</title>
 </head>

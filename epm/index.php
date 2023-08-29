@@ -30,8 +30,8 @@
         <h4> Контактная информация </h4>
         <div>
           <div> Шишова Светлана Сергеевна – заместитель начальника Учреждения – начальник Центра мониторинга загрязнения окружающей среды  </div>
-          <div> Электронная почта: <a href='mailto:ugms.lnr@mail.ru'><i class='fa fa-envelope' aria-hidden='true'></i>ugms.lnr@mail.ru</a></div>
-          <div> Телефон: <a href='tel:8(572)96-60-61'><i class='fa fa-mobile' aria-hidden='true'></i>8(572)96-60-61</a></div>
+          <div> Электронная почта: <a href='mailto:ugms.lnr@mail.ru'>ugms.lnr@mail.ru</a></div>
+          <div> Телефон: <a href='tel:8(572)96-60-61'>8(572)96-60-61</a></div>
         </div>
       </div>
     </div>
