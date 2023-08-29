@@ -1,7 +1,13 @@
 <?
+// MARK: prod / dev version comment	
+error_reporting(0);	
 
 function connect($login, $password){
-	return (new mysqli("ugmslnr", $login, $password)) or die("Не удалось соединиться с базой данных");
+	$conn = new mysqli("ugmslnr", $login, $password);
+	if ($conn->connect_error) {
+		die("Не удалось соединиться с базой данных");
+	}
+	return $conn;
 }
 
 function get_arr($conn, $sql){
