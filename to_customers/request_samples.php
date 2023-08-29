@@ -12,13 +12,23 @@
       <h2>Образцы писем-запросов</h2>
       <div>
         <ul>
-          <li><a href="/files/request_samples/Запрос агроинформация.doc">Запрос агроинформация</a></li>
-          <li><a href="/files/request_samples/Запрос климат.doc">Запрос климат</a></li>
-          <li><a href="/files/request_samples/Запрос морфометрия.doc">Запрос морфометрия</a></li>
-          <li><a href="/files/request_samples/Запрос уровень воды.doc">Запрос уровень воды</a></li>
-          <li><a href="/files/request_samples/Запрос фоновых.doc">Запрос фоновых</a></li>
-          <li><a href="/files/request_samples/Заявление.doc">Заявление</a></li>
-          <li><a href="/files/request_samples/Физ. лицо.doc">Физ. лицо</a></li>
+          <?
+          // reads files from folder and creates list of links
+          $folder = "request_samples/";
+          $dir = $_SERVER['DOCUMENT_ROOT'] . "/files/". $folder;
+          if (is_dir($dir)) {
+            if ($dh = opendir($dir)) {
+              while (($file = readdir($dh)) !== false) {
+                if(strpos($file, ".doc") !== false){
+                  ?>
+                  <li><a href="/files/<? echo $folder.$file; ?>"><? echo $file; ?></a></li>
+                  <?
+                }
+              }
+              closedir($dh);
+            }
+          }
+          ?>
         </ul>
       </div>
     </div>
