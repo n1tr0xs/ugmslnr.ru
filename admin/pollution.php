@@ -18,7 +18,7 @@
         <div class='form-row'>
           <textarea cols="50" rows="5" name="desc" placeholder="Описание"></textarea>
         </div>
-        <div class='form-row'><label for="password">Пароль:</label><input type="password" name="password" placeholder="Пароль" required></div>
+        <div class='form-row'><label for="password">Пароль</label><input type="password" name="password" placeholder="Пароль" required></div>
         <div class="form-row"><button>Отправить данные</button></div>
       </form><br> <a href='/admin/'> Список панелей администрирования </a>
     </div>

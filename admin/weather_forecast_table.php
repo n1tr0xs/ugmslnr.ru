@@ -59,7 +59,7 @@ $conn = connect("visiter", "");
           <label>Температура</label>          
           <input type="number" id="temp_min" name="temperature" required>
         </div>
-        <div class='form-row'><label for="password">Пароль:</label><input type="password" name="password" placeholder="Пароль" required></div>
+        <div class='form-row'><label for="password">Пароль</label><input type="password" name="password" placeholder="Пароль" required></div>
         <div class="form-row">
           <button id='submit-button'>Отправить данные</button>
         </div>

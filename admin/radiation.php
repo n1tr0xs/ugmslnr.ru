@@ -13,7 +13,7 @@
       <form action="/admin/radiation_exec.php" method="post">
         <div class='form-row'><input type="date" name="date" value="<? echo date('Y-m-d'); ?>" placeholder="Дата" required></div>
         <div class="form-row"><input type="text" placeholder="Описание" name="desc"></div>
-        <div class='form-row'><label for="password">Пароль:</label><input type="password" name="password" placeholder="Пароль" required></div>
+        <div class='form-row'><label for="password">Пароль</label><input type="password" name="password" placeholder="Пароль" required></div>
         <div class="form-row"><button>Отправить данные</button></div>
       </form><br> <a href='/admin/'> Список панелей администрирования </a>
     </div>
