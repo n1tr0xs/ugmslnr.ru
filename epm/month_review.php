@@ -10,10 +10,25 @@
   <div id='containter'>
     <div id='content'>
       <h3> Ежемесячный обзор состояния окружающей среды </h3>
-      <ul class='no-bullets'>
-        <!-- TODO: auto list -->
-        <li> <a href='/updatable/month_review/july_2023.pdf'> Ежемесячный обзор состояния окружающей среды. Июль 2023</a></li>
-      </ul>
+      <table class='no-border text-left table-striped'>
+        <?
+        // reads files from folder and creates list of links
+        $folder = "month_review/";
+        $dir = $_SERVER['DOCUMENT_ROOT'] . "/updatable/". $folder;
+        if (is_dir($dir)) {
+          if ($dh = opendir($dir)) {
+            while (($file = readdir($dh)) !== false) {
+              if(strpos($file, ".pdf") !== false){
+                ?>
+                <tr><td><a href="/updatable/<? echo $folder.$file; ?>">  <? echo $file; ?></a></td></tr>
+                <?
+              }
+            }
+            closedir($dh);
+          }
+        }
+        ?>
+      </table>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>

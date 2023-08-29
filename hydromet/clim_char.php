@@ -10,8 +10,23 @@
   <div id='containter'>
     <div id='content'>
       <table class='no-border text-left table-striped'>
-        <!-- TODO: auto list -->
-        <tr><td><a href="/updatable/clim_char/06.2023.pdf">Климатическая характеристика июня 2023 года</a></td></tr>        
+        <?
+        // reads files from folder and creates list of links
+        $folder = "clim_char/";
+        $dir = $_SERVER['DOCUMENT_ROOT'] . "/updatable/". $folder;
+        if (is_dir($dir)) {
+          if ($dh = opendir($dir)) {
+            while (($file = readdir($dh)) !== false) {
+              if(strpos($file, ".pdf") !== false){
+                ?>
+                <tr><td><a href="/updatable/<? echo $folder.$file; ?>">  <? echo $file; ?></a></td></tr>
+                <?
+              }
+            }
+            closedir($dh);
+          }
+        }
+        ?>
       </table>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

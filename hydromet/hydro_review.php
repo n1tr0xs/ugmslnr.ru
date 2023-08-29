@@ -9,8 +9,25 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <!-- TODO: auto list -->
-      <tr><td><a href="/updatable/hydro_review/06.2023.pdf">Гидрологический обзор за июнь 2023 года</a></td></tr>
+      <table class='no-border text-left table-striped'>
+        <?
+        // reads files from folder and creates list of links
+        $folder = "hydro_review/";
+        $dir = $_SERVER['DOCUMENT_ROOT'] . "/updatable/". $folder;
+        if (is_dir($dir)) {
+          if ($dh = opendir($dir)) {
+            while (($file = readdir($dh)) !== false) {
+              if(strpos($file, ".pdf") !== false){
+                ?>
+                <tr><td><a href="/updatable/<? echo $folder.$file; ?>">  <? echo $file; ?></a></td></tr>
+                <?
+              }
+            }
+            closedir($dh);
+          }
+        }
+        ?>
+      </table>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>
