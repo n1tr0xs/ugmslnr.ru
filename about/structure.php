@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <script src="/js/jquery.min.js"> </script>
-  <script src="/js/structure.js"></script>
   <link rel="stylesheet" href="/css/master.css">
   <title>Структура</title>
 </head>
