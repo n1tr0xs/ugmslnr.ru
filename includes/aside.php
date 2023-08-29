@@ -71,6 +71,7 @@
       <li><a href="/hydromet/circumstances.php">Гидрометеорологические условия</a></li>
       <li><a href="/hydromet/clim_char.php">Климатическая характеристика</a></li>
       <li><a href="/hydromet/pfatp.php">Вероятностный прогноз температуры воздуха и осадков</a></li>
+      <li><a href="/hydromet/meteo_net.php">Сеть метеостанций ФГБУ "УГМС по ЛНР"</a></li>
     </ul>
   </div>
 </div>
