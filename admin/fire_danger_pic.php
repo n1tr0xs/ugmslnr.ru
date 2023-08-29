@@ -9,7 +9,7 @@
 <body>
   <div id='containter'>
     <div id='content'>
-      <form action="/admin/fire_danger_exec.php" method="post" enctype="multipart/form-data">
+      <form action="/admin/fire_danger_pic_exec.php" method="post" enctype="multipart/form-data">
         <div class='form-row'><input type="file" name="fileToUpload"></div>
         <div class='form-row'><button type="submit">Отправить данные</button></div>
       </form><br> <a href='/admin/'> Список панелей администрирования </a>
