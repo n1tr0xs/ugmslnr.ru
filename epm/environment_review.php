@@ -20,7 +20,7 @@
             while (($file = readdir($dh)) !== false) {
               if(strpos($file, ".pdf") !== false){
                 ?>
-                <tr><td><a href="/updatable/<? echo $folder.$file; ?>">  <? echo $file; ?></a></td></tr>
+                <tr><td><a href="/updatable/<? echo $folder.$file; ?>">  <? echo basename($file, '.pdf'); ?></a></td></tr>
                 <?
               }
             }
