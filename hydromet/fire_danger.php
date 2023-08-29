@@ -50,10 +50,7 @@
           </tr>
         </tbody>
       </table>
-      <div class='text-center'>
-        <img src="/updatable/fire_danger.png" alt="Пожарная опасность" class='no-border'>
-      </div>
-      <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/fire_forecast.html'; ?>
+      <p><a href="/hydromet/fire_danger_forecast.php">Прогноз пожароопасности</a></p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>
