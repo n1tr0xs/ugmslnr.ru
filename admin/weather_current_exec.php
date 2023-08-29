@@ -16,9 +16,9 @@ replace into `ugmslnr`.`weather_current` values
 ('{$date}', {$icon}, {$temperature}, {$wind_speed}, {$humidity}, {$pressure})
 ";
 if($conn->query($sql) === TRUE){
-	echo "Данные отправлены.";
+	echo "<span style='color: green'>Данные отправлены.</span>";
 } else {
-	echo "Error: {$sql}<br>{$conn->error}";
+	echo "<span style='color: red'>Ошибка</span>";
 }
 
 echo "<br>";
