@@ -1,9 +1,14 @@
 <?
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
+$password = $_POST['password'];
+$conn = connect("editor", $password);
+
+$_file = basename(__FILE__, '_exec.php');
+
 $date1 = $_POST['date1'];
 $desc1 = $_POST['desc1'];
 $date2 = $_POST['date2'];
 $desc2 = $_POST['desc2'];
-$_file = basename(__FILE__, '_exec.php');
 
 $text = "";
 $text .= "<p class='day'>Прогноз на ". $date1. "</p>";
