@@ -1,10 +1,7 @@
 <?
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
-$conn = connect("editor", $password);
-
 $_file = basename(__FILE__, '_exec.php');
 
-$filepath = $_SERVER['DOCUMENT_ROOT'] . "/updatable/{$_file}.png";
+$filepath = $_SERVER['DOCUMENT_ROOT'] . "/updatable/fire_danger.png";
 if(move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $filepath)){
 	echo "Данные отправлены.";
 } else {
