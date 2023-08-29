@@ -53,7 +53,7 @@
       <li><a href='/epm/awc.php'> Информация о неблагоприятных метеорологических условиях (НМУ) </a></li>
       <li><a href='/epm/pollution.php'> Загрязнение атмосферного воздуха </a></li>
       <li><a href='/epm/radiation.php'> Радиационная обстановка </a></li>
-      <li><a href='/epm/month_review.php'> Ежемесячный обзор состояния окружающей среды </a></li>
+      <li><a href='/epm/environment_review.php'> Ежемесячный обзор состояния окружающей среды </a></li>
     </ul>
   </div>
 

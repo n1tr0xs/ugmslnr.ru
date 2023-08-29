@@ -13,7 +13,7 @@
       <table class='no-border text-left table-striped'>
         <?
         // reads files from folder and creates list of links
-        $folder = "month_review/";
+        $folder = "environment_review/";
         $dir = $_SERVER['DOCUMENT_ROOT'] . "/updatable/". $folder;
         if (is_dir($dir)) {
           if ($dh = opendir($dir)) {
