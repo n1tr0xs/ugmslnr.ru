@@ -45,7 +45,7 @@ $conn = connect("visiter", "");
           <label>Давление</label>          
           <input type="number" id="pressure" name="pressure" required>
         </div>
-        <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
+        <div class='form-row'><label for="password">Пароль:</label><input type="password" name="password" placeholder="Пароль" required></div>
         <div class="form-row">
           <button id='submit-button'>Отправить данные</button>
         </div>

@@ -20,7 +20,7 @@
         <div class='form-row'>
           <textarea cols="50" rows="5" name="desc_region" placeholder="Описание для области"></textarea>
         </div>
-        <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
+        <div class='form-row'><label for="password">Пароль:</label><input type="password" name="password" placeholder="Пароль" required></div>
         <div class="form-row">
           <button id='submit-button'>Отправить данные</button>
         </div>
