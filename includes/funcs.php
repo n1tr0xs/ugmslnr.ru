@@ -4,9 +4,8 @@ error_reporting(0);
 
 function connect($login, $password){
 	$conn = new mysqli("ugmslnr", $login, $password);
-	if ($conn->connect_error) {
+	if ($conn->connect_error)
 		return false;
-	}
 	return $conn;
 }
 
