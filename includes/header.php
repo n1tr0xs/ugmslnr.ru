@@ -7,7 +7,7 @@ $conn = connect("visiter", "");
   <script src="/js/listeners.js"></script>
   <link rel="stylesheet" href="/css/header.css">
   <div>
-    <img src="/files/logo.png" alt="Логотип Росгидромет" class="no-border" align="left">
+    <img src="/files/imgs/logo.png" alt="Логотип Росгидромет" class="no-border" align="left">
     <p style="font-size: 1.2em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>
     <p style="font-size: 1.2em"> "Управление по гидрометеорологии и мониторингу окружающей среды по Луганской Народной Республике" </p>
   </div>
