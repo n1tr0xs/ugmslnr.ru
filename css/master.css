@@ -30,6 +30,7 @@
   --nav-a-color: #fffffffc;
   --nav-a-background: #1e4b75;
   --border-color-file: #000000;
+  --aside-content-background: #d9d9d9;
 }
 
 * {
@@ -63,7 +64,7 @@ body {
 }
 
 #aside-content {
-  background: var(--content-background);
+  background: var(--aside-content-background);
   width: calc(25% - 2px);
   float: left;
   text-align: center;
@@ -375,8 +376,14 @@ p.region {
   opacity: 0;
 }
 
-#content:hover,
+nav {
+  position: sticky;
+  top: 0px;
+}
+
+/*#content:hover,
 #aside-content:hover,
 #aside-content > div:hover {
   box-shadow: rgba(0, 0, 0, .8) 0px 0px 0px 1px, rgba(0, 0, 0, .8) 0px 1px 6px, rgba(255, 255, 255, .8) 0px 0px 0px 1px inset !important;
 }
+*/
