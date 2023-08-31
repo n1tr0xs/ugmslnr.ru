@@ -1,15 +1,17 @@
+<!-- TODO: word->pdf -->
+<!-- TODO: etc. -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/master.css">
-  <title>Ежемесячный обзор состояния окружающей среды</title>
+  <title>Ежемесячный бюллетень загрязнения окружающей среды</title>
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3> Ежемесячный обзор состояния окружающей среды </h3>
+      <h3> Ежемесячный бюллетень загрязнения окружающей среды</h3>
       <table class='no-border text-left table-striped'>
         <?
         // reads files from folder and creates list of links
