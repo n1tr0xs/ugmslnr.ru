@@ -26,3 +26,19 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 }, false);
+
+document.addEventListener('DOMContentLoaded', function(){
+  let c = document.getElementById('content');
+  let a = document.getElementById('aside-content');
+  new_height = c.offsetHeight;
+  if(a.offsetHeight < new_height)
+    a.style.height = new_height + 'px';
+}, false);
+
+window.addEventListener('resize', function(event) {
+  let c = document.getElementById('content');
+  let a = document.getElementById('aside-content');
+  new_height = c.offsetHeight;
+  if(a.offsetHeight < new_height)
+    a.style.height = new_height + 'px';
+}, true);
