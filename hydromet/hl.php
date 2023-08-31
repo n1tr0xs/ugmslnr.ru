@@ -19,6 +19,19 @@
         <li>обработка оперативной информации и составление предупреждений об опасных гидрологических явлениях;</li>
         <li>обеспечение органов власти, населения и заинтересованных организаций гидрологической информацией, в том числе в период весеннего половодья.</li>
       </ul>
+
+      <div class="text-center"><img src="/updatable/hydro_map.png" class="no-border"></div>
+      <table class="text-left" style="font-size: 1em; width: 25%; float: bottom;" >
+        <caption>Условные обозначения</caption>
+        <tr>
+          <td style="color: black;">210</td>
+          <td width="min-content">Уровень воды</td>
+        </tr>
+        <tr>
+          <td style="color: red;">1</td>
+          <td>Изменение уровня воды</td>
+        </tr>          
+      </table>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>
