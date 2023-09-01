@@ -28,16 +28,12 @@ function get_row($conn, $sql){
 function print_files($folder){
 	// reads files from folder and print them in table
 	$dir = $_SERVER['DOCUMENT_ROOT'] . "/updatable/". $folder;
-	if (is_dir($dir)) {
-		if ($dh = opendir($dir)) {
-			while (($file = readdir($dh)) !== false) {
-				if(strpos($file, ".pdf") !== false){
-					?>
-					<tr><td><a href="/updatable/<? echo $folder.$file; ?>">  <? echo basename($file, '.pdf'); ?></a></td></tr>
-					<?
-				}
-			}
-			closedir($dh);
+	if (!is_dir($dir))
+		return;
+	$files = scandir($dir);
+	foreach($files as $file){
+		if(strpos($file, ".pdf") !== false){
+			?> <tr><td><a target="_blank" href="/updatable/<? echo $folder.$file; ?>">  <? echo basename($file, '.pdf'); ?></a></td></tr> <?
 		}
 	}
 }
