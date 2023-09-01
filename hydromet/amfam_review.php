@@ -10,23 +10,7 @@
   <div id='containter'>
     <div id='content'>
       <table class='no-border text-left table-striped'>
-        <?
-        // reads files from folder and creates list of links
-        $folder = "amfam_review/";
-        $dir = $_SERVER['DOCUMENT_ROOT'] . "/updatable/". $folder;
-        if (is_dir($dir)) {
-          if ($dh = opendir($dir)) {
-            while (($file = readdir($dh)) !== false) {
-              if(strpos($file, ".pdf") !== false){
-                ?>
-                <tr><td><a href="/updatable/<? echo $folder.$file; ?>">  <? echo basename($file, '.pdf'); ?></a></td></tr>
-                <?
-              }
-            }
-            closedir($dh);
-          }
-        }
-        ?>
+        <? print_files("amfam_review/"); ?>
       </table>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
