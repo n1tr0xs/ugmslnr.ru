@@ -1,5 +1,3 @@
-<!-- TODO: word->pdf -->
-<!-- TODO: etc. -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
