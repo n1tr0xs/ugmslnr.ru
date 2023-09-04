@@ -46,8 +46,8 @@ window.addEventListener('resize', function(event) {
 document.addEventListener('DOMContentLoaded', function () {
   themeForm = document.getElementById('theme-form');
   themeForm.addEventListener('change', function(){
-    const theme = themeForm.querySelector('input[name="theme"]:checked').value;
-    const fileName = `${theme}.css`;
+    const theme = document.getElementById('theme-switcher').checked;
+    const fileName = `${theme === true ? 'dark': 'light'}.css`;
     const localUrl = `/css/${fileName}`;
     document.getElementById("stylesheet").href = localUrl;
   })
