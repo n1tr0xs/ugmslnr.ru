@@ -24,7 +24,7 @@
         <div class="form-row">
           <button id='submit-button'>Отправить данные</button>
         </div>
-      </form><br> <a href='/admin/index.html'> Список панелей администрирования </a>
+      </form><br> <a href='/admin/index.php'> Список панелей администрирования </a>
     </div>
   </div>
 </body>
