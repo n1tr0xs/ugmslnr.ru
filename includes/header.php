@@ -5,7 +5,6 @@ $conn = connect("visiter", "");
 <header>
   <script src="https://use.fontawesome.com/bd02b5ff79.js" defer></script>
   <script src="/js/listeners.js"></script>
-  <link rel="stylesheet" href="/css/header.css">
   <div style="float: left;">
     <img src="/files/imgs/logo.png" alt="Логотип Росгидромет" class="no-border" align="left">
     <p style="font-size: 1.2em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>
