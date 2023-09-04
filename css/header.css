@@ -71,6 +71,12 @@ nav a {
 nav a:hover {
   background: car(--nav-a-background);
 }
+
+#theme-form-container {
+  float: right; 
+  margin-right: 15px; 
+  margin-top: .9em;
+}
 }
 
 /* mobile header */
@@ -165,5 +171,9 @@ nav a:hover {
 
   .menu a:hover{
     text-decoration: none;
+  }
+
+  #theme-form-container {
+    display: none;
   }
 }

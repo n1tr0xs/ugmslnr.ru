@@ -6,19 +6,10 @@ $conn = connect("visiter", "");
   <script src="https://use.fontawesome.com/bd02b5ff79.js" defer></script>
   <script src="/js/script.js"></script>
   <div style="float: left;">
-    <img src="/files/imgs/logo.png" alt="Логотип Росгидромет" class="no-border" align="left">
+    <img src="/files/imgs/logo.png" alt="Логотип Росгидромет" class="no-border" align="left" style="width: 80px; height: 80px; margin-left: 25px">
     <p style="font-size: 1.2em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>
     <p style="font-size: 1.2em"> "Управление по гидрометеорологии и мониторингу окружающей среды по Луганской Народной Республике" </p>
   </div>
-  <div style="float: right;">
-    <form id="theme-form">
-      ☀
-      <label class="switch">
-        <input type="checkbox" name="theme" id="theme-switcher">
-        <span class="slider round"></span>
-      </label>
-      🌙
-    </form>
 </header>
 
 <nav style="clear: both;">
@@ -56,5 +47,15 @@ $conn = connect("visiter", "");
       </ul>
     </li>
     <li class='navbar'><a href='/weather_report.php'> Погода </a></li>
+    <div id="theme-form-container">
+    <form id="theme-form">
+      ☀
+      <label class="switch">
+        <input type="checkbox" name="theme" id="theme-switcher">
+        <span class="slider round"></span>
+      </label>
+      🌙
+    </form>
+  </div>
   </ul>
 </nav>
