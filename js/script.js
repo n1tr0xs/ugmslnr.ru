@@ -1,4 +1,6 @@
+// ############################################################################
 // funcs
+// ############################################################################
 function loadFile(filePath) {
   var result = null;
   var xmlhttp = new XMLHttpRequest();
@@ -33,7 +35,10 @@ function getCookie(cname) {
   return "";
 }
 
+// ############################################################################
 // listeners
+// ############################################################################
+// mobile menu button
 document.addEventListener('DOMContentLoaded', function(){
   let menuBtn = document.querySelector('.menu-btn');
   let menu = document.querySelector('.menu');
@@ -44,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function(){
   })
 }, false);
 
+// angles for dropdowns
 document.addEventListener('DOMContentLoaded', function(){
   let links = document.querySelectorAll('a.dropdown');
   for(let i=0; i<links.length; ++i){
@@ -51,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 }, false);
 
+// dropdown menu items
 document.addEventListener('DOMContentLoaded', function(){
   let dropdown = document.querySelectorAll('.dropdown');
   for(let i=0; i<dropdown.length; ++i) {
@@ -63,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 }, false);
 
+// align content with aside-content on document load
 document.addEventListener('DOMContentLoaded', function(){
   let c = document.getElementById('content');
   let a = document.getElementById('aside-content');
@@ -71,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function(){
     a.style.height = new_height + 'px';
 }, false);
 
+// align content with aside-content on window resize
 window.addEventListener('resize', function(event) {
   let c = document.getElementById('content');
   let a = document.getElementById('aside-content');
@@ -79,6 +88,7 @@ window.addEventListener('resize', function(event) {
     a.style.height = new_height + 'px';
 }, true);
 
+// theme switcher
 document.addEventListener('DOMContentLoaded', function () {
   themeForm = document.getElementById('theme-form');
   themeForm.addEventListener('change', function(){
@@ -91,10 +101,24 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 }, false);
 
+// get theme from cookie
 document.addEventListener('DOMContentLoaded', function () {
   const theme = getCookie('theme');
   const localUrl = `/css/${theme}.css`;
-  document.getElementById("stylesheet").href = localUrl;
+  if(['dark', 'light'].includes(theme))
+    document.getElementById("stylesheet").href = localUrl;
   if(theme === 'dark')
     document.getElementById('theme-switcher').checked = true;
+}, false);
+
+// prefered color scheme handler
+document.addEventListener('DOMContentLoaded', function () {
+  const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+  let theme = 'light';
+  if(colorSchemeQueryList['matches'] === true){
+    document.getElementById('theme-switcher').checked = true;
+    theme = 'dark';
+  }
+  const localUrl = `/css/${theme}.css`;
+  document.getElementById("stylesheet").href = localUrl;
 }, false);
