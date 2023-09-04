@@ -25,15 +25,15 @@ function get_row($conn, $sql){
 	return $row;
 }
 
-function print_files($folder){
+function get_files($folder, $ext='.pdf'){
 	// reads files from folder and print them in table
-	$dir = $_SERVER['DOCUMENT_ROOT'] . "/updatable/". $folder;
+	$dir = $_SERVER['DOCUMENT_ROOT'] . $folder;
 	if (!is_dir($dir))
 		return;
-	$files = scandir($dir);
+	$files = scandir($dir);	
 	foreach($files as $file){
-		if(strpos($file, ".pdf") !== false){
-			?> <tr><td><a target="_blank" href="/updatable/<? echo $folder.$file; ?>">  <? echo basename($file, '.pdf'); ?></a></td></tr> <?
+		if(strpos($file, $ext) !== false){
+			yield $folder.$file => basename($file, $ext);
 		}
 	}
 }

@@ -12,7 +12,13 @@
       <h2>Образцы писем-запросов</h2>
       <div>
         <ul>
-          <? print_files("request_samples/"); ?>
+          <? 
+          $path = "/files/request_samples/";
+          $ext = ".doc";
+          $files = get_files($path, $ext); 
+          foreach($files as $path => $name): ?>
+            <li> <a target="_blank" href="<? echo $path; ?>">  <? echo $name; ?></a></li>
+          <? endforeach; ?>
         </ul>
       </div>
     </div>
@@ -22,3 +28,5 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
 </html>
+
+<tr><td><a target="_blank" href="/updatable/<? echo $folder.$file; ?>">  <? echo basename($file, '.pdf'); ?></a></td></tr> <?

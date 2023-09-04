@@ -10,7 +10,13 @@
   <div id='containter'>
     <div id='content'>
       <table class='no-border text-left table-striped'>
-        <? print_files("circumstances/"); ?>
+        <? 
+          $path = "/updatable/circumstances/";
+          $ext = ".pdf";
+          $files = get_files($path, $ext); 
+          foreach($files as $path => $name): ?>
+            <tr><td><a target="_blank" href="<? echo $path; ?>">  <? echo $name; ?></a></td></tr>
+          <? endforeach; ?>
       </table>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

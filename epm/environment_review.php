@@ -11,7 +11,13 @@
     <div id='content'>
       <h3> Ежемесячный бюллетень загрязнения окружающей среды</h3>
       <table class='no-border text-left table-striped'>
-        <? print_files("environment_review/"); ?>
+        <? 
+          $path = "/updatable/environment_review/";
+          $ext = ".pdf";
+          $files = get_files($path, $ext); 
+          foreach($files as $path => $name): ?>
+            <tr><td><a target="_blank" href="<? echo $path; ?>">  <? echo $name; ?></a></td></tr>
+          <? endforeach; ?>
       </table>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
