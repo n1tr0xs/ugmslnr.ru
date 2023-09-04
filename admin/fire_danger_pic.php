@@ -15,7 +15,7 @@
           <span class="file-msg">или перетащите файл сюда</span>
           <input type="file" name="fileToUpload" class="file-input">
         </div>
-        <div class='form-row'><label for="password">Пароль</label><input type="password" name="password" placeholder="Пароль" required></div>
+        <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
         <div class='form-row'><button type="submit">Отправить данные</button></div>
       </form><br> <a href='/admin/'> Список панелей администрирования </a>
     </div>
