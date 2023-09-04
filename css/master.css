@@ -375,8 +375,3 @@ p.region {
   cursor: pointer;
   opacity: 0;
 }
-
-nav {
-  position: sticky;
-  top: 0px;
-}

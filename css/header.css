@@ -2,6 +2,11 @@ header {
   clear: both;
 }
 
+nav {
+  position: sticky;
+  top: 0px;
+}
+
 @media screen and (min-width: 1000px) {
 /* computer header */
 nav {
