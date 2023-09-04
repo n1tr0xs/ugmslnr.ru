@@ -128,7 +128,7 @@ th {
   width: 1%;
 }
 
-thead, td[colspan='4'] {
+thead{
   font-weight: bold;
 }
 
@@ -151,11 +151,7 @@ thead, td[colspan='4'] {
   background: var(--scrollbar-thumb-hover);
 }
 
-::-moz-selection {
-  background-color: var(--selection);
-  color: var(--text-bright);
-}
-
+::-moz-selection,
 ::selection {
   background-color: var(--selection);
   color: var(--text-bright);
@@ -190,7 +186,9 @@ h6 {
 .leader {
   display: block;
 }
-.leader > figure, .leader > div {
+
+.leader > figure, 
+.leader > div {
   display: inline-block;
   vertical-align: middle;
 }
@@ -214,16 +212,6 @@ section ol {
 
 section li {
   margin-left: 2em;
-}
-
-blockquote {
-  background: var(--quote-background);
-  border-radius: 5px;
-}
-
-blockquote ~ figcaption {
-  text-indent: 10em;
-  font-style: italic;
 }
 
 img {
@@ -257,13 +245,8 @@ p {
   text-indent: 2em;
 }
 
-.no-border {
-  border: 0;
-}
-
-table.no-border,
-table.no-border tr,
-table.no-border td {
+.no-border,
+.no-border * {
   border: 0;
 }
 
