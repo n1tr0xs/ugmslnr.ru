@@ -1,0 +1,32 @@
+:root {
+  --aside-content-background: #2d3133;
+  --background-body: #1f2123;
+  --background-bright: #ffffff;
+  --background-tr-odd: #363b3d;
+  --background: #1d1f20;
+  --border-color-file: #8c8273;
+  --border-color: #665f54;
+  --border: 1px solid var(--border-color);
+  --circle-size: 1em;
+  --content-background: #292c2e;
+  --footer-background: #1b1a23;
+  --header-border: 2px solid #a5a5a5;
+  --links: #4fb4ff;
+  --menu-background: #395d8b;
+  --menu-border: 1px solid #000000;
+  --menu-dropdown-background: #00000e;
+  --menu-dropdown-hover-background: #303436;
+  --nav-a-background: #1e4b75;
+  --nav-a-color: rgba(232, 230, 227, 0.99);
+  --quote-background: gray;
+  --scrollbar-thumb-hover: var(--button-hover);
+  --scrollbar-thumb: #484e51;
+  --selection: #9e9e9e;
+  --show-background: rgb(38, 59, 84);
+  --show-text: #ffffff;
+  --text-bright: #e8e6e3;
+  --text-footer: rgba(232, 230, 227, 0.99);
+  --text-gloomy: #e8e6e3;
+  --text-main: #e8e6e3;
+  --text-muted: #9d9487;
+}

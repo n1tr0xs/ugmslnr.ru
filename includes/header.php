@@ -6,13 +6,21 @@ $conn = connect("visiter", "");
   <script src="https://use.fontawesome.com/bd02b5ff79.js" defer></script>
   <script src="/js/listeners.js"></script>
   <link rel="stylesheet" href="/css/header.css">
-  <div>
+  <div style="float: left;">
     <img src="/files/imgs/logo.png" alt="Логотип Росгидромет" class="no-border" align="left">
     <p style="font-size: 1.2em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>
     <p style="font-size: 1.2em"> "Управление по гидрометеорологии и мониторингу окружающей среды по Луганской Народной Республике" </p>
   </div>
+  <div style="float: right;">
+    <form id="theme-form">
+      <div class="form-row"><input type="radio" name="theme" id="theme-auto" value="auto" checked="true"> <label for="theme-auto">Автоматическая тема</label></div>
+      <div class="form-row"><input type="radio" name="theme" id="theme-light" value="light"> <label for="theme-light">Светлая тема</label></div>
+      <div class="form-row"><input type="radio" name="theme" id="theme-dark" value="dark"> <label for="theme-dark">Темная тема</label></div>
+    </form>
+  </div>
 </header>
-<nav>
+
+<nav style="clear: both;">
 
   <div class='mobile menu-btn'>
     <span></span>

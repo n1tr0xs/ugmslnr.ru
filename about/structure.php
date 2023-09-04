@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <script src="/js/jquery.min.js"> </script>
-  <link rel="stylesheet" href="/css/master.css">
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
   <title>Структура</title>
 </head>
 <body>

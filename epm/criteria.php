@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/master.css">
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
   <style media="screen">
     #content > span {
       text-align: center;

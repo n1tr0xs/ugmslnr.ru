@@ -15,7 +15,7 @@
       }
     }, false);
   </script>
-  <link rel="stylesheet" href="/css/master.css">
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
   <title>УГМС по ЛНР - Федеральное государственное бюджетное учреждение</title>
 </head>
 <body>

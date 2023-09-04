@@ -42,3 +42,13 @@ window.addEventListener('resize', function(event) {
   if(a.offsetHeight < new_height)
     a.style.height = new_height + 'px';
 }, true);
+
+document.addEventListener('DOMContentLoaded', function () {
+  themeForm = document.getElementById('theme-form');
+  themeForm.addEventListener('change', function(){
+    const theme = themeForm.querySelector('input[name="theme"]:checked').value;
+    const fileName = `${theme}.css`;
+    const localUrl = `/css/${fileName}`;
+    document.getElementById("stylesheet").href = localUrl;
+  })
+}, false);
