@@ -16,9 +16,9 @@
           $path = "/files/request_samples/";
           $ext = ".doc";
           $files = get_files($path, $ext); 
-          foreach($files as $path => $name): ?>
+          foreach($files as $path => $name){ ?>
             <li> <a target="_blank" href="<?=$path?>">  <?=$name?></a></li>
-          <? endforeach; ?>
+          <? } >?
         </ul>
       </div>
     </div>

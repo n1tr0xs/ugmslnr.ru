@@ -34,14 +34,14 @@
     $data = get_arr($conn, $sql);
     ?>
     <div id='warnings' class='text-left'>
-      <? foreach($data as $row): ?>
+      <? foreach($data as $row){ ?>
         <div class='warning <?=$row['is_active'] ? "warned" : "";?>'>
           <div>
             <div class='circle'></div>
             <span><?=$row['name']?></span>
           </div>
         </div>
-      <? endforeach; ?>
+      <? } >?
     </div>
   </div>
 

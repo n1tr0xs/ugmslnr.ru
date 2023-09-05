@@ -25,9 +25,9 @@
           $days = get_arr($conn, $sql);
           ?>
           <tr>
-            <? foreach ($days as $row): ?>
+            <? foreach ($days as $row){ ?>
               <td colspan="2"><?=date("d", strtotime($row['date']))?></td>
-            <? endforeach; ?>
+            <? } >?
           </tr>
           <tr>
             <td>ночь</td>
@@ -58,19 +58,19 @@
           $data = get_arr($conn, $sql); 
           ?>
           <tr>
-            <? foreach($data as $row): ?>
+            <? foreach($data as $row){ ?>
               <td class="text-center"> <img width="75px" height="75px" class="no-border" src="<?=$row['icon']?>"></td>
-            <? endforeach; ?>
+            <? } >?
           </tr>
           <tr>
-            <? foreach ($data as $row): ?>
+            <? foreach ($data as $row){ ?>
               <td><?=$row['wind_direction']."<br>".$row['temperature']." м/с"?> </td>
-            <? endforeach; ?>
+            <? } >?
           </tr>
           <tr>
-            <? foreach ($data as $row): ?>
+            <? foreach ($data as $row){ ?>
               <td><?=$row['wind_speed'].' &deg;C'?> 
-            <? endforeach; ?>
+            <? } >?
           </tr>
         </table>
         <?
@@ -84,13 +84,13 @@
         ";
         $data = get_arr($conn, $sql);
         ?>
-        <? foreach($data as $row): ?>
+        <? foreach($data as $row){ ?>
           <p class="day"> <?=$row['date']?> </p>
           <p class="region"> По городу Луганск </p>
           <p class="description"> <?=$row['desc_city']?> </p>
           <p class="region"> По территории Луганской Народной Республики </p>
           <p class="description"> <?=$row['desc_region']?> </p>
-        <? endforeach; ?>
+        <? } >?
       </div>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
