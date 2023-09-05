@@ -12,7 +12,7 @@
       }, false)
     }, false);
   </script>
-  <link rel="stylesheet" href="/css/admin.css">
+  
   <title>Администрирование - пожароопасность</title>
 </head>
 <body>

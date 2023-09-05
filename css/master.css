@@ -385,3 +385,8 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* theme switcher end */
+.form-row {
+  display: block;
+}

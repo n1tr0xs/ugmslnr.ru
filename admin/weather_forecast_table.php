@@ -7,7 +7,7 @@ $conn = connect("visiter", "");
 <head>
   <meta charset="utf-8">
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html';?>
-  <link rel="stylesheet" href="/css/admin.css">
+  
   <title>Администрирование - прогноз погоды - таблица</title>
 </head>
 <body>
