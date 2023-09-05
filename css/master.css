@@ -390,3 +390,48 @@ input:checked + .slider:before {
 .form-row {
   display: block;
 }
+
+textarea {
+  color: #1d1d1d;
+  color: var(--form-text);
+  background-color: #efefef;
+  background-color: var(--background);
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+input {
+  color: #1d1d1d;
+  color: var(--form-text);
+  background-color: #efefef;
+  background-color: var(--background);
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+button {
+  color: #1d1d1d;
+  color: var(--form-text);
+  background-color: #efefef;
+  background-color: var(--background);
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}

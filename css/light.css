@@ -30,3 +30,7 @@
   --text-main: #000000;
   --text-muted: #70777f;
 }
+
+html {
+    color-scheme: light !important;
+}

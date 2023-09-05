@@ -30,3 +30,7 @@
   --text-main: #e8e6e3;
   --text-muted: #9d9487;
 }
+
+html {
+    color-scheme: dark !important;
+}
