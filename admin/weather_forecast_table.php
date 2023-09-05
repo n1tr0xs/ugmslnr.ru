@@ -60,9 +60,7 @@ $conn = connect("visiter", "");
           <input type="number" id="temp_min" name="temperature" required>
         </div>
         <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
-        <div class="form-row">
-          <button id='submit-button'>Отправить данные</button>
-        </div>
+        <div class="form-row"><button id='submit-button'>Отправить данные</button></div>
       </form><br> <a href='/admin/index.php'> Список панелей администрирования </a>
     </div>
   </div>
