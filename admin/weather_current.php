@@ -10,11 +10,11 @@
   <div id='containter'>
     <div id='content'> 
       <form action="/admin/weather_current_exec.php" method="post">
-        <div class="form-row"> 
+        <fieldset>
+        
           <label for="date">Дата</label> 
           <input type="date" name="date" value="<?=date('Y-m-d')?>" required>
-        </div>
-        <div class="form-row">
+        
           <label for="icon">Иконка</label>
           <select name="icon" required>
             <?
@@ -24,25 +24,24 @@
               <option value="<?=$row['id']?>"><?=$row['name']?></option>
             <? } ?>
           </select>
-        </div>
-        <div class="form-row"> 
+        
           <label>Температура</label>          
-          <input type="number" id="temp_min" name="temperature" required>
-        </div>
-        <div class="form-row"> 
+          <input type="text" id="temperature" name="temperature" required>
+        
           <label>Скорость ветра</label>
-          <input type="number" id="wind_min" name="wind_speed" required>
-        </div>
-        <div class="form-row"> 
+          <input type="text" id="wind_speed" name="wind_speed" required>
+        
           <label>Влажность</label>          
           <input type="number" id="humidity" name="humidity" required>
-        </div>
-        <div class="form-row"> 
+        
           <label>Давление</label>          
           <input type="number" id="pressure" name="pressure" required>
-        </div>
-        <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
-        <div class="form-row"><button id='submit-button'>Отправить данные</button></div>
+        
+          <label>Пароль</label>
+          <input type="password" name="password" placeholder="Пароль" required>
+
+          <button id='submit-button'>Отправить данные</button>
+        </fieldset>
       </form><br> <a href='/admin/index.php'> Список панелей администрирования </a>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

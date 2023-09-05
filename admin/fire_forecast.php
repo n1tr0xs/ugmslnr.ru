@@ -1,3 +1,4 @@
+// TODO
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -11,12 +12,25 @@
     <div id='content'>
       <h3> Администрирование - пожароопасность</h3>
       <form action="/admin/fire_forecast_exec.php" method="post">
-        <div class='form-row'><input type="text" name="date1" placeholder="Дата" required></div>
-        <div class='form-row'><textarea rows="5" cols="50" name="desc" placeholder="Описание" required></textarea></div>
-        <div class='form-row'><input type="text" name="date2" placeholder="Дата" required></div>
-        <div class='form-row'><textarea rows="5" cols="50" name="desc" placeholder="Описание" required></textarea></div>
-        <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
-        <div class='form-row'><button>Отправить данные</button></div>
+        <fieldset>
+
+          <label>Дата</label>
+          <input type="text" name="date1" placeholder="Дата" required>
+          
+          <label>Описание</label>
+          <textarea rows="5" cols="50" name="desc" placeholder="Описание" required></textarea>
+          
+          <label>Дата</label>
+          <input type="text" name="date2" placeholder="Дата" required>
+          
+          <label>Описание</label>
+          <textarea rows="5" cols="50" name="desc" placeholder="Описание" required></textarea>
+          
+          <label>Пароль</label>
+          <input type="password" name="password" placeholder="Пароль" required>
+          
+          <button>Отправить данные</button>
+        </fieldset>
       </form><br> <a href='/admin/'> Список панелей администрирования </a>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

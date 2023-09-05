@@ -10,18 +10,22 @@
   <div id='containter'>
     <div id='content'> 
       <form action="/admin/weather_forecast_text_exec.php" method="post">
-        <div class="form-row"> 
+        <fieldset>
           <label for="date">Дата</label> 
           <input type="date" name="date" value="<?=date('Y-m-d')?>" required>
-        </div>
-        <div class='form-row'>
+          
+          <label>Описание для города</label>
           <textarea cols="50" rows="5" name="desc_city" placeholder="Описание для города" required></textarea>
-        </div>
-        <div class='form-row'>
+          
+          
+          <label>Описание для области</label>
           <textarea cols="50" rows="5" name="desc_region" placeholder="Описание для области" required></textarea>
-        </div>
-        <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
-        <div class="form-row"><button id='submit-button'>Отправить данные</button></div>
+          
+          <label>Пароль</label>
+          <input type="password" name="password" placeholder="Пароль" required>
+          
+          <button id='submit-button'>Отправить данные</button>
+        </fieldset>
       </form><br> <a href='/admin/index.php'> Список панелей администрирования </a>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

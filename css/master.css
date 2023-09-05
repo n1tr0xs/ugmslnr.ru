@@ -387,9 +387,6 @@ input:checked + .slider:before {
 }
 
 /* theme switcher end */
-.form-row {
-  display: block;
-}
 
 textarea {
   color: #1d1d1d;
@@ -434,4 +431,53 @@ button {
   border: none;
   border-radius: 6px;
   outline: none;
+}
+
+select {
+  color: #1d1d1d;
+  color: var(--form-text);
+  background-color: #efefef;
+  background-color: var(--background);
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  row-gap: .5em;
+  justify-items: start;
+  align-items: baseline;
+}
+
+fieldset label {
+  text-align: right;
+  padding-right: .25em;
+  white-space: nowrap;
+}
+
+fieldset button{
+  grid-column: 1 / span 2; 
+  white-space: nowrap;
+}
+
+fieldset .span2 {
+  grid-column: 1 / span 2;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  height: 1em;
+  width: 1em;
+}
+
+input[type='checkbox']:active{
+  transform: translateY(2px);
 }

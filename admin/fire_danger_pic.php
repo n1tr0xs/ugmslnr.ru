@@ -19,13 +19,19 @@
   <div id='containter'>
     <div id='content'>
       <form action="/admin/fire_danger_pic_exec.php" method="post" enctype="multipart/form-data">
-        <div class='form-row file-drop-area'>
+        <fieldset>
+        
+        <div class='file-drop-area span2'>
           <span class="fake-btn">Выберите файл</span>
           <span class="file-msg" id="file-msg">или перетащите файл сюда</span>
           <input type="file" name="fileToUpload" class="file-input" id="file-input" required>
         </div>
-        <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
-        <div class='form-row'><button type="submit">Отправить данные</button></div>
+        
+        <label>Пароль</label>
+        <input type="password" name="password" placeholder="Пароль" required>
+        
+        <button type="submit">Отправить данные</button>
+      </fieldset>
       </form><br> <a href='/admin/'> Список панелей администрирования </a>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

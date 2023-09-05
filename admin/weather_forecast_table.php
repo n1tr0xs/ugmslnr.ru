@@ -10,11 +10,11 @@
   <div id='containter'>
     <div id='content'> 
       <form action="/admin/weather_forecast_table_exec.php" method="post">
-        <div class="form-row"> 
+        <fieldset>
+
           <label for="date">Дата</label> 
           <input type="date" name="date" value="<?=date('Y-m-d')?>" required>
-        </div>
-        <div class="form-row"> 
+
           <label for="day_part">Часть дня</label>
           <select name="day_part" required>
             <?
@@ -24,8 +24,7 @@
               <option value="<?=$row['id']?>"><?=$row['name']?></option>
             <? } ?>
           </select>
-        </div>
-        <div class="form-row">
+
           <label for="icon">Иконка</label>
           <select name="icon" required>
             <?
@@ -35,8 +34,7 @@
               <option value="<?=$row['id']?>"><?=$row['name']?></option>
             <? } ?>
           </select>
-        </div>
-        <div class="form-row">
+
           <label for="wind_direction">Направление ветра</label>
           <select name="wind_direction" required>
             <?
@@ -46,18 +44,20 @@
               <option value="<?=$row['id']?>"><?=$row['direction']?></option>
             <? } ?>
           </select>
-        </div>
-        <div class="form-row"> 
+
           <label>Скорость ветра</label>
           <input type="text" id="wind_speed" name="wind_speed" required>
-        </div>
-        <div class="form-row"> 
+
           <label>Температура</label>          
           <input type="text" id="temperature" name="temperature" required>
-        </div>
-        <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
-        <div class="form-row"><button id='submit-button'>Отправить данные</button></div>
-      </form><br> <a href='/admin/index.php'> Список панелей администрирования </a>
+
+          <label>Пароль</label>
+          <input type="password" name="password" placeholder="Пароль" required>
+          
+          <button id='submit-button'>Отправить данные</button>
+        </fieldset>
+      </form>
+      <p><a href='/admin/index.php'> Список панелей администрирования </a></p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
   </div>

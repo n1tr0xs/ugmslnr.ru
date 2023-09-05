@@ -11,13 +11,18 @@
     <div id='content'>
       <h3>Администрирование - Загрязнение атмосферного воздуха</h3>
       <form action="/admin/pollution_exec.php" method="post">
-        <div class="form-row"> 
+        <fieldset>
           <label for="date">Дата</label> 
           <input type="date" name="date" value="<?=date('Y-m-d')?>" required>
-        </div>
-        <div class='form-row'><textarea cols="50" rows="5" name="desc" placeholder="Описание" required></textarea></div>
-        <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
-        <div class="form-row"><button>Отправить данные</button></div>
+        
+          <label>Описание</label>
+          <textarea cols="50" rows="5" name="desc" placeholder="Описание" required></textarea>
+          
+          <label>Пароль</label>
+          <input type="password" name="password" placeholder="Пароль" required>
+          
+          <button>Отправить данные</button>
+        </fieldset>
       </form><br> <a href='/admin/'> Список панелей администрирования </a>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

@@ -11,10 +11,18 @@
     <div id='content'>
       <h3>Администрирование - радиация</h3>
       <form action="/admin/radiation_exec.php" method="post">
-        <div class='form-row'><input type="date" name="date" value="<?=date('Y-m-d')?>" placeholder="Дата" required></div>
-        <div class="form-row"><textarea placeholder="Описание" rows="5" cols="50" name="desc" required></textarea></div>
-        <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
-        <div class="form-row"><button>Отправить данные</button></div>
+        <fieldset>
+          <label>Дата</label>
+          <input type="date" name="date" value="<?=date('Y-m-d')?>" placeholder="Дата" required>
+          
+          <label>Описание</label>
+          <textarea placeholder="Описание" rows="5" cols="50" name="desc" required></textarea>
+          
+          <label>Пароль</label>
+          <input type="password" name="password" placeholder="Пароль" required>
+          
+          <button>Отправить данные</button>
+        </fieldset>
       </form><br> <a href='/admin/'> Список панелей администрирования </a>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
