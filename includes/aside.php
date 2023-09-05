@@ -19,12 +19,12 @@
     ";
     $row = get_row($conn, $sql);    
     ?>
-    <p style='text-align: center;'><? echo date("d.m.Y", strtotime($row['date'])); ?></p>
-    <div class='text-center'><img src="<? echo $row['url'];?> " class='no-border' width="75px"></div>
-    <p><span style='color: red;'>Температура</span>: <? echo $row["temperature"]; ?> &#x2103;</p>
-    <p><span style='color: green;'>Ветер</span>: <? echo $row["wind_speed"]; ?> м/с</p>
-    <p><span style='color: blue;'>Влажность</span>: <? echo $row["humidity"]; ?> %</p>
-    <p><span style='color: black;'>Давление</span>: <? echo $row["pressure"]; ?> мм.рт.ст.</p>
+    <p style='text-align: center;'><?=date("d.m.Y", strtotime($row['date']))?></p>
+    <div class='text-center'><img src="<?=$row['url']?>" class='no-border' width="75px"></div>
+    <p><span style='color: red;'>Температура</span>: <?=$row["temperature"]?> &#x2103;</p>
+    <p><span style='color: green;'>Ветер</span>: <?=$row["wind_speed"]?> м/с</p>
+    <p><span style='color: blue;'>Влажность</span>: <?=$row["humidity"]?> %</p>
+    <p><span style='color: black;'>Давление</span>: <?=$row["pressure"]?> мм.рт.ст.</p>
   </div>
 
   <div id='warnings-container'>
@@ -35,10 +35,10 @@
     ?>
     <div id='warnings' class='text-left'>
       <? foreach($data as $row): ?>
-        <div class='warning <? echo $row['is_active']? "warned" : "";?>'>
+        <div class='warning <?=$row['is_active'] ? "warned" : "";?>'>
           <div>
             <div class='circle'></div>
-            <span><? echo $row['name']; ?></span>
+            <span><?=$row['name']?></span>
           </div>
         </div>
       <? endforeach; ?>

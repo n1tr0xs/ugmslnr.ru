@@ -14,8 +14,8 @@
       $sql = "select * from `ugmslnr`.`radiation` order by `date` desc limit 1";
       $row = get_row($conn, $sql);
       ?>
-      <p class="day"><? echo date("d.m.Y", strtotime($row['date'])); ?></p>
-      <p class="description"><? echo $row['description']; ?></p>
+      <p class="day"><?=date("d.m.Y", strtotime($row['date']))?></p>
+      <p class="description"><?=$row['description']?></p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>

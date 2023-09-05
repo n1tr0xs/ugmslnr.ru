@@ -15,7 +15,7 @@
           $ext = ".pdf";
           $files = get_files($path, $ext); 
           foreach($files as $path => $name): ?>
-            <tr><td><a target="_blank" href="<? echo $path; ?>">  <? echo $name; ?></a></td></tr>
+            <tr><td><a target="_blank" href="<?=$path?>">  <?=$name?></a></td></tr>
           <? endforeach; ?>
       </table>
     </div>

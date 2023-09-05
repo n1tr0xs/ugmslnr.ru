@@ -17,7 +17,7 @@
           $ext = ".doc";
           $files = get_files($path, $ext); 
           foreach($files as $path => $name): ?>
-            <li> <a target="_blank" href="<? echo $path; ?>">  <? echo $name; ?></a></li>
+            <li> <a target="_blank" href="<?=$path?>">  <?=$name?></a></li>
           <? endforeach; ?>
         </ul>
       </div>
@@ -28,5 +28,3 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
 </html>
-
-<tr><td><a target="_blank" href="/updatable/<? echo $folder.$file; ?>">  <? echo basename($file, '.pdf'); ?></a></td></tr> <?

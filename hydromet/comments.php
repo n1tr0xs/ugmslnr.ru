@@ -14,7 +14,7 @@
       $sql = "select `date`, `comment` from `ugmslnr`.`sinop_comments` order by `date` desc limit 1";
       $row = get_row($conn, $sql);
       ?>
-      <p> <? echo $row['comment']; ?> </p>
+      <p><?=$row['comment']?></p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>

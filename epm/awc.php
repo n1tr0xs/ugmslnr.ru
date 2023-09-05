@@ -25,8 +25,8 @@
       $date = date("d.m Y", strtotime($row['date']));
       $desc = $row['desc'];
       ?>
-      <p>Прогноз уровня загрязнения атмосферного воздуха в г. Луганске и городах Луганской Народной Республики на <? echo $date; ?> года</p>
-      <p class='description'> <? echo $desc; ?> </p>
+      <p>Прогноз уровня загрязнения атмосферного воздуха в г. Луганске и городах Луганской Народной Республики на <?=$date?> года</p>
+      <p class='description'> <?=$desc?> </p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>

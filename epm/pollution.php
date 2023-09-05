@@ -14,7 +14,7 @@
       $sql = "select `date`, `description` from `ugmslnr`.`pollution` order by `date` desc limit 1";
       $row = get_row($conn, $sql);      
       ?>
-      <p> <? echo $row['description']; ?></p>
+      <p><?=$row['description']?></p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>
