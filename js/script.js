@@ -1,6 +1,7 @@
 // ############################################################################
 // funcs
 // ############################################################################
+
 function loadFile(filePath) {
   var result = null;
   var xmlhttp = new XMLHttpRequest();
@@ -38,6 +39,7 @@ function getCookie(cname) {
 // ############################################################################
 // listeners
 // ############################################################################
+
 // mobile menu button
 document.addEventListener('DOMContentLoaded', function(){
   let menuBtn = document.querySelector('.menu-btn');
@@ -74,18 +76,18 @@ document.addEventListener('DOMContentLoaded', function(){
 document.addEventListener('DOMContentLoaded', function(){
   let c = document.getElementById('content');
   let a = document.getElementById('aside-content');
-  new_height = c.offsetHeight;
-  if(a.offsetHeight < new_height)
-    a.style.height = new_height + 'px';
+  new_height = c.offsetHeight > a.offsetHeight ? c.offsetHeight : a.offsetHeight;
+  a.style.height = new_height + 'px';
+  c.style.height = new_height + 'px';
 }, false);
 
 // align content with aside-content on window resize
 window.addEventListener('resize', function(event) {
   let c = document.getElementById('content');
   let a = document.getElementById('aside-content');
-  new_height = c.offsetHeight;
-  if(a.offsetHeight < new_height)
-    a.style.height = new_height + 'px';
+  new_height = c.offsetHeight > a.offsetHeight ? c.offsetHeight : a.offsetHeight;
+  a.style.height = new_height + 'px';
+  c.style.height = new_height + 'px';
 }, true);
 
 // theme switcher
