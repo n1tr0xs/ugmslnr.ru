@@ -25,7 +25,7 @@ body {
   float: left;
   width: calc(75% - 2px);
   margin: 0 0 0 1px;
-  padding: 1em 0;
+  padding: 1em 1em;
 }
 
 #aside-content {
