@@ -9,11 +9,11 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3> Комментарии синоптика</h3>
       <? 
       $sql = "select `date`, `comment` from `ugmslnr`.`sinop_comments` order by `date` desc limit 1";
       $row = get_row($conn, $sql);
       ?>
+      <h3> Комментарии синоптика от <?=format_date($row['date'])?></h3>
       <p><?=$row['comment']?></p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

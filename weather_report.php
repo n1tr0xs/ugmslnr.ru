@@ -26,7 +26,7 @@
           ?>
           <tr>
             <? foreach ($days as $row){ ?>
-              <td colspan="2"><?=date("d", strtotime($row['date']))?></td>
+              <td colspan="2"><?=date("d.m", strtotime($row['date']))?></td>
             <? } ?>
           </tr>
           <tr>
@@ -86,7 +86,7 @@
         $data = get_arr($conn, $sql);
         ?>
         <? foreach($data as $row){ ?>
-          <p class="day"> <?=$row['date']?> </p>
+          <p class="day"> Прогноз на <?=format_date($row['date'])?></p>
           <p class="region"> По городу Луганск </p>
           <p class="description"> <?=$row['desc_city']?> </p>
           <p class="region"> По территории Луганской Народной Республики </p>

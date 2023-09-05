@@ -9,16 +9,18 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3 > Вероятностный прогноз температуры воздуха и осадков </h3>
-      <?
-      $sql = "select * from `ugmslnr`.`pfatp` order by `date` desc limit 1";
-      $row = get_row($conn, $sql);      
-      ?>
-      <p class='day'>Прогноз на <?=date("d.m.Y", strtotime($row['date']))?></p>
-      <p class='description'> <?=$row['desc']?></p>
-      <p style='font-style: italic;'> Примечание:</p>
+      <h3> Вероятностный прогноз температуры воздуха и осадков </h3>
       <p> Вероятностный прогноз температуры и осадков составлен специалистами ФГБУ «Гидрометцентр России».</p>
       <p> <a href='https://meteoinfo.ru/1month-forc'>https://meteoinfo.ru/1month-forc</a> </p>
+      <table class='no-border text-left table-striped'>
+        <? 
+          $path = "/updatable/pfatp/";
+          $ext = ".pdf";
+          $files = get_files($path, $ext); 
+          foreach($files as $path => $name){ ?>
+            <tr><td><a target="_blank" href="<?=$path?>">  <?=$name?></a></td></tr>
+          <? } ?>
+      </table>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
     <span style="display: block; clear: both;"></span>
