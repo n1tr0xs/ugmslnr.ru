@@ -59,14 +59,6 @@ document.addEventListener('DOMContentLoaded', function(){
   })
 });
 
-// angles for dropdowns
-document.addEventListener('DOMContentLoaded', function(){
-  let links = document.querySelectorAll('a.dropdown');
-  for(let i=0; i<links.length; ++i){
-    links[i].innerHTML = links[i].innerHTML + ' <i class="fa fa-angle-down" aria-hidden="true">';
-  }
-});
-
 // dropdown menu items
 document.addEventListener('DOMContentLoaded', function(){
   let dropdown = document.querySelectorAll('.dropdown');
