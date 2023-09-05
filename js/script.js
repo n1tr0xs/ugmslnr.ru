@@ -36,6 +36,14 @@ function getCookie(cname) {
   return "";
 }
 
+function setSize(){
+  let c = document.getElementById('content');
+  let a = document.getElementById('aside-content');
+  new_height = c.offsetHeight > a.offsetHeight ? c.offsetHeight : a.offsetHeight;
+  a.style.height = new_height + 'px';
+  c.style.height = new_height + 'px';
+}
+
 // ############################################################################
 // listeners
 // ############################################################################
@@ -49,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function(){
   	menuBtn.classList.toggle('active');
   	menu.classList.toggle('active');
   })
-}, false);
+});
 
 // angles for dropdowns
 document.addEventListener('DOMContentLoaded', function(){
@@ -57,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function(){
   for(let i=0; i<links.length; ++i){
     links[i].innerHTML = links[i].innerHTML + ' <i class="fa fa-angle-down" aria-hidden="true">';
   }
-}, false);
+});
 
 // dropdown menu items
 document.addEventListener('DOMContentLoaded', function(){
@@ -70,25 +78,10 @@ document.addEventListener('DOMContentLoaded', function(){
         dropdown_content[j].classList.toggle('active');
     });
   }
-}, false);
+});
 
 // align content with aside-content on document load
-document.addEventListener('DOMContentLoaded', function(){
-  let c = document.getElementById('content');
-  let a = document.getElementById('aside-content');
-  new_height = c.offsetHeight > a.offsetHeight ? c.offsetHeight : a.offsetHeight;
-  a.style.height = new_height + 'px';
-  c.style.height = new_height + 'px';
-}, false);
-
-// align content with aside-content on window resize
-window.addEventListener('resize', function(event) {
-  let c = document.getElementById('content');
-  let a = document.getElementById('aside-content');
-  new_height = c.offsetHeight > a.offsetHeight ? c.offsetHeight : a.offsetHeight;
-  a.style.height = new_height + 'px';
-  c.style.height = new_height + 'px';
-}, true);
+document.addEventListener('DOMContentLoaded', setSize, true);
 
 // theme switcher
 document.addEventListener('DOMContentLoaded', function () {
@@ -101,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("stylesheet").href = localUrl;
     setCookie('theme', theme);
   })
-}, false);
+});
 
 // get theme from cookie
 document.addEventListener('DOMContentLoaded', function () {
@@ -110,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if(['dark', 'light'].includes(theme))
     document.getElementById("stylesheet").href = localUrl;
   document.getElementById('theme-switcher').checked = theme === 'dark';
-}, false);
+});
 
 // prefered color scheme handler
 document.addEventListener('DOMContentLoaded', function () {
@@ -122,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   const localUrl = `/css/${theme}.css`;
   document.getElementById("stylesheet").href = localUrl;
-}, false);
+});
 
 // custom file input
 document.addEventListener('DOMContentLoaded', function(){
@@ -131,8 +124,8 @@ document.addEventListener('DOMContentLoaded', function(){
     const span = document.getElementById('file-msg');
     input.addEventListener('input', function(){
       span.innerText = this.files[0]['name'];
-    }, false)
+    })
   } catch (e) {
     return;
   }
-}, false);
+});
