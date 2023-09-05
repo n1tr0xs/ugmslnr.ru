@@ -12,7 +12,7 @@
       <h3> Администрирование - неблогаприятные метеорологические условия</h3>
       <form action="/admin/awc_exec.php" method="post">
         <div class='form-row'><input type="date" name="date" value="<? echo date('Y-m-d'); ?>" placeholder="Дата" required></div>
-        <div class='form-row'><textarea rows='5' cols='50' name="desc" placeholder="Описание" required></textarea></div>
+        <div class='form-row'><textarea rows="5" cols="50" name="desc" placeholder="Описание" required></textarea></div>
         <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
         <div class='form-row'><button>Отправить данные</button></div>
       </form><br> <a href='/admin/'> Список панелей администрирования </a>
