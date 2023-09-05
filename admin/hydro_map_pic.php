@@ -13,7 +13,7 @@
         <div class='form-row file-drop-area'>
           <span class="fake-btn">Выберите файл</span>
           <span class="file-msg">или перетащите файл сюда</span>
-          <input type="file" name="fileToUpload" class="file-input">
+          <input type="file" name="fileToUpload" class="file-input" required>
         </div>
         <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
         <div class='form-row'><button type="submit">Отправить данные</button></div>

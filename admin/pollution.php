@@ -13,10 +13,10 @@
       <form action="/admin/pollution_exec.php" method="post">
         <div class="form-row"> 
           <label for="date">Дата</label> 
-          <input type="date" name="date" value="<? echo date('Y-m-d'); ?>">
+          <input type="date" name="date" value="<? echo date('Y-m-d'); ?>" required>
         </div>
         <div class='form-row'>
-          <textarea cols="50" rows="5" name="desc" placeholder="Описание"></textarea>
+          <textarea cols="50" rows="5" name="desc" placeholder="Описание" required></textarea>
         </div>
         <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
         <div class="form-row"><button>Отправить данные</button></div>

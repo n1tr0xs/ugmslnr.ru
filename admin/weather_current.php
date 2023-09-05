@@ -16,7 +16,7 @@ $conn = connect("visiter", "");
       <form action="/admin/weather_current_exec.php" method="post">
         <div class="form-row"> 
           <label for="date">Дата</label> 
-          <input type="date" name="date" value="<? echo date('Y-m-d'); ?>">
+          <input type="date" name="date" value="<? echo date('Y-m-d'); ?>" required>
         </div>
         <div class="form-row">
           <label for="icon">Иконка</label>
