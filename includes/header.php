@@ -3,7 +3,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
 $conn = connect("visiter", "");
 ?>
 <header>
-  <script src="https://use.fontawesome.com/bd02b5ff79.js" defer></script>
   <script src="/js/script.js"></script>
   <div>
     <img src="/files/imgs/logo.png" alt="Логотип Росгидромет" class="no-border" align="left" style="width: 80px; height: 80px; margin-left: 25px">
@@ -23,7 +22,7 @@ $conn = connect("visiter", "");
   <ul class='navbar menu'>
     <li class='navbar'><a href='/index.php'>Начальная страница</a></li>
     <li class='navbar dropdown'>
-      <a class='dropdown' href="#">О нас </a>
+      <a class='dropdown' href="#">О нас ⮟</a>
       <ul class='navbar dropdown-content'>
         <li><a href='/about/index.php'>О нас</a></li>
         <li><a href='/about/leadership.php'>Руководство</a></li>
@@ -39,14 +38,14 @@ $conn = connect("visiter", "");
     </li>
     <li class='navbar'><a href='/about/contacts.php'>Контакты</a></li>
     <li class='navbar dropdown'>
-      <a class='dropdown' href='#'>Потребителям</a>
+      <a class='dropdown' href='#'>Потребителям ⮟</a>
       <ul class='navbar dropdown-content'>
         <li><a href="/to_customers/index.php">Услуги</a></li>
         <li><a href="/to_customers/request_samples.php">Образцы писем-запросов</a></li>
         <li><a href="/to_customers/office_hours.php">Часы приема</a></li>
       </ul>
     </li>
-    <li class='navbar'><a href='/weather_report.php'> Погода </a></li>
+    <li class='navbar'><a href='/weather_report.php'>Погода</a></li>
     <div id="theme-form-container">
     <form id="theme-form">
       ☀
