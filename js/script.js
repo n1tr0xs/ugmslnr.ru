@@ -111,13 +111,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // custom file input
 document.addEventListener('DOMContentLoaded', function(){
-  try{
-    const input = document.getElementById('file-input');
-    const span = document.getElementById('file-msg');
-    input.addEventListener('input', function(){
-      span.innerText = this.files[0]['name'];
-    })
-  } catch (e) {
-    return;
-  }
+  const input = document.getElementById('file-input');
+  const span = document.getElementById('file-msg');
+  input.addEventListener('input', function(){
+    if(this.files[0]['name'].split('.').pop() != 'png'){    
+      alert('Выберите png файл!');
+      return (this.value = "");
+    }
+    span.innerText = this.files[0]['name'];
+  });
 });
