@@ -122,3 +122,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const localUrl = `/css/${theme}.css`;
   document.getElementById("stylesheet").href = localUrl;
 }, false);
+
+// custom file input
+document.addEventListener('DOMContentLoaded', function(){
+  const input = document.getElementById('file-input');
+  const span = document.getElementById('file-msg');
+  input.addEventListener('input', function(){
+    span.innerText = input.files[0]['name'];
+  }, false)
+}, false);

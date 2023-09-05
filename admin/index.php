@@ -14,9 +14,9 @@
         <li><a href='/admin/comments.php'>Комментарии синоптика</a></li>
         <li><a href='/admin/fire_danger_pic.php'>Пожароопасность - картинка</a></li>
         <li><a href='/admin/fire_forecast.php'>Пожароопасность</a></li>
+        <li><a href='/admin/hydro_map_pic.php'>Гидрологическая карта</a></li>
         <li><a href='/admin/pfatp.php'>Вероятностный прогноз температуры воздуха и осадков</a></li>
         <li><a href='/admin/pollution.php'>Загрязнение окружающей среды</a></li>
-        <li><a href='/admin/radiation.php'>Радиация</a></li>
         <li><a href='/admin/warnings.php'>Предупреждения</a></li>
         <li><a href='/admin/weather_current.php'>Текущая погода</a></li>
         <li><a href='/admin/weather_forecast_table.php'>Прогноз погоды - таблица</a></li>

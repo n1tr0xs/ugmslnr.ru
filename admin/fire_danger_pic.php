@@ -3,15 +3,6 @@
 <head>
   <meta charset="utf-8">
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html';?>
-  <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function(){
-      const input = document.getElementById('file-input');
-      const span = document.getElementById('file-msg');
-      input.addEventListener('input', function(){
-        span.innerText = input.files[0]['name'];
-      }, false)
-    }, false);
-  </script>
   <title>Администрирование - пожароопасность</title>
 </head>
 <body>
