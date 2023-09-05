@@ -109,8 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const localUrl = `/css/${theme}.css`;
   if(['dark', 'light'].includes(theme))
     document.getElementById("stylesheet").href = localUrl;
-  if(theme === 'dark')
-    document.getElementById('theme-switcher').checked = true;
+  document.getElementById('theme-switcher').checked = theme === 'dark';
 }, false);
 
 // prefered color scheme handler
@@ -127,9 +126,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // custom file input
 document.addEventListener('DOMContentLoaded', function(){
-  const input = document.getElementById('file-input');
-  const span = document.getElementById('file-msg');
-  input.addEventListener('input', function(){
-    span.innerText = input.files[0]['name'];
-  }, false)
+  try{
+    const input = document.getElementById('file-input');
+    const span = document.getElementById('file-msg');
+    input.addEventListener('input', function(){
+      span.innerText = this.files[0]['name'];
+    }, false)
+  } catch (e) {
+    return;
+  }
 }, false);
