@@ -17,7 +17,7 @@
           $files = get_files($path, $ext); 
           foreach($files as $path => $name){ ?>
             <tr><td><a target="_blank" href="<?=$path?>">  <?=$name?></a></td></tr>
-          <? } >?
+          <? } ?>
       </table>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

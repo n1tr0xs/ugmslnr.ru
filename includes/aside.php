@@ -41,7 +41,7 @@
             <span><?=$row['name']?></span>
           </div>
         </div>
-      <? } >?
+      <? } ?>
     </div>
   </div>
 

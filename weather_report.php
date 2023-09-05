@@ -27,7 +27,7 @@
           <tr>
             <? foreach ($days as $row){ ?>
               <td colspan="2"><?=date("d", strtotime($row['date']))?></td>
-            <? } >?
+            <? } ?>
           </tr>
           <tr>
             <td>ночь</td>
@@ -60,17 +60,17 @@
           <tr>
             <? foreach($data as $row){ ?>
               <td class="text-center"> <img width="75px" height="75px" class="no-border" src="<?=$row['icon']?>"></td>
-            <? } >?
+            <? } ?>
           </tr>
           <tr>
             <? foreach ($data as $row){ ?>
               <td><?=$row['wind_direction']."<br>".$row['temperature']." м/с"?> </td>
-            <? } >?
+            <? } ?>
           </tr>
           <tr>
             <? foreach ($data as $row){ ?>
               <td><?=$row['wind_speed'].' &deg;C'?> 
-            <? } >?
+            <? } ?>
           </tr>
         </table>
         <?
@@ -90,7 +90,7 @@
           <p class="description"> <?=$row['desc_city']?> </p>
           <p class="region"> По территории Луганской Народной Республики </p>
           <p class="description"> <?=$row['desc_region']?> </p>
-        <? } >?
+        <? } ?>
       </div>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
