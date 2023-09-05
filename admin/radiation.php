@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html';?>
   <link rel="stylesheet" href="/css/admin.css">
   <title>Администрирование - радиация</title>
 </head>
@@ -11,7 +11,7 @@
     <div id='content'>
       <h3>Администрирование - радиация</h3>
       <form action="/admin/radiation_exec.php" method="post">
-        <div class='form-row'><input type="date" name="date" value="<?=date('Y-m-d'); ?>" placeholder="Дата" required></div>
+        <div class='form-row'><input type="date" name="date" value="<?=date('Y-m-d')?>" placeholder="Дата" required></div>
         <div class="form-row"><textarea placeholder="Описание" rows="5" cols="50" name="desc" required></textarea></div>
         <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
         <div class="form-row"><button>Отправить данные</button></div>

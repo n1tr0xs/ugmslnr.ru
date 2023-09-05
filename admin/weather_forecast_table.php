@@ -6,7 +6,7 @@ $conn = connect("visiter", "");
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html';?>
   <link rel="stylesheet" href="/css/admin.css">
   <title>Администрирование - прогноз погоды - таблица</title>
 </head>
@@ -16,7 +16,7 @@ $conn = connect("visiter", "");
       <form action="/admin/weather_forecast_table_exec.php" method="post">
         <div class="form-row"> 
           <label for="date">Дата</label> 
-          <input type="date" name="date" value="<?=date('Y-m-d'); ?>" required>
+          <input type="date" name="date" value="<?=date('Y-m-d')?>" required>
         </div>
         <div class="form-row"> 
           <label for="day_part">Часть дня</label>
@@ -24,9 +24,9 @@ $conn = connect("visiter", "");
             <?
             $sql = "SELECT * FROM `ugmslnr`.`day_parts` order by `id`";
             $arr = get_arr($conn, $sql);
-            foreach($arr as $row): ?>
-              <option value="<?=$row['id']; ?>"><?=$row['name']; ?></option>
-            <? endforeach; ?>
+            foreach($arr as $row){ ?>
+              <option value="<?=$row['id']?>"><?=$row['name']?></option>
+            <? } ?>
           </select>
         </div>
         <div class="form-row">
@@ -35,9 +35,9 @@ $conn = connect("visiter", "");
             <?
             $sql = "SELECT * FROM `ugmslnr`.`icons` order by `id`";
             $arr = get_arr($conn, $sql);
-            foreach($arr as $row): ?>
-              <option value="<?=$row['id']; ?>"><?=$row['name']; ?></option>
-            <? endforeach; ?>
+            foreach($arr as $row){ ?>
+              <option value="<?=$row['id']?>"><?=$row['name']?></option>
+            <? } ?>
           </select>
         </div>
         <div class="form-row">
@@ -46,9 +46,9 @@ $conn = connect("visiter", "");
             <?
             $sql = "SELECT * FROM `ugmslnr`.`wind_directions` order by `id`";
             $arr = get_arr($conn, $sql);
-            foreach($arr as $row): ?>
-              <option value="<?=$row['id']; ?>"><?=$row['direction']; ?></option>
-            <? endforeach; ?>
+            foreach($arr as $row){ ?>
+              <option value="<?=$row['id']?>"><?=$row['direction']?></option>
+            <? } ?>
           </select>
         </div>
         <div class="form-row"> 

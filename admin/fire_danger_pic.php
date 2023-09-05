@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html';?>
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function(){
       const input = document.getElementById('file-input');
