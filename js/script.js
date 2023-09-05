@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const localUrl = `/css/${theme}.css`;
   if(['dark', 'light'].includes(theme))
     document.getElementById("stylesheet").href = localUrl;
-  document.getElementById('theme-switcher').checked = theme === 'dark';
+  document.getElementById('theme-switcher').checked = (theme === 'dark');
 });
 
 // prefered color scheme handler
