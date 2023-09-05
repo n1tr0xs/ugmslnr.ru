@@ -12,7 +12,6 @@
       }, false)
     }, false);
   </script>
-  
   <title>Администрирование - пожароопасность</title>
 </head>
 <body>

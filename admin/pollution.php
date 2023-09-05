@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html';?>
-  
   <title>Администрирование - Загрязнение атмосферного воздуха</title>
 </head>
 <body>

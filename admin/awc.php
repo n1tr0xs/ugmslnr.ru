@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html';?>
-  
   <title>Администрирование - неблогаприятные метеорологические условия</title>
 </head>
 <body>

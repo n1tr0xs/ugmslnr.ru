@@ -1,13 +1,8 @@
-<?
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
-$conn = connect("visiter", "");
-?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html';?>
-  
   <title>Администрирование - текущая погода</title>
 </head>
 <body>
