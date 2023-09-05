@@ -16,7 +16,7 @@
     </div>
     <div class='muted'>
       <p> Последнее обновление страницы: </p>
-      <p> <?=date("Y-m-d H:i:s", filemtime(basename($_SERVER['SCRIPT_FILENAME'])));?> </p>
+      <p> <?=date("Y-m-d", filemtime(basename($_SERVER['SCRIPT_FILENAME'])));?> </p>
     </div>
   </div>
 </footer>
