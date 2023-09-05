@@ -11,6 +11,7 @@ $conn = connect("visiter", "");
   <title>Администрирование - текущая погода</title>
 </head>
 <body>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'> 
       <form action="/admin/weather_current_exec.php" method="post">
@@ -49,7 +50,9 @@ $conn = connect("visiter", "");
         <div class="form-row"><button id='submit-button'>Отправить данные</button></div>
       </form><br> <a href='/admin/index.php'> Список панелей администрирования </a>
     </div>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
   </div>
 </div>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
 </html>

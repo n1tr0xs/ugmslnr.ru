@@ -7,6 +7,7 @@
   <title>Администрирование - неблогаприятные метеорологические условия</title>
 </head>
 <body>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
       <h3> Администрирование - неблогаприятные метеорологические условия</h3>
@@ -17,6 +18,8 @@
         <div class='form-row'><button>Отправить данные</button></div>
       </form><br> <a href='/admin/'> Список панелей администрирования </a>
     </div>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
   </div>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
 </html>

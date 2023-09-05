@@ -7,6 +7,7 @@
   <title>Администрирование</title>
 </head>
 <body>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
       <ul>
@@ -23,6 +24,8 @@
         <li><a href='/admin/weather_forecast_text.php'>Прогноз погоды - текст</a></li>
       </ul>
     </div>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
   </div>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
 </html>

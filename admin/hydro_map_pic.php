@@ -7,6 +7,7 @@
   <title>Администрирование - гидрологическая карта</title>
 </head>
 <body>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
       <form action="/admin/fire_danger_pic_exec.php" method="post" enctype="multipart/form-data">
@@ -19,6 +20,8 @@
         <div class='form-row'><button type="submit">Отправить данные</button></div>
       </form><br> <a href='/admin/'> Список панелей администрирования </a>
     </div>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
   </div>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
 </html>
