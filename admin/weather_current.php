@@ -16,7 +16,7 @@ $conn = connect("visiter", "");
       <form action="/admin/weather_current_exec.php" method="post">
         <div class="form-row"> 
           <label for="date">Дата</label> 
-          <input type="date" name="date" value="<? echo date('Y-m-d'); ?>" required>
+          <input type="date" name="date" value="<?=date('Y-m-d'); ?>" required>
         </div>
         <div class="form-row">
           <label for="icon">Иконка</label>
@@ -25,7 +25,7 @@ $conn = connect("visiter", "");
             $sql = "SELECT * FROM `ugmslnr`.`icons` order by `id`";
             $arr = get_arr($conn, $sql);
             foreach($arr as $row): ?>
-              <option value="<? echo $row['id']; ?>"><? echo $row['name']; ?></option>
+              <option value="<?=$row['id']; ?>"><?=$row['name']; ?></option>
             <? endforeach; ?>
           </select>
         </div>
