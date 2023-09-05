@@ -14,7 +14,7 @@ $temperature = $_POST['temperature'];
 
 $sql = "
 replace into `ugmslnr`.`weather_forecast_table` values 
-('{$date}', {$day_part}, '{$icon}', {$wind_direction}, '{$wind_speed}', '{$temperature}')
+('{$date}', {$day_part}, '{$icon}', {$wind_direction}, '{$temperature}', '{$wind_speed}')
 ";
 
 if($conn->query($sql) === TRUE){

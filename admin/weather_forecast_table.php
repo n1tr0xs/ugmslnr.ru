@@ -49,11 +49,11 @@
         </div>
         <div class="form-row"> 
           <label>Скорость ветра</label>
-          <input type="number" id="wind_min" name="wind_speed" required>
+          <input type="text" id="wind_speed" name="wind_speed" required>
         </div>
         <div class="form-row"> 
           <label>Температура</label>          
-          <input type="number" id="temp_min" name="temperature" required>
+          <input type="text" id="temperature" name="temperature" required>
         </div>
         <div class='form-row'><input type="password" name="password" placeholder="Пароль" required></div>
         <div class="form-row"><button id='submit-button'>Отправить данные</button></div>

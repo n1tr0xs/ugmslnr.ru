@@ -45,6 +45,7 @@
               w.day_part day_part, 
               w.temperature temperature,
               w.wind_speed wind_speed,
+              wd.direction wind_direction,
               i.url icon
             from 
               `ugmslnr`.`weather_forecast_table` w
