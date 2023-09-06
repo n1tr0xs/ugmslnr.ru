@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <script src="/js/funcs.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function(){
       var min_news = 1;
