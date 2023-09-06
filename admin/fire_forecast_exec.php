@@ -22,6 +22,6 @@ fwrite($file, $text);
 fclose($file);
 
 echo "<span style='color: green'>Данные отправлены.</span>";
-echo "<a href='/admin/{$_file}.html'>Страница администрирования</a><br>";
+echo "<a href='/admin/{$_file}.php'>Страница администрирования</a><br>";
 echo "<a href='/index.php'>Главная страница сайта</a><br>";
 ?>
