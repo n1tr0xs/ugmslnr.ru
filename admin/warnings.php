@@ -13,17 +13,22 @@
       <h3> Администрирование - предупреждения</h3>
       <form method="post" action="/admin/warnings_exec.php">
         <fieldset>
-          <label for="meteo">Метеорологическое</label>
-          <input type="checkbox" name="meteo" required>
-          
-          <label for="hydro">Гидрометеорологическое</label>
-          <input type="checkbox" name="hydro" required>
-          
-          <label for="agro">Агрометеорологическое</label>
-          <input type="checkbox" name="agro" required>
-          
-          <label for="pollution">Загрязнение окружающей среды</label>
-          <input type="checkbox" name="pollution" required>
+          <label>Тип предупреждения</label>
+          <select name="type">
+            <option value="Метеорологическое">Метеорологическое</option>
+            <option value="Гидрологическое">Гидрологическое</option>
+            <option value="Загрязнение окружающей среды">Загрязнение окружающей среды</option>
+            <option value="Агрометеорологическое">Агрометеорологическое</option>
+          </select>
+
+          <label>Описание</label>
+          <textarea name="description" rows="5" cols="50"></textarea>
+
+          <label>Начало</label>
+          <input type="datetime-local" name="start">
+
+          <label>Конец</label>
+          <input type="datetime-local" name="end">
           
           <label>Пароль</label>
           <input type="password" name="password" placeholder="Пароль" required>

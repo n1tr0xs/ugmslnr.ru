@@ -5,25 +5,14 @@ $conn = connect("editor", $password);
 
 $_file = basename(__FILE__, '_exec.php');
 
-$meteo = $_POST['meteo'];
-$agro = $_POST['agro'];
-$hydro = $_POST['hydro'];
-$pollution = $_POST['pollution'];
-
-$names = array();
-if($meteo)
-	array_push($names, "Метеорология");
-if($agro)
-	array_push($names, "Агрометеорология");
-if($hydro)
-	array_push($names, "Гидрология");
-if($pollution)
-	array_push($names, "Загрязнение окружающей среды");
+$type = $_POST['type'];
+$description = $_POST['description'];
+$start = $_POST['start'];
+$end = $_POST['end'];
 
 $sql = "
-update `ugmslnr`.`warnings`
-set `is_active`='1'
-where `name` IN (\"".implode('", "', $names)."\")
+insert into `ugmslnr`.`warnings` values 
+(NULL, '{$type}', '{$start}', '{$end}', '{$description}')
 ";
 
 if($conn->query($sql) === TRUE){

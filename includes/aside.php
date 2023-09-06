@@ -29,20 +29,44 @@
 
   <div id='warnings-container'>
     <span class='div-name'>Предупреждения</span>
-    <?
-    $sql = "select `name`, `is_active` from `ugmslnr`.`warnings`";
-    $data = get_arr($conn, $sql);
-    ?>
-    <div id='warnings' class='text-left'>
-      <? foreach($data as $row){ ?>
-        <div class='warning <?=$row['is_active'] ? "warned" : "";?>'>
+    
+    <div id="warnings" class="text-left">
+      <?
+      $not_warned = array('Метеорологическое', 'Гидрологическое', 'Загрязнение окружающей среды', 'Агрометеорология');
+      $warned = array();
+      $now = date('Y-m-d h:m:s');
+      $sql = "
+      select
+        w.id, 
+        w.type,
+        w.start,
+        w.end
+      from `ugmslnr`.`warnings` w
+      where w.start <= '{$now}' and w.end > '{$now}'
+      ";
+      $data = get_arr($conn, $sql);
+      foreach($data as $row) { ?>
+        <? array_push($warned, $row['type']); ?>
+        <div class="warning warned">
           <div>
-            <div class='circle'></div>
-            <span><?=$row['name']?></span>
+            <div class="circle"></div>
+            <span><a href="/warning.php?id=<?=$row['id']?>"><?=$row['type']?></a></span>
+          </div>
+        </div>
+      <? } ?>
+
+      <? 
+      $not_warned = array_diff($not_warned, $warned);
+      foreach($not_warned as $type) { ?>
+        <div class="warning">
+          <div>
+            <div class="circle"></div>
+            <span><?=$type?></span>
           </div>
         </div>
       <? } ?>
     </div>
+
   </div>
 
   <div>
