@@ -32,31 +32,36 @@
     
     <div id="warnings" class="text-left">
       <?
-      $not_warned = array('Метеорологическое', 'Гидрологическое', 'Загрязнение окружающей среды', 'Агрометеорология');
       $warned = array();
+      $d = intval(date('d'))+1;
+      if($d < 10)
+        $d = '0'.$d;
+      $tomorrow = date('Y-m-').$d.date(' h:m:s');
       $now = date('Y-m-d h:m:s');
       $sql = "
       select
         w.id, 
         w.type,
         w.start,
-        w.end
+        w.end,
+        w.aside_name
       from `ugmslnr`.`warnings` w
-      where w.start <= '{$now}' and w.end > '{$now}'
+      where 
+        (w.start <= '{$today}' and w.end > '{$today}') 
+        or
+        (w.start <= '{$tomorrow}' and w.end > '{$tomorrow}')
       ";
       $data = get_arr($conn, $sql);
       foreach($data as $row) { ?>
-        <? array_push($warned, $row['type']); ?>
+        <? array_push($warned, $row['aside_name']); ?>
         <div class="warning warned">
           <div>
             <div class="circle"></div>
-            <span><a href="/warning.php?id=<?=$row['id']?>"><?=$row['type']?></a></span>
+            <span><a href="/warning.php?id=<?=$row['id']?>"><?=$row['aside_name']?></a></span>
           </div>
         </div>
-      <? } ?>
-
-      <? 
-      $not_warned = array_diff($not_warned, $warned);
+      <? } 
+      $not_warned = array_diff(array('Метеорологическое', 'Гидрологическое', 'Загрязнение окружающей среды', 'Агрометеорологическое'), $warned);
       foreach($not_warned as $type) { ?>
         <div class="warning">
           <div>

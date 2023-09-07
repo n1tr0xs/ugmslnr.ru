@@ -5,14 +5,29 @@ $conn = connect("editor", $password);
 
 $_file = basename(__FILE__, '_exec.php');
 
-$type = $_POST['type'];
+$aside_name = $_POST['type'];
 $description = $_POST['description'];
 $start = $_POST['start'];
 $end = $_POST['end'];
 
+switch ($aside_name) {
+	case "Метеорологическое":
+		$type = "метеорология";		
+		break;
+	case "Гидрологическое":		
+		$type = "гидрология";
+		break;
+	case "Загрязнение окружающей среды":
+		$type = "загрязнение окружающей среды";		
+		break;
+	case "Агрометеорологическое":		
+		$type = "Агрометеорология";
+		break;
+}
+
 $sql = "
 insert into `ugmslnr`.`warnings` values 
-(NULL, '{$type}', '{$start}', '{$end}', '{$description}')
+(NULL, '{$type}', '{$start}', '{$end}', '{$description}', '{$aside_name}')
 ";
 
 if($conn->query($sql) === TRUE){
@@ -22,6 +37,6 @@ if($conn->query($sql) === TRUE){
 }
 
 echo "<br>";
-echo "<a href='/admin/{$_file}.html'>Страница администрирования</a><br>";
+echo "<a href='/admin/{$_file}.php'>Страница администрирования</a><br>";
 echo "<a href='/index.php'>Главная страница сайта</a><br>";
 ?>
