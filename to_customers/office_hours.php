@@ -14,8 +14,7 @@
       <p> Пятница: 8:00 - 16:00. </p>
       <p> Суббота - Воскресенье: выходной. </p>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
-    <span style="display: block; clear: both;"></span>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>    
   </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>

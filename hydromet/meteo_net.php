@@ -13,7 +13,6 @@
       <div class='text-center'><img src="/files/imgs/meteo_net.jpg" class='no-border'></div>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
-    <span style="display: block; clear: both;"></span>
   </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>

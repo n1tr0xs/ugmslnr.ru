@@ -32,7 +32,6 @@
       <p style="color:red; font-weight: bold; font-size: 1.5em; text-align: center;">Мы помним подвиг нашего народа в Великой Отечественной войне. Мы ценим их героическую волю и стремление к свободе. Мы чтим память тех, кто подарил свободу будущим поколениям!</p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
-    <span style="display: block; clear: both;"></span>
   </div>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>
