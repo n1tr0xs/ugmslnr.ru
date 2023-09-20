@@ -12,8 +12,10 @@
       <h3> Загрязнение атмосферного воздуха</h3>
       <?
       $sql = "select `date`, `description` from `ugmslnr`.`pollution` order by `date` desc limit 1";
-      $row = get_row($conn, $sql);      
+      $row = get_row($conn, $sql);  
+      $date = date("d.m Y", strtotime($row['date']));    
       ?>
+      <p>Прогноз уровня загрязнения атмосферного воздуха в г. Луганске и городах Луганской Народной Республики на <?=$date?> года</p>
       <p><?=$row['description']?></p>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

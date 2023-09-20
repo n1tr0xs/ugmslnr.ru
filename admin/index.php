@@ -21,6 +21,7 @@
         <li><a href='/admin/weather_current.php'>Текущая погода</a></li>
         <li><a href='/admin/weather_forecast_table.php'>Прогноз погоды - таблица</a></li>
         <li><a href='/admin/weather_forecast_text.php'>Прогноз погоды - текст</a></li>
+        <li><a href='/admin/radiation.php'>Радиационная обстановка</a></li>
       </ul>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>

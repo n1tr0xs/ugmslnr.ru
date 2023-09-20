@@ -18,7 +18,7 @@ if($conn->query($sql) === TRUE){
 } else {
 	echo "<span style='color: red'>Ошибка</span>";
 }
-
+echo "<br>";
 echo "<a href='/admin/{$_file}.php'>Страница администрирования</a><br>";
 echo "<a href='/index.php'>Главная страница сайта</a><br>";
 ?>

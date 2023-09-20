@@ -11,7 +11,7 @@
     <div id='content'>
       <h3>Прогноз пожароопасности</h3>
       <div class='text-center'>
-        <img src="/updatable/fire_danger.png" alt="Пожарная опасность" class='no-border'>
+        <img src="/updatable/fire_danger.png" alt="Пожарная опасность" class='no-border' width="700px">
       </div>
       <? include $_SERVER['DOCUMENT_ROOT'] . '/updatable/fire_forecast.html'; ?>
     </div>

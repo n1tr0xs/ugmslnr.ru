@@ -17,7 +17,7 @@
           $ext = ".doc";
           $files = get_files($path, $ext); 
           foreach($files as $path => $name){ ?>
-            <li> <a target="_blank" href="<?=$path?>">  <?=$name?></a></li>
+            <li> <a target="_blank" href="<?=$path?>"><?=$name?></a></li>
           <? } ?>
         </ul>
       </div>
