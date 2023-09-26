@@ -58,6 +58,14 @@ body {
  color: var(--text-bright);
 }
 
+#news-containter {
+  display: inline-flex;
+}
+
+.news {
+  display: inline-block;
+}
+
 a {
   text-decoration: none;
   color: var(--links);
