@@ -5,8 +5,8 @@ $conn = connect("editor", $password);
 
 $_file = basename(__FILE__, '_exec.php');
 
-$date = $_POST['date'];
-$desc = $_POST['desc'];
+$date = $conn->real_escape_string($_POST['date']);
+$desc = $conn->real_escape_string($_POST['desc']);
 
 $sql = "
 replace into `ugmslnr`.`pollution` values

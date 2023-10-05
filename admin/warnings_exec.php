@@ -5,10 +5,10 @@ $conn = connect("editor", $password);
 
 $_file = basename(__FILE__, '_exec.php');
 
-$aside_name = $_POST['type'];
-$description = $_POST['description'];
-$start = $_POST['start'];
-$end = $_POST['end'];
+$aside_name = $conn->real_escape_string($_POST['type']);
+$description = $conn->real_escape_string($_POST['description']);
+$start = $conn->real_escape_string($_POST['start']);
+$end = $conn->real_escape_string($_POST['end']);
 
 switch ($aside_name) {
 	case "Метеорологическое":

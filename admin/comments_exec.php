@@ -5,8 +5,8 @@ $conn = connect("editor", $password);
 
 $_file = basename(__FILE__, '_exec.php');
 
-$date = $_POST['date'];
-$comment = $_POST['comment'];
+$date = $conn->real_escape_string($_POST['date']);
+$comment = $conn->real_escape_string($_POST['comment']);
 
 $sql = "
 replace into `ugmslnr`.`sinop_comments` values 

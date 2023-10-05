@@ -5,10 +5,10 @@ $conn = connect("editor", $password);
 
 $_file = basename(__FILE__, '_exec.php');
 
-$date1 = $_POST['date1'];
-$desc1 = $_POST['desc1'];
-$date2 = $_POST['date2'];
-$desc2 = $_POST['desc2'];
+$date1 = $conn->real_escape_string($_POST['date1']);
+$desc1 = $conn->real_escape_string($_POST['desc1']);
+$date2 = $conn->real_escape_string($_POST['date2']);
+$desc2 = $conn->real_escape_string($_POST['desc2']);
 
 $text = "";
 $text .= "<p class='day'>Прогноз на ". $date1. "</p>";

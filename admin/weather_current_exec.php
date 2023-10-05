@@ -5,12 +5,12 @@ $conn = connect("editor", $password);
 
 $_file = basename(__FILE__, '_exec.php');
 
-$date = $_POST['date'];
-$icon = $_POST['icon'];
-$temperature = $_POST['temperature'];
-$wind_speed = $_POST['wind_speed'];
-$humidity = $_POST['humidity'];
-$pressure = $_POST['pressure'];
+$date = $conn->real_escape_string($_POST['date']);
+$icon = $conn->real_escape_string($_POST['icon']);
+$temperature = $conn->real_escape_string($_POST['temperature']);
+$wind_speed = $conn->real_escape_string($_POST['wind_speed']);
+$humidity = $conn->real_escape_string($_POST['humidity']);
+$pressure = $conn->real_escape_string($_POST['pressure']);
 
 $sql = "
 replace into `ugmslnr`.`weather_current` values 
