@@ -1,12 +1,14 @@
-<IfModule dir_module>
-    DirectoryIndex index.php index.html index.shtml
-</IfModule>
+DirectoryIndex index.php index.html index.shtml
+
 AddDefaultCharset UTF-8
 AddCharset UTF-8 .html
 AddCharset UTF-8 .php
+
 <FilesMatch "\.(html|php)$">
     Header set Cache-Control: "no-cache, no-store"
     Header unset ETag
 </FilesMatch>
+
 Header set X-Content-Type-Options nosniff
+
 Options -Indexes
