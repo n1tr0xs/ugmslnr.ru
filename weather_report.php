@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  
+  <meta name="description" content="Прогноз погоды по Луганску">
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
   <title>Погода</title>
 </head>

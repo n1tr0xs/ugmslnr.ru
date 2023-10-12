@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  
+  <meta name="description" content="предупреждение по Луганской области">
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
   <title>Просмотр предупреждения</title>
 </head>
