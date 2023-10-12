@@ -6,7 +6,9 @@ nav {
   position: sticky;
   top: 0px;
 }
-
+nav a.dropdown {
+  cursor: default;
+}
 /* computer header */
 @media screen and (min-width: 1000px) {
 nav {
