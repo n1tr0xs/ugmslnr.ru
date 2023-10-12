@@ -6,6 +6,7 @@ function loadFile(filePath) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open("GET", filePath);
   xmlhttp.send();
+  if(xmlhttp.)
   return xmlhttp.responseText || '';
 }
 
@@ -66,9 +67,6 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 });
-
-// align content with aside-content on document load
-// document.addEventListener('DOMContentLoaded', setSize, true);
 
 // theme switcher
 document.addEventListener('DOMContentLoaded', function () {

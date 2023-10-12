@@ -10,7 +10,7 @@
   <div id='containter'>
     <div id='content'>
       <div class='news'>
-        <h2> News 2 </h2>
+        <h2 class='news-title'> News 2 </h2>
         <div>
           <p> Paragraph 1 </p>
           <p> Paragraph 2 </p>
