@@ -7,7 +7,7 @@
     document.addEventListener('DOMContentLoaded', function(){
       const parser = new DOMParser();
       const min_news = 1;
-      const max_news = 23;      
+      const max_news = 2;      
       const xhttp = new XMLHttpRequest();
       const div = document.getElementById('news-container');
       xhttp.onreadystatechange = function() {

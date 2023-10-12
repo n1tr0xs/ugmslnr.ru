@@ -267,6 +267,14 @@ table.text-left td {
 #warnings .warning:hover .warning-text {
   display: table-cell;
 }
+
+.warning {
+  cursor: default;
+}
+
+.warned {
+  cursor: pointer;
+}
 /* warnings styling end */
 
 p.day {

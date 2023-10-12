@@ -6,7 +6,6 @@ function loadFile(filePath) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open("GET", filePath);
   xmlhttp.send();
-  if(xmlhttp.)
   return xmlhttp.responseText || '';
 }
 
