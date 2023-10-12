@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
+  <meta name="description" content="Главная страница УГМС по ЛНР">
   <script>
     document.addEventListener('DOMContentLoaded', function(){
       const parser = new DOMParser();
@@ -17,7 +18,6 @@
       }
     }, false);
   </script>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
   <title>УГМС по ЛНР - Федеральное государственное бюджетное учреждение</title>
 </head>
 <body>
