@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
-  <meta name="description" content="Главная страница УГМС по ЛНР">
+  <meta name="description" content="Главная страница УГМС по ЛНР">  
   <script>
     document.addEventListener('DOMContentLoaded', function(){
       const parser = new DOMParser();
