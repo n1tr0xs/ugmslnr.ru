@@ -4,13 +4,16 @@
   <meta charset="utf-8">
   <script>
     document.addEventListener('DOMContentLoaded', function(){
+      const parser = new DOMParser();
       var min_news = 1;
-      var max_news = 0;
-      var folder = '/news/short_news/';
+      var max_news = 2;
+      var folder = '/news/';
       var div = document.getElementById('news-container');
       for(let i=max_news; i>=min_news; --i) {
-        let fileName = 'short_news' + i + '.php';
-        div.innerHTML += loadFile(folder + fileName);
+        let fileName = 'news' + i + '.php';
+        const doc = parser.parseFromString(loadFile(folder+fileName), 'text/html');
+        div.appendChild(doc.querySelector("div.news h2"));
+        div.appendChild(doc.querySelector("div.news p"));
       }
     }, false);
   </script>

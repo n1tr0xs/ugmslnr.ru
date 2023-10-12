@@ -5,12 +5,9 @@
 function loadFile(filePath) {
   var result = null;
   var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", filePath, false);
+  xmlhttp.open("GET", filePath);
   xmlhttp.send();
-  if (xmlhttp.status==200) {
-    result = xmlhttp.responseText;
-  }
-  return result || '';
+  return xmlhttp.responseText || '';
 }
 
 function setCookie(cname, cvalue, exdays=365) {

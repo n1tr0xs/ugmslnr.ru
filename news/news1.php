@@ -1,12 +1,12 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
-    <meta charset="utf-8">
-    <title></title>
+<head>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
+  <meta charset="utf-8">
+  <title></title>
 </head>
-  <body>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+<body>
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
       <div class='news'>
@@ -18,7 +18,7 @@
           <p> Paragraph 4 </p>
         </div>
       </div>
-   </div>
+    </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
-</body>
-</html>
+  </body>
+  </html>
