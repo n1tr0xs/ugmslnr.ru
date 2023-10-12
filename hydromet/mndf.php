@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
+  <meta name="description" content="Отдел метеорологических и численных прогнозов">
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
   <title>Отдел метеорологических и численных прогнозов</title>
 </head>
 <body>

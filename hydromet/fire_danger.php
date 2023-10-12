@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
+  <meta name="description" content="Пожарная опасность">
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
   <title>Пожарная опасность</title>
 </head>
 <body>

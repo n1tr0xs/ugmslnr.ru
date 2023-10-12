@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
+  <meta name="description" content="Бессмертный полк">
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
   <title>Бессмертный полк</title>
 </head>
 <body>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
+  <meta name="description" content="Вакансии УГМС по ЛНР">
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
   <title>Вакансии</title>
 </head>
 <body>

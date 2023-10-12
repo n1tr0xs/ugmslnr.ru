@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
-    <meta charset="utf-8">
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
+    
     <title></title>
 </head>
   <body>

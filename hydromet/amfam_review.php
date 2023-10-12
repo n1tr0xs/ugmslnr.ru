@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/styles.html'; ?>
-  <title>Отдел агрометеорологических прогнозов и агрометеорологии</title>
+  <meta name="description" content="Месячные агрометеообзоры УГМС по ЛНР">
+  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
+  <title>Месячные агрометеообзоры</title>
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
