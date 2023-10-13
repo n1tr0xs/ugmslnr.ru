@@ -12,11 +12,14 @@
       const div = document.getElementById('news-container');
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          const page = parser.parseFromString(xhttp.responseText, 'text/html');
+          const page = parser.parseFromString(this.responseText, 'text/html');
+          a = document.createElement('a');
+          a.href = this.responseURL;          
           n = document.createElement('div');
           n.appendChild(page.querySelector('div.news h2.news-title'));
           n.appendChild(page.querySelector('div.news p'));
-          div.appendChild(n);
+          a.appendChild(n);
+          div.appendChild(a);
         }
       };
       for(let i=max_news; i>=min_news; --i) {
