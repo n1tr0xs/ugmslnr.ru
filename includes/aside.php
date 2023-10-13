@@ -21,10 +21,10 @@
     ?>
     <p style='text-align: center;'><?=date("d.m.Y", strtotime($row['date']))?></p>
     <div class='text-center'><img src="<?=$row['url']?>" class='no-border' width="75px"></div>
-    <p><span style='color: red;'>Температура</span>: <?=$row["temperature"]?> &#x2103;</p>
-    <p><span style='color: green;'>Ветер</span>: <?=$row["wind_speed"]?> м/с</p>
-    <p><span style='color: blue;'>Влажность</span>: <?=$row["humidity"]?> %</p>
-    <p><span style='color: black;'>Давление</span>: <?=$row["pressure"]?> мм.рт.ст.</p>
+    <p><span id="temperature">Температура</span>: <?=$row["temperature"]?> &#x2103;</p>
+    <p><span id="wind">Ветер</span>: <?=$row["wind_speed"]?> м/с</p>
+    <p><span id="humidity">Влажность</span>: <?=$row["humidity"]?> %</p>
+    <p><span id="pressure">Давление</span>: <?=$row["pressure"]?> мм.рт.ст.</p>
   </div>
 
   <div id='warnings-container'>

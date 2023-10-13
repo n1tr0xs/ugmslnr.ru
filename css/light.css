@@ -34,3 +34,19 @@
 html {
     color-scheme: light !important;
 }
+
+#temperature {
+  color: red;
+}
+
+#wind {
+  color: green;
+}
+
+#humidity {
+  color: blue;
+}
+
+#pressure {
+  color: black;
+}

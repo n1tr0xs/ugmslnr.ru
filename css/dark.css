@@ -34,3 +34,19 @@
 html {
     color-scheme: dark !important;
 }
+
+#temperature {
+  color: #ff1a1a;
+}
+
+#wind {
+  color: #72ff72;
+}
+
+#humidity {
+  color: #337dff;
+}
+
+#pressure {
+  color: #e8e6e3;
+}
