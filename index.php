@@ -12,9 +12,11 @@
       const div = document.getElementById('news-container');
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          const page = parser.parseFromString(xhttp.responseText, 'text/html');  
-          div.appendChild(page.querySelector('div.news h2.news-title'));
-          div.appendChild(page.querySelector('div.news p'));
+          const page = parser.parseFromString(xhttp.responseText, 'text/html');
+          n = document.createElement('div');
+          n.appendChild(page.querySelector('div.news h2.news-title'));
+          n.appendChild(page.querySelector('div.news p'));
+          div.appendChild(n);
         }
       };
       for(let i=max_news; i>=min_news; --i) {
@@ -23,15 +25,15 @@
         xhttp.send();
       }
     }, false);
-  </script>
+  </script>  
   <title>УГМС по ЛНР - Федеральное государственное бюджетное учреждение</title>
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
+      <h1> Последние новости </h1>
       <div id='news-container'>
-        <h1> Последние новости </h1>
       </div>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
