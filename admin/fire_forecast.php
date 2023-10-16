@@ -1,4 +1,3 @@
-<!-- TODO -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -14,14 +13,11 @@
       <form action="/admin/fire_forecast_exec.php" method="post">
         <fieldset>
 
-          <label>Дата</label>
-          <input type="text" name="date1" placeholder="Дата" required>
-          
-          <label>Описание</label>
-          <textarea rows="5" cols="50" name="desc" placeholder="Описание" required></textarea>
-          
-          <label>Дата</label>
-          <input type="text" name="date2" placeholder="Дата" required>
+          <label>Начало</label>
+          <input type="date" name="start" value="<?=date('Y-m-d')?>" placeholder="Дата" required>
+
+          <label>Конец</label>
+          <input type="date" name="end" value="<?=date('Y-m-d')?>" placeholder="Дата" required>
           
           <label>Описание</label>
           <textarea rows="5" cols="50" name="desc" placeholder="Описание" required></textarea>
