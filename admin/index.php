@@ -4,25 +4,48 @@
   <meta http-equiv="robots" content="noindex">
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html';?>
   <title>Администрирование</title>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(){
+      const files = [
+        'awc',
+        'comments',
+        'fire_danger_pic',
+        'fire_forecast',
+        'hydro_map_pic',
+        'pollution',
+        'warnings',
+        'weather_current',
+        'weather_forecast_table',
+        'weather_forecast_text',
+        'radiation',
+      ]
+      const xhttp = new XMLHttpRequest();
+      const div = document.getElementById('content');
+      const ul = document.createElement('ul');
+      div.appendChild(ul);
+      const parser = new DOMParser();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          const page = parser.parseFromString(this.responseText, 'text/html');
+          li = document.createElement('li');
+          ul.appendChild(li);
+          a = document.createElement('a');
+          li.appendChild(a);
+          a.href = this.responseURL;
+          a.innerText = page.querySelector('title').innerText;
+        }
+      };
+      files.forEach((file)=>{
+        xhttp.open('GET', file+'.php', false);
+        xhttp.send();
+      });
+    }, false);
+  </script>
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <ul>
-        <li><a href='/admin/awc.php'>Неблогаприятные метеорологические условия (НМУ)</a></li>
-        <li><a href='/admin/comments.php'>Комментарии синоптика</a></li>
-        <li><a href='/admin/fire_danger_pic.php'>Пожароопасность - картинка</a></li>
-        <li><a href='/admin/fire_forecast.php'>Пожароопасность</a></li>
-        <li><a href='/admin/hydro_map_pic.php'>Гидрологическая карта</a></li>
-        <li><a href='/admin/pfatp.php'>Вероятностный прогноз температуры воздуха и осадков</a></li>
-        <li><a href='/admin/pollution.php'>Загрязнение окружающей среды</a></li>
-        <li><a href='/admin/warnings.php'>Предупреждения</a></li>
-        <li><a href='/admin/weather_current.php'>Текущая погода</a></li>
-        <li><a href='/admin/weather_forecast_table.php'>Прогноз погоды - таблица</a></li>
-        <li><a href='/admin/weather_forecast_text.php'>Прогноз погоды - текст</a></li>
-        <li><a href='/admin/radiation.php'>Радиационная обстановка</a></li>
-      </ul>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
   </div>
