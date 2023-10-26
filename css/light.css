@@ -39,18 +39,18 @@ html {
   background-color: black;
 }
 
-#temperature {
+#aside-content #temperature {
   color: red;
 }
 
-#wind {
+#aside-content #wind {
   color: green;
 }
 
-#humidity {
+#aside-content #humidity {
   color: blue;
 }
 
-#pressure {
+#aside-content #pressure {
   color: black;
 }
