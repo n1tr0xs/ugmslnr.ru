@@ -16,21 +16,14 @@
       <div>
         <?
         $sql = "
-        select `start`, `end`, `desc` from (
-          select `start`, `end`, `desc`
-          from `ugmslnr`.`fire_forecast`
-          order by `start` desc
-          limit 2
-        ) a
-        order by `start` asc
+        select `start`, `end`, `desc`
+        from `ugmslnr`.`fire_forecast`
+        order by `start` desc
+        limit 1
         ";
         $data = get_arr($conn, $sql);
         foreach ($data as $row){ ?>
-          <?if($row['start'] != $row['end']){?>
-            <p style='font-weight: bold;'> Прогноз на <?=format_date($row['start'])?> - <?=format_date($row['end'])?></p>
-          <?}else{?>
-            <p style='font-weight: bold;'> Прогноз на <?=format_date($row['start'])?></p>
-          <?}?>
+          <p style='font-weight: bold;'> Прогноз на <?=format_date($row['start'])?> - <?=format_date($row['end'])?></p>
           <p><?=$row['desc']?></p>
         <?}?>
       </div>

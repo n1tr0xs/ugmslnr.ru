@@ -7,7 +7,7 @@ $_file = basename(__FILE__, '_exec.php');
 
 $date = $conn->real_escape_string($_POST['date']);
 $desc_city = $conn->real_escape_string($_POST['desc_city']);
-$desc_region = $conn->real_escape_string($_POST['desc_region'];) 
+$desc_region = $conn->real_escape_string($_POST['desc_region']);
 
 $sql = "
 replace into `ugmslnr`.`weather_forecast_text` values 
