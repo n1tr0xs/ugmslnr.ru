@@ -32,7 +32,11 @@
 }
 
 html {
-    color-scheme: dark !important;
+  color-scheme: dark !important;
+}
+
+.slider:before {
+  background-color: black ;
 }
 
 #temperature {

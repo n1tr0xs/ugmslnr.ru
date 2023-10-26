@@ -374,7 +374,6 @@ p.region {
   width: 16px;
   left: 4px;
   bottom: .2em;
-  background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
 }

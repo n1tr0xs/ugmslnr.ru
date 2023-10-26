@@ -35,6 +35,10 @@ html {
     color-scheme: light !important;
 }
 
+.slider:before {
+  background-color: white;
+}
+
 #temperature {
   color: red;
 }
