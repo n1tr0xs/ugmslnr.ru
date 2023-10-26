@@ -9,6 +9,7 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
+      <h3>Администрирование - комментарии синоптика</h3>
       <form action="/admin/comments_exec.php" method="post">
         <fieldset>
           

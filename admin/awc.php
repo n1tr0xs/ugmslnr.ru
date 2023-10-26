@@ -3,13 +3,13 @@
 <head>
   <meta http-equiv="robots" content="noindex">
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html';?>
-  <title>Администрирование - неблогоприятные метеорологические условия</title>
+  <title>Администрирование - неблагоприятные метеорологические условия</title>
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3> Администрирование - неблогоприятные метеорологические условия</h3>
+      <h3> Администрирование - неблагоприятные метеорологические условия</h3>
       <form action="/admin/awc_exec.php" method="post">
         <fieldset>
 

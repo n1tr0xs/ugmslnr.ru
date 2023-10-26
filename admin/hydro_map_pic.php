@@ -9,6 +9,7 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
+      <h3>Администрирование - гидрологическая карта</h3>
       <form action="/admin/fire_danger_pic_exec.php" method="post" enctype="multipart/form-data">
         <fieldset>
           

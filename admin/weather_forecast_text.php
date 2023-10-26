@@ -9,6 +9,7 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'> 
+      <h3>Администрирование - прогноз погоды - текст</h3>
       <form action="/admin/weather_forecast_text_exec.php" method="post">
         <fieldset>
           <label for="date">Дата</label> 
