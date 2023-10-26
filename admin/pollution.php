@@ -3,13 +3,13 @@
 <head>
   <meta http-equiv="robots" content="noindex">
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html';?>
-  <title>Администрирование - Загрязнение атмосферного воздуха</title>
+  <title>Администрирование - загрязнение атмосферного воздуха</title>
 </head>
 <body>
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3>Администрирование - Загрязнение атмосферного воздуха</h3>
+      <h3>Администрирование - загрязнение атмосферного воздуха</h3>
       <form action="/admin/pollution_exec.php" method="post">
         <fieldset>
           <label for="date">Дата</label> 
