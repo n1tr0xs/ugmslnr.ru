@@ -36,7 +36,7 @@ html {
 }
 
 .slider:before {
-  background-color: black ;
+  background-color: white;
 }
 
 #temperature {
