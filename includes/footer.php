@@ -1,5 +1,5 @@
-<footer class='pc'>
-  <div id='row1'>
+<footer>
+  <div>
     <div id='company'>
       <p> Федеральное государственное бюджетное учреждение </p>
       <p> "УГМС по ЛНР" </p>
@@ -9,7 +9,7 @@
       <p> <a href='mailto:@mail.ru'> @mail.ru </a> </p>
     </div>
   </div>
-  <div id='row2'>
+  <div>
     <div>
       <p>©2023. Все права защищены.</p>
       <p class='muted new-line'>При использовании материалов сайта ссылка обязательна.</p>
