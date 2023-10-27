@@ -10,7 +10,7 @@
   <div id='containter'>
     <div id='content'>
       <h3>Администрирование - гидрологическая карта</h3>
-      <form action="/admin/fire_danger_pic_exec.php" method="post" enctype="multipart/form-data">
+      <form action="/admin/hydro_map_pic_exec.php" method="post" enctype="multipart/form-data">
         <fieldset>
           
           <div class='file-drop-area span2'>
