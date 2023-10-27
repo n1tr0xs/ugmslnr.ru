@@ -16,7 +16,7 @@
           <div class='file-drop-area span2'>
             <span class="fake-btn">Выберите файл</span>
             <span class="file-msg">или перетащите файл сюда</span>
-            <input type="file" name="fileToUpload" class="file-input" required>
+            <input type="file" name="fileToUpload" class="file-input" accept="image/png" required>
           </div>
           
           <label>Пароль</label>
