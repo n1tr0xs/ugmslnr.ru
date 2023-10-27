@@ -26,12 +26,10 @@
       <p><span id="humidity">Влажность</span>: <?=$row["humidity"]?> %</p>
       <p><span id="pressure">Давление</span>: <?=$row["pressure"]?> мм.рт.ст.</p>
     <? } ?>
-    
   </div>
 
   <div id='warnings-container'>
     <span class='div-name'>Предупреждения</span>
-    
     <div id="warnings" class="text-left">
       <?
       $warned = array();
@@ -72,7 +70,6 @@
         </div>
       <? } ?>
     </div>
-
   </div>
 
   <div>
