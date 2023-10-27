@@ -1,7 +1,6 @@
 <div id='aside-content'>
   
   <div id='weather-container' class='text-left'>
-    <span class='div-name'> Погода в Луганске </span>
     <?
     $sql = "
     select 
@@ -17,14 +16,17 @@
     order by `date` desc
     limit 1
     ";
-    $row = get_row($conn, $sql);    
-    ?>
-    <p style='text-align: center;'><?=date("d.m.Y", strtotime($row['date']))?></p>
-    <div class='text-center'><img src="<?=$row['url']?>" class='no-border' width="75px"></div>
-    <p><span id="temperature">Температура</span>: <?=$row["temperature"]?> &#x2103;</p>
-    <p><span id="wind">Ветер</span>: <?=$row["wind_speed"]?> м/с</p>
-    <p><span id="humidity">Влажность</span>: <?=$row["humidity"]?> %</p>
-    <p><span id="pressure">Давление</span>: <?=$row["pressure"]?> мм.рт.ст.</p>
+    $row = get_row($conn, $sql);
+    if($row) {?>
+      <span class='div-name'> Погода в Луганске </span>
+      <p style='text-align: center;'><?=date("d.m.Y", strtotime($row['date']))?></p>
+      <div class='text-center'><img src="<?=$row['url']?>" class='no-border' width="75px"></div>
+      <p><span id="temperature">Температура</span>: <?=$row["temperature"]?> &#x2103;</p>
+      <p><span id="wind">Ветер</span>: <?=$row["wind_speed"]?> м/с</p>
+      <p><span id="humidity">Влажность</span>: <?=$row["humidity"]?> %</p>
+      <p><span id="pressure">Давление</span>: <?=$row["pressure"]?> мм.рт.ст.</p>
+    <? } ?>
+    
   </div>
 
   <div id='warnings-container'>
@@ -33,9 +35,8 @@
     <div id="warnings" class="text-left">
       <?
       $warned = array();
-      $d = intval(date('d'))+1;
-      if($d < 10)
-        $d = '0'.$d;
+      $not_warned = array('Метеорологическое', 'Гидрологическое', 'Загрязнение окружающей среды', 'Агрометеорологическое');
+      $d = str_pad(intval(date('d'))+1, 2, '0', STR_PAD_LEFT);
       $tomorrow = date('Y-m-').$d.date(' h:m:s');
       $now = date('Y-m-d h:m:s');
       $sql = "
@@ -61,7 +62,7 @@
           </div>
         </div>
       <? } 
-      $not_warned = array_diff(array('Метеорологическое', 'Гидрологическое', 'Загрязнение окружающей среды', 'Агрометеорологическое'), $warned);
+      $not_warned = array_diff($not_warned, $warned);
       foreach($not_warned as $type) { ?>
         <div class="warning">
           <div>
