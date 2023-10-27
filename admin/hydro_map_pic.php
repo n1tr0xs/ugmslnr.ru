@@ -12,11 +12,10 @@
       <h3>Администрирование - гидрологическая карта</h3>
       <form action="/admin/hydro_map_pic_exec.php" method="post" enctype="multipart/form-data">
         <fieldset>
-          
           <div class='file-drop-area span2'>
             <span class="fake-btn">Выберите файл</span>
-            <span class="file-msg">или перетащите файл сюда</span>
-            <input type="file" name="fileToUpload" class="file-input" accept="image/png" required>
+            <span class="file-msg" id="file-msg">или перетащите файл сюда</span>
+            <input type="file" name="fileToUpload" class="file-input" id="file-input" accept="image/*" required>
           </div>
           
           <label>Пароль</label>
