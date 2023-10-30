@@ -2,13 +2,6 @@
 // funcs
 // ############################################################################
 
-function loadFile(filePath) {
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", filePath);
-  xmlhttp.send();
-  return xmlhttp.responseText || '';
-}
-
 function setCookie(cname, cvalue, exdays=365) {
   const d = new Date();
   d.setTime(d.getTime() + exdays*24*60*60*1000);
@@ -103,13 +96,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // custom file input
 document.addEventListener('DOMContentLoaded', function(){
-  const input = document.getElementById('file-input');
-  const span = document.getElementById('file-msg');
-  input.addEventListener('input', function(){
-    if(this.files[0]['name'].split('.').pop() != 'png'){    
-      alert('Выберите png файл!');
-      return (this.value = "");
-    }
-    span.innerText = this.files[0]['name'];
-  });
+  try {
+    const input = document.getElementById('file-input');
+    const span = document.getElementById('file-msg');
+    input.addEventListener('input', function(){
+      if(this.files[0]['name'].split('.').pop() != 'png'){    
+        alert('Выберите png файл!');
+        return (this.value = "");
+      }
+      span.innerText = this.files[0]['name'];
+    });
+  } catch (e) {};
 });
