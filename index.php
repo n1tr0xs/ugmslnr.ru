@@ -11,8 +11,9 @@
       const div = document.getElementById('news-container');
       for(let i=max_news; i>=min_news; --i) {
         const fileName = 'news' + i + '.php';
-        const xhttp = new XMLHttpRequest();  
-        xhttp.open("GET", '/news/'+fileName, true);
+        const url = '/news/' + fileName;
+        const xhttp = new XMLHttpRequest();
+        xhttp.open("GET", url, true);
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             const page = parser.parseFromString(this.responseText, 'text/html');
