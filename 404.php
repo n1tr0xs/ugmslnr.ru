@@ -8,8 +8,7 @@
   <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3>Страница не найдена</h3>
-      <p><a href="/">Вернуться на главную</a></p>
+      <h2>Страница не найдена</h2>
     </div>
     <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
   </div>
