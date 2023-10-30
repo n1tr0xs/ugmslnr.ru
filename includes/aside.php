@@ -16,15 +16,17 @@
     order by `date` desc
     limit 1
     ";
-    $row = get_row($conn, $sql);
-    if($row) {?>
-      <span class='div-name'> Погода в Луганске </span>
+    $row = get_row($conn, $sql); ?>
+    <span class='div-name'> Погода в Луганске </span>
+    <? if($row) {?>
       <p style='text-align: center;'><?=date("d.m.Y", strtotime($row['date']))?></p>
       <div class='text-center'><img src="<?=$row['url']?>" class='no-border' width="75px"></div>
       <p><span id="temperature">Температура</span>: <?=$row["temperature"]?> &#x2103;</p>
       <p><span id="wind">Ветер</span>: <?=$row["wind_speed"]?> м/с</p>
       <p><span id="humidity">Влажность</span>: <?=$row["humidity"]?> %</p>
       <p><span id="pressure">Давление</span>: <?=$row["pressure"]?> мм.рт.ст.</p>
+    <? } else { ?>
+      <p> Нет данных о текущей погоде </p>
     <? } ?>
   </div>
 
@@ -53,16 +55,16 @@
       $data = get_arr($conn, $sql);
       foreach($data as $row) { ?>
         <? array_push($warned, $row['aside_name']); ?>
-        <div class="warning warned">
+        <div class="warning warned" title="Предупреждение есть">
           <div>
             <div class="circle"></div>
             <span><a href="/warning.php?id=<?=$row['id']?>"><?=$row['aside_name']?></a></span>
           </div>
         </div>
-      <? } 
-      $not_warned = array_diff($not_warned, $warned);
-      foreach($not_warned as $type) { ?>
-        <div class="warning">
+      <? } ?>
+      <? $not_warned = array_diff($not_warned, $warned); ?>
+      <? foreach($not_warned as $type) { ?>
+        <div class="warning" title="Предупреждений нет или нет данных">
           <div>
             <div class="circle"></div>
             <span><?=$type?></span>
