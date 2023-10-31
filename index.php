@@ -13,7 +13,7 @@
         const fileName = 'news' + i + '.php';
         const url = '/news/' + fileName;
         const xhttp = new XMLHttpRequest();
-        xhttp.open("GET", url, true);
+        xhttp.open("GET", url, false);
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             const page = parser.parseFromString(this.responseText, 'text/html');

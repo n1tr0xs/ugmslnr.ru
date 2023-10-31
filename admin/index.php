@@ -18,24 +18,24 @@
         'weather_forecast_table',
         'weather_forecast_text',
         'radiation',
-      ]
-      const xhttp = new XMLHttpRequest();
+        ]
       const div = document.getElementById('content');
       const ul = document.createElement('ul');
       div.appendChild(ul);
       const parser = new DOMParser();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          const page = parser.parseFromString(this.responseText, 'text/html');
-          li = document.createElement('li');
-          ul.appendChild(li);
-          a = document.createElement('a');
-          li.appendChild(a);
-          a.href = this.responseURL;
-          a.innerText = page.querySelector('title').innerText;
-        }
-      };
       files.forEach((file)=>{
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            const page = parser.parseFromString(this.responseText, 'text/html');
+            li = document.createElement('li');
+            ul.appendChild(li);
+            a = document.createElement('a');
+            li.appendChild(a);
+            a.href = this.responseURL;
+            a.innerText = page.querySelector('title').innerText;
+          }
+        };
         xhttp.open('GET', file+'.php', false);
         xhttp.send();
       });
