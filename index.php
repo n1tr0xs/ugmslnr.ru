@@ -19,7 +19,7 @@
         ";
         $data = get_arr($conn, $sql);
         foreach($data as $row){ ?>
-          <a href="/news.php?id=<?=$row['id']?>">
+          <a href="/views/news.php?id=<?=$row['id']?>">
             <div>
               <h3 class='news-title'> <?=$row['title']?> </h3>
               <?=substr($row['desc'], 0, strpos($row['desc'], '</p>')). '...'?>

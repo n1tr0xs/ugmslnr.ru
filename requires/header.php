@@ -45,7 +45,7 @@ $conn = connect("visiter", "");
         <li><a href="/to_customers/office_hours.php">Часы приема</a></li>
       </ul>
     </li>
-    <li class='navbar'><a href='/weather_report.php'>Погода</a></li>
+    <li class='navbar'><a href='/views/weather_report.php'>Погода</a></li>
     <div id="theme-form-container">
     <form id="theme-form">
       ☀

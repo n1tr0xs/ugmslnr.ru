@@ -58,7 +58,7 @@
         <div class="warning warned" title="Предупреждение есть">
           <div>
             <div class="circle"></div>
-            <span><a href="/warning.php?id=<?=$row['id']?>"><?=$row['aside_name']?></a></span>
+            <span><a href="/views/warning.php?id=<?=$row['id']?>"><?=$row['aside_name']?></a></span>
           </div>
         </div>
       <? } ?>
@@ -93,7 +93,7 @@
       <li><a href='/hydromet/mndf.php'>Отдел метеорологических и численных прогнозов </a></li>
       <li><a href='/hydromet/amfam.php'>Отдел агрометеорологических прогнозов и агрометеорологии</a></li>
       <li><a href='/hydromet/hl.php'>Отдел гидрологии</a></li>
-      <li><a href='/weather_report.php'>Прогноз погоды </a></li>
+      <li><a href='/views/weather_report.php'>Прогноз погоды </a></li>
       <li><a href='/hydromet/comments.php'>Комментарии синоптика </a></li>
       <li><a href='/hydromet/fire_danger.php'>Пожарная опасность</a></li>
       <li><a href='/hydromet/criteria.php'>Критерии ОЯ и НЯ</a></li>
