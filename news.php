@@ -16,7 +16,6 @@
       from `ugmslnr`.`news`
       where id={$id}
       ";
-      echo $sql;
       $row = get_row($conn, $sql);
       ?>
       <h3 class='news-title'> <?=$row['title']?> </h3>
