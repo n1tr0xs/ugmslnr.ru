@@ -9,24 +9,18 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h1> Последние новости </h1>
-      <div id='news-container'>
-        <?
-        $sql = "
-        select id, title, `desc`
-        from `ugmslnr`.`news`
-        order by id desc
-        ";
-        $data = get_arr($conn, $sql);
-        foreach($data as $row){ ?>
-          <a href="/news.php?id=<?=$row['id']?>">
-            <div>
-              <h3 class='news-title'> <?=$row['title']?> </h3>
-              <?=substr($row['desc'], 0, strpos($row['desc'], '</p>')). '...'?>
-            </div>
-          </a>
-        <? } ?>
-      </div>
+      <?
+      $id = $_GET['id'];
+      $sql = "
+      select id, title, `desc`
+      from `ugmslnr`.`news`
+      where id={$id}
+      ";
+      echo $sql;
+      $row = get_row($conn, $sql);
+      ?>
+      <h3 class='news-title'> <?=$row['title']?> </h3>
+      <?=$row['desc']?>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>

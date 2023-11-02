@@ -18,7 +18,8 @@
         'weather_forecast_table',
         'weather_forecast_text',
         'radiation',
-        ]
+        'news_create',
+      ]
       const div = document.getElementById('content');
       const ul = document.createElement('ul');
       div.appendChild(ul);
