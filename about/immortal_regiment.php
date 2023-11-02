@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
 <head>
   <meta name="description" content="Бессмертный полк">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Бессмертный полк</title>
 </head>
 <body>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
       <p>Гидрометеорологическое обеспечение Вооруженных Сил в период ВОВ 1941-1945 – одна из самых значимых страниц гидрометеорологической службы СССР, в состав которой входило Управление гидрометеорологической службы Украины.
@@ -31,8 +31,8 @@
       </p>
       <p style="color:red; font-weight: bold; font-size: 1.5em; text-align: center;">Мы помним подвиг нашего народа в Великой Отечественной войне. Мы ценим их героическую волю и стремление к свободе. Мы чтим память тех, кто подарил свободу будущим поколениям!</p>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
 </html>

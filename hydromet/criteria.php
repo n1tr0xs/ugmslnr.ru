@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
 <head>
   <meta name="description" content="Критерии опасных явлений и неблагоприятных явлений">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Критерии ОЯ и НЯ</title>
 </head>
 <body>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
       <p> <span style='font-weight: bold;'> Опасное природное явление (ОЯ) </span>: Гидрометеорологическое или гелиогеофизическое явление, которое по интенсивности развития, продолжительности или моменту возникновения может представлять угрозу жизни или здоровью граждан, а также может наносить значительный материальный ущерб.</p>
@@ -265,8 +265,8 @@
         </tbody>
       </table>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
 </html>

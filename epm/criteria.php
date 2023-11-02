@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta name="description" content="Критерии качества компонентов природной среды">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <style media="screen">
     #content > span {
       text-align: center;
@@ -14,7 +14,7 @@
   <title>Критерии качества компонентов природной среды</title>
 </head>
 <body>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
       <h3 > Критерии экстремально высокого загрязнения окружающей природной среды (ЭВЗ) </h3>
@@ -114,8 +114,8 @@
         </ul>
       </ol>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
 </html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="Прмеры запросов в УГМС по ЛНР">
   <title>Образцы писем-запросов</title>
 </head>
 <body>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
       <h2>Образцы писем-запросов</h2>
@@ -22,8 +22,8 @@
         </ul>
       </div>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
 </html>

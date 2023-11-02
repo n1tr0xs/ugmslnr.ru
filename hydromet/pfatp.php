@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
 <head>
   <meta name="description" content="Вероятностный прогноз температуры воздуха и осадков">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Вероятностный прогноз температуры воздуха и осадков</title>
 </head>
 <body>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
       <h3> Вероятностный прогноз температуры воздуха и осадков </h3>
@@ -22,8 +22,8 @@
           <? } ?>
       </table>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
 </html>

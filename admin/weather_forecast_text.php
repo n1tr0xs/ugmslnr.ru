@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
 <head>
   <meta http-equiv="robots" content="noindex">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html';?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
   <title>Администрирование - прогноз погоды - текст</title>
 </head>
 <body>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'> 
       <h3>Администрирование - прогноз погоды - текст</h3>
@@ -30,8 +30,8 @@
       </form>
       <span><a href='/admin/index.php'> Список панелей администрирования </a></span>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
 </html>

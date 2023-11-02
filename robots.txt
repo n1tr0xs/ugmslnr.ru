@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /includes/
+Disallow: /requires/
 Disallow: /js/
 Disallow: /updatable/
 Disallow: /admin/

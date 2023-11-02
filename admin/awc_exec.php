@@ -1,5 +1,5 @@
 <?
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/funcs.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/requires/funcs.php';
 $password = $_POST['password'];
 $conn = connect("editor", $password);
 

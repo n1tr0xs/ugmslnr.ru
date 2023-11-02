@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
 <head>
   <meta name="description" content="О нас">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>О нас</title>
 </head>
 <body>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
       <section>
@@ -20,8 +20,8 @@
         <p>Приказом Росгидромета от 31.03.2023 номер 206 утвержден Устав Учреждения.</p>
         <p>Учреждение действует на основании лицензии <a href="/files/docs/Л039-00117-7700663260 от 14.07.2023.pdf">Л039-00117-77/00663260 от 14.07.2023</a> по виду деятельности «Деятельность в области гидрометеорологии и смежных с ней областях (за исключением указанной деятельности, осуществляемой в ходе инженерных изысканий, выполняемых для подготовки проектной документации, строительства)».</p>
       </div>
-      <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
+      <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
   </body>
   </html>

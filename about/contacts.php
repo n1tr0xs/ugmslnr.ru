@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
 <head>
   <meta name="description" content="Контакты УГМС по ЛНР">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Контакты</title>
 </head>
 <body>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
       <h2> Общая контактная информация </h1>
@@ -23,8 +23,8 @@
           <span>857-2-96-60-61</span>
         </p>
       </div>
-      <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
+      <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
   </body>
   </html>

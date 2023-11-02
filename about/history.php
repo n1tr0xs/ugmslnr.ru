@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
 <head>
   <meta name="description" content="Краткая историческая справка УГМС по ЛНР">
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.html'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Краткая историческая справка</title>
 </head>
 <body>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
       <h3>Краткая историческая справка</h3>
@@ -22,8 +22,8 @@
       <p> 01 февраля 2015 года Луганский областной центр по гидрометеорологии преобразован в Центр гидрометеорологии Министерства чрезвычайных ситуаций и ликвидации последствий стихийных бедствий Луганской Народной Республики.</p>
       <p> 31 марта 2023 года на территории Луганской Народной Республики создано федеральное государственное бюджетное учреждение «Управление по гидрометеорологии и мониторингу окружающей среды по Луганской Народной Республике».</p>
     </div>
-    <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/aside.php'; ?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>
-  <? include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
 </html>

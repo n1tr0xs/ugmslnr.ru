@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   const theme = getCookie('theme');
   const localUrl = `/css/${theme}.css`;
-  if(['dark', 'light'].includes(theme))
+  if(['dark', 'light'].requires(theme))
     document.getElementById("stylesheet").href = localUrl;
   document.getElementById('theme-switcher').checked = (theme === 'dark');
 });
