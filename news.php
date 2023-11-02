@@ -10,7 +10,7 @@
   <div id='containter'>
     <div id='content'>
       <?
-      $id = $_GET['id'];
+      $id = $conn->real_escape_string($_GET['id']);
       $sql = "
       select id, title, `desc`
       from `ugmslnr`.`news`
