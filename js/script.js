@@ -23,15 +23,6 @@ function getCookie(cname) {
   return "";
 }
 
-function setSize(){
-  const c = document.getElementById('content');
-  const a = document.getElementById('aside-content');
-  new_height = c.offsetHeight > a.offsetHeight ? c.offsetHeight : a.offsetHeight;
-  console.log(c.offsetHeight, a.offsetHeight);
-  a.style.height = new_height + 'px';
-  c.style.height = new_height + 'px';
-}
-
 // ############################################################################
 // listeners
 // ############################################################################
