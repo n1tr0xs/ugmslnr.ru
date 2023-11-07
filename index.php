@@ -9,13 +9,14 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h1> Последние новости </h1>
+      <h2> Последние новости </h2>
       <div id='news-container'>
         <?
         $sql = "
         select id, title, `desc`
         from `ugmslnr`.`news`
         order by id desc
+        limit 10
         ";
         $data = get_arr($conn, $sql);
         foreach($data as $row){ ?>

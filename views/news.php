@@ -11,15 +11,16 @@
     <div id='content'>
       <?
       $id = $conn->real_escape_string($_GET['id']);
-      $sql = "
-      select id, title, `desc`
-      from `ugmslnr`.`news`
-      where id={$id}
-      ";
-      $row = get_row($conn, $sql);
-      ?>
-      <h3 class='news-title'> <?=$row['title']?> </h3>
-      <?=$row['desc']?>
+      if($id) {
+        $sql = "
+        select id, title, `desc`
+        from `ugmslnr`.`news`
+        where id={$id}
+        ";   
+        $row = get_row($conn, $sql); ?>
+        <h3 class='news-title'> <?=$row['title']?> </h3>
+        <?=$row['desc']?>
+      <? } ?>  
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>
