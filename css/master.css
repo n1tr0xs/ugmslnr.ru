@@ -297,7 +297,6 @@ p.region {
 }
 
 /* file drop area styling */
-
 .file-drop-area {
   position: relative;
   display: flex;
@@ -400,7 +399,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
 /* theme switcher end */
 
 textarea {
