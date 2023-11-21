@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 // theme switcher
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function(){
   themeForm = document.getElementById('theme-form');
   themeForm.addEventListener('change', function(){
     const is_checked = document.getElementById('theme-switcher').checked;
@@ -65,16 +65,16 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // get theme from cookie
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function(){
   const theme = getCookie('theme');
   const localUrl = `/css/${theme}.css`;
-  if(['dark', 'light'].requires(theme))
+  if(['dark', 'light'].includes(theme))
     document.getElementById("stylesheet").href = localUrl;
   document.getElementById('theme-switcher').checked = (theme === 'dark');
 });
 
 // prefered color scheme handler
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function(){
   const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
   let theme = 'light';
   if(colorSchemeQueryList['matches'] === true){
