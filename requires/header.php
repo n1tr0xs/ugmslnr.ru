@@ -1,6 +1,7 @@
 <? 
 require $_SERVER['DOCUMENT_ROOT'] . '/requires/funcs.php'; 
-$conn = connect("visiter", "");
+
+$conn = connect("visiter", "visiter_ugms");
 ?>
 <header>
   <script src="/js/script.js"></script>

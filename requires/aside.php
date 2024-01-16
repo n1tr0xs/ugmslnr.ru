@@ -20,7 +20,7 @@
     <span class='div-name'> Погода в Луганске </span>
     <? if($row) {?>
       <p style='text-align: center;'><?=date("d.m.Y", strtotime($row['date']))?></p>
-      <div class='text-center'><img src="<?=$row['url']?>" class='no-border' width="75px"></div>
+      <!--<div class='text-center'><img src="<?=$row['url']?>" class='no-border' width="75px"></div>-->
       <p><span id="temperature">Температура</span>: <?=$row["temperature"]?> &#x2103;</p>
       <p><span id="wind">Ветер</span>: <?=$row["wind_speed"]?> м/с</p>
       <p><span id="humidity">Влажность</span>: <?=$row["humidity"]?> %</p>

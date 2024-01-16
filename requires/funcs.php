@@ -3,7 +3,8 @@
 // error_reporting(0);	
 
 function connect($login, $password){
-	$conn = new mysqli("ugmslnr", $login, $password);
+	$conn = new mysqli("127.0.0.1", $login, $password, "ugmslnr");
+	return $conn;
 	if ($conn->connect_error)
 		return false;
 	return $conn;
@@ -33,7 +34,7 @@ function get_files($folder, $ext='.pdf'){
 	$files = scandir($dir);	
 	foreach($files as $file){
 		if(strpos($file, $ext) !== false){
-			yield $folder.$file => basename($file, $ext);
+			yield $folder.$file => $file;
 		}
 	}
 }
@@ -55,4 +56,13 @@ function format_date($date){
         case 12: $m = 'декабря'; break;
     }
     return intval($date[2]).'&nbsp;'.$m.'&nbsp;'.$date[0].'&nbsp'.'года';
+}
+
+function exec_result($response, $file){
+    if($response === TRUE){
+        echo "Данные отправлены.";
+    } else {
+        echo "Ошибка отправки данных.<br> {$conn->error}";
+    }
+    echo "<br><a href='/admin/". basename($file, '_exec.php'). ".php'>Вернуться на страницу ввода </a>";
 }
