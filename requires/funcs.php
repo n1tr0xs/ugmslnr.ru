@@ -58,11 +58,13 @@ function format_date($date){
     return intval($date[2]).'&nbsp;'.$m.'&nbsp;'.$date[0].'&nbsp'.'года';
 }
 
-function exec_result($response, $file){
-    if($response === TRUE){
+function exec_result($sql, $file){
+    $conn = connect("editor", '9v~<\XRZ#*vvf');
+    if($conn->query($sql) === TRUE){
         echo "Данные отправлены.";
     } else {
-        echo "Ошибка отправки данных.<br> {$conn->error}";
+        echo "Ошибка отправки данных.<br> {$conn->error}<br>";
+        echo "SQL: {$sql}";
     }
     echo "<br><a href='/admin/". basename($file, '_exec.php'). ".php'>Вернуться на страницу ввода </a>";
 }

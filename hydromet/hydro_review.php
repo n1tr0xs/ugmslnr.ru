@@ -9,6 +9,7 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
+      <h2>Месячные гидрологические обзоры</h2>
       <table class='no-border text-left table-striped'>
         <? 
           $path = "/updatable/hydro_review/";

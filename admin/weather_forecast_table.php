@@ -51,9 +51,6 @@
 
           <label>Температура</label>          
           <input type="text" id="temperature" name="temperature" required>
-
-          <label>Пароль</label>
-          <input type="password" name="password" placeholder="Пароль" required>
           
           <button id='submit-button'>Отправить данные</button>
         </fieldset>

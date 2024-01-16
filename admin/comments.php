@@ -19,9 +19,6 @@
           <label>Комментарий</label>
           <textarea name="comment" placeholder="Комментарий" rows="5" cols="50" required></textarea>
           
-          <label>Пароль</label>
-          <input type="password" name="password" placeholder="Пароль" required>
-          
           <button>Отправить данные</button>
         </fieldset>
       </form>

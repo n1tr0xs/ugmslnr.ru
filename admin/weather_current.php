@@ -15,16 +15,17 @@
           
           <label for="date">Дата</label> 
           <input type="date" name="date" value="<?=date('Y-m-d')?>" required>
-          
-          <label for="icon">Иконка</label>
-          <select name="icon" required>
-            <?
-            $sql = "SELECT * FROM `ugmslnr`.`icons` order by `id`";
-            $arr = get_arr($conn, $sql);
-            foreach($arr as $row){ ?>
-              <option value="<?=$row['id']?>"><?=$row['name']?></option>
-            <? } ?>
-          </select>
+          <div class='hidden'>
+              <label for="icon">Иконка</label>
+              <select name="icon" required>
+                <?
+                $sql = "SELECT * FROM `ugmslnr`.`icons` order by `id`";
+                $arr = get_arr($conn, $sql);
+                foreach($arr as $row){ ?>
+                  <option value="<?=$row['id']?>"><?=$row['name']?></option>
+                <? } ?>
+              </select>
+          </div>
           
           <label>Температура</label>          
           <input type="text" id="temperature" name="temperature" required>
@@ -37,9 +38,6 @@
           
           <label>Давление</label>          
           <input type="number" id="pressure" name="pressure" required>
-          
-          <label>Пароль</label>
-          <input type="password" name="password" placeholder="Пароль" required>
 
           <button id='submit-button'>Отправить данные</button>
         </fieldset>

@@ -22,9 +22,6 @@
           <label>Описание</label>
           <textarea rows="5" cols="50" name="desc" placeholder="Описание" required></textarea>
           
-          <label>Пароль</label>
-          <input type="password" name="password" placeholder="Пароль" required>
-          
           <button>Отправить данные</button>
         </fieldset>
       </form>

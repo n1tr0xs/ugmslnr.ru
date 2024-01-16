@@ -9,16 +9,13 @@
       const files = [
         'awc',
         'comments',
-        'fire_danger_pic',
         'fire_forecast',
-        'hydro_map_pic',
         'pollution',
         'warnings',
         'weather_current',
         'weather_forecast_table',
         'weather_forecast_text',
         'radiation',
-        'news_create',
       ]
       const div = document.getElementById('content');
       const ul = document.createElement('ul');

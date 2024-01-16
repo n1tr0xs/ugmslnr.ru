@@ -1,7 +1,6 @@
 <?
 require $_SERVER['DOCUMENT_ROOT'] . '/requires/funcs.php';
-$password = $_POST['password'];
-$conn = connect("editor", $password);
+$conn = connect("editor", '9v~<\XRZ#*vvf');
 
 $date = $conn->real_escape_string($_POST['date']);
 $desc = $conn->real_escape_string($_POST['desc']);
@@ -11,12 +10,5 @@ replace into `ugmslnr`.`awc` values
 ('{$date}', '{$desc}')
 ";
 
-$ch = curl_init(($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . '/admin/result.php');
-$ch_opts = [];
-$ch_opts[CURLOPT_RETURNTRANSFER] = true;
-$ch_opts[CURLOPT_POSTFIELDS] = [];
-$ch_opts[CURLOPT_POSTFIELDS]['file'] = basename(__FILE__, '_exec.php');
-$ch_opts[CURLOPT_POSTFIELDS]['resp'] = ($conn->query($sql) === TRUE);
-curl_setopt_array($ch, $ch_opts);
-echo curl_exec($ch);
+exec_result($sql, __FILE__);
 ?>

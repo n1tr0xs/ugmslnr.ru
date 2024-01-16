@@ -9,7 +9,7 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3> Ежемесячный бюллетень загрязнения окружающей среды</h3>
+      <h2>Ежемесячный бюллетень загрязнения окружающей среды</h2>
       <table class='no-border text-left table-striped'>
         <? 
           $path = "/updatable/environment_review/";

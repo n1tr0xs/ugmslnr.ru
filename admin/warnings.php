@@ -29,9 +29,6 @@
           <label>Конец</label>
           <input type="datetime-local" name="end">
           
-          <label>Пароль</label>
-          <input type="password" name="password" placeholder="Пароль" required>
-          
           <button>Отправить данные</button>
         </fieldset>
       </form>

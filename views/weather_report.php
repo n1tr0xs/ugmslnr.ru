@@ -11,7 +11,6 @@
     <div id='content'>
       <h3> Прогноз погоды </h3>
       <div id='forecast'>
-        <table>
           <?
           $sql = "
           select date from (
@@ -20,10 +19,12 @@
           order by `date` desc 
           limit 3
           ) a
-          order by date asc
+          order by `date` asc
           ";
           $days = get_arr($conn, $sql);
+          if($days){
           ?>
+        <table>
           <tr>
             <? foreach ($days as $row){ ?>
               <td colspan="2"><?=date("d.m", strtotime($row['date']))?></td>
@@ -54,7 +55,7 @@
             order by `date` desc 
             limit 6
           ) a
-          order by date asc
+          order by date asc, day_part asc
           ";
           $data = get_arr($conn, $sql); 
           ?>
@@ -74,13 +75,13 @@
             <? } ?>
           </tr>
         </table>
-        <?
+        <? }
         $sql = "
         select 
           date, desc_city, desc_region 
         from 
           `ugmslnr`.`weather_forecast_text` 
-        order by date desc
+        order by date asc
         limit 3
         ";
         $data = get_arr($conn, $sql);

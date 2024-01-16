@@ -22,9 +22,6 @@
           <label>Описание для области</label>
           <textarea cols="50" rows="5" name="desc_region" placeholder="Описание для области" required></textarea>
           
-          <label>Пароль</label>
-          <input type="password" name="password" placeholder="Пароль" required>
-          
           <button id='submit-button'>Отправить данные</button>
         </fieldset>
       </form>

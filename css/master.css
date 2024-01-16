@@ -494,3 +494,7 @@ input[type='radio'] {
 input[type='checkbox']:active{
   transform: translateY(2px);
 }
+
+.hidden {
+    display: none;
+}
