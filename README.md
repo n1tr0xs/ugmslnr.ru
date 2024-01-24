@@ -1,5 +1,3 @@
-This is source code of site for ФГБУ "УГМС по ЛНР" - ugmslnr.ru
-Developer: Никита "n1tr0xs" Троянов
+This is source code of site for ФГБУ "УГМС по ЛНР" - ugmslnr.ru.
 
-Use `ugmslnr.sql` to initialize SQL Database.
-Pages uses mysqli object created via `funcs.php::connect` to make SQL requests.
+Developer: Никита "n1tr0xs" Троянов.
