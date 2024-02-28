@@ -77,12 +77,14 @@
         </table>
         <? }
         $sql = "
+        select * from (
         select 
           date, desc_city, desc_region 
         from 
           `ugmslnr`.`weather_forecast_text` 
+        order by date desc
+        limit 3) a
         order by date asc
-        limit 3
         ";
         $data = get_arr($conn, $sql);
         ?>

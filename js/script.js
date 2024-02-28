@@ -13,7 +13,7 @@ function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
   let ca = decodedCookie.split(';');
-  for(let i = 0; i <ca.length; i++) {
+  for(let i = 0; i < ca.length; i++) {
     let c = ca[i];
     while (c.charAt(0) == ' ')
       c = c.substring(1);
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function(){
   menuBtn.addEventListener('click', function(){
   	menuBtn.classList.toggle('active');
   	menu.classList.toggle('active');
-  })
+  });
 });
 
 // dropdown menu items
@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function(){
   let dropdown = document.querySelectorAll('.dropdown');
   for(let i=0; i<dropdown.length; ++i) {
     let dd = dropdown[i];
-    let dropdown_content = dd.querySelectorAll('.dropdown-content');
     dd.addEventListener('click', function(){
+      let dropdown_content = this.querySelectorAll('.dropdown-content');
       for(let j=0; j<dropdown_content.length; ++j)
         dropdown_content[j].classList.toggle('active');
     });
@@ -61,7 +61,19 @@ document.addEventListener('DOMContentLoaded', function(){
     const localUrl = `/css/${fileName}`;
     document.getElementById("stylesheet").href = localUrl;
     setCookie('theme', theme);
-  })
+  });
+});
+
+// prefered color scheme handler
+document.addEventListener('DOMContentLoaded', function(){
+  const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+  let theme = 'light';
+  if(colorSchemeQueryList['.matches'] === true){
+    document.getElementById('theme-switcher').checked = true;
+    theme = 'dark';
+  }
+  const localUrl = `/css/${theme}.css`;
+  document.getElementById("stylesheet").href = localUrl;
 });
 
 // get theme from cookie
@@ -73,29 +85,17 @@ document.addEventListener('DOMContentLoaded', function(){
   document.getElementById('theme-switcher').checked = (theme === 'dark');
 });
 
-// prefered color scheme handler
-document.addEventListener('DOMContentLoaded', function(){
-  const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
-  let theme = 'light';
-  if(colorSchemeQueryList['matches'] === true){
-    document.getElementById('theme-switcher').checked = true;
-    theme = 'dark';
-  }
-  const localUrl = `/css/${theme}.css`;
-  document.getElementById("stylesheet").href = localUrl;
-});
-
 // custom file input
 document.addEventListener('DOMContentLoaded', function(){
   try {
     const input = document.getElementById('file-input');
     const span = document.getElementById('file-msg');
     input.addEventListener('input', function(){
-      if(this.files[0]['name'].split('.').pop() != 'png'){    
+      if(this.files[0].name.split('.').pop() != 'png'){    
         alert('Выберите png файл!');
         return (this.value = "");
       }
-      span.innerText = this.files[0]['name'];
+      span.innerText = this.files[0].name;
     });
-  } catch (e) {};
+  } catch (e) {}
 });

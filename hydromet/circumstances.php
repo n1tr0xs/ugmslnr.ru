@@ -9,6 +9,7 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
+        <h2>Гидрометеорологические условия</h2>
       <table class='no-border text-left table-striped'>
         <? 
           $path = "/updatable/circumstances/";

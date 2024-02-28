@@ -9,8 +9,14 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
+        <h2>Комментарии синоптика</h2>
       <? 
-      $sql = "select `date`, `comment` from `ugmslnr`.`sinop_comments` order by `date` desc limit 1";
+      $sql = "
+      select `date`, `comment` 
+      from `ugmslnr`.`sinop_comments` 
+      order by `date` desc 
+      limit 1
+      ";
       $row = get_row($conn, $sql);
       if($row) { ?>
         <h3> Комментарии синоптика от <?=format_date($row['date'])?></h3>

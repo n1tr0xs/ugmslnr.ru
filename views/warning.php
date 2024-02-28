@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta name="description" content="предупреждение по Луганской области">
+  <meta name="description" content="Предупреждение по ЛНР № <?=$_GET['id'];?>">
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
-  <title>Просмотр предупреждения</title>
+  <title>Просмотр предупреждения № <?=$_GET['id'];?></title>
 </head>
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>

@@ -9,13 +9,17 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3>Радиационная обстановка</h3>
+      <h2>Радиационная обстановка</h2>
       <?
-      $sql = "select * from `ugmslnr`.`radiation` order by `date` desc limit 1";
+      $sql = "
+      select * 
+      from `ugmslnr`.`radiation` 
+      order by `date` desc 
+      limit 1";
       $row = get_row($conn, $sql);
-      ?>
-      <p class="day"><?=date("d.m.Y", strtotime($row['date']))?></p>
-      <p class="description"><?=$row['description']?></p>
+      if($row){?>
+        <p class="description"><?=$row['description']?></p>
+      <? } ?>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>

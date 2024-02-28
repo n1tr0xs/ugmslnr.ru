@@ -12,7 +12,7 @@
       <h2>Месячные гидрологические обзоры</h2>
       <table class='no-border text-left table-striped'>
         <? 
-          $path = "/updatable/hydro_review/";
+          $path = "/updatable/hydro/reviews/";
           $ext = ".pdf";
           $files = get_files($path, $ext); 
           foreach($files as $path => $name){ ?>

@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
-  <meta name="description" content="Приемные дни УГМС по ЛНР">
-  <title>Часы приема</title>
+  <meta name="description" content="Приемные часы УГМС по ЛНР">
+  <title>Часы приёма</title>
 </head>
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>

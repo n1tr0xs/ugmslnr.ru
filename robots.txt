@@ -3,3 +3,4 @@ Disallow: /requires/
 Disallow: /js/
 Disallow: /updatable/
 Disallow: /admin/
+Disallow: /test/

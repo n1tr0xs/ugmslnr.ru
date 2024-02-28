@@ -19,13 +19,12 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3> Руководство УГМС по ЛНР</h3>
-
+      <h2>Руководство ФГБУ «УГМС по ЛНР»</h2>
       <div class='leader'>
         <img src="/files/imgs/photo-w.png">
         <div>
           <p class='name'>Баева Ирина Николаевна</p>
-          <p>Начальник Учреждения</p>
+          <p>Начальник учреждения</p>
           <p>Электронная почта: <a href='mailto:ugms.lnr@mail.ru'>ugms.lnr@mail.ru</a></p>
         </div>
       </div>
@@ -34,7 +33,7 @@
         <img src="/files/imgs/photo-w.png">
         <div>
           <p class='name'>Шишова Светлана Сергеевна</p>
-          <p>Заместитель начальника Учреждения – начальник центра мониторинга загрязнения окружающей среды</p>
+          <p>Заместитель начальника учреждения – начальник Центра по мониторингу загрязнения окружающей среды</p>
           <p>Электронная почта: <a href='mailto:ugms.lnr@mail.ru'>ugms.lnr@mail.ru</a></p>
         </div>
       </div>
@@ -43,7 +42,7 @@
         <img src="/files/imgs/photo-w.png">
         <div>
           <p class='name'>Шубенок Светлана Николаевна</p>
-          <p>Заместитель начальника Учреждения – начальник Гидрометцентра Луганской Народной Республики</p>
+          <p>Заместитель начальника учреждения – начальник гидрометцентра Луганской Народной Республики</p>
           <p>Электронная почта: <a href='mailto:ugms.lnr@mail.ru'>ugms.lnr@mail.ru</a></p>
         </div>
       </div>

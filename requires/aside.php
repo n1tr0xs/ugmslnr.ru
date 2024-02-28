@@ -17,9 +17,9 @@
     limit 1
     ";
     $row = get_row($conn, $sql); ?>
-    <span class='div-name'> Погода в Луганске </span>
+    <span class='div-name'>Погода в Луганске</span>
     <? if($row) {?>
-      <p style='text-align: center;'><?=date("d.m.Y", strtotime($row['date']))?></p>
+      <p class='text-center' style="text-indent: 0;"><?=date("d.m.Y", strtotime($row['date']))?></p>
       <div class='text-center'><img src="<?=$row['url']?>" class='no-border' width="75px"></div>
       <p><span id="temperature">Температура</span>: <?=$row["temperature"]?> &#x2103;</p>
       <p><span id="wind">Ветер</span>: <?=$row["wind_speed"]?> м/с</p>
@@ -77,12 +77,13 @@
   <div>
     <span class='div-name'> Мониторинг загрязнения окружающей среды </span>
     <ul>
-      <li><a href='/epm/index.php'> Центр мониторинга загрязнения окружающей среды </a></li>
+      <li><a href='/epm/index.php'> Центр по мониторингу загрязнения окружающей среды </a></li>
       <li><a href='/epm/criteria.php'> Критерии качества компонентов природной среды </a></li>
       <li><a href='/epm/awc.php'> Информация о неблагоприятных метеорологических условиях (НМУ) </a></li>
       <li><a href='/epm/pollution.php'> Загрязнение атмосферного воздуха </a></li>
       <li><a href='/epm/radiation.php'> Радиационная обстановка </a></li>
-      <li><a href='/epm/environment_review.php'> Ежемесячный обзор состояния окружающей среды </a></li>
+      <li><a href='/epm/cms_net.php'> Сеть наблюдений за загрязнением окружающей среды <br/> &emsp;ФГБУ «УГМС по ЛНР» </a></li>
+      <li><a href='/epm/environment_review.php'> Ежемесячный бюллетень состояния окружающей среды </a></li>
     </ul>
   </div>
 

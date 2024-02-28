@@ -11,7 +11,7 @@
   <div id='containter'>
     <div id='content'>
       <div class='text-center'>
-        <img class="no-border auto-scaled-img" src="/files/imgs/structure.png">
+        <img class="no-border" src="/files/imgs/structure.png">
       </div>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>

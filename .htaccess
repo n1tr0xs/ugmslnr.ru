@@ -1,10 +1,8 @@
-DirectoryIndex index.php index.html index.shtml
+DirectoryIndex index.php index.html
 
 AddDefaultCharset UTF-8
-AddCharset UTF-8 .html
-AddCharset UTF-8 .php
 
-<FilesMatch "\.(html|php)$">
+<FilesMatch "\.(php|doc|pdf)$">
     Header set Cache-Control: "no-cache, no-store"
     Header unset ETag
 </FilesMatch>

@@ -1,3 +1,4 @@
+<? header('HTTP/1.1 404 Not Found'); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>

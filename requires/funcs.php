@@ -1,6 +1,6 @@
 <?
 // MARK: prod / dev version comment	
-// error_reporting(0);	
+error_reporting(0);	
 
 function connect($login, $password){
 	$conn = new mysqli("127.0.0.1", $login, $password, "ugmslnr");

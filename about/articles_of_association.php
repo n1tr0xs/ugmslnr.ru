@@ -9,12 +9,12 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3> Уставные документы </h3>
+      <h2> Уставные документы </h2>
       <ul class='no-bullets'>
-        <li><a href="/files/documents/regulation.pdf">Устав ФГБУ "УГМС по ЛНР"</a></li>
-        <li><a href="/files/documents/oerder.pdf">Приказ</a></li>
-        <li><a href="/files/documents/ul-1239400002610-20230828151953.pdf">Выписка из Единого государственного реестра юридических лиц</a></li>
-        <li><a href="/files/documents/">Свидетельство о государственной регистрации юридического лица (ИНН)</a></li>
+        <li><a href="/files/docs/regulation.pdf">Устав ФГБУ "УГМС по ЛНР"</a></li>
+        <li><a href="/files/docs/order.pdf">Приказ</a></li>
+        <li><a href="/files/docs/ul-1239400002610-20230828151953.pdf">Выписка из Единого государственного реестра юридических лиц</a></li>
+        <li><a href="/files/docs/Л039-00117-7700663260 от 14.07.2023.pdf">Свидетельство о государственной регистрации юридического лица (ИНН)</a></li>
       </ul>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>

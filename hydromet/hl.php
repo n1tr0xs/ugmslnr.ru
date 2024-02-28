@@ -9,7 +9,7 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3 >Отдел гидрологии</h3>
+      <h2>Отдел гидрологии</h2>
       Основными видами деятельности отдела гидрологии является:
       <ul>
         <li>производство гидрологических и метеорологических наблюдений на гидрологических постах рек бассейна Северского Донца и реки Нагольная (бассейн Приазовья);</li>
@@ -20,18 +20,7 @@
         <li>обеспечение органов власти, населения и заинтересованных организаций гидрологической информацией, в том числе в период весеннего половодья.</li>
       </ul>
 
-      <div class="text-center"><img src="/updatable/hydro_map.png" class="no-border"></div>
-      <table class="text-left" style="font-size: 1em; width: 25%; float: bottom;" >
-        <caption>Условные обозначения</caption>
-        <tr>
-          <td style="color: black;">210</td>
-          <td width="min-content">Уровень воды</td>
-        </tr>
-        <tr>
-          <td style="color: red;">1</td>
-          <td>Изменение уровня воды</td>
-        </tr>          
-      </table>
+      <div class="text-center"><img src="/updatable/hydro/map.png?v=<?=time();?>" class="no-border"></div>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>

@@ -9,7 +9,7 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3>Прогноз пожароопасности</h3>
+      <h2>Прогноз пожароопасности</h2>
       <div class='text-center'>
         <img src="/updatable/fire_danger.png" alt="Пожарная опасность" class='no-border' width="700px">
       </div>

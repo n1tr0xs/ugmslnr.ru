@@ -1,14 +1,36 @@
 <? 
 require $_SERVER['DOCUMENT_ROOT'] . '/requires/funcs.php'; 
-
 $conn = connect("visiter", "visiter_ugms");
 ?>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(96387965, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/96387965" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 <header>
   <script src="/js/script.js"></script>
   <div>
-    <img src="/files/imgs/logo.png" alt="Логотип Росгидромет" class="no-border" align="left" style="width: 80px; height: 80px; margin-left: 25px">
+    <a href="/press/190_let.php" style="background-image:url(/files/imgs/banner_background.png);background-position: center;background-size:cover;display:flex;justify-content:center;width:100%;overflow:hidden;align-items:center;">
+      <img src="/files/imgs/banner_190.png" class='no-border' style="width: 100%; margin: 0; padding: 0;"/> 
+    </a>
+  </div>
+  <div>
+    <img src="/files/imgs/logo.png?v=2" alt="Логотип Росгидромет" class="no-border" align="left" style="width: 80px; height: 80px; margin-left: 25px">
     <p style="font-size: 1.2em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>
-    <p style="font-size: 1.2em"> "Управление по гидрометеорологии и мониторингу окружающей среды по Луганской Народной Республике" </p>
+    <p style="font-size: 1.2em"> «Управление по гидрометеорологии и мониторингу окружающей среды по Луганской Народной Республике» </p>
   </div>
 </header>
 
@@ -21,9 +43,9 @@ $conn = connect("visiter", "visiter_ugms");
   </div>
 
   <ul class='navbar menu'>
-    <li class='navbar'><a href='/index.php'>Начальная страница</a></li>
+    <li class='navbar'><a href='/index.php'>Новости</a></li>
     <li class='navbar dropdown'>
-      <a class='dropdown'>О нас ⮟</a>
+      <a class='dropdown'>О нас ▼</a>
       <ul class='navbar dropdown-content'>
         <li><a href='/about/index.php'>О нас</a></li>
         <li><a href='/about/leadership.php'>Руководство</a></li>
@@ -39,7 +61,7 @@ $conn = connect("visiter", "visiter_ugms");
     </li>
     <li class='navbar'><a href='/about/contacts.php'>Контакты</a></li>
     <li class='navbar dropdown'>
-      <a class='dropdown'>Потребителям ⮟</a>
+      <a class='dropdown'>Потребителям ▼</a>
       <ul class='navbar dropdown-content'>
         <li><a href="/to_customers/index.php">Услуги</a></li>
         <li><a href="/to_customers/request_samples.php">Образцы писем-запросов</a></li>
@@ -47,9 +69,10 @@ $conn = connect("visiter", "visiter_ugms");
       </ul>
     </li>
     <li class='navbar'><a href='/views/weather_report.php'>Погода</a></li>
+    
     <div id="theme-form-container">
-    <form id="theme-form">
-      ☀
+      <form id="theme-form">
+      🌞
       <label class="switch">
         <input type="checkbox" name="theme" id="theme-switcher">
         <span class="slider round"></span>
