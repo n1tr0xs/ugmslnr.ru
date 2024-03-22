@@ -23,12 +23,12 @@ $conn = connect("visiter", "visiter_ugms");
 <header>
   <script src="/js/script.js"></script>
   <div>
-    <a href="/press/190_let.php" style="background-image:url(/files/imgs/banner_background.png);background-position: center;background-size:cover;display:flex;justify-content:center;width:100%;overflow:hidden;align-items:center;">
-      <img src="/files/imgs/banner_190.png" class='no-border' style="width: 100%; margin: 0; padding: 0;"/> 
+    <a href="/press/190-let.php" style="background-image:url(/files/imgs/banner_background.png);background-position: center;background-size:cover;display:flex;justify-content:center;width:100%;overflow:hidden;align-items:center;">
+      <img src="/files/imgs/banner_190.png" style="width: 100%; margin: 0; padding: 0;"/> 
     </a>
   </div>
   <div>
-    <img src="/files/imgs/logo.png?v=2" alt="Логотип Росгидромет" class="no-border" align="left" style="width: 80px; height: 80px; margin-left: 25px">
+    <img src="/files/imgs/logo.png?v=2" alt="Логотип Росгидромет" align="left" style="width: 80px; height: 80px; margin-left: 25px">
     <p style="font-size: 1.2em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>
     <p style="font-size: 1.2em"> «Управление по гидрометеорологии и мониторингу окружающей среды по Луганской Народной Республике» </p>
   </div>
@@ -53,10 +53,8 @@ $conn = connect("visiter", "visiter_ugms");
         <li><a href='/about/requisites.php'>Реквизиты</a></li>
         <li><a href="/about/articles_of_association.php">Уставные документы</a></li>
         <li><a href="/about/anti_corruption.php">Противодействие коррупции</a></li>
-        <li><a href='/about/contacts.php'>Контакты</a></li>
         <li><a href='/about/immortal_regiment.php'>Бессмертный полк</a></li>
         <li><a href='/about/history.php'>Историческая справка</a></li>
-        <!-- <li><a href='/about/vakansy.php'>Вакансии</a></li> -->
       </ul>
     </li>
     <li class='navbar'><a href='/about/contacts.php'>Контакты</a></li>
@@ -64,8 +62,8 @@ $conn = connect("visiter", "visiter_ugms");
       <a class='dropdown'>Потребителям ▼</a>
       <ul class='navbar dropdown-content'>
         <li><a href="/to_customers/index.php">Услуги</a></li>
-        <li><a href="/to_customers/request_samples.php">Образцы писем-запросов</a></li>
-        <li><a href="/to_customers/office_hours.php">Часы приема</a></li>
+        <li><a href="/to_customers/contacts.php">Контакты</a></li>
+        <li><a href="/to_customers/dp_confirmation.php">Подтверждение возникновения ОЯ</a></li>
       </ul>
     </li>
     <li class='navbar'><a href='/views/weather_report.php'>Погода</a></li>

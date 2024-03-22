@@ -10,7 +10,7 @@
   <div id='containter'>
     <div id='content'>
       <h2>Сеть метеостанций ФГБУ «УГМС по ЛНР»</h2>
-      <div class='text-center'><img src="/files/imgs/meteo_net.jpg" class='no-border'></div>
+      <div class='text-center'><img src="/files/imgs/meteo_net.jpg"></div>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>

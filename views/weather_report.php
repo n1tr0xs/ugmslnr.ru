@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta name="description" content="Прогноз погоды по Луганску">
+  <meta name="description" content="Прогноз погоды по Луганску. Погода в Луганске. Погода в ЛНР.">
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Погода</title>
 </head>
@@ -61,7 +61,7 @@
           ?>
           <tr>
             <? foreach($data as $row){ ?>
-              <td class="text-center"> <img width="75px" height="75px" class="no-border" src="<?=$row['icon']?>"></td>
+              <td class="text-center"> <img width="75px" height="75px" src="<?=$row['icon']?>"></td>
             <? } ?>
           </tr>
           <tr>

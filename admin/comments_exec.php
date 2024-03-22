@@ -1,8 +1,8 @@
 <?
 require $_SERVER['DOCUMENT_ROOT'] . '/requires/funcs.php';
-$conn = connect("editor", '9v~<\XRZ#*vvf');
+$conn = connect("visiter", "visiter_ugms");
 
-$_file = basename(__FILE__, '_exec.php');
+// $_file = basename(__FILE__, '_exec.php');
 
 $date = $conn->real_escape_string($_POST['date']);
 $comment = $conn->real_escape_string($_POST['comment']);

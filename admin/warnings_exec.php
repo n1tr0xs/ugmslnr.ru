@@ -1,6 +1,6 @@
 <?
 require $_SERVER['DOCUMENT_ROOT'] . '/requires/funcs.php';
-$conn = connect("editor", '9v~<\XRZ#*vvf');
+$conn = connect("visiter", "visiter_ugms");
 
 $aside_name = $conn->real_escape_string($_POST['type']);
 $description = $conn->real_escape_string($_POST['description']);

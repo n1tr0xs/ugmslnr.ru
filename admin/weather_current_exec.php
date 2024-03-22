@@ -1,6 +1,7 @@
 <?
 require $_SERVER['DOCUMENT_ROOT'] . '/requires/funcs.php';
-$conn = connect("editor", '9v~<\XRZ#*vvf');
+$conn = connect("visiter", "visiter_ugms");
+
 $date = $conn->real_escape_string($_POST['date']);
 $icon = $conn->real_escape_string($_POST['icon']);
 $temperature = $conn->real_escape_string($_POST['temperature']);
@@ -9,7 +10,7 @@ $humidity = $conn->real_escape_string($_POST['humidity']);
 $pressure = $conn->real_escape_string($_POST['pressure']);
 
 $sql = "
-replace into `ugmslnr`.`weather_current` values 
+insert into `weather_current` values 
 ('', '{$date}', {$icon}, {$temperature}, {$wind_speed}, {$humidity}, {$pressure})
 ";
 

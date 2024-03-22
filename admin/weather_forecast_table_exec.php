@@ -1,6 +1,6 @@
 <?
 require $_SERVER['DOCUMENT_ROOT'] . '/requires/funcs.php';
-$conn = connect("editor", '9v~<\XRZ#*vvf');
+$conn = connect("visiter", "visiter_ugms");
 
 $date = $conn->real_escape_string($_POST['date']);
 $day_part = $conn->real_escape_string($_POST['day_part']);

@@ -504,7 +504,7 @@ input[type='checkbox']:active{
 }
 
 .short-news-title:hover,
-#news-container :hover > p.short-news-title {
+#news-container > a:hover > div > p.short-news-title {
     text-decoration: underline;
 }
 
@@ -514,4 +514,8 @@ input[type='checkbox']:active{
 
 .bold {
     font-weight: bold;
+}
+
+.clear {
+    clear: both;
 }

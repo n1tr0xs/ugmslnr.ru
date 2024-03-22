@@ -11,7 +11,7 @@
     <div id='content'>
       <h2>Прогноз пожароопасности</h2>
       <div class='text-center'>
-        <img src="/updatable/fire_danger.png" alt="Пожарная опасность" class='no-border' width="700px">
+        <img src="/updatable/fire_danger.png" alt="Карта-прогноз пожароопасности" width="700px" onerror="this.style.display='none';">
       </div>
       <div>
         <?

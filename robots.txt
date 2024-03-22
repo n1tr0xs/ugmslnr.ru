@@ -1,6 +1,11 @@
 User-agent: *
+User-agent: Yandex
 Disallow: /requires/
 Disallow: /js/
 Disallow: /updatable/
 Disallow: /admin/
 Disallow: /test/
+
+
+User-agent: Yandex
+Clean-param: page

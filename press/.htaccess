@@ -1,5 +1,0 @@
-<Files 'template.php'>
-    deny from all
-</Files>
-
-DirectoryIndex /index.php

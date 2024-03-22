@@ -20,7 +20,7 @@
     <span class='div-name'>Погода в Луганске</span>
     <? if($row) {?>
       <p class='text-center' style="text-indent: 0;"><?=date("d.m.Y", strtotime($row['date']))?></p>
-      <div class='text-center'><img src="<?=$row['url']?>" class='no-border' width="75px"></div>
+      <div class='text-center'><img src="<?=$row['url']?>" width="75px"></div>
       <p><span id="temperature">Температура</span>: <?=$row["temperature"]?> &#x2103;</p>
       <p><span id="wind">Ветер</span>: <?=$row["wind_speed"]?> м/с</p>
       <p><span id="humidity">Влажность</span>: <?=$row["humidity"]?> %</p>
@@ -101,6 +101,7 @@
       <li><a href="/hydromet/circumstances.php">Гидрометеорологические условия</a></li>
       <li><a href="/hydromet/clim_char.php">Климатическая характеристика</a></li>
       <li><a href="/hydromet/pfatp.php">Вероятностный прогноз температуры воздуха и осадков</a></li>
+      <li><a href="/hydromet/hydromet_bulletin.php">Информационный гидрометеорологический бюллетень</a></li>
       <li><a href="/hydromet/meteo_net.php">Сеть метеостанций ФГБУ "УГМС по ЛНР"</a></li>
     </ul>
   </div>
