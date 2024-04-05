@@ -1,12 +1,12 @@
 <?
-// MARK: prod / dev version comment	
-error_reporting(0);	
+// MARK: prod (0) / dev (1) version comment	
+error_reporting(0);	// production
+// error_reporting(1); // development
+
+require 'credentials.php';
 
 function connect($login, $password){
 	$conn = new mysqli("127.0.0.1", $login, $password, "ugmslnr");
-	return $conn;
-	if ($conn->connect_error)
-		return false;
 	return $conn;
 }
 
@@ -59,7 +59,7 @@ function format_date($date){
 }
 
 function exec_result($sql, $file){
-    $conn = connect("editor", 'wM2tZ1iB7c');
+    $conn = connect($GLOBALS['LOGIN'], $GLOBALS['PASSWORD']);
     if($conn->query($sql) === TRUE){
         echo "Данные отправлены.";
     } else {
