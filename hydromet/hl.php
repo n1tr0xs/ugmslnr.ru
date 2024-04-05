@@ -20,7 +20,7 @@
         <li>обеспечение органов власти, населения и заинтересованных организаций гидрологической информацией, в том числе в период весеннего половодья.</li>
       </ul>
 
-      <div class="text-center"><img src="/updatable/hydro/map.png?v=<?=time();?>"></div>
+      <div class="text-center"><img src="/updatable/hydro_map.png?v=<?=time();?>"></div>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>

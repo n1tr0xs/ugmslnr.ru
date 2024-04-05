@@ -1,14 +1,18 @@
 <?
 require $_SERVER['DOCUMENT_ROOT'] . '/requires/funcs.php';
-$conn = connect("visiter", "visiter_ugms");
 
+$img_path = $_SERVER['DOCUMENT_ROOT'] . "/updatable/fire_danger.png";
+$result = move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $img_path);
+echo "Карта ". ($result ? "" : "не "). "загружена.<br>";
+  
+$conn = connect("visiter", "visiter_ugms");
 $start = $conn->real_escape_string($_POST['start']);
 $end = $conn->real_escape_string($_POST['end']);
 $desc = $conn->real_escape_string($_POST['desc']);
 
 $sql = "
 replace into `ugmslnr`.`fire_forecast` values
-('$start', '$end', '$desc')
+(NULL, '$start', '$end', '$desc')
 ";
 
 exec_result($sql, __FILE__);

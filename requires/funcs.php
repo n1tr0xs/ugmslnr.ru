@@ -59,7 +59,7 @@ function format_date($date){
 }
 
 function exec_result($sql, $file){
-    $conn = connect('', '');
+    $conn = connect("editor", 'wM2tZ1iB7c');
     if($conn->query($sql) === TRUE){
         echo "Данные отправлены.";
     } else {

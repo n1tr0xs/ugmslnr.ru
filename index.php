@@ -9,6 +9,7 @@
     document.addEventListener('DOMContentLoaded', function(){
       const maxNews = 6;
       const files = [
+          '31-marta–godovshhina-obrazovanija-FGBU-UGMS-po-LNR',
           'pozdravlenie-nachalnika-FGBU-UGMS-po-LNR-so-Vsemirnym-meteorologicheskim-dnem',
           'v-Luganske-otkryli-modernizirovannuju-meteostanciju-i-punkt-nabljudenij-za-zagrjazneniem-atmosfernogo-vozduha',
           'pozdravlenie-rukovoditelya-Rosgidrometa-s-8-Marta',
@@ -55,7 +56,6 @@
             img = document.createElement('img');
             img.src = '/press/assets/' + slice[i] + '/' + page.querySelector('img.asset').src.split('/').pop();
             img.style = "width: 130px; float: left; margin-right: 1em;"
-            console.log(img);
             d.appendChild(img);
             
             p_title = document.createElement('p');

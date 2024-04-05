@@ -11,7 +11,7 @@ $pressure = $conn->real_escape_string($_POST['pressure']);
 
 $sql = "
 insert into `weather_current` values 
-('', '{$date}', {$icon}, {$temperature}, {$wind_speed}, {$humidity}, {$pressure})
+(NULL, '{$date}', {$icon}, {$temperature}, {$wind_speed}, {$humidity}, {$pressure})
 ";
 
 exec_result($sql, __FILE__);

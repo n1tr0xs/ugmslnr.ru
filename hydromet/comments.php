@@ -9,7 +9,6 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-        <h2>Комментарии синоптика</h2>
       <? 
       $sql = "
       select `date`, `comment` 

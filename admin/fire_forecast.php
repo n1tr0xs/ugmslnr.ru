@@ -10,14 +10,19 @@
   <div id='containter'>
     <div id='content'>
       <h3> Администрирование - пожароопасность</h3>
-      <form action="/admin/fire_forecast_exec.php" method="post">
+      <form action="/admin/fire_forecast_exec.php" method="post" enctype="multipart/form-data">
         <fieldset>
-
+          <div class='file-drop-area span2'>
+            <span class="fake-btn">Выберите файл</span>
+            <span class="file-msg" id="file-msg">или перетащите файл сюда</span>
+            <input type="file" name="fileToUpload" class="file-input" id="file-input" accept="image/png" required>
+          </div>
+          
           <label>Начало</label>
-          <input type="date" name="start" value="<?=date('Y-m-d')?>" placeholder="Дата" required>
+          <input type="date" name="start" value="<?=date('Y-m-d', strtotime('+1days'))?>" placeholder="Дата" required>
 
           <label>Конец</label>
-          <input type="date" name="end" value="<?=date('Y-m-d')?>" placeholder="Дата" required>
+          <input type="date" name="end" value="<?=date('Y-m-d', strtotime('+3days'))?>" placeholder="Дата" required>
           
           <label>Описание</label>
           <textarea rows="5" cols="50" name="desc" placeholder="Описание" required></textarea>

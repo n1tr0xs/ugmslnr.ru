@@ -16,7 +16,7 @@
         'weather_forecast_table',
         'weather_forecast_text',
         'radiation',
-        'hydro_map'
+        'hydro_map',
       ]
       const div = document.getElementById('content');
       const ul = document.createElement('ul');

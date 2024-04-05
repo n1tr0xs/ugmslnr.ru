@@ -12,7 +12,7 @@
         <h2>Гидрометеорологические условия</h2>
       <table class='no-border text-left table-striped'>
         <? 
-          $path = "/updatable/circumstances/";
+          $path = "/updatable/hydromet_conditions/";
           $ext = ".pdf";
           $files = get_files($path, $ext); 
           foreach($files as $path => $name){ ?>

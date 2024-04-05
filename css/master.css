@@ -72,8 +72,7 @@ div#news-container > a {
   color: var(--text-main);
   border: var(--border);
   margin-top: .5em;
-  padding-right: .5em;
-  padding-left: .5em;
+  padding: 0 .5em .5em .5em;
 }
 
 .news {
