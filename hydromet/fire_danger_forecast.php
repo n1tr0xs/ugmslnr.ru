@@ -19,7 +19,7 @@
       $row = get_row($conn, $sql);
       ?>
       <? if($row) { ?>
-      <h2>Карта пожароопасности на <?=format_date(date('Y-m-d', strtotime(row['start']. ' -1 days')))?></h2>
+      <h2>Карта пожароопасности на <?=format_date(date('Y-m-d', strtotime($row['start']. ' -1 days')))?></h2>
       <div class='text-center'>
         <img src="/updatable/fire_danger.png" alt="Карта пожароопасности" width="550px" onerror="this.style.display='none';">
       </div>
