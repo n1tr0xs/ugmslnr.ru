@@ -9,6 +9,11 @@
     document.addEventListener('DOMContentLoaded', function(){
       const maxNews = 6;
       const files = [
+          'bessmertnyj-polk-FGBU-UGMS-po-LNR',
+          'dlja-uchashhihsja-GBOU-LNR-Luganskaja-specializirovannaja-shkola-5-imeni-V-I-Dalja-organizovana-proforientacionnaja-jekskursija-v-FGBU-UGMS-po-LNR',
+          'meteorolog-FGBU-UGMS-po-LNR-proshla-kursy-povysheniya-kvalifikacii-vedushhih-specialistov-v-oblasti-meteorologicheskih-aktinometricheskih-i-teplobalansovyh-nablyudenij-na-baze--FGBU-GGO',
+          'Mihail-Mishustin-prinyal-uchastie-v-zasedanii-kollegii-Federalьnoj-sluzhby-po-gidrometeorologii-i-monitoringu-okruzhayushhej-sredy',
+          'kollektiv-FGBU-UGMS-po-LNR-prisoedinilsya-k-respublikanskoj-akcii-«CHistaya-Respublika»',
           '31-marta–godovshhina-obrazovanija-FGBU-UGMS-po-LNR',
           'pozdravlenie-nachalnika-FGBU-UGMS-po-LNR-so-Vsemirnym-meteorologicheskim-dnem',
           'v-Luganske-otkryli-modernizirovannuju-meteostanciju-i-punkt-nabljudenij-za-zagrjazneniem-atmosfernogo-vozduha',
