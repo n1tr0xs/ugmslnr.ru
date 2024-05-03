@@ -28,7 +28,7 @@ $conn = connect("visiter", "visiter_ugms");
     </a>
   </div>
   <div>
-    <img src="/files/imgs/logo.png?v=2" alt="Логотип Росгидромет" align="left" style="width: 80px; height: 80px; margin-left: 25px">
+    <a href="/index.php"> <img src="/files/imgs/logo.png?v=2" alt="Логотип Росгидромет" align="left" style="width: 80px; height: 80px; margin-left: 25px"> </a>
     <p style="font-size: 1.2em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>
     <p style="font-size: 1.2em"> «Управление по гидрометеорологии и мониторингу окружающей среды по Луганской Народной Республике» </p>
   </div>
@@ -52,7 +52,7 @@ $conn = connect("visiter", "visiter_ugms");
         <li><a href='/about/structure.php'>Структура</a></li>
         <li><a href='/about/requisites.php'>Реквизиты</a></li>
         <li><a href="/about/articles_of_association.php">Уставные документы</a></li>
-        <li><a href="/about/anti_corruption.php">Противодействие коррупции</a></li>
+        <li><a href="/about/anticorruption.php">Противодействие коррупции</a></li>
         <li><a href='/about/immortal_regiment.php'>Бессмертный полк</a></li>
         <li><a href='/about/history.php'>Историческая справка</a></li>
       </ul>
