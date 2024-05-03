@@ -10,7 +10,6 @@
   <div id='containter'>
     <div id='content'>
     <!---->
-    
     <!---->
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
