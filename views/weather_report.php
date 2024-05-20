@@ -21,28 +21,12 @@
           ) a
           order by `date` asc
           ";
-          $days = get_arr($conn, $sql);
-          if($days){
-          ?>
-        <table>
-          <tr>
-            <? foreach ($days as $row){ ?>
-              <td colspan="2"><?=date("d.m", strtotime($row['date']))?></td>
-            <? } ?>
-          </tr>
-          <tr>
-            <td>ночь</td>
-            <td>день</td>
-            <td>ночь</td>
-            <td>день</td>
-            <td>ночь</td>
-            <td>день</td>
-          </tr>
-          <? 
-          $sql = "
-          select * from (
+          foreach(get_arr($conn, $sql) as $day){ ?>
+        <table class="weather-report">
+            <?
+            $date = $day['date'];
+            $sql = "
             select 
-              w.date date, 
               w.day_part day_part, 
               w.temperature temperature,
               w.wind_speed wind_speed,
@@ -52,30 +36,39 @@
               `ugmslnr`.`weather_forecast_table` w
               join `ugmslnr`.`icons` i on (w.icon=i.id)
               join `ugmslnr`.`wind_directions` wd on (w.wind_direction=wd.id)
-            order by `date` desc 
-            limit 6
-          ) a
-          order by date asc, day_part asc
-          ";
-          $data = get_arr($conn, $sql); 
-          ?>
-          <tr>
+            where 
+              w.date='{$date}'
+            order by `day_part` asc 
+            limit 2
+            ";
+            $data = get_arr($conn, $sql);
+            ?>
+            <tr>
+                <td colspan="2"><?= date("d.m", strtotime($date)) ?></td>
+            </tr>
+            <tr>
+                <td> ночь </td>
+                <td> день </td>
+            </tr>
+            <tr>
             <? foreach($data as $row){ ?>
-              <td class="text-center"> <img width="75px" height="75px" src="<?=$row['icon']?>"></td>
+              <td class="text-center"> <img width="75em" height="75em" src="<?= $row["icon"] ?>"></td>
             <? } ?>
           </tr>
           <tr>
             <? foreach ($data as $row){ ?>
-              <td><?=$row['wind_direction']."<br>".$row['temperature']." м/с"?> </td>
+              <td><?= $row["wind_direction"]."<br>".$row["temperature"]." м/с" ?> </td>
             <? } ?>
           </tr>
           <tr>
             <? foreach ($data as $row){ ?>
-              <td><?=$row['wind_speed'].' &deg;C'?> 
+              <td><?= $row["wind_speed"] . " &deg;C" ?> 
             <? } ?>
           </tr>
         </table>
-        <? }
+        <? } ?>
+        <div class="clear"></div>
+        <?
         $sql = "
         select * from (
         select 
@@ -86,14 +79,12 @@
         limit 3) a
         order by date asc
         ";
-        $data = get_arr($conn, $sql);
-        ?>
-        <? foreach($data as $row){ ?>
-          <p class="day"> Прогноз на <?=format_date($row['date'])?></p>
+        foreach(get_arr($conn, $sql) as $row){ ?>
+          <p class="day"> Прогноз на <?= format_date($row["date"]) ?></p>
           <p class="region"> По городу Луганск </p>
-          <p class="description"> <?=$row['desc_city']?> </p>
+          <p class="description"> <?= $row["desc_city"] ?> </p>
           <p class="region"> По территории Луганской Народной Республики </p>
-          <p class="description"> <?=$row['desc_region']?> </p>
+          <p class="description"> <?= $row["desc_region"] ?> </p>
         <? } ?>
       </div>
     </div>

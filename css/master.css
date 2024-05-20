@@ -518,3 +518,17 @@ input[type='checkbox']:active{
 .clear {
     clear: both;
 }
+
+table.weather-report {
+    float: left;
+    width: 33%;
+}
+table.weather-report td {
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    text-align: center;
+}
+table.weather-report tr:last-child td {
+    height: 4em;
+}
