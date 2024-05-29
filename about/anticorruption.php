@@ -114,6 +114,7 @@
       <li><a href="/files/docs/ukaz-prezidenta-o-naczionalnom-plane-protivodejstviya-korrupczii-na-2021-2024-gg..pdf"> Указ Президента Российской Федерации “О национальном плане противодействия коррупции на 2021 – 2024 гг.”</a></li>
      </ul>
    -->
+   <p><a href="/files/docs/ugms_anticorruption/Информация о среднемесячной заработной плате.pdf">Информация о среднемесячной заработной плате</a></p>
  </div>
  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
 </div>
