@@ -25,10 +25,10 @@
         </div>
         <p>«В прошлом году на территории Луганской Народной Республики было создано региональное управление при Росгидромете. Уверен, что под руководством федерального ведомства и в его составе наша метеослужба будет успешно работать и со временем выйдет на общероссийский уровень. Желаю всем ее сотрудникам успехов на этом пути», – сказал Леонид Пасечник.</p>
         
-        <div class="clear" style="display: flex; flex-wrap: wrap;align-content: flex-start;justify-content: space-evenly;align-items: baseline;flex-direction: row; gap: 1em; height:350px; width: 100%; overflow-x: scroll;">
-            <img src="2.jpg" class="asset" height="100%"/>
-            <img src="4.jpg" class="asset" height="100%"/>
-            <img src="5.jpg" class="asset" height="100%"/>
+        <div class="clear img-carousel" style="height: 21em;">
+            <img src="2.jpg" class="asset"/>
+            <img src="4.jpg" class="asset"/>
+            <img src="5.jpg" class="asset"/>
         </div>
     <!---->
     </div>

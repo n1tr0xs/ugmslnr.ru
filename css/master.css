@@ -534,3 +534,23 @@ table.weather-report td {
 table.weather-report tr:last-child td {
     height: 4em;
 }
+
+.img-carousel {
+    display: flex; 
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-direction: row; 
+    gap: 1em; 
+    width: 100%; 
+    overflow-x: scroll;
+}
+
+.img-carousel * {
+    height: 100%;
+}
+
+.img-carousel .h50 {
+    height: 50%;
+}

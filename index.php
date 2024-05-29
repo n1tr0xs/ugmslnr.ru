@@ -9,6 +9,7 @@
     document.addEventListener('DOMContentLoaded', function(){
       const maxNews = 6;
       const files = [
+          'detskiye-risunki-o-pogode',
           'bessmertnyj-polk-FGBU-UGMS-po-LNR',
           'dlja-uchashhihsja-GBOU-LNR-Luganskaja-specializirovannaja-shkola-5-imeni-V-I-Dalja-organizovana-proforientacionnaja-jekskursija-v-FGBU-UGMS-po-LNR',
           'meteorolog-FGBU-UGMS-po-LNR-proshla-kursy-povysheniya-kvalifikacii-vedushhih-specialistov-v-oblasti-meteorologicheskih-aktinometricheskih-i-teplobalansovyh-nablyudenij-na-baze--FGBU-GGO',
