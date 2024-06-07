@@ -27,35 +27,34 @@ function get_row($conn, $sql){
 }
 
 function get_files($folder, $ext='.pdf'){
-	// reads files from folder and print them in table
+	// return files with given extension in given folder
 	$dir = $_SERVER['DOCUMENT_ROOT'] . $folder;
 	if (!is_dir($dir))
 		return;
-	$files = scandir($dir);	
-	foreach($files as $file){
-		if(strpos($file, $ext) !== false){
-			yield $folder.$file => $file;
+	foreach(scandir($dir) as $filename){
+		if(strpos($filename, $ext) !== false){
+			yield $filename;
 		}
 	}
 }
 
 function format_date($date){
 	$date=explode("-", $date);
-    switch ($date[1]){
-        case 1: $m = 'января'; break;
-        case 2: $m = 'февраля'; break;
-        case 3: $m = 'марта'; break;
-        case 4: $m = 'апреля'; break;
-        case 5: $m = 'мая'; break;
-        case 6: $m = 'июня'; break;
-        case 7: $m = 'июля'; break;
-        case 8: $m = 'августа'; break;
-        case 9: $m = 'сентября'; break;
-        case 10: $m = 'октября'; break;
-        case 11: $m = 'ноября'; break;
-        case 12: $m = 'декабря'; break;
-    }
-    return intval($date[2]).'&nbsp;'.$m.'&nbsp;'.$date[0].'&nbsp'.'года';
+	$month_name = [
+	    '01' => 'января',
+        '02' => 'февраля',
+        '03' => 'марта',
+        '04' => 'апреля',
+        '05' => 'мая',
+        '06' => 'июня',
+        '07' => 'июля',
+        '08' => 'августа',
+        '09' => 'сентября',
+        '10' => 'октября',
+        '11' => 'ноября',
+        '12' => 'декабря',
+	];
+    return intval($date[2]).'&nbsp;'.$month_name[$date[1]].'&nbsp;'.$date[0].'&nbsp'.'года';
 }
 
 function exec_result($sql, $file){

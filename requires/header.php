@@ -21,16 +21,15 @@ $conn = connect("visiter", "visiter_ugms");
 <!-- /Yandex.Metrika counter -->
 
 <header>
-  <script src="/js/script.js"></script>
   <div>
     <a href="/press/190-let.php" style="background-image:url(/files/imgs/banner_background.png);background-position: center;background-size:cover;display:flex;justify-content:center;width:100%;overflow:hidden;align-items:center;">
       <img src="/files/imgs/banner_190.png" style="width: 100%; margin: 0; padding: 0;"/> 
     </a>
   </div>
   <div>
-    <a href="/index.php"> <img src="/files/imgs/logo.png?v=2" alt="Логотип Росгидромет" align="left" style="width: 80px; height: 80px; margin-left: 25px"> </a>
-    <p style="font-size: 1.2em"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>
-    <p style="font-size: 1.2em"> «Управление по гидрометеорологии и мониторингу окружающей среды по Луганской Народной Республике» </p>
+    <img src="/files/imgs/logo.png?v=2" alt="Логотип Росгидромет" align="left" style="width: 80px; height: 80px; margin-left: 25px">
+    <p style="font-size: 1.2em; padding: .5em;"> ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ </p>
+    <p style="font-size: 1.2em; padding: .5em;"> «Управление по гидрометеорологии и мониторингу окружающей среды по Луганской Народной Республике» </p>
   </div>
 </header>
 

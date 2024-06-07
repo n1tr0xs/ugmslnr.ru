@@ -17,6 +17,9 @@
         'weather_forecast_text',
         'radiation',
         'hydro_map',
+        'upload_hydromet_bulletin',
+        'upload_env_review',
+        'upload_clim_char',
       ]
       const div = document.getElementById('content');
       const ul = document.createElement('ul');
