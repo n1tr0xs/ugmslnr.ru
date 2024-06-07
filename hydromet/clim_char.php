@@ -14,9 +14,25 @@
         <? 
           $path = "/updatable/clim_char/";
           $ext = ".pdf";
-          $files = get_files($path, $ext); 
-          foreach($files as $path => $name){ ?>
-            <tr><td><a target="_blank" href="<?=$path?>">  <?=$name?></a></td></tr>
+          $files = array();
+          foreach(get_files($path, $ext) as $filename){
+              $b_name = basename($filename, $ext);
+              $files[] = [
+                  'month' => explode(' ', $b_name)[2],
+                  'year' => intval(explode(' ', $b_name)[3]),
+                  'name' => $filename,
+                  'path' => $path.$filename,
+              ];
+          }
+          $month_order = array('января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря');
+          usort($files, function($a, $b) use ($month_order){
+              if($a['year']==$b['year']){
+                  return array_search($b['month'], $month_order) - array_search($a['month'], $month_order);
+              }
+              return $b['year'] - $a['year'];
+          });
+          foreach($files as $row){ ?>
+            <tr><td><a target="_blank" href="<?=$row['path']?>"><?=$row['name']?></a></td></tr>
           <? } ?>
       </table>
     </div>

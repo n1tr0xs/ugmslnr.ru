@@ -57,7 +57,7 @@
           </tr>
           <tr>
             <? foreach ($data as $row){ ?>
-              <td><?= $row["wind_direction"]."<br>".$row["temperature"]." м/с" ?> </td>
+              <td style="height: 8em;"><?= $row["wind_direction"]."<br>".$row["temperature"]." м/с" ?> </td>
             <? } ?>
           </tr>
           <tr>

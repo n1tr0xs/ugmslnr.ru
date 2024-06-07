@@ -8,30 +8,11 @@
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function(){
       const maxNews = 6;
-      const files = [
-          'detskiye-risunki-o-pogode',
-          'bessmertnyj-polk-FGBU-UGMS-po-LNR',
-          'dlja-uchashhihsja-GBOU-LNR-Luganskaja-specializirovannaja-shkola-5-imeni-V-I-Dalja-organizovana-proforientacionnaja-jekskursija-v-FGBU-UGMS-po-LNR',
-          'meteorolog-FGBU-UGMS-po-LNR-proshla-kursy-povysheniya-kvalifikacii-vedushhih-specialistov-v-oblasti-meteorologicheskih-aktinometricheskih-i-teplobalansovyh-nablyudenij-na-baze--FGBU-GGO',
-          'Mihail-Mishustin-prinyal-uchastie-v-zasedanii-kollegii-Federalьnoj-sluzhby-po-gidrometeorologii-i-monitoringu-okruzhayushhej-sredy',
-          'kollektiv-FGBU-UGMS-po-LNR-prisoedinilsya-k-respublikanskoj-akcii-«CHistaya-Respublika»',
-          '31-marta–godovshhina-obrazovanija-FGBU-UGMS-po-LNR',
-          'pozdravlenie-nachalnika-FGBU-UGMS-po-LNR-so-Vsemirnym-meteorologicheskim-dnem',
-          'v-Luganske-otkryli-modernizirovannuju-meteostanciju-i-punkt-nabljudenij-za-zagrjazneniem-atmosfernogo-vozduha',
-          'pozdravlenie-rukovoditelya-Rosgidrometa-s-8-Marta',
-          'shumakov-23-february',
-          'v-vgu-sostoyalos-zasedaniye-basseinogo-soveta-donskogo-basseynogo-okruga',
-          '190-let',
-          'zasedaniye-kollegii-roshydrometa',
-          '20-dekabrja-sostojalos-vruchenie-Pochetnogo-svidetelstva-vekovogo-punkta-nabljudenij-M-II-Belovodsk',
-          'bolee-100-let-so-dnja-nachala-meteorologicheskih-nabljudenij-na-meteorologicheskoj-stancii-II-razrjada-Belovodsk',
-          'rabotniki-FGBU-UGMS-po-LNR-proshli-obuchenie-po-programme-povyshenija-kvalifikacii-Osnovnye-napravlenija-dejatelnosti-uchrezhdenij-Rosgidrometa-Rossijskoj-Federacii',
-          'bolee-100-let-so-dnja-nachala-meteorologicheskih-nabljudenij-na-meteorologicheskoj-stancii-I-razrjada-Lugansk',
-          'rabotniki-FGBU-UGMS-po-LNR-prinjali-uchastie-v-obuchajushhem-seminare-na-baze-Departamenta-Rosgidrometa-po-JuFO-i-SKFO',
-          'poseshhenie-Glavnoj-geofizicheskoj-observatorii-im.-A.I.-Voejkova-rabotnikami-FGBU-UGMS-po-LNR',
-          'v-Sankt-Peterburge-obsudili-aktualnye-voprosy-monitoringa-zagrjaznenija-atmosfernogo-vozduha-v-Rossijskoj-Federacii',
-      ]
-      
+      const files = [<?
+        $file = fopen("news_order", "r");
+        echo fread($file, filesize("news_order"));
+        fclose($file);
+      ?>];
       var queryDict = {}
       location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
       var currentPage = Number(queryDict['page'] || 0);

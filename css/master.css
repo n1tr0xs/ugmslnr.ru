@@ -12,6 +12,7 @@ body {
   background: var(--background-body);
   text-rendering: optimizeLegibility;
   text-align: justify;
+  min-width: 700px;
 }
 
 #containter {
@@ -547,10 +548,20 @@ table.weather-report tr:last-child td {
     overflow-x: scroll;
 }
 
-.img-carousel * {
+.img-carousel img {
     height: 100%;
 }
 
 .img-carousel .h50 {
     height: 50%;
+}
+
+.news-img-left {
+    float: left; 
+    padding-right: 1em;
+}
+
+.news-img-right {
+    float: right; 
+    padding-left: 1em;
 }
