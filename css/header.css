@@ -96,10 +96,6 @@ nav a:hover {
     font-size: 3em;
   }
 
-  header {
-    border-bottom: var(--header-border);
-  }
-
   .dropdown .dropdown-content {
     display: none;
   }
