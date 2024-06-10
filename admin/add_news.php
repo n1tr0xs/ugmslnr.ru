@@ -29,14 +29,20 @@
         const ta = document.getElementById("code");
         pos = ta.selectionStart;
         x = ta.value;
-        ta.value = x.slice(0, pos) + "<img src='' class='asset news-img-left'>" + x.slice(pos);
+        img_name = window.prompt("Название картинки");
+        if(img_name == null || img_name == "")
+            return;
+        ta.value = x.slice(0, pos) + "<img src='" + img_name + "' class='asset news-img-left'>" + x.slice(pos);
     }
     
     function add_center_img(){
         const ta = document.getElementById("code");
         pos = ta.selectionStart;
         x = ta.value;
-        ta.value = x.slice(0, pos) + "<div class='text-center clear'><img src='' class='asset'></div>" + x.slice(pos);
+        img_name = window.prompt("Название картинки");
+        if(img_name == null || img_name == "")
+            return;
+        ta.value = x.slice(0, pos) + "<div class='text-center clear'><img src='" + img_name + "' class='asset'></div>" + x.slice(pos);
     }
   </script>
 </head>
@@ -52,7 +58,7 @@
       <form action="/admin/add_news_exec.php" method="post">
         <fieldset>
           
-          <label>Заголовок новости</label>
+          <label for="inp">Заголовок новости</label>
           <input type="text" id="inp" ondbclick="this.select()" oninput="translit(this.value, 'out');" onchange="translit(this.value, 'out');" name="news-title"> </input>
           <br>
           <textarea id="out" style="width: 600px;" name="news-name" required> </textarea>
@@ -60,7 +66,8 @@
           <button type="button" onclick="add_p();">Добавить абзац</button>
           <button type="button" onclick="add_left_img();">Добавить картинку слева</button>
           <button type="button" onclick="add_center_img();">Добавить картинку по центру</button>
-          <textarea id="code" class="playable-code" oninput="updateCode()" onchange="updateCode()" cols="80" rows="15" name="code" required> </textarea>
+         
+          <textarea id="code" class="playable-code" oninput="updateCode()" onchange="updateCode()" cols="80" rows="15" name="code" style="width: 500px;" required> </textarea>
           
           <button>Отправить данные</button>
         </fieldset>
