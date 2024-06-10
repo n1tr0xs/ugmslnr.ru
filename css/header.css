@@ -85,12 +85,8 @@ nav a:hover {
 
 /* mobile header */
 @media screen and (max-width: 1000px) {
-  .mobile.menu-btn {
-    display: absolute;
-  }
-
   nav {
-    position: absolute;
+    position: fixed;
     top: .2em;
     left: .3em;
     font-size: 2.5em;

@@ -357,11 +357,24 @@ img {
 }
 
 /* theme switcher */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 1.4em;
+/* mobile */
+@media screen and (max-width: 1000px) {
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 80px;
+      height: 1.4em;
+    }
+}
+
+/* PC */
+@media screen and (min-width: 1000px) {
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 1.4em;
+    }
 }
 
 .switch input {
@@ -383,6 +396,7 @@ img {
   transition: .4s;
 }
 
+
 .slider:before {
   position: absolute;
   content: "";
@@ -402,10 +416,20 @@ input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(16px);
-  -ms-transform: translateX(16px);
-  transform: translateX(16px);
+@media screen and (min-width: 1000px) {
+    input:checked + .slider:before {
+      -webkit-transform: translateX(16px);
+      -ms-transform: translateX(16px);
+      transform: translateX(16px);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    input:checked + .slider:before {
+      -webkit-transform: translateX(50px);
+      -ms-transform: translateX(50px);
+      transform: translateX(50px);
+    }
 }
 
 /* Rounded sliders */
