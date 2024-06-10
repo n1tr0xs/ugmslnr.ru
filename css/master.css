@@ -12,7 +12,6 @@ body {
   background: var(--background-body);
   text-rendering: optimizeLegibility;
   text-align: justify;
-  min-width: 700px;
 }
 
 #containter {
