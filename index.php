@@ -25,6 +25,7 @@
           var currentPage = Number(queryDict['page'] || 0);
           
           const parser = new DOMParser();
+          
           const slice = files.slice(currentPage*maxNews, (currentPage+1)*maxNews);
           for(let i=0; i<slice.length; ++i){
             const xhttp = new XMLHttpRequest();
@@ -36,7 +37,7 @@
                 a = document.createElement('a');
                 a.href = this.responseURL;
                 div_news.appendChild(a);
-                
+                a.style = "order: " + i + ';';
                 d = document.createElement('div');
                 a.appendChild(d);
                 
@@ -77,7 +78,6 @@
           };
           
           const div_content = document.getElementById('content');
-          
           // блок со ссылками на пред . след страницы новостей
           prev_next = document.createElement('div');
           prev_next.classList.add('clear');
