@@ -9,3 +9,4 @@ Disallow: /test/
 
 User-agent: Yandex
 Clean-param: page
+Clean-param: debug
