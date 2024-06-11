@@ -12,7 +12,7 @@
         $file = fopen("news_order", "r");
         echo fread($file, filesize("news_order"));
         fclose($file);
-        ?>];
+      ?>];
       var queryDict = {};
       location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]});
       var currentPage = Number(queryDict['page'] || 0);
@@ -53,14 +53,14 @@
             }
             d.appendChild(p_title);
             
-            var maxLength = 160;
+            var maxLength = 180;
             p_short = document.createElement('p');
             p_short_text = '';
             page.querySelector('div#content').querySelectorAll('p').forEach((element)=>{p_short_text += element.innerText + ' '});
             
-            //trim the string to the maximum length
+            // обрезаем до максимальной длины
             var trimmedString = p_short_text.substr(0, maxLength);
-            //re-trim if we are in the middle of a word
+            // переобрезаем, если оказались посреди слова
             trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
             p_short.innerText = trimmedString + '...';
             p_short.classList.add('short-news-description');
