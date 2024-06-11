@@ -1,5 +1,89 @@
+:root {
+  --aside-content-background: #d9d9d9;
+  --background-body: #f3f3f3;
+  --background-bright: #ffffff;
+  --background-tr-odd: #c9c9c9;
+  --background: #f7f6f8;
+  --border-color-file: #000000;
+  --border-color: #727272;
+  --border: 1px solid var(--border-color);
+  --circle-size: 1em;
+  --content-background: #e1e1e1;
+  --footer-background: #22202c;
+  --header-border: 2px solid #a5a5a5;
+  --links: #0076d1;
+  --menu-background: #5481b9;
+  --menu-border: 1px solid #000000;
+  --menu-dropdown-background: #000011;
+  --menu-dropdown-hover-background: #404040;
+  --nav-a-background: #1e4b75;
+  --nav-a-color: #fffffffc;
+  --quote-background: gray;
+  --scrollbar-thumb-hover: var(--button-hover);
+  --scrollbar-thumb: rgb(170, 170, 170);
+  --selection: #9e9e9e;
+  --show-background: rgb(38, 59, 84);
+  --show-text: #ffffff;
+  --text-bright: #000000;
+  --text-footer: #fffffffc;
+  --text-gloomy: #ffffff;
+  --text-main: #000000;
+  --text-muted: #70777f;
+  --aside-btn-color: #00000;
+  --scheme: light !important;
+  --slider-before-bg-color: black;
+  --aside-temperature-color: red;
+  --aside-wind-color: green;
+  --aside-humidity-color: blue;
+  --aside-pressure-color: black;
+}
+
+:root.dark {
+  --aside-content-background: #2d3133;
+  --background-body: #1f2123;
+  --background-bright: #ffffff;
+  --background-tr-odd: #363b3d;
+  --background: #1d1f20;
+  --border-color-file: #8c8273;
+  --border-color: #665f54;
+  --border: 1px solid var(--border-color);
+  --circle-size: 1em;
+  --content-background: #292c2e;
+  --footer-background: #1b1a23;
+  --header-border: 2px solid #a5a5a5;
+  --links: #4fb4ff;
+  --menu-background: #395d8b;
+  --menu-border: 1px solid #000000;
+  --menu-dropdown-background: #00000e;
+  --menu-dropdown-hover-background: #303436;
+  --nav-a-background: #1e4b75;
+  --nav-a-color: rgba(232, 230, 227, 0.99);
+  --quote-background: gray;
+  --scrollbar-thumb-hover: var(--button-hover);
+  --scrollbar-thumb: #484e51;
+  --selection: #9e9e9e;
+  --show-background: rgb(38, 59, 84);
+  --show-text: #ffffff;
+  --text-bright: #e8e6e3;
+  --text-footer: rgba(232, 230, 227, 0.99);
+  --text-gloomy: #e8e6e3;
+  --text-main: #e8e6e3;
+  --text-muted: #9d9487;
+  --aside-btn-color: yellow;
+  --scheme: dark !important;
+  --slider-before-bg-color: white;
+  --aside-temperature-color: #ff1a1a;
+  --aside-wind-color: #72ff72;
+  --aside-humidity-color: #337dff;
+  --aside-pressure-color: #e8e6e3;
+}
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  color-scheme: var(--scheme);
 }
 
 body {
@@ -126,6 +210,22 @@ body {
 #aside-content a[href^='mailto:']:hover {
  text-decoration: none;
  color: var(--text-bright);
+}
+
+#aside-content #temperature {
+  color: var(--aside-temperature-color);
+}
+
+#aside-content #wind {
+  color: var(--aside-wind-color);
+}
+
+#aside-content #humidity {
+  color: var(--aside-humidity-color);
+}
+
+#aside-content #pressure {
+  color: var(--aside-pressure-color);
 }
 
 div#news-container {
@@ -447,7 +547,6 @@ img {
   transition: .4s;
 }
 
-
 .slider:before {
   position: absolute;
   content: "";
@@ -455,6 +554,7 @@ img {
   width: 16px;
   left: 4px;
   bottom: .2em;
+  background-color: var(--slider-before-bg-color);
   -webkit-transition: .4s;
   transition: .4s;
 }
