@@ -106,7 +106,7 @@ nav a:hover {
   	position: relative;
     top: .1em;
     right: .2em;
-    z-index:2;
+    z-index: 2;
     overflow: hidden;
   }
 

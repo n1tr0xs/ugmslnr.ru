@@ -57,6 +57,19 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 });
 
+// mobile aside button
+document.addEventListener('DOMContentLoaded', function() {
+	let asideBtn = document.querySelector('#aside-btn');
+	let aside = document.querySelector('#aside-content');
+	let content = document.querySelector('#content');
+
+	asideBtn.addEventListener('click', function() {
+		asideBtn.classList.toggle('active');
+		aside.classList.toggle('active');
+		content.classList.toggle('disabled');
+	});
+});
+
 // dropdown menu items
 document.addEventListener('DOMContentLoaded', function() {
 	let dropdown = document.querySelectorAll('.dropdown');
