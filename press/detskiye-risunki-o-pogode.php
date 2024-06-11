@@ -14,7 +14,7 @@
         <p>Мы представляем вашему вниманию работы, которые выполнили дети наших сотрудников.</p>
         <p>Трудно выбрать из них "самые-самые". Все рисунки очень интересные.</p>
         <p>По итогам конкурса все юные художники были награждены грамотами и сладкими подарками.</p>
-        <div class="clear img-carousel" style="height: 43em;">
+        <div class="clear img-carousel" style="max-height: 43em;">
             <img src="8.jpg" class="asset h50"/>
             <img src="1.jpg" class="asset h50"/>
             <img src="2.jpg" class="asset h50"/>
