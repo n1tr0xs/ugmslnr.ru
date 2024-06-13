@@ -15,15 +15,15 @@
         <p>Трудно выбрать из них "самые-самые". Все рисунки очень интересные.</p>
         <p>По итогам конкурса все юные художники были награждены грамотами и сладкими подарками.</p>
         <div class="clear img-carousel" style="max-height: 43em;">
-            <img src="8.jpg" class="asset h50"/>
-            <img src="1.jpg" class="asset h50"/>
-            <img src="2.jpg" class="asset h50"/>
-            <img src="3.jpg" class="asset h50"/>
-            <img src="4.jpg" class="asset h50"/>
-            <img src="5.jpg" class="asset h50"/>
-            <img src="6.jpg" class="asset h50"/>
-            <img src="7.jpg" class="asset h50"/>
-            <img src="9.jpg" class="asset h50"/>
+            <img src="8.jpg" class="h50"/>
+            <img src="1.jpg" class="h50"/>
+            <img src="2.jpg" class="h50"/>
+            <img src="3.jpg" class="h50"/>
+            <img src="4.jpg" class="h50"/>
+            <img src="5.jpg" class="h50"/>
+            <img src="6.jpg" class="h50"/>
+            <img src="7.jpg" class="h50"/>
+            <img src="9.jpg" class="h50"/>
         </div>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>

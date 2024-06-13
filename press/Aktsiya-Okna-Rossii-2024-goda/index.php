@@ -14,12 +14,12 @@
         <h3><?=$news_title;?></h3>
         <p> В федеральном государственном бюджетном учреждении «Управление по гидрометеорологии и мониторингу окружающей среды по Луганской Народной Республике» проведена акция «Окна России», приуроченная к празднованию Дня России. </p>
         <div class='img-carousel' style="height: 40em;">
-            <img src="0.jpg" class="asset h50"/>
-            <img src="1.jpg" class="asset h50"/>
-            <img src="2.jpg" class="asset h50"/>
-            <img src="3.jpg" class="asset h50"/>
-            <img src="4.jpg" class="asset h50"/>
-            <img src="5.jpg" class="asset h50"/>
+            <img src="0.jpg" class="h50"/>
+            <img src="1.jpg" class="h50"/>
+            <img src="2.jpg" class="h50"/>
+            <img src="3.jpg" class="h50"/>
+            <img src="4.jpg" class="h50"/>
+            <img src="5.jpg" class="h50"/>
         </div>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>

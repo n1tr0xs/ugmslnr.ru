@@ -10,11 +10,11 @@
       
     	news_name = document.getElementById("out").value;
     	
-    	document.querySelectorAll('#content img.asset').forEach((img) => {
-    		img.src = '/press/assets/' + news_name + '/' + img.src.split('/').pop();
+    	document.querySelectorAll('#output img').forEach((img) => {
+    		img.src = '/press/' + news_name + '/' + img.src.split('/').pop();
     	});
-    	document.querySelectorAll('#content a.asset').forEach((a) => {
-    		a.href = '/press/assets/' + news_name + '/' + a.href.split('/').pop();
+    	document.querySelectorAll('#output a').forEach((a) => {
+    		a.href = '/press/' + news_name + '/' + a.href.split('/').pop();
     	});
     };
     
@@ -29,10 +29,10 @@
         const ta = document.getElementById("code");
         pos = ta.selectionStart;
         x = ta.value;
-        img_name = window.prompt("Название картинки");
+        img_name = window.prompt("Имя файла изображения");
         if(img_name == null || img_name == "")
             return;
-        ta.value = x.slice(0, pos) + "<img src='" + img_name + "' class='asset news-img-left'>" + x.slice(pos);
+        ta.value = x.slice(0, pos) + "<img src='" + img_name + "' class='news-img-left'>" + x.slice(pos);
     }
     
     function add_center_img(){
@@ -42,7 +42,7 @@
         img_name = window.prompt("Название картинки");
         if(img_name == null || img_name == "")
             return;
-        ta.value = x.slice(0, pos) + "<div class='text-center clear'><img src='" + img_name + "' class='asset'></div>" + x.slice(pos);
+        ta.value = x.slice(0, pos) + "<div class='text-center'><img src='" + img_name + "'></div>" + x.slice(pos);
     }
   </script>
 </head>
@@ -52,7 +52,7 @@
     <div id='content'>
       <h3> Администрирование - создание новости</h3>
       
-      <div class="output" style="min-height: 50px;"></div>
+      <div id="output" class="output" style="min-height: 50px;"></div>
       <div class='clear'></div>
       <hr>
       <form action="/admin/add_news_exec.php" method="post">

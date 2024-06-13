@@ -16,9 +16,9 @@
         <p>Прекрасная погода и сплоченные действия коллектива учреждения позволили справиться с большим объемом работы быстро и качественно! Слаженная работа помогла навести чистоту и порядок после зимы!</p>
         
         <div class="clear img-carousel" style="max-height: 43em;">
-            <img src="1.jpg" class="asset h50"/>
-            <img src="2.jpg" class="asset h50"/>
-            <img src="3.jpg" class="asset h50"/>
+            <img src="1.jpg" class="h50"/>
+            <img src="2.jpg" class="h50"/>
+            <img src="3.jpg" class="h50"/>
         </div>
     <!---->
     </div>
