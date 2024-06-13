@@ -16,8 +16,8 @@
                 <script async type="text/javascript">
                     const maxNews = 6;
                     const files = [<?
-                    $file = fopen("news_order", "r");
-                    echo fread($file, filesize("news_order"));
+                    $file = fopen($_SERVER['DOCUMENT_ROOT']. "/news_order", "r");
+                    echo fread($file, filesize($_SERVER['DOCUMENT_ROOT']. "/news_order"));
                     fclose($file);
                     ?>];
                     var queryDict = {};
@@ -46,7 +46,7 @@
                                 img = document.createElement('img');
                                 ext_img = page.querySelector('#content img');
                                 if(ext_img != null) {
-                                    img.src = 'press/' + slice[i] + '/' + ext_img.src.split('/').pop();
+                                    img.src = '/press/' + slice[i] + '/' + ext_img.src.split('/').pop();
                                     img.style = "width: 130px; float: left; margin-right: 1em;"
                                 }
                                 d.appendChild(img);
@@ -74,7 +74,7 @@
                                 d.appendChild(p_short);
                             }
                         };
-                        xhttp.open('GET', 'press/' + slice[i] + '/', true);
+                        xhttp.open('GET', '/press/' + slice[i] + '/', true);
                         xhttp.send();
                     };
                     
