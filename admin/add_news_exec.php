@@ -11,7 +11,7 @@ $text_template = fread($template, filesize($template_name));
 [$start, $end] = explode('<--CONTENT-->', $text_template);
 fclose($template);
 
-$file = fopen($_SERVER['DOCUMENT_ROOT'] . "/press/". $news_name. ".php", 'w') or die("Не удалось открыть файл новости");
+$file = fopen($_SERVER['DOCUMENT_ROOT'] . "/press/". $news_name. "/index.php", 'w') or die("Не удалось открыть файл новости");
 fwrite($file, "<? $"."news_title=\"{$news_title}\"; ?>\n");
 fwrite($file, $start);
 fwrite($file, $code);

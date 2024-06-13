@@ -4,7 +4,6 @@
   <meta http-equiv="robots" content="noindex">
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
   <title>Администрирование - загрузка вложений для новости</title>
-  
 </head>
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
