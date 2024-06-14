@@ -44,12 +44,15 @@ let menuBtn = document.querySelector('.menu-btn');
 let asideBtn = document.querySelector('#aside-btn');
 let menu = document.querySelector('.menu');
 let aside = document.querySelector('#aside-content');
+let content = document.querySelector('#content');
+const CONTENT_STYLE_DISPLAY = content.style.display;
 
 menuBtn.addEventListener('click', function() {
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
 	aside.classList.remove('active');
 	asideBtn.classList.remove('active');
+	content.style.display = menu.classList.contains('active') ? 'none' : CONTENT_STYLE_DISPLAY;
 });
 
 asideBtn.addEventListener('click', function() {
@@ -57,6 +60,7 @@ asideBtn.addEventListener('click', function() {
 	aside.classList.toggle('active');
 	menuBtn.classList.remove('active');
 	menu.classList.remove('active');
+	content.style.display = aside.classList.contains('active') ? 'none' : CONTENT_STYLE_DISPLAY;
 });
 
 // dropdown menu items

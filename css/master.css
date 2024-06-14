@@ -913,7 +913,6 @@ nav a.dropdown {
     margin: 0;
     background: var(--background-body);
     transform: translateX(-10000%);
-    transition: transform 0.1s;
   }
 
   .menu.active {
