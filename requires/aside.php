@@ -1,5 +1,3 @@
-<div id="aside-btn"></div>
-
 <div id='aside-content'>
   
   <div id='weather-container' class='text-left'>

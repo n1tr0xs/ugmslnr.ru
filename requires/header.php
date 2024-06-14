@@ -35,12 +35,15 @@ $conn = connect("visiter", "visiter_ugms");
 
 <nav style="clear: both;">
 
-  <div class='mobile menu-btn'>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
+    <div style="display: flex; flex-direction: row; flex-wrap: nowrap">
+      <div class='mobile menu-btn'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <div id="aside-btn"></div>
+    </div>
   <ul class='navbar menu'>
     <li class='navbar'><a href='/index.php'>Новости</a></li>
     <li class='navbar dropdown'>

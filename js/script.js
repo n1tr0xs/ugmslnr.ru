@@ -39,22 +39,24 @@ function translit(src, out_id) {
 // listeners
 // ########################################################################
 
-// mobile menu button
+// mobile menu and aside buttons
 let menuBtn = document.querySelector('.menu-btn');
+let asideBtn = document.querySelector('#aside-btn');
 let menu = document.querySelector('.menu');
+let aside = document.querySelector('#aside-content');
+
 menuBtn.addEventListener('click', function() {
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
+	aside.classList.remove('active');
+	asideBtn.classList.remove('active');
 });
 
-// mobile aside button
-let asideBtn = document.querySelector('#aside-btn');
-let aside = document.querySelector('#aside-content');
-let content = document.querySelector('#content');
 asideBtn.addEventListener('click', function() {
 	asideBtn.classList.toggle('active');
 	aside.classList.toggle('active');
-	content.classList.toggle('disabled');
+	menuBtn.classList.remove('active');
+	menu.classList.remove('active');
 });
 
 // dropdown menu items
