@@ -55,7 +55,7 @@
           <button id='submit-button'>Отправить данные</button>
         </fieldset>
       </form>
-      <span><a href='/admin/index.php'> Список панелей администрирования </a></span>
+      <span><a href='/admin/'> Список панелей администрирования </a></span>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>
