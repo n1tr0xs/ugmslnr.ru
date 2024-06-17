@@ -57,13 +57,15 @@ function format_date($date){
     return intval($date[2]).'&nbsp;'.$month_name[$date[1]].'&nbsp;'.$date[0].'&nbsp'.'года';
 }
 
-function exec_result($sql, $file){
+function exec_result($sql, $dir){
     $conn = connect($GLOBALS['LOGIN'], $GLOBALS['PASSWORD']);
     if($conn->query($sql) === TRUE){
-        echo "Данные отправлены.";
+        echo "<p>Данные отправлены.</p>";
     } else {
-        echo "Ошибка отправки данных.<br> {$conn->error}<br>";
-        echo "SQL: {$sql}";
+        echo "<p>Ошибка отправки данных.</p>";
+        echo "<p>SQL: {$sql}</p>";
+        echo "<p>Ошибка: {$conn->error}</p>";
     }
-    echo "<br><a href='/admin/". basename($file, '_exec.php'). ".php'>Вернуться на страницу ввода </a>";
+    $url = explode($_SERVER['SERVER_NAME'], $dir)[1];
+    echo "<p><a href='{$url}/'>Вернуться на страницу ввода </a></p>";
 }
