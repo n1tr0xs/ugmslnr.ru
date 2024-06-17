@@ -4,16 +4,6 @@
   <meta name="description" content="Руководство УГМС по ЛНР">
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Руководство</title>
-  <style>
-    .leader {
-      display:  flex;
-      align-items: center;
-      justify-content: left;
-    }
-    .leader > div > p:nth-child(2) {
-      font-style: italic;
-    }
-  </style>
 </head>
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
