@@ -1,4 +1,4 @@
-<? $page_name = 'Панели администрирования'; ?>
+<? $page_name = 'Администрирование - Прогноз погоды'; ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>

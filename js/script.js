@@ -35,6 +35,26 @@ function translit(src, out_id) {
 	}).join("");
 }
 
+function output_admin_panels(files){
+    files.sort();
+    const div = document.querySelector('#admin-panels');
+    const parser = new DOMParser();
+    for(let i=0; i<files.length; ++i){
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                const page = parser.parseFromString(this.responseText, 'text/html');
+                a = document.createElement('a');
+                a.href = this.responseURL;
+                a.innerText = page.querySelector('title').innerText;
+                a.style.order = i;
+                div.appendChild(a);
+            }
+        };
+        xhttp.open('GET', files[i], true);
+        xhttp.send();
+    }
+}
 // ########################################################################
 // listeners
 // ########################################################################
