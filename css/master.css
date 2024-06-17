@@ -279,11 +279,13 @@ body {
 .news-img-left {
   float: left;
   padding-right: 1em;
+  clear: left;
 }
 
 .news-img-right {
   float: right;
   padding-left: 1em;
+  clear: right;
 }
 
 /* links styling */
