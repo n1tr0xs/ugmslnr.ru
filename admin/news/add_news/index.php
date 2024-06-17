@@ -81,7 +81,7 @@
           <button type="button" onclick="add_left_img();">Добавить картинку слева</button>
           <button type="button" onclick="add_center_img();">Добавить картинку по центру</button>
           <button type="button" onclick="add_carousel();">Добавить карусель картинок</button>
-          <textarea id="code" class="playable-code" cols="80" rows="15" name="code" style="width: 500px;"
+          <textarea id="code" class="playable-code" cols="100" rows="20" name="code"
             oninput="updateCode()" onchange="updateCode()" required> 
           </textarea>
           <button>Отправить данные</button>
