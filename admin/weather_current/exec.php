@@ -14,4 +14,4 @@ insert into `weather_current` values
 (NULL, '{$date}', {$icon}, {$temperature}, {$wind_speed}, {$humidity}, {$pressure})
 ";
 
-exec_result($sql, __DIR__);
+exec_result($sql);

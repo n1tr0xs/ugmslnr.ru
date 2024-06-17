@@ -15,4 +15,4 @@ replace into `ugmslnr`.`fire_forecast` values
 (NULL, '$start', '$end', '$desc')
 ";
 
-exec_result($sql, __DIR__);
+exec_result($sql);

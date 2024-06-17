@@ -10,4 +10,4 @@ replace into `ugmslnr`.`sinop_comments` values
 ('{$date}', '{$comment}')
 ";
 
-exec_result($sql, __DIR__);
+exec_result($sql);

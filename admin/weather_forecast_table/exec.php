@@ -14,4 +14,4 @@ replace into `ugmslnr`.`weather_forecast_table` values
 ('{$date}', {$day_part}, '{$icon}', {$wind_direction}, '{$temperature}', '{$wind_speed}')
 ";
 
-exec_result($sql, __DIR__);
+exec_result($sql);

@@ -11,4 +11,4 @@ replace into `ugmslnr`.`weather_forecast_text` values
 ('{$date}', '{$desc_city}', '{$desc_region}')
 ";
 
-exec_result($sql, __DIR__);
+exec_result($sql);

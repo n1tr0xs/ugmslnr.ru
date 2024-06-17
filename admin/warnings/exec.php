@@ -27,4 +27,4 @@ insert into `ugmslnr`.`warnings` values
 (NULL, '{$type}', '{$start}', '{$end}', '{$description}', '{$aside_name}')
 ";
 
-exec_result($sql, __DIR__);
+exec_result($sql);

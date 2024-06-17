@@ -57,7 +57,7 @@ function format_date($date){
     return intval($date[2]).'&nbsp;'.$month_name[$date[1]].'&nbsp;'.$date[0].'&nbsp'.'года';
 }
 
-function exec_result($sql, $dir){
+function exec_result($sql){
     $conn = connect($GLOBALS['LOGIN'], $GLOBALS['PASSWORD']);
     if($conn->query($sql) === TRUE){
         echo "<p>Данные отправлены.</p>";
@@ -66,6 +66,5 @@ function exec_result($sql, $dir){
         echo "<p>SQL: {$sql}</p>";
         echo "<p>Ошибка: {$conn->error}</p>";
     }
-    $url = explode($_SERVER['SERVER_NAME'], $dir)[1];
-    echo "<p><a href='{$url}/'>Вернуться на страницу ввода </a></p>";
+    echo "<p><a href='.'>Вернуться на страницу ввода </a></p>";
 }

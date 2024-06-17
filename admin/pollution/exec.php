@@ -10,4 +10,4 @@ replace into `ugmslnr`.`pollution` values
 ('{$date}', '{$desc}')
 ";
 
-exec_result($sql, __DIR__);
+exec_result($sql);
