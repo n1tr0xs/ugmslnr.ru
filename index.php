@@ -16,9 +16,7 @@
                 <script async type="text/javascript">
                     const maxNews = 6;
                     const files = [<?
-                    $file = fopen($_SERVER['DOCUMENT_ROOT']. "/news_order", "r");
-                    echo fread($file, filesize($_SERVER['DOCUMENT_ROOT']. "/news_order"));
-                    fclose($file);
+                        echo file_get_contents($_SERVER['DOCUMENT_ROOT']. "/news_order");
                     ?>];
                     var queryDict = {};
                     location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]});
