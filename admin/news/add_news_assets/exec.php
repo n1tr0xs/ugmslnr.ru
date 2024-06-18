@@ -14,7 +14,7 @@ for($i=0; $i<count($files['name']); ++$i){
     $dest = $path. $fname;
     echo "<p>Загрузка файла ". $fname. "...</p>";
     $result = move_uploaded_file($tmp, $dest);
-    echo "<p>Файл ". $fname. ($result ? "" : "не "). " загружен.</p>";
+    echo "<p>Файл ". $fname. ($result ? " " : " не "). "загружен.</p>";
 }
 
 echo "<p><a href='.'>Вернуться на страницу ввода </a></p>";
