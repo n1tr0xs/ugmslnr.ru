@@ -26,7 +26,7 @@
       <p><span id="humidity">Влажность</span>: <?=$row["humidity"]?> %</p>
       <p><span id="pressure">Давление</span>: <?=$row["pressure"]?> мм.рт.ст.</p>
     <? } else { ?>
-      <p> Нет данных о текущей погоде </p>
+ <p> Нет данных о текущей погоде </p>
     <? } ?>
   </div>
 

@@ -57,12 +57,12 @@
           </tr>
           <tr>
             <? foreach ($data as $row){ ?>
-              <td style="height: 8em;"><?= $row["wind_direction"]."<br>".$row["temperature"]." м/с" ?> </td>
+              <td style="height: 8em;"><?=$row["wind_direction"]."<br>".$row["wind_speed"].' м/с' ?> </td>
             <? } ?>
           </tr>
           <tr>
             <? foreach ($data as $row){ ?>
-              <td><?= $row["wind_speed"] . " &deg;C" ?> 
+              <td><?=$row["temperature"]. ' &deg;C'?> 
             <? } ?>
           </tr>
         </table>
