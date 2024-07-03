@@ -31,7 +31,7 @@
                             if (this.readyState == 4 && this.status == 200) {
                                 const page = parser.parseFromString(this.responseText, 'text/html');
                                 
-                                const div_news = document.getElementById('news-container');
+                                const div_news = document.querySelector('#news-container');
                                 
                                 a = document.createElement('a');
                                 a.href = this.responseURL;
@@ -76,7 +76,7 @@
                         xhttp.send();
                     };
                     
-                    const div_content = document.getElementById('content');
+                    const div_content = document.querySelector('#content');
                     // блок со ссылками на пред . след страницы новостей
                     prev_next = document.createElement('div');
                     prev_next.classList.add('clear');
@@ -89,20 +89,20 @@
                     // ссылка на предыдущую страницу новостей
                     prev_p = document.createElement('p');
                     if(currentPage > 0) {
-                    prev_a = document.createElement('a');
-                    prev_a.href = '?page=' + (currentPage-1);
-                    prev_a.innerText = '⇽ Предыдушая страница';
-                    prev_p.appendChild(prev_a);
+                        prev_a = document.createElement('a');
+                        prev_a.href = '?page=' + (currentPage-1);
+                        prev_a.innerText = '⇽ Предыдушая страница';
+                        prev_p.appendChild(prev_a);
                     }
                     prev_next.appendChild(prev_p)
                     
                     // ссылка на следующую страницу новостей
                     next_p = document.createElement('p');
                     if(currentPage < Math.floor(files.length/maxNews)) {
-                    next_a = document.createElement('a');
-                    next_a.href = '?page=' + (currentPage+1);
-                    next_a.innerText = 'Следующая страница ⇾';
-                    next_p.appendChild(next_a);
+                        next_a = document.createElement('a');
+                        next_a.href = '?page=' + (currentPage+1);
+                        next_a.innerText = 'Следующая страница ⇾';
+                        next_p.appendChild(next_a);
                     }
                     prev_next.appendChild(next_p);
                 </script>

@@ -6,8 +6,8 @@
   <title>Администрирование - создание новости</title>
   <script type="text/javascript">
     function updateCode() {
-      document.querySelector(".output").innerHTML = document.getElementById("code").value;
-      news_name = document.getElementById("out").value;
+      document.querySelector(".output").innerHTML = document.querySelector("#code").value;
+      news_name = document.querySelector("#out").value;
       document.querySelectorAll('#output img').forEach((img) => {
         img.src = '/press/' + news_name + '/' + img.src.split('/').pop();
       });
@@ -17,7 +17,7 @@
     };
     
     function add_code(code){
-        const ta = document.getElementById('code');
+        const ta = document.querySelector('#code');
         pos = ta.selectionStart;
         x = ta.value;
         ta.value = x.slice(0, pos) + code + x.slice(pos);
