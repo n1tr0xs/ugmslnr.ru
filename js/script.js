@@ -27,7 +27,7 @@ function translit(src, out_id) {
 	const map={"Ё":"YO","Й":"I","Ц":"TS","У":"U","К":"K","Е":"E","Н":"N","Г":"G","Ш":"SH","Щ":"SCH","З":"Z","Х":"H","Ъ":"'","ё":"yo","й":"i","ц":"ts","у":"u","к":"k","е":"e","н":"n","г":"g","ш":"sh","щ":"sch","з":"z","х":"h","ъ":"'","Ф":"F","Ы":"I","В":"V","А":"A","П":"P","Р":"R","О":"O","Л":"L","Д":"D","Ж":"ZH","Э":"E","ф":"f","ы":"i","в":"v","а":"a","п":"p","р":"r","о":"o","л":"l","д":"d","ж":"zh","э":"e","Я":"Ya","Ч":"CH","С":"S","М":"M","И":"I","Т":"T","Ь":"","Б":"B","Ю":"YU","я":"ya","ч":"ch","с":"s","м":"m","и":"i","т":"t","ь":"","б":"b","ю":"yu",'"':"-"," ":"-"};
 	const b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-';
 
-	document.getElementById(out_id).value = src.split('').map(function(char) {
+	document.querySelector("#"+out_id).value = src.split('').map(function(char) {
 		c = map[char];
 		if (c) return c;
 		if (b.indexOf(char) > -1) return char;
@@ -94,9 +94,9 @@ for (let i = 0; i < dropdown.length; ++i) {
 }
 
 // theme switcher
-themeForm = document.getElementById('theme-form');
+themeForm = document.querySelector('#theme-form');
 themeForm.addEventListener('change', function() {
-	const is_checked = document.getElementById('theme-switcher').checked;
+	const is_checked = document.querySelector('#theme-switcher').checked;
 	const theme = `${is_checked === true ? 'dark' : 'light'}`;
 	if(theme == 'dark')
 	    document.querySelector('html').classList.add('dark');
@@ -110,19 +110,19 @@ themeForm.addEventListener('change', function() {
 const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
 if (colorSchemeQueryList['.matches'] === true) {
 	document.querySelector('html').classList.add('dark');
-	document.getElementById('theme-switcher').checked = true;
+	document.querySelector('#theme-switcher').checked = true;
 }
 
 // set theme from cookie
 const theme = getCookie('theme');
 if (theme === 'dark') {
 	document.querySelector('html').classList.add('dark');
-	document.getElementById('theme-switcher').checked = true;
+	document.querySelector('#theme-switcher').checked = true;
 }
 
 // custom file input
-const input = document.getElementById('file-input');
-const span = document.getElementById('file-msg');
+const input = document.querySelector('#file-input');
+const span = document.querySelector('#file-msg');
 if (input && span) {
 	input.addEventListener('input', function() {
 		span.innerText = "";
