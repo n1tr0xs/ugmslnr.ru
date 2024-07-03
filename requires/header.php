@@ -22,7 +22,7 @@ $conn = connect("visiter", "visiter_ugms");
 
 <header>
   <div>
-    <a href="/press/190-let.php" style="background-image:url(/files/imgs/banner_background.png);background-position: center;background-size:cover;display:flex;justify-content:center;width:100%;overflow:hidden;align-items:center;">
+    <a href="/press/190-let/" style="background-image:url(/files/imgs/banner_background.png);background-position: center;background-size:cover;display:flex;justify-content:center;width:100%;overflow:hidden;align-items:center;">
       <img src="/files/imgs/banner_190.png" style="width: 100%; margin: 0; padding: 0;"/> 
     </a>
   </div>
