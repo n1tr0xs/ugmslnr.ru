@@ -4,6 +4,12 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="Более 100 лет со дня начала метеорологических наблюдений на метеорологической станции I разряда Луганск">
   <title>Более 100 лет со дня начала метеорологических наблюдений на метеорологической станции I разряда Луганск</title>
+  <link rel="canonical" href="<?
+    $uri = explode('/', $_SERVER['REQUEST_URI']);
+    $uri[count($uri)-1] = '';
+    echo 'https://'. $_SERVER['HTTP_HOST']. join('/', $uri);
+  ?>
+  "/>
 </head>
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>

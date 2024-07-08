@@ -4,6 +4,12 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="Бессмертный полк ФГБУ «УГМС по ЛНР»">
   <title>Бессмертный полк ФГБУ «УГМС по ЛНР»</title>
+  <link rel="canonical" href="<?
+    $uri = explode('/', $_SERVER['REQUEST_URI']);
+    $uri[count($uri)-1] = '';
+    echo 'https://'. $_SERVER['HTTP_HOST']. join('/', $uri);
+  ?>
+  "/>
 </head>
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>

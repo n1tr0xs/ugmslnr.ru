@@ -4,6 +4,12 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="Работники ФГБУ «УГМС по ЛНР» прошли обучение по программе повышения квалификации «Основные направления деятельности учреждений Росгидромета Российской Федерации»">
   <title>Работники ФГБУ «УГМС по ЛНР» прошли обучение по программе повышения квалификации «Основные направления деятельности учреждений Росгидромета Российской Федерации»</title>
+  <link rel="canonical" href="<?
+    $uri = explode('/', $_SERVER['REQUEST_URI']);
+    $uri[count($uri)-1] = '';
+    echo 'https://'. $_SERVER['HTTP_HOST']. join('/', $uri);
+  ?>
+  "/>
 </head>
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>

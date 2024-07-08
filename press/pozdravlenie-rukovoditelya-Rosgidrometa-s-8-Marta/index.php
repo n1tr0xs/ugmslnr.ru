@@ -4,6 +4,12 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="Поздравление руководителя Росгидромета с 8 Марта">
   <title>Поздравление руководителя Росгидромета с 8 Марта</title>
+  <link rel="canonical" href="<?
+    $uri = explode('/', $_SERVER['REQUEST_URI']);
+    $uri[count($uri)-1] = '';
+    echo 'https://'. $_SERVER['HTTP_HOST']. join('/', $uri);
+  ?>
+  "/>
 </head>
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>

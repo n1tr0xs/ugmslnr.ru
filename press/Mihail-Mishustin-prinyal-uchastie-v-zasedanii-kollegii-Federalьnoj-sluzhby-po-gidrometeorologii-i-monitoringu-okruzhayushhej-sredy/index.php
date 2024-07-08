@@ -4,6 +4,12 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="Михаил Мишустин принял участие в заседании коллегии Федеральной службы по гидрометеорологии и мониторингу окружающей среды">
   <title>Михаил Мишустин принял участие в заседании коллегии Федеральной службы по гидрометеорологии и мониторингу окружающей среды</title>
+  <link rel="canonical" href="<?
+    $uri = explode('/', $_SERVER['REQUEST_URI']);
+    $uri[count($uri)-1] = '';
+    echo 'https://'. $_SERVER['HTTP_HOST']. join('/', $uri);
+  ?>
+  "/>
 </head>
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
