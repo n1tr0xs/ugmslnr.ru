@@ -36,9 +36,11 @@
       <?
       $warned = array();
       $not_warned = array('Метеорологическое', 'Гидрологическое', 'Загрязнение окружающей среды', 'Агрометеорологическое');
+      $now = date('Y-m-d h:m:s');
+      
       $d = str_pad(intval(date('d'))+1, 2, '0', STR_PAD_LEFT);
       $tomorrow = date('Y-m-').$d.date(' h:m:s');
-      $now = date('Y-m-d h:m:s');
+    
       $sql = "
       select
         w.id, 
@@ -48,9 +50,9 @@
         w.aside_name
       from `ugmslnr`.`warnings` w
       where 
-        (w.start <= '{$today}' and w.end > '{$today}') 
+        (w.start <= '{$now}' and w.end >= '{$now}')
         or
-        (w.start <= '{$tomorrow}' and w.end > '{$tomorrow}')
+        w.start >= '{$tomorrow}'
       ";
       $data = get_arr($conn, $sql);
       foreach($data as $row) { ?>
