@@ -22,7 +22,7 @@ function delTree($dir, $out_prefix=""){
     rmdir($dir);
 }
 
-delTree($_SERVER['DOCUMENT_ROOT']. "/press/". substr($news_name, 1, strlen($news_name)-3));
+// delTree($_SERVER['DOCUMENT_ROOT']. "/press/". substr($news_name, 1, strlen($news_name)-3));
 
 echo "<p>Новость удалена.</p>";
 echo "<p><a href='.'>Вернуться на страницу ввода </a></p>";
