@@ -49,7 +49,7 @@
         img_count = Number(window.prompt("Количество картинок в карусели"));
         if(img_count < 1 || isNaN(img_count))
             return;
-        code = "<div class='img-carousel' style='max:height: 43em'>\n";
+        code = "<div class='img-carousel' style='max-height: 43em'>\n";
         for(let i=0; i<img_count; ++i){
             img_name = window.prompt("Название картинки");
             if(img_name == null || img_name == "")
