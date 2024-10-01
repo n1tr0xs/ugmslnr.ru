@@ -15,7 +15,7 @@
         <div>
           <p class='name'>Баева Ирина Николаевна</p>
           <p>Начальник учреждения</p>
-          <p>Электронная почта: <a href='mailto:ugms.lnr@mail.ru'>ugms.lnr@mail.ru</a></p>
+          <p>Электронная почта: <a href='mailto:baeva@lnr.mecom.ru'>baeva@lnr.mecom.ru</a></p>
         </div>
       </div>
 
@@ -24,7 +24,7 @@
         <div>
           <p class='name'>Шишова Светлана Сергеевна</p>
           <p>Заместитель начальника учреждения – начальник Центра по мониторингу загрязнения окружающей среды</p>
-          <p>Электронная почта: <a href='mailto:ugms.lnr@mail.ru'>ugms.lnr@mail.ru</a></p>
+          <p>Электронная почта: <a href='mailto:shishova@lnr.mecom.ru'>shishova@lnr.mecom.ru</a></p>
         </div>
       </div>
 
@@ -33,7 +33,7 @@
         <div>
           <p class='name'>Шубенок Светлана Николаевна</p>
           <p>Заместитель начальника учреждения – начальник гидрометцентра Луганской Народной Республики</p>
-          <p>Электронная почта: <a href='mailto:ugms.lnr@mail.ru'>ugms.lnr@mail.ru</a></p>
+          <p>Электронная почта: <a href='mailto:shubenok@lnr.mecom.ru'>shubenok@lnr.mecom.ru</a></p>
         </div>
       </div>
 
@@ -42,7 +42,7 @@
         <div>
           <p class='name'>Грановская Галина Владимировна</p>
           <p>Главный бухгалтер – начальник отдела бухгалтерского учета</p>
-          <p>Электронная почта: <a href='mailto:ugms.lnr@mail.ru'>ugms.lnr@mail.ru</a></p>
+          <p>Электронная почта: <a href='mailto:granovskaya@lnr.mecom.ru'>granovskaya@lnr.mecom.ru</a></p>
         </div>
       </div>
 

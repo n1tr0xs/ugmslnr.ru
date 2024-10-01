@@ -3,8 +3,8 @@
 <head>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
     <link rel="canonical" href="https://ugmslnr.ru/"/>
-    <meta name="description" content="Новости">
-    <title>Новости</title>
+    <meta name="description" content="Новости, Главная страница УГМС по ЛНР, Официальный сайт УГМС по ЛНР">
+    <title>Официальный сайт ФГБУ «УГМС по ЛНР»</title>
 </head>
 <body>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
