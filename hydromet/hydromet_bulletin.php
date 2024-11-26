@@ -18,8 +18,8 @@
           foreach(get_files($path, $ext) as $filename){
               $b_name = basename($filename, $ext);
               $files[] = [
-                  'month' => explode(' ', $b_name)[6],
-                  'year' => intval(explode(' ', $b_name)[7]),
+                  'month' => explode(' ', $b_name)[3],
+                  'year' => intval(explode(' ', $b_name)[4]),
                   'name' => $filename,
                   'path' => $path.$filename,
               ];
