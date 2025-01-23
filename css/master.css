@@ -921,7 +921,9 @@ footer {
   background: var(--footer-background);
   color: var(--text-footer);
   border-top: var(--border);
-  padding-top: 10px;
+  padding-top: .8em;
+  padding-right: 2em;
+  padding-bottom: .8em;
   width: 100%;
 }
 
@@ -932,15 +934,11 @@ footer > div {
   justify-content: space-between;
 }
 
-footer > div > div p:first-child {
+footer > div > div p {
   margin: 0;
-  padding-left: 0.8em;
 }
 
 footer > div > div p:last-child {
-  margin: 0;
-  padding-right: 0.8em;
-  margin-bottom: 1em;
   text-align: right;
 }
 
