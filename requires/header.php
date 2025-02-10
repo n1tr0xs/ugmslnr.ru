@@ -70,6 +70,12 @@ $conn = connect("visiter", "visiter_ugms");
         <li><a href="/to_customers/dp_confirmation.php">Подтверждение возникновения ОЯ</a></li>
       </ul>
     </li>
+    <li class='navbar dropdown'>
+      <a class='dropdown'>Весеннее половодье и дождевые паводки ▼</a>
+      <ul class='navbar dropdown-content'>
+        <li><a href="/high_water/2025.php">2025</a></li>
+      </ul>
+    </li>
     <li class='navbar'><a href='/views/weather_report.php'>Погода</a></li>
     
     <div id="theme-form-container">
