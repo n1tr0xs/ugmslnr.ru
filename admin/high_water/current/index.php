@@ -12,12 +12,12 @@
       <h3> Администрирование - текущая обстановка Весеннего половодья </h3>
       <form action="exec.php" method="post">
         <fieldset>
-          <label>Описание</label>
-          <textarea name="description" rows="5" cols="50"></textarea>
           <label>Начало</label>
-          <input type="datetime-local" name="start">
-          <label>Конец</label>
-          <input type="datetime-local" name="end">          
+          <input type="date" name="start">
+          
+          <label>Описание</label>
+          <textarea name="description" rows="20" cols="90"></textarea>
+          
           <button>Отправить данные</button>
         </fieldset>
       </form>

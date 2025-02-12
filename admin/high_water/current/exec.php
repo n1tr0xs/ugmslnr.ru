@@ -2,13 +2,12 @@
 require $_SERVER['DOCUMENT_ROOT'] . '/requires/funcs.php';
 $conn = connect("visiter", "visiter_ugms");
 
-$description = $conn->real_escape_string($_POST['description']);
 $start = $conn->real_escape_string($_POST['start']);
-$end = $conn->real_escape_string($_POST['end']);
+$description = $conn->real_escape_string($_POST['description']);
 
 $sql = "
 insert into `ugmslnr`.`high_water_current` values 
-(NULL, '{$start}', '{$end}', '{$description}')
+(NULL, '{$start}', '{$description}')
 ";
 
 exec_result($sql);

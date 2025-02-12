@@ -12,12 +12,15 @@
       <h3> Администрирование - предупреждения вессеннего половодья </h3>
       <form method="post" action="exec.php">
         <fieldset>
-          <label>Описание</label>
-          <textarea name="description" rows="5" cols="50"></textarea>
           <label>Начало</label>
           <input type="datetime-local" name="start">
+          
           <label>Конец</label>
           <input type="datetime-local" name="end">
+          
+          <label>Описание</label>
+          <textarea name="description" rows="5" cols="50"></textarea>
+          
           <button>Отправить данные</button>
         </fieldset>
       </form>
