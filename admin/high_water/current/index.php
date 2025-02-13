@@ -12,12 +12,14 @@
       <h3>Администрирование -  текущая обстановка Весеннего половодья</h3>
       <form action="exec.php" method="post" enctype="multipart/form-data">
         <fieldset>
+
           <div class='file-drop-area span2'>
             <span class="fake-btn">Выберите файл</span>
             <span class="file-msg" id="file-msg">или перетащите файл сюда</span>
             <input type="file" name="fileToUpload" class="file-input" id="file-input" accept=".pdf" required>
           </div>
           <button type="submit">Отправить данные</button>
+
         </fieldset>
       </form>
       <span><a href='/admin/'> Список панелей администрирования </a></span>
