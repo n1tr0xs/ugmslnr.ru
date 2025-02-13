@@ -16,27 +16,11 @@
       <div>
         <a href="preliminary-assessment.php"> Предварительная оценка развития весеннего половодья на реках Луганской Народной Республики в 2025 году </a>
       </div>
+      
+      <p></p>
 
       <!-- Текущее состояние -->
-      <?
-      $sql = "
-      select id, start_date, description
-      from `ugmslnr`.`high_water_current`
-      where `start_date` <= '2026-01-01'
-      order by `id` desc
-      limit 1
-      ";
-      $row = get_row($conn, $sql); ?>
-      <? if ($row) { ?>
-        <?
-        $start_date = date("d.m.Y", strtotime($row['start_date']));
-        $end_date = date("d.m.Y", strtotime("+1week", strtotime($row['start_date'])));
-        ?>
-        <div>
-          <h3> Обстановка на <?=$start_date;?> - <?=$end_date;?> </h3>
-          <p> <?=$row['description'];?> </p>
-        </div>
-      <? } ?>
+      <a href="/updatable/high_water/weekly.pdf" target="_blank"> Недельный прогноз гидрологической обстановки </a>
 
       <!-- Предупреждения -->
       <?
@@ -128,6 +112,21 @@
                 </tr>
               <? } ?>
           </tbody>
+      </table>
+      <table style="width: 60%">
+          <?
+          $sql = "
+          SELECT status, color, description
+          FROM `high_water_statuses`
+          ";
+          $rows = get_arr($conn, $sql);
+          ?>
+          <? foreach($rows as $row) { ?>
+          <tr>
+              <td style="background-color: <?=$row['color'];?>; width: 20%"></td>
+              <td style="min-width: content; width: 80%;"><?=$row['description'];?></td>
+          </tr>
+          <? } ?>
       </table>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>

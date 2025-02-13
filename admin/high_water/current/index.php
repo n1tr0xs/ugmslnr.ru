@@ -3,22 +3,21 @@
 <head>
   <meta http-equiv="robots" content="noindex">
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
-  <title> Администрирование -  текущая обстановка Весеннего половодья </title>
+  <title>Администрирование - текущая обстановка Весеннего половодья</title>
 </head>
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3> Администрирование - текущая обстановка Весеннего половодья </h3>
-      <form action="exec.php" method="post">
+      <h3>Администрирование -  текущая обстановка Весеннего половодья</h3>
+      <form action="exec.php" method="post" enctype="multipart/form-data">
         <fieldset>
-          <label>Начало</label>
-          <input type="date" name="start">
-          
-          <label>Описание</label>
-          <textarea name="description" rows="20" cols="90"></textarea>
-          
-          <button>Отправить данные</button>
+          <div class='file-drop-area span2'>
+            <span class="fake-btn">Выберите файл</span>
+            <span class="file-msg" id="file-msg">или перетащите файл сюда</span>
+            <input type="file" name="fileToUpload" class="file-input" id="file-input" accept=".pdf" required>
+          </div>
+          <button type="submit">Отправить данные</button>
         </fieldset>
       </form>
       <span><a href='/admin/'> Список панелей администрирования </a></span>

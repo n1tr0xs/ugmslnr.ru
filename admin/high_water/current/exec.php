@@ -1,13 +1,8 @@
 <?
 require $_SERVER['DOCUMENT_ROOT'] . '/requires/funcs.php';
-$conn = connect("visiter", "visiter_ugms");
 
-$start = $conn->real_escape_string($_POST['start']);
-$description = $conn->real_escape_string($_POST['description']);
+$dest = $_SERVER['DOCUMENT_ROOT'] . "/updatable/high_water/weekly.pdf";
+$result = move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $dest);
 
-$sql = "
-insert into `ugmslnr`.`high_water_current` values 
-(NULL, '{$start}', '{$description}')
-";
-
-exec_result($sql);
+echo "<p>Данные". ($result ? " " : " не "). "отправлены.</p>";
+echo "<p><a href='.'>Вернуться на страницу ввода </a></p>";
