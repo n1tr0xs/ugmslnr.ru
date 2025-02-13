@@ -20,7 +20,9 @@
       <p></p>
 
       <!-- Текущее состояние -->
-      <a href="/updatable/high_water/weekly.pdf" target="_blank"> Недельный прогноз гидрологической обстановки </a>
+      <? if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/updatable/high_water/weekly.pdf")) { ?>
+        <a href="/updatable/high_water/weekly.pdf" target="_blank"> Недельный прогноз гидрологической обстановки </a>
+      <? } ?>
 
       <!-- Предупреждения -->
       <?
@@ -32,7 +34,9 @@
       order by `id` desc
       ";
       $data = get_arr($conn, $sql); ?>
-      <h3> Предупреждения </h3>
+      <? if (count($data)) { ?>
+        <h3> Предупреждения </h3>
+      <? } ?>
       <? foreach ($data as $row) { ?>
         <?
         $start_date = date("d.m.Y", strtotime($row['start_date']));
