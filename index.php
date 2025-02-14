@@ -107,6 +107,11 @@
                     prev_next.appendChild(next_p);
                 </script>
             </div>
+            <div>
+                <a href="/high_water/2025.php">
+                    <img src="/files/imgs/high_water_banner.png" alt="Баннер весеннего половодья">
+                </a>
+            </div>
         </div>
         <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
     </div>
