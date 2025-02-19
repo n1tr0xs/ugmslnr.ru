@@ -28,7 +28,7 @@
           </select>
           
           <label>Фактическая обстановка</label>
-          <select name="status">
+          <select name="current_status">
           <?
           $sql = "
           select status, color, description
@@ -41,8 +41,23 @@
           <? } ?>
           </select>
           
+          
           <label>Прогноз на трое суток</label>
           <textarea name="forecast_description" cols="80" rows="5"></textarea>
+          
+          <label>Статус прогноза</label>
+          <select name="forecast_status">
+          <?
+          $sql = "
+          select status, color, description
+          from `ugmslnr`.`high_water_statuses`
+          ";
+          $rows = get_arr($conn, $sql);
+          ?>
+          <? foreach($rows as $row) { ?>
+              <option value="<?=$row['status'];?>" style="background-color: <?=$row['color'];?>; color: black;"> <?=$row['description'];?> </option>
+          <? } ?>
+          </select>
           
           <label>Дата</label>
           <input type='date' name="date" value="<?=date('Y.m.d');?>"/>

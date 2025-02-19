@@ -10,7 +10,6 @@
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h1 style="color: red;"> Страница находится в разработке. Информация может быть неполной / отличаться от реальной </h1>
       <h3> Весеннее половодье и дождевые паводки 2025 </h3>
 
       <div>
@@ -86,10 +85,10 @@
           <tbody style="color: black;">
               <?
               $sql = "
-              select id, water_body_name, water_post_name, hws.description current_description, forecast_description, last_update, hwp.status
+              select id, water_body_name, water_post_name, hws.description current_description, forecast_description, last_update, current_status, forecast_status
               from 
                 `ugmslnr`.`high_water_posts` hwp
-                join `ugmslnr`.`high_water_statuses` hws on (hwp.status = hws.status)
+                join `ugmslnr`.`high_water_statuses` hws on (current_status = status)
               order by `id` asc
               ";
               $rows = get_arr($conn, $sql);
@@ -100,7 +99,7 @@
                     <? if($is_first) { ?>
                         <?
                         $sql = "
-                        select max(status) ms
+                        select max(current_status) ms
                         from `ugmslnr`.`high_water_posts`
                         ";
                         $response = get_row($conn, $sql);
@@ -108,11 +107,14 @@
                         ?>
                         <td rowspan="10" style="vertical-align: middle; background-color: <?=$max_color;?>"> Луганская Народная Республика </td> 
                     <? $is_first = false; } ?>
-                    <? $color = $COLOR_BY_STATUS[$row['status']]; ?>
-                    <td style="background-color: <?=$color;?>"><?=$row['water_body_name'];?></td>
-                    <td style="background-color: <?=$color;?>"><?=$row['water_post_name'];?></td>
-                    <td style="background-color: <?=$color;?>"><?=$row['current_description'];?></td>
-                    <td style="background-color: <?=$color;?>"><?=$row['forecast_description'];?></td>
+                    <? 
+                    $current_color = $COLOR_BY_STATUS[$row['current_status']]; 
+                    $forecast_color = $COLOR_BY_STATUS[$row['forecast_status']];
+                    ?>
+                    <td style="background-color: <?=$current_color;?>"><?=$row['water_body_name'];?></td>
+                    <td style="background-color: <?=$current_color;?>"><?=$row['water_post_name'];?></td>
+                    <td style="background-color: <?=$current_color;?>"><?=$row['current_description'];?></td>
+                    <td style="background-color: <?=$forecast_color;?>"><?=$row['forecast_description'];?></td>
                 </tr>
               <? } ?>
           </tbody>
