@@ -108,7 +108,7 @@
                 </script>
             </div>
             <div>
-                <a href="/high_water/2025.php">
+                <a href="https://www.meteorf.gov.ru/press/polovod2025/">
                     <img src="/files/imgs/high_water_banner.png" alt="Баннер весеннего половодья">
                 </a>
             </div>
