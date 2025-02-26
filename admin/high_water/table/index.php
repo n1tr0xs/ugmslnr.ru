@@ -43,7 +43,7 @@
           
           
           <label>Прогноз на трое суток</label>
-          <textarea name="forecast_description" cols="80" rows="5"></textarea>
+          <textarea name="forecast_description" cols="80" rows="5" required></textarea>
           
           <label>Статус прогноза</label>
           <select name="forecast_status">
