@@ -20,7 +20,7 @@
 
       <!-- Текущее состояние -->
       <? if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/updatable/high_water/weekly.pdf")) { ?>
-        <a href="/updatable/high_water/weekly.pdf" target="_blank"> Недельный прогноз гидрологической обстановки </a>
+        <a href="/updatable/high_water/weekly.pdf" target="_blank"> Еженедельный прогноз гидрологической обстановки </a>
       <? } ?>
 
       <!-- Предупреждения -->
