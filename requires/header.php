@@ -24,9 +24,14 @@ $conn = connect("visiter", "visiter_ugms");
 <? if(date("Y") == "2024") { ?>
   <div>
     <a href="/press/190-let/" style="background-image:url(/files/imgs/banner_background.png);background-position: center;background-size:cover;display:flex;justify-content:center;width:100%;overflow:hidden;align-items:center;">
-      <img src="/files/imgs/banner_190.png" style="width: 100%; margin: 0; padding: 0;"/> 
+      <img src="/files/imgs/banner_190.png" style="width: 100%; margin: 0;"/> 
     </a>
   </div>
+ <? } ?>
+ <? if(date("Y") == "2025") { ?>
+ <a href="#" style="background-image:url(/files/imgs/banner80letwowback.png); background-position: center; background-size:cover;display:flex;justify-content:center;width:100%;overflow:hidden;align-items:center; padding: 0">
+      <img src="/files/imgs/banner80letwowfront.png" style="max-height: 60px; max-width:100%; object-fit:contain;"/> 
+    </a>
  <? } ?>
   <div>
     <img src="/files/imgs/logo.png?v=2" alt="Логотип Росгидромет" align="left" style="width: 80px; height: 80px; margin-left: 25px">
