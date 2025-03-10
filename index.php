@@ -107,9 +107,12 @@
                     prev_next.appendChild(next_p);
                 </script>
             </div>
-            <div>
+            <div id="banners">
                 <a href="https://www.meteorf.gov.ru/press/polovod2025/">
-                    <img src="/files/imgs/high_water_banner.png" alt="Баннер весеннего половодья">
+                    <img src="/files/imgs/high_water_banner.png" alt="Баннер весеннего половодья" style="max-width: 290px;">
+                </a>
+                <a href="https://www.meteorf.gov.ru/about/weather-for-victory/">
+                    <img src="/files/imgs/weather_for_victory.jpg" alt="Погода для Победы" style="max-width: 290px;">
                 </a>
             </div>
         </div>
