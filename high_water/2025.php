@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
 <head>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
-    <link rel="canonical" href="https://ugmslnr.ru/"/>
     <meta name="description" content="Весеннее половодье и дождевые паводки 2025">
     <title>Весеннее половодье и дождевые паводки 2025</title>
 </head>
@@ -16,7 +15,9 @@
         <a href="preliminary-assessment.php"> Предварительная оценка развития весеннего половодья на реках Луганской Народной Республики в 2025 году </a>
       </div>
       
-      <p></p>
+      <div>
+          <a href="consultation.php"> Консультация об ожидаемых максимальных уровнях воды весеннего половодья на реках Луганской Народной Республики в 2025 году </a>
+      </div>
 
       <!-- Текущее состояние -->
       <? if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/updatable/high_water/weekly.pdf")) { ?>
