@@ -1,4 +1,3 @@
-<? header('Location: /'); ?>
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
 <head>
