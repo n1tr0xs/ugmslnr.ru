@@ -1,6 +1,6 @@
 <? $news_title="Для студентов кафедры географии факультета естественных наук ФГБОУ ВО «ЛГПУ» организованы профориентационные экскурсии в ФГБУ «УГМС по ЛНР»"; ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="<?=$news_title;?>">

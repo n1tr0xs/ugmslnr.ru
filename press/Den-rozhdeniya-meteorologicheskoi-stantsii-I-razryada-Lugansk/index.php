@@ -1,6 +1,6 @@
 <? $news_title="День рождения метеорологической станции I разряда Луганск"; ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="<?=$news_title;?>">

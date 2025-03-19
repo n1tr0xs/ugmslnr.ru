@@ -1,6 +1,6 @@
 <? $news_title="В Санкт-Петербурге работники ФГБУ «УГМС по ЛНР» прошли инструктаж по эксплуатации, проведению работ по техническому обслуживанию, монтажу устройств поста наблюдения за загрязнением атмосферного воздуха на базе ООО «Невалайн»"; ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="<?=$news_title;?>">

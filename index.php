@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
-    <link rel="canonical" href="https://ugmslnr.ru/"/>
+    <link rel="canonical" href="https://ugmslnr.ru/">
     <meta name="description" content="Новости, Главная страница УГМС по ЛНР, Официальный сайт УГМС по ЛНР">
     <title>Официальный сайт ФГБУ «УГМС по ЛНР»</title>
 </head>
@@ -13,7 +13,7 @@
             <h3> Новости </h3>
             <div id='news-container'>
                 <noscript>Разрешите JavaScript, чтобы увидеть список новостей.</noscript>
-                <script async type="text/javascript">
+                <script>
                     const maxNews = 6;
                     const files = [<?
                         echo file_get_contents($_SERVER['DOCUMENT_ROOT']. "/news_order");

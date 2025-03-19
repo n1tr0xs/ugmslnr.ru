@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="Для учащихся ГБОУ ЛНР «Луганская специализированная школа № 5 имени В.И. Даля» организована профориентационная экскурсия в ФГБУ «УГМС по ЛНР»">

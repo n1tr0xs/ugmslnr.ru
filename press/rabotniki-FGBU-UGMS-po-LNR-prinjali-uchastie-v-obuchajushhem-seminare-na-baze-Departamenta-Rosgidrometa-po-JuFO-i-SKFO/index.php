@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="Работники ФГБУ «УГМС по ЛНР» приняли участие в обучающем семинаре на базе Департамента Росгидромета по ЮФО и СКФО">

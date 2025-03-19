@@ -1,6 +1,6 @@
 <? $news_title="Акция Окна России 2024 года"; ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="<?=$news_title;?>">

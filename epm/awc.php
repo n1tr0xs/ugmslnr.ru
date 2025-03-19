@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <meta name="description" content="Информация о неблагоприятных метеорологических условиях (НМУ)">
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>

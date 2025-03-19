@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
     <meta name="description" content="Предварительная оценка развития весеннего половодья на реках Луганской Народной Республики в 2025 году">

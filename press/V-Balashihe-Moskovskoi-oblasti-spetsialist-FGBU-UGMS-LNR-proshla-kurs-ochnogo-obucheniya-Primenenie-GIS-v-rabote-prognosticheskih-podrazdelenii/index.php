@@ -1,6 +1,6 @@
 <? $news_title="В г. Балашиха Московской области специалист ФГБУ «УГМС по ЛНР» прошла курс очного обучения «Применение ГИС-технологий в работе специалистов прогностических подразделений учреждений Росгидромета»"; ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="<?=$news_title;?>">

@@ -1,6 +1,6 @@
 <? header('Location: /'); ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <meta name="description" content="Информационный гидрометеорологический бюллетень">
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>

@@ -1,6 +1,6 @@
 <? $page_name = 'Администрирование - удаление новости'; ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <meta http-equiv="robots" content="noindex">
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>

@@ -1,6 +1,6 @@
 <? $news_title="ФГБУ «УГМС по ЛНР» приняло участие в 31-м заседании бассейнового совета Донского бассейнового округа"; ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="<?=$news_title;?>">

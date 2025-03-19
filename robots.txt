@@ -10,3 +10,5 @@ Disallow: /admin/
 User-agent: Yandex
 Clean-param: page
 Clean-param: debug
+
+Sitemap: https://ugmslnr.ru/sitemap.xml

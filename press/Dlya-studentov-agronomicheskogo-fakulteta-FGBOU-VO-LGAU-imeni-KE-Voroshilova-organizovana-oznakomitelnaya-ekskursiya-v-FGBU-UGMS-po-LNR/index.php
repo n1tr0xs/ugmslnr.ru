@@ -1,6 +1,6 @@
 <? $news_title="Для студентов агрономического факультета  ФГБОУ ВО ЛГАУ имени К.Е. Ворошилова  организована ознакомительная экскурсия в ФГБУ «УГМС по ЛНР»"; ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="<?=$news_title;?>">

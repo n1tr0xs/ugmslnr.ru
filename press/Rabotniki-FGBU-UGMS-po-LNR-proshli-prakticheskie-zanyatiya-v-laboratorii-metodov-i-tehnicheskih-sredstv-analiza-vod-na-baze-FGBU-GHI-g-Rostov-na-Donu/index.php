@@ -1,6 +1,6 @@
 <? $news_title="Работники ФГБУ «УГМС по ЛНР» прошли практические занятия в лаборатории методов и технических средств анализа вод на базе ФГБУ «ГХИ» г.&nbsp;Ростов-на-Дону"; ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="<?=$news_title;?>">

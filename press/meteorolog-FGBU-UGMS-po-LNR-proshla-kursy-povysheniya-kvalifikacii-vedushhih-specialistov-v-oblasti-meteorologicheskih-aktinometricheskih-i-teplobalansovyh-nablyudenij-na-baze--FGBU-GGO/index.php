@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <meta name="description" content="Метеоролог ФГБУ «УГМС по ЛНР» прошла курсы повышения квалификации ведущих специалистов в области метеорологических, актинометрических и теплобалансовых наблюдений на базе ФГБУ «ГГО»">

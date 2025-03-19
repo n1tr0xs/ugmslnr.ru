@@ -20,7 +20,7 @@
     <span class='div-name'>Погода в Луганске</span>
     <? if($row) {?>
       <p class='text-center' style="text-indent: 0;"><?=date("d.m.Y", strtotime($row['date']))?></p>
-      <div class='text-center'><img src="<?=$row['url']?>" width="75px"></div>
+      <div class='text-center'><img src="<?=$row['url']?>" alt="" style="width: 75px;"></div>
       <p><span id="temperature">Температура</span>: <?=$row["temperature"]?> &#x2103;</p>
       <p><span id="wind">Ветер</span>: <?=$row["wind_speed"]?> м/с</p>
       <p><span id="humidity">Влажность</span>: <?=$row["humidity"]?> %</p>
@@ -79,7 +79,7 @@
       <li><a href='/epm/awc.php'> Информация о неблагоприятных метеорологических условиях (НМУ) </a></li>
       <li><a href='/epm/pollution.php'> Загрязнение атмосферного воздуха </a></li>
       <li><a href='/epm/radiation.php'> Радиационная обстановка </a></li>
-      <li><a href='/epm/cms_net.php'> Сеть наблюдений за загрязнением окружающей среды <br/> &emsp;ФГБУ «УГМС по ЛНР» </a></li>
+      <li><a href='/epm/cms_net.php'> Сеть наблюдений за загрязнением окружающей среды <br> &emsp;ФГБУ «УГМС по ЛНР» </a></li>
       <li><a href='/epm/environment_review.php'> Ежемесячный бюллетень состояния окружающей среды </a></li>
     </ul>
   </div>

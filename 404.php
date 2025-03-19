@@ -1,6 +1,6 @@
 <? header('HTTP/1.1 404 Not Found'); ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Страница не найдена</title>

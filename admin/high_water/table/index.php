@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
   <meta http-equiv="robots" content="noindex">
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
@@ -60,7 +60,7 @@
           </select>
           
           <label>Дата</label>
-          <input type='date' name="date" value="<?=date('Y.m.d');?>"/>
+          <input type='date' name="date" value="<?=date('Y.m.d');?>">
           
           <button>Отправить данные</button>
         </fieldset>
