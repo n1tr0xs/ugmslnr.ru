@@ -10,7 +10,7 @@
   <div id='containter'>
     <div id='content'>
       <h2>Сеть наблюдений за загрязнением окружающей среды ФГБУ «УГМС по ЛНР»</h2>
-      <div class='text-center'><img src="/files/imgs/cms_net.png?v=1" style="height: 900px"></div>
+      <div class='text-center'><img src="/files/imgs/cms_net.png?v=3" style="height: 900px"></div>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>
