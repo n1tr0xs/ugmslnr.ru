@@ -12,6 +12,10 @@
       <h3>Администрирование - загрузка бюллетеня гидрометеорологического бюллетеня</h3>
       <form action="exec.php" method="post" enctype="multipart/form-data">
         <fieldset>
+          <div>
+              <label>Месяц</label>
+              <input type="month" name="monthYear" required>
+          </div>
           <div class='file-drop-area span2'>
             <span class="fake-btn">Выберите файл</span>
             <span class="file-msg" id="file-msg">или перетащите файл сюда</span>
