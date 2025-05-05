@@ -218,6 +218,11 @@
             <p>Участник Великой Отечественной Войны.</p>
             <p>Пропал без вести.</p>
         </div>
+        <div class="clear">
+            <img class="clear news-img-left" src="38.png" style="width: 15em;"/>
+            <p>Литвинов Алексей Елисеевич (1920 &ndash; 1969) &ndash; дедушка Поздняковой Елены Николаевны &ndash; бухгалтера.</p>
+            <p>Участник Великой Отечественной Войны. Рядовой 9674 танковой части.</p>
+        </div>
         <!---->
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
