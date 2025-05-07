@@ -1,8 +1,17 @@
 <?
 require $_SERVER['DOCUMENT_ROOT'] . '/requires/funcs.php';
 
-$dest = $_SERVER['DOCUMENT_ROOT'] . "/updatable/environment_review/" . $_FILES['fileToUpload']['name'];
-$result = move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $dest);
+$year = $_POST['year'];
+$month = $_POST['month'];
 
-echo "<p>Данные" . ($result ? " " : " не ") . "отправлены.</p>";
+$fileName = "Бюллетень загрязнения окружающей среды ЛНР за $month $year года.pdf";
+$dest = $_SERVER['DOCUMENT_ROOT'] . "/updatable/environment_review/" . $fileName;
+
+if(file_exists($dest)){
+    echo "<p>Отчет за этот месяц уже существует!</p>";
+}
+else {
+    $result = move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $dest);    
+    echo "<p>Данные" . ($result ? " " : " не ") . "отправлены.</p>";
+}
 echo "<p><a href='.'>Вернуться на страницу ввода </a></p>";
