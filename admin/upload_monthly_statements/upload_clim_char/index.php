@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
+
 <head>
   <meta http-equiv="robots" content="noindex">
-  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Администрирование - загрузка климатической характеристики</title>
 </head>
+
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
@@ -17,7 +19,7 @@
             <span class="file-msg" id="file-msg">или перетащите файл сюда</span>
             <input type="file" name="fileToUpload" class="file-input" id="file-input" accept=".pdf" required>
           </div>
-          
+
           <button type="submit">Отправить данные</button>
         </fieldset>
       </form>
@@ -27,4 +29,5 @@
   </div>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
+
 </html>

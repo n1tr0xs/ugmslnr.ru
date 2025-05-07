@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
+
 <head>
   <meta name="description" content="Загрязнение атмосферного воздуха">
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Загрязнение атмосферного воздуха</title>
 </head>
+
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
@@ -18,12 +20,13 @@
       limit 1
       ";
       $row = get_row($conn, $sql);
-      if($row){ ?>
-        <p><?=$row['description']?></p>
+      if ($row) { ?>
+        <p><?= $row['description'] ?></p>
       <? } ?>
     </div>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
   </div>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
+
 </html>

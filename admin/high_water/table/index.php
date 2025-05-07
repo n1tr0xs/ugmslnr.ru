@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
+
 <head>
   <meta http-equiv="robots" content="noindex">
-  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
-  <title> Администрирование -  таблица Весеннего половодья </title>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
+  <title> Администрирование - таблица Весеннего половодья </title>
 </head>
+
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
@@ -14,54 +16,59 @@
         <fieldset style="grid-template-columns: auto auto; align-items: anchor-center;">
           <label>Пост</label>
           <select name="high_water_post">
-              <?
-              $sql = "
+            <?
+            $sql = "
               select id, water_body_name, water_post_name
               from `ugmslnr`.`high_water_posts`
               order by id
               ";
-              $rows = get_arr($conn, $sql);
-              ?>
-              <? foreach($rows as $row) { ?>
-                <option value="<?=$row['id'];?>">  <?=$row['water_body_name'];?>, <?=$row['water_post_name'];?></option>
-              <? } ?>
+            $rows = get_arr($conn, $sql);
+            ?>
+            <? foreach ($rows as $row) { ?>
+              <option value="<?= $row['id']; ?>"> <?= $row['water_body_name']; ?>, <?= $row['water_post_name']; ?>
+              </option>
+            <? } ?>
           </select>
-          
+
           <label>Фактическая обстановка</label>
           <select name="current_status">
-          <?
-          $sql = "
+            <?
+            $sql = "
           select status, color, description
           from `ugmslnr`.`high_water_statuses`
           ";
-          $rows = get_arr($conn, $sql);
-          ?>
-          <? foreach($rows as $row) { ?>
-              <option value="<?=$row['status'];?>" style="background-color: <?=$row['color'];?>; color: black;"> <?=$row['description'];?> </option>
-          <? } ?>
+            $rows = get_arr($conn, $sql);
+            ?>
+            <? foreach ($rows as $row) { ?>
+              <option value="<?= $row['status']; ?>" style="background-color: <?= $row['color']; ?>; color: black;">
+                <?= $row['description']; ?>
+              </option>
+            <? } ?>
           </select>
-          
-          
+
+
           <label>Прогноз на трое суток</label>
           <textarea name="forecast_description" cols="80" rows="5" required></textarea>
-          
+
           <label>Статус прогноза</label>
           <select name="forecast_status">
-          <?
-          $sql = "
+            <?
+            $sql = "
           select status, color, description
           from `ugmslnr`.`high_water_statuses`
           ";
-          $rows = get_arr($conn, $sql);
-          ?>
-          <? foreach($rows as $row) { ?>
-              <option value="<?=$row['status'];?>" style="background-color: <?=$row['color'];?>; color: black;"> <?=$row['description'];?> </option>
-          <? } ?>
+            $rows = get_arr($conn, $sql);
+            ?>
+            <? foreach ($rows as $row) { ?>
+              <option value="<?= $row['status']; ?>" style="background-color: <?= $row['color']; ?>; color: black;">
+                <?= $row['description']; ?>
+              </option>
+            <? } ?>
           </select>
-          
+
           <label>Дата</label>
-          <input type='date' name="date" value="<?=date('Y.m.d');?>">
-          
+          <input type='date' name="date" value="<?= date('Y.m.d'); ?>">
+
           <button>Отправить данные</button>
         </fieldset>
       </form>
@@ -71,4 +78,5 @@
   </div>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
+
 </html>

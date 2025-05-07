@@ -6,12 +6,15 @@ $pwd = $_POST['pwd'];
 $sql = $_POST['sql'];
 
 $conn = connect($username, $pwd);
-if($conn->connect_error) die("<p>DB Connection error</p>");
+if ($conn->connect_error)
+    die("<p>DB Connection error</p>");
 
 $resp = $conn->query($sql);
-if($resp == TRUE){
+if ($resp == TRUE) {
     echo "<p>Данные отправлены.</p>";
-    echo "<p>DUMP: "; var_dump($resp); echo "</p>";
+    echo "<p>DUMP: ";
+    var_dump($resp);
+    echo "</p>";
 } else {
     echo "<p>Ошибка отправки данных.</p>";
     echo "<p>SQL: {$sql}</p>";

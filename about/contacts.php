@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
+
 <head>
   <meta name="description" content="Контакты УГМС по ЛНР">
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Контакты</title>
 </head>
+
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
@@ -22,9 +24,10 @@
           <b> Телефон (городской): </b>
           <span>857-2-96-60-61</span>
         </p>
-      </div>
-      <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
     </div>
-    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
-  </body>
-  </html>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
+  </div>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
+</body>
+
+</html>

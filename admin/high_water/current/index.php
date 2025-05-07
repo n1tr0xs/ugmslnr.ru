@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
+
 <head>
   <meta http-equiv="robots" content="noindex">
-  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Администрирование - текущая обстановка Весеннего половодья</title>
 </head>
+
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3>Администрирование -  текущая обстановка Весеннего половодья</h3>
+      <h3>Администрирование - текущая обстановка Весеннего половодья</h3>
       <form action="exec.php" method="post" enctype="multipart/form-data">
         <fieldset>
           <div class='file-drop-area span2'>
@@ -26,4 +28,5 @@
   </div>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
+
 </html>

@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
+
 <head>
   <meta http-equiv="robots" content="noindex">
-  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
+  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Администрирование - загрузка вложений для новости</title>
 </head>
+
 <body>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
   <div id='containter'>
     <div id='content'>
-      <h3> Администрирование - загрузка вложений для новости</h3>    
+      <h3> Администрирование - загрузка вложений для новости</h3>
       <div class="output" style="min-height: 50px;"></div>
       <form action="exec.php" method="post" enctype="multipart/form-data">
         <fieldset>
           <label>Заголовок новости</label>
-          <input type="text" id="inp" ondbclick="this.select()" oninput="translit(this.value, 'out');" onchange="translit(this.value, 'out');"> </input>
+          <input type="text" id="inp" ondbclick="this.select()" oninput="translit(this.value, 'out');"
+            onchange="translit(this.value, 'out');"> </input>
           <br>
           <textarea id="out" style="width: 600px;" name="news-name" required> </textarea>
           <div class='file-drop-area span2'>
@@ -31,4 +34,5 @@
   </div>
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
+
 </html>

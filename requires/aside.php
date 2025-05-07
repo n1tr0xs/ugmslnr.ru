@@ -1,5 +1,5 @@
 <div id='aside-content'>
-  
+
   <div id='weather-container' class='text-left'>
     <?
     $sql = "
@@ -18,15 +18,15 @@
     ";
     $row = get_row($conn, $sql); ?>
     <span class='div-name'>Погода в Луганске</span>
-    <? if($row) {?>
-      <p class='text-center' style="text-indent: 0;"><?=date("d.m.Y", strtotime($row['date']))?></p>
-      <div class='text-center'><img src="<?=$row['url']?>" alt="" style="width: 75px;"></div>
-      <p><span id="temperature">Температура</span>: <?=$row["temperature"]?> &#x2103;</p>
-      <p><span id="wind">Ветер</span>: <?=$row["wind_speed"]?> м/с</p>
-      <p><span id="humidity">Влажность</span>: <?=$row["humidity"]?> %</p>
-      <p><span id="pressure">Давление</span>: <?=$row["pressure"]?> мм.рт.ст.</p>
+    <? if ($row) { ?>
+      <p class='text-center' style="text-indent: 0;"><?= date("d.m.Y", strtotime($row['date'])) ?></p>
+      <div class='text-center'><img src="<?= $row['url'] ?>" alt="" style="width: 75px;"></div>
+      <p><span id="temperature">Температура</span>: <?= $row["temperature"] ?> &#x2103;</p>
+      <p><span id="wind">Ветер</span>: <?= $row["wind_speed"] ?> м/с</p>
+      <p><span id="humidity">Влажность</span>: <?= $row["humidity"] ?> %</p>
+      <p><span id="pressure">Давление</span>: <?= $row["pressure"] ?> мм.рт.ст.</p>
     <? } else { ?>
- <p> Нет данных о текущей погоде </p>
+      <p> Нет данных о текущей погоде </p>
     <? } ?>
   </div>
 
@@ -37,7 +37,7 @@
       $warned = array();
       $not_warned = array('Метеорологическое', 'Гидрологическое', 'Загрязнение окружающей среды', 'Агрометеорологическое');
       $now = date('Y-m-d h:m:s');
-    
+
       $sql = "
       select
         w.id, 
@@ -50,21 +50,21 @@
         w.end >= '{$now}' or w.start >= '{$now}'
       ";
       $data = get_arr($conn, $sql);
-      foreach($data as $row) { ?>
+      foreach ($data as $row) { ?>
         <? array_push($warned, $row['aside_name']); ?>
         <div class="warning warned" title="Предупреждение есть">
           <div>
             <div class="circle"></div>
-            <span><a href="/views/warning.php?id=<?=$row['id']?>"><?=$row['aside_name']?></a></span>
+            <span><a href="/views/warning.php?id=<?= $row['id'] ?>"><?= $row['aside_name'] ?></a></span>
           </div>
         </div>
       <? } ?>
       <? $not_warned = array_diff($not_warned, $warned); ?>
-      <? foreach($not_warned as $type) { ?>
+      <? foreach ($not_warned as $type) { ?>
         <div class="warning" title="Предупреждений нет или нет данных">
           <div>
             <div class="circle"></div>
-            <span><?=$type?></span>
+            <span><?= $type ?></span>
           </div>
         </div>
       <? } ?>
@@ -79,7 +79,8 @@
       <li><a href='/epm/awc.php'> Информация о неблагоприятных метеорологических условиях (НМУ) </a></li>
       <li><a href='/epm/pollution.php'> Загрязнение атмосферного воздуха </a></li>
       <li><a href='/epm/radiation.php'> Радиационная обстановка </a></li>
-      <li><a href='/epm/cms_net.php'> Сеть наблюдений за загрязнением окружающей среды <br> &emsp;ФГБУ «УГМС по ЛНР» </a></li>
+      <li><a href='/epm/cms_net.php'> Сеть наблюдений за загрязнением окружающей среды <br> &emsp;ФГБУ «УГМС по
+          ЛНР» </a></li>
       <li><a href='/epm/environment_review.php'> Ежемесячный бюллетень состояния окружающей среды </a></li>
     </ul>
   </div>
