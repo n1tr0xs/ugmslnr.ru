@@ -72,10 +72,10 @@
               from `ugmslnr`.`high_water_posts`
               ";
           $row = get_row($conn, $sql);
-          $last_update = date("d.m.Y H:i", strtotime("+9 hours", strtotime($row['lu'])));
+          $last_update = date("d.m.Y", strtotime("+9 hours", strtotime($row['lu'])));
           ?>
           Опасные и неблагоприятные явления на реках по территории ответственности
-          ФГБУ&nbsp;«УГМС&nbsp;по&nbsp;ЛНР» по состоянию на <?= $last_update; ?> МСК
+          ФГБУ&nbsp;«УГМС&nbsp;по&nbsp;ЛНР» по состоянию на <?= $last_update; ?>
         </caption>
         <thead>
           <tr>
