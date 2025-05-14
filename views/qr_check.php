@@ -2,6 +2,7 @@
 <html lang="ru" dir="ltr">
 <head>
   <meta name="description" content="Проверка подлинности документа">
+  <meta name="robots" content="noindex" />
   <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
   <title>Проверка подлинности документа</title>
 </head>
