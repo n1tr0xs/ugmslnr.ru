@@ -6,8 +6,10 @@ Disallow: /updatable/
 Disallow: /files/
 Disallow: /admin/
 
+
 User-agent: Yandex
 Clean-param: page
 Clean-param: debug
+Disallow: /views/qr_check.php?
 
 Sitemap: https://ugmslnr.ru/sitemap.xml
