@@ -3,8 +3,8 @@
 
 <head>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
-    <meta name="description" content="Бессмертный полк ФГБУ «УГМС по ЛНР»">
-    <title>Бессмертный полк ФГБУ «УГМС по ЛНР»</title>
+    <meta name="description" content="Бессмертный полк ФГБУ «УГМС по ЛНР» 2025">
+    <title>Бессмертный полк ФГБУ «УГМС по ЛНР» 2025</title>
     <link rel="canonical" href="" />
 </head>
 
