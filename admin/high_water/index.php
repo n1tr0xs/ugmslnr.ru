@@ -15,12 +15,11 @@
       <h3><?= $page_name; ?></h3>
       <div id='admin-panels' style="display: flex; flex-wrap: nowrap; flex-direction: column;">
         <script type="module">
-          output_admin_panels([ < ?
-            foreach(array_diff(scandir('.'), array('..', '.')) as $name)
-                    if (is_dir($name))
-                        echo "'{$name}/',\n"; ?
-                    >
-                ]);
+          output_admin_panels([ <?
+          foreach (array_diff(scandir('.'), array('..', '.')) as $name)
+            if (is_dir($name))
+              echo "'{$name}/',\n";
+          ?>]);
         </script>
       </div>
     </div>
