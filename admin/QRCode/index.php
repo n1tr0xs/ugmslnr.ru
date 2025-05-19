@@ -25,7 +25,6 @@
     function hashData(data) {
         const encoder = new TextEncoder();
         const encoded = encoder.encode(data);
-
         return crypto.subtle.digest('SHA-256', encoded).then(hashBuffer => {
             const hashArray = Array.from(new Uint8Array(hashBuffer));
             const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
@@ -64,7 +63,7 @@
     function downloadQR() {
         // Download QR code
         const href = document.getElementById('qrcode_image').src;
-        const name = document.getElementById('doc_hash').value;
+        const name = document.getElementById('doc_number').value;
 
         const link = document.createElement('a');
         link.href = href;
