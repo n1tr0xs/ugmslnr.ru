@@ -60,6 +60,22 @@
       code += "</div>";
       add_code(code);
     }
+
+    function add_clear_div() {
+      code = `<div class="clear">\n`
+      img_name = window.prompt("Имя файла изображения");
+      if (img_name == null || img_name == "")
+        return;
+      code += `<img src='${img_name}' class='clear news-img-left' style="width: 15em;"/>`;
+      paragraphs_count = Number(window.prompt("Количество параграфов"));
+      if (paragraphs_count < 1 || isNaN(paragraphs_count))
+        return;
+      for (let i = 0; i < paragraphs_count; ++i) {
+        code += `\n<p> </p>`;
+      }
+      code += `\n</div>`;
+      add_code(code);
+    }
   </script>
 </head>
 
@@ -83,6 +99,7 @@
           <button type="button" onclick="add_left_img();">Добавить картинку слева</button>
           <button type="button" onclick="add_center_img();">Добавить картинку по центру</button>
           <button type="button" onclick="add_carousel();">Добавить карусель картинок</button>
+          <button type="button" onclick="add_clear_div();">Добавить модуль с картинкой (как Бессмертный полк)</button>
           <textarea id="code" class="playable-code" cols="100" rows="20" name="code" oninput="updateCode()"
             onchange="updateCode()" required>
           </textarea>
