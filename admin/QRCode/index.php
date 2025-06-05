@@ -7,69 +7,68 @@
     <title>Администрирование - QR CODE</title>
     <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
     <script>
-    function getDocumentData() {
-        // Data
-        const documentData = {
-            type: document.getElementById('doc_type').value,
-            number: document.getElementById('doc_number').value,
-            date: document.getElementById('doc_date').value,
-            responseTo: document.getElementById('doc_source').value,
-            recipient: document.getElementById('doc_receiver').value,
-            executedBy: document.getElementById('doc_performer').value,
-            signedBy: document.getElementById('doc_signer').value,
-            comment: document.getElementById('doc_comment').value
+        function getDocumentData() {
+            const documentData = {
+                type: document.getElementById('doc_type').value,
+                number: document.getElementById('doc_number').value,
+                date: document.getElementById('doc_date').value,
+                responseTo: document.getElementById('doc_source').value,
+                recipient: document.getElementById('doc_receiver').value,
+                executedBy: document.getElementById('doc_performer').value,
+                signedBy: document.getElementById('doc_signer').value,
+                comment: document.getElementById('doc_comment').value
+            };
+            return documentData;
+        }
+
+        function hashData(data) {
+            const encoder = new TextEncoder();
+            const encoded = encoder.encode(data);
+            return crypto.subtle.digest('SHA-256', encoded).then(hashBuffer => {
+                const hashArray = Array.from(new Uint8Array(hashBuffer));
+                const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+                return hashHex;
+            });
         };
-        return documentData;
-    }
 
-    function hashData(data) {
-        const encoder = new TextEncoder();
-        const encoded = encoder.encode(data);
-        return crypto.subtle.digest('SHA-256', encoded).then(hashBuffer => {
-            const hashArray = Array.from(new Uint8Array(hashBuffer));
-            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-            return hashHex;
-        });
-    };
+        function updateQR() {
+            document.getElementById('qrcode').innerHTML = ""; // deleting previous QR
+            // QR options
+            const options = {
+                width: 256,
+                height: 256,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+            };
+            documentData = getDocumentData();
+            const stringData = JSON.stringify(documentData);
+            const hash = hashData(stringData).then(hash => {
+                document.getElementById('doc_hash').value = hash; // Updating doc_hash
+                const data = `https://ugmslnr.ru/views/qr_check.php?h=${hash}`;
+                // Updating QR code
+                QRCode.toDataURL(data, options, function (error, url) {
+                    if (error) {
+                        console.error(error);
+                    } else {
+                        const img = document.createElement('img');
+                        img.src = url;
+                        img.id = 'qrcode_image';
+                        document.getElementById('qrcode').appendChild(img);
+                    }
+                })
+            });
+        }
 
-    function updateQR() {
-        document.getElementById('qrcode').innerHTML = ""; // deleting previous QR
-        // QR options
-        const options = {
-            width: 256,
-            height: 256,
-            colorDark: "#000000",
-            colorLight: "#ffffff",
-        };
-        documentData = getDocumentData();
-        const stringData = JSON.stringify(documentData);
-        const hash = hashData(stringData).then(hash => {
-            document.getElementById('doc_hash').value = hash; // Updating doc_hash
-            const data = `https://ugmslnr.ru/views/qr_check.php?h=${hash}`;
-            // Updating QR code
-            QRCode.toDataURL(data, options, function(error, url) {
-                if (error) {
-                    console.error(error);
-                } else {
-                    const img = document.createElement('img');
-                    img.src = url;
-                    img.id = 'qrcode_image';
-                    document.getElementById('qrcode').appendChild(img);
-                }
-            })
-        });
-    }
+        function downloadQR() {
+            // Download QR code
+            const href = document.getElementById('qrcode_image').src;
+            const name = document.getElementById('doc_number').value;
 
-    function downloadQR() {
-        // Download QR code
-        const href = document.getElementById('qrcode_image').src;
-        const name = document.getElementById('doc_number').value;
-
-        const link = document.createElement('a');
-        link.href = href;
-        link.download = `${name}.png`;
-        link.click();
-    }
+            const link = document.createElement('a');
+            link.href = href;
+            link.download = `${name}.png`;
+            link.click();
+        }
     </script>
 </head>
 

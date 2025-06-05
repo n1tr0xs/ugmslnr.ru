@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="robots" content="noindex">
-    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
     <title>Администрирование - радиация</title>
 </head>
 
@@ -15,7 +15,7 @@
             <form action="exec.php" method="post">
                 <fieldset>
                     <label>Дата</label>
-                    <input type="date" name="date" value="<?=date('Y-m-d')?>" placeholder="Дата" required>
+                    <input type="date" name="date" value="<?= date('Y-m-d') ?>" placeholder="Дата" required>
                     <label>Описание</label>
                     <textarea placeholder="Описание" rows="5" cols="50" name="desc" required></textarea>
                     <button>Отправить данные</button>

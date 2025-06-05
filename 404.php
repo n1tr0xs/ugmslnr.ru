@@ -3,19 +3,19 @@
 <html lang="ru" dir="ltr">
 
 <head>
-  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
-  <title>Страница не найдена</title>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
+    <title>Страница не найдена</title>
 </head>
 
 <body>
-  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
-  <div id='containter'>
-    <div id='content'>
-      <h2>Страница не найдена</h2>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
+    <div id='containter'>
+        <div id='content'>
+            <h2>Страница не найдена</h2>
+        </div>
+        <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
     </div>
-    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>
-  </div>
-  <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/footer.php'; ?>
 </body>
 
 </html>

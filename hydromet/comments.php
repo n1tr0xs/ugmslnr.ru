@@ -12,16 +12,16 @@
     <div id='containter'>
         <div id='content'>
             <?
-      $sql = "
+            $sql = "
       select `date`, `comment` 
       from `ugmslnr`.`sinop_comments` 
       order by `date` desc 
       limit 1
       ";
-      $row = get_row($conn, $sql);
-      if ($row) { ?>
-            <h3> Комментарии синоптика от <?= format_date($row['date']) ?></h3>
-            <p><?= $row['comment'] ?></p>
+            $row = get_row($conn, $sql);
+            if ($row) { ?>
+                <h3> Комментарии синоптика от <?= format_date($row['date']) ?></h3>
+                <p><?= $row['comment'] ?></p>
             <? } ?>
         </div>
         <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>

@@ -13,14 +13,14 @@
         <div id='content'>
             <h2>Радиационная обстановка</h2>
             <?
-      $sql = "
+            $sql = "
       select * 
       from `ugmslnr`.`radiation` 
       order by `date` desc 
       limit 1";
-      $row = get_row($conn, $sql);
-      if ($row) { ?>
-            <p class="description"><?= $row['description'] ?></p>
+            $row = get_row($conn, $sql);
+            if ($row) { ?>
+                <p class="description"><?= $row['description'] ?></p>
             <? } ?>
         </div>
         <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/aside.php'; ?>

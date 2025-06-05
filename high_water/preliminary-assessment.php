@@ -2,7 +2,7 @@
 <html lang="ru" dir="ltr">
 
 <head>
-    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
     <meta name="description"
         content="Предварительная оценка развития весеннего половодья на реках Луганской Народной Республики в 2025 году">
     <title>Предварительная оценка развития весеннего половодья на реках Луганской Народной Республики в 2025 году

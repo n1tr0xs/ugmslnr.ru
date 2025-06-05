@@ -11,10 +11,10 @@ $text_template = fread($template, filesize($template_name));
 [$start, $end] = explode('<--CONTENT-->', $text_template);
 fclose($template);
 
-$path = $_SERVER['DOCUMENT_ROOT'] . "/press/". $news_name. '/';
+$path = $_SERVER['DOCUMENT_ROOT'] . "/press/" . $news_name . '/';
 mkdir($path);
-$file = fopen($path. "index.php", 'w') or die("Не удалось открыть файл новости");
-fwrite($file, "<? $"."news_title=\"{$news_title}\"; ?>\n");
+$file = fopen($path . "index.php", 'w') or die("Не удалось открыть файл новости");
+fwrite($file, "<? $" . "news_title=\"{$news_title}\"; ?>\n");
 fwrite($file, $start);
 fwrite($file, $code);
 fwrite($file, $end);
@@ -26,7 +26,7 @@ $old_news = fread($file, filesize($fname));
 fclose($file);
 
 $file = fopen($fname, 'w') or die("Не удалось открыть файл очереди новостей");
-fwrite($file, "'{$news_name}',\n". $old_news);
+fwrite($file, "'{$news_name}',\n" . $old_news);
 fclose($file);
 
 echo "<p>Данные отправлены.</p>";

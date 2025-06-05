@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="robots" content="noindex">
-    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
     <title>Администрирование - пожароопасность</title>
 </head>
 
@@ -21,10 +21,10 @@
                             required>
                     </div>
                     <label>Начало</label>
-                    <input type="date" name="start" value="<?=date('Y-m-d', strtotime('+1days'))?>" placeholder="Дата"
+                    <input type="date" name="start" value="<?= date('Y-m-d', strtotime('+1days')) ?>" placeholder="Дата"
                         required>
                     <label>Конец</label>
-                    <input type="date" name="end" value="<?=date('Y-m-d', strtotime('+3days'))?>" placeholder="Дата"
+                    <input type="date" name="end" value="<?= date('Y-m-d', strtotime('+3days')) ?>" placeholder="Дата"
                         required>
                     <label>Описание</label>
                     <textarea rows="5" cols="50" name="desc" placeholder="Описание" required></textarea>

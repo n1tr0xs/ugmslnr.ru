@@ -6,14 +6,14 @@
 <head>
     <meta http-equiv="robots" content="noindex">
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
-    <title><?=$PAGE_NAME;?></title>
+    <title><?= $PAGE_NAME; ?></title>
 </head>
 
 <body>
     <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/header.php'; ?>
     <div id='containter'>
         <div id='content'>
-            <h3><?=$PAGE_NAME;?></h3>
+            <h3><?= $PAGE_NAME; ?></h3>
             <form action="exec.php" method="post" enctype="multipart/form-data">
                 <fieldset>
                     <label for="month">Месяц</label>

@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="robots" content="noindex">
-    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
     <title>Администрирование - прогноз погоды - текст</title>
 </head>
 
@@ -15,11 +15,10 @@
             <form action="exec.php" method="post">
                 <fieldset>
                     <label for="date">Дата</label>
-                    <input type="date" name="date" value="<?=date('Y-m-d')?>" required>
+                    <input type="date" name="date" value="<?= date('Y-m-d') ?>" required>
 
                     <label>Описание для города</label>
                     <textarea cols="50" rows="5" name="desc_city" placeholder="Описание для города" required></textarea>
-
 
                     <label>Описание для области</label>
                     <textarea cols="50" rows="5" name="desc_region" placeholder="Описание для области"

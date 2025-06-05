@@ -20,13 +20,13 @@
                     <select id='title' name='title'>
                         <option value="" selected>Выберите название</option>
                         <?
-            $file = fopen($_SERVER['DOCUMENT_ROOT'] . "/news_order", "r");
-            while ($line = fgets($file)) {
-              $val = $line;
-              $news_name = substr($line, 1, strlen($line) - 4);
-              echo "<option value=\"" . $val . "\">" . $news_name . "</option>";
-            }
-            ?>
+                        $file = fopen($_SERVER['DOCUMENT_ROOT'] . "/news_order", "r");
+                        while ($line = fgets($file)) {
+                            $val = $line;
+                            $news_name = substr($line, 1, strlen($line) - 4);
+                            echo "<option value=\"" . $val . "\">" . $news_name . "</option>";
+                        }
+                        ?>
                     </select>
 
                     <button>Отправить данные</button>

@@ -14,12 +14,12 @@
             <h3>Образцы писем-запросов</h3>
             <div>
                 <ul>
-                    <? 
-          $path = "/files/request_samples/";
-          $ext = ".doc";
-          $files = get_files($path, $ext); 
-          foreach($files as $name){ ?>
-                    <li> <a download href="<?=$path.$name?>"><?=$name?></a></li>
+                    <?
+                    $path = "/files/request_samples/";
+                    $ext = ".doc";
+                    $files = get_files($path, $ext);
+                    foreach ($files as $name) { ?>
+                        <li> <a download href="<?= $path . $name ?>"><?= $name ?></a></li>
                     <? } ?>
                 </ul>
             </div>

@@ -20,8 +20,7 @@
                         foreach (array_diff(scandir('.'), array('..', '.')) as $name)
                             if (is_dir($name))
                                 echo "'{$name}/',\n";
-                        ?>
-                        ])
+                        ?>])
                     });
                 </script>
             </div>

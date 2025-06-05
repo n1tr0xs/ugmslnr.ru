@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="robots" content="noindex">
-    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html';?>
+    <? require $_SERVER['DOCUMENT_ROOT'] . '/requires/head.html'; ?>
     <title>Администрирование - прогноз погоды - таблица</title>
 </head>
 
@@ -16,35 +16,35 @@
                 <fieldset>
 
                     <label for="date">Дата</label>
-                    <input type="date" name="date" value="<?=date('Y-m-d')?>" required>
+                    <input type="date" name="date" value="<?= date('Y-m-d') ?>" required>
 
                     <label for="day_part">Часть дня</label>
                     <select name="day_part" required>
                         <?
-            $sql = "SELECT * FROM `ugmslnr`.`day_parts` order by `id`";
-            $arr = get_arr($conn, $sql);
-            foreach($arr as $row){ ?>
-                        <option value="<?=$row['id']?>"><?=$row['name']?></option>
+                        $sql = "SELECT * FROM `ugmslnr`.`day_parts` order by `id`";
+                        $arr = get_arr($conn, $sql);
+                        foreach ($arr as $row) { ?>
+                            <option value="<?= $row['id'] ?>"><?= $row['name'] ?></option>
                         <? } ?>
                     </select>
 
                     <label for="icon">Иконка</label>
                     <select name="icon" required>
                         <?
-            $sql = "SELECT * FROM `ugmslnr`.`icons` order by `id`";
-            $arr = get_arr($conn, $sql);
-            foreach($arr as $row){ ?>
-                        <option value="<?=$row['id']?>"><?=$row['name']?></option>
+                        $sql = "SELECT * FROM `ugmslnr`.`icons` order by `id`";
+                        $arr = get_arr($conn, $sql);
+                        foreach ($arr as $row) { ?>
+                            <option value="<?= $row['id'] ?>"><?= $row['name'] ?></option>
                         <? } ?>
                     </select>
 
                     <label for="wind_direction">Направление ветра</label>
                     <select name="wind_direction" required>
                         <?
-            $sql = "SELECT * FROM `ugmslnr`.`wind_directions` order by `id`";
-            $arr = get_arr($conn, $sql);
-            foreach($arr as $row){ ?>
-                        <option value="<?=$row['id']?>"><?=$row['direction']?></option>
+                        $sql = "SELECT * FROM `ugmslnr`.`wind_directions` order by `id`";
+                        $arr = get_arr($conn, $sql);
+                        foreach ($arr as $row) { ?>
+                            <option value="<?= $row['id'] ?>"><?= $row['direction'] ?></option>
                         <? } ?>
                     </select>
 
