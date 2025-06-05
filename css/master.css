@@ -288,6 +288,11 @@ body {
     clear: right;
 }
 
+div.text-center > img {
+    max-width: 40rem;
+    max-height: 40rem;
+}
+
 /* links styling */
 a {
     text-decoration: none;
