@@ -35,6 +35,9 @@
                     <label for="year">Год</label>
                     <input type="number" name="year" id="year">
 
+                    <label for="replace_statement">Заменить предыдущий отчет</label>
+                    <input type="checkbox" name="replace_statement" id="replace_statement" />
+
                     <div class='file-drop-area span2'>
                         <span class="fake-btn">Выберите файл</span>
                         <span class="file-msg" id="file-msg">или перетащите файл сюда</span>
