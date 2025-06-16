@@ -2,11 +2,4 @@ DirectoryIndex index.php
 
 AddDefaultCharset UTF-8
 
-<FilesMatch "\.(php)$">
-    Header set Cache-Control: "no-cache, no-store"
-    Header unset ETag
-</FilesMatch>
-
-Header set X-Content-Type-Options nosniff
-
 Options -Indexes

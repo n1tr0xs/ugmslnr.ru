@@ -7,7 +7,7 @@ require 'credentials.php';
 
 function connect($login, $password)
 {
-    $conn = new mysqli("127.0.0.1", $login, $password, "ugmslnr");
+    $conn = new mysqli("db", $login, $password, "ugmslnr");
     return $conn;
 }
 
