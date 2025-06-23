@@ -19,7 +19,7 @@
                     $ext = ".doc";
                     $files = get_files($path, $ext);
                     foreach ($files as $name) { ?>
-                        <li> <a download href="<?= $path . $name ?>"><?= $name ?></a></li>
+                        <li> <a download href="<?= $path . $name ?>?v=<?= time() ?>"><?= $name ?></a></li>
                     <? } ?>
                 </ul>
             </div>
